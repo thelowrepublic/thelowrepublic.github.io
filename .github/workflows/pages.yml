@@ -1,0 +1,56 @@
+# Builds the Low Republic wiki from ARTICLES/ and ARTWORKS/ and publishes it to GitHub Pages.
+# Runs on every push to main (including article edits made on github.com), and can be
+# started by hand from the Actions tab. The site code lives in WIKI-SITE/.
+name: Build and publish the wiki
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push waits for the current one instead of cancelling it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: WIKI-SITE/requirements.txt
+
+      - name: Install the build's Python packages
+        run: pip install -r WIKI-SITE/requirements.txt
+
+      - name: Build the site
+        run: python WIKI-SITE/build.py
+
+      - name: Check every link, anchor and image in the built site
+        run: python WIKI-SITE/tests/check_site.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: WIKI-SITE/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

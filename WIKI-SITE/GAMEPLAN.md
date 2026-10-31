@@ -1,6 +1,6 @@
 # The Low Republic wiki: analysis and game plan
 
-Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phase 1 (look and feel) is built and awaiting approval.
+Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phase 1 (look and feel) is built. The site is live at https://jakubpawelec.github.io/the-low-republic-wiki/ and republishes on every push to `main`.
 
 Everything for the website lives in this `WIKI-SITE/` folder. The one exception is the GitHub Actions workflow file, which GitHub requires to be in `.github/workflows/`. `ARTICLES/`, `ARTWORKS/` and the two logos are read-only input. The build never writes to them.
 
@@ -233,7 +233,7 @@ The eight articles are listed in `config.yml`. No generated feature may place tw
 | 6 | **Go live** | The Actions workflow. A pull request to `main` for you to merge, after which the site is live. A check on desktop and phone. | You merge |
 | 7 | **Handover** | `WIKI-SITE/README.md`: how edits go live, how to preview locally, how to read the build report, how to change labels or the sidebar. | Done |
 
-Work happens on the `claude/gifted-brown-x20p6v` branch. The site only goes live when you merge into `main`. Until then I'll show progress with screenshots taken in a headless browser.
+Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main` when each step is ready (authors' permission, 31 October 2026). The publishing workflow from Phase 6 was brought forward so the site can be browsed while it is built; the rest of Phase 6 (final checks on desktop and phone) still comes at the end.
 
 ---
 
