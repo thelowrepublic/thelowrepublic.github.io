@@ -1,0 +1,574 @@
+#!/usr/bin/env python3
+"""Build the Low Republic wiki.
+
+Reads the articles in ARTICLES/ and the images in ARTWORKS/, and writes a static
+website to WIKI-SITE/_site/. It never writes to ARTICLES/ or ARTWORKS/.
+
+    python WIKI-SITE/build.py              build the site
+    python WIKI-SITE/build.py --strict     also fail if anything is unresolved
+    python -m http.server -d WIKI-SITE/_site    preview it at http://localhost:8000
+
+The article format is specified in ARTICLES/_FORMAT.md. The design of the site
+is in WIKI-SITE/GAMEPLAN.md.
+"""
+
+from __future__ import annotations
+
+import argparse
+import html
+import re
+import shutil
+import sys
+import unicodedata
+import urllib.parse
+from collections import defaultdict
+from dataclasses import dataclass, field
+from pathlib import Path
+
+import yaml
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markdown_it import MarkdownIt
+from PIL import Image, ImageOps
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+ARTICLES = ROOT / "ARTICLES"
+ARTWORKS = ROOT / "ARTWORKS"
+LOGOS = {
+    "logo-wide.png": ROOT / "lowrepubliclogowide.png",
+    "logo-tall.png": ROOT / "lowrepubliclogotall.png",
+}
+
+# category -> folder, in the order the format lists them
+FOLDERS = {
+    "history": "history",
+    "faction": "factions",
+    "character": "characters",
+    "place": "places",
+    "page": "pages",
+}
+MAIN_PAGE = "Main Page"
+IMAGE_KEYS = ("image", "image_caption", "artwork_author", "artwork_author_link")
+WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300px box
+
+WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
+HATNOTE_RE = re.compile(r"^\*((?:Main articles?|See also|Further information): .+)\*$")
+HEADING_RE = re.compile(r"^(#{2,3}) (.+)$")
+FENCE_RE = re.compile(r"^```\s*(\w*)\s*$")
+
+
+class BuildError(Exception):
+    """A problem that stops the build, such as front matter that will not parse."""
+
+
+# --------------------------------------------------------------------------
+# Names, slugs and anchors
+# --------------------------------------------------------------------------
+
+
+def strip_accents(text: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
+
+
+def title_slug(title: str) -> str:
+    """The file-name rule of _FORMAT 1: lowercase, no accents, no apostrophes or
+    full stops, spaces become hyphens."""
+    text = strip_accents(title).lower().replace("'", "").replace("’", "").replace(".", "")
+    return text.replace(" ", "-")
+
+
+def url_slug(name: str) -> str:
+    """A URL-safe slug for redirect names, which may hold any punctuation."""
+    text = re.sub(r"[^a-z0-9-]+", "-", title_slug(name))
+    return re.sub(r"-{2,}", "-", text).strip("-")
+
+
+def anchor(heading: str) -> str:
+    """The anchor of a heading: `The schism, 14–8 BBY` -> `the-schism-14-8-bby`."""
+    text = strip_accents(heading).lower().replace("'", "").replace("’", "")
+    return re.sub(r"[^a-z0-9]+", "-", text).strip("-") or "section"
+
+
+def unique_anchors(texts):
+    """Anchors for a list of headings, numbering any repeats (`-2`, `-3`)."""
+    seen: dict[str, int] = {}
+    out = []
+    for text in texts:
+        base = anchor(text)
+        seen[base] = seen.get(base, 0) + 1
+        out.append(base if seen[base] == 1 else f"{base}-{seen[base]}")
+    return out
+
+
+def plain_text(fragment: str) -> str:
+    return html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+
+
+def first_sentences(text: str, limit: int = 220) -> str:
+    text = " ".join(text.split())
+    if len(text) <= limit:
+        return text
+    cut = text.rfind(". ", 0, limit)
+    return text[: cut + 1] if cut > 60 else text[:limit].rsplit(" ", 1)[0] + "…"
+
+
+# --------------------------------------------------------------------------
+# Reading articles
+# --------------------------------------------------------------------------
+
+
+@dataclass
+class Article:
+    path: Path
+    meta: dict
+    body: str
+    slug: str
+    headings: list = field(default_factory=list)  # (level, text, anchor)
+    anchors: dict = field(default_factory=dict)  # heading text -> anchor
+
+    @property
+    def title(self) -> str:
+        return self.meta["title"]
+
+    @property
+    def category(self) -> str:
+        return self.meta["category"]
+
+    @property
+    def infobox(self) -> dict | None:
+        return self.meta.get("infobox")
+
+    @property
+    def url(self) -> str:
+        """The page's path relative to the site root."""
+        return "" if self.title == MAIN_PAGE else f"wiki/{self.slug}/"
+
+    @property
+    def root(self) -> str:
+        """The relative path from this page back to the site root."""
+        return "" if self.title == MAIN_PAGE else "../../"
+
+
+def normalise(raw: str) -> str:
+    """UTF-8 text with Windows line endings and trailing spaces removed."""
+    raw = raw.replace("\r\n", "\n").replace("\r", "\n")
+    return "\n".join(line.rstrip() for line in raw.split("\n"))
+
+
+def fenced_lines(lines) -> set[int]:
+    """Indices of lines that are inside (or are the fences of) a ``` block."""
+    inside, out = False, set()
+    for i, line in enumerate(lines):
+        if line.startswith("```"):
+            out.add(i)
+            inside = not inside
+        elif inside:
+            out.add(i)
+    return out
+
+
+def read_article(path: Path) -> Article:
+    rel = path.relative_to(ROOT)
+    raw = normalise(path.read_bytes().decode("utf-8-sig"))
+    if not raw.startswith("---\n"):
+        raise BuildError(f"{rel}: the file does not start with front matter (---)")
+    end = raw.find("\n---\n", 3)
+    if end < 0:
+        raise BuildError(f"{rel}: the front matter is never closed with ---")
+    try:
+        meta = yaml.safe_load(raw[4:end]) or {}
+    except yaml.YAMLError as exc:
+        raise BuildError(f"{rel}: the front matter is not valid YAML\n{exc}") from exc
+    for key in ("title", "category"):
+        if not meta.get(key):
+            raise BuildError(f"{rel}: front matter has no `{key}`")
+    meta["title"] = str(meta["title"])
+    art = Article(path=path, meta=meta, body=raw[end + 5 :], slug=path.stem)
+
+    lines = art.body.split("\n")
+    fenced = fenced_lines(lines)
+    found = [(len(m.group(1)), m.group(2)) for i, line in enumerate(lines)
+             if i not in fenced and (m := HEADING_RE.match(line))]
+    for (level, text), anc in zip(found, unique_anchors(t for _, t in found)):
+        art.headings.append((level, text, anc))
+        art.anchors.setdefault(text, anc)
+    return art
+
+
+# --------------------------------------------------------------------------
+# The site
+# --------------------------------------------------------------------------
+
+
+class Site:
+    def __init__(self, config: dict, out: Path):
+        self.config = config
+        self.out = out
+        self.articles: dict[str, Article] = {}
+        self.redirects: dict[str, tuple[Article, str | None, str]] = {}  # url slug -> (target, heading, name)
+        self.warnings: list[str] = []
+        self.media: dict[str, dict | None] = {}
+        self.media_written: set[Path] = set()
+        self.hidden = set(config.get("hidden") or [])
+        self.quarantine = set(config.get("quarantine") or [])
+        self.md = self._make_markdown()
+        self.jinja = Environment(
+            loader=FileSystemLoader(HERE / "templates"),
+            autoescape=select_autoescape(["html"]),
+            trim_blocks=True,
+            lstrip_blocks=True,
+        )
+
+    def warn(self, where: str, message: str) -> None:
+        self.warnings.append(f"{where}: {message}")
+
+    # ---- loading ----------------------------------------------------------
+
+    def load(self) -> None:
+        for category, folder in FOLDERS.items():
+            for path in sorted((ARTICLES / folder).glob("*.md")):
+                if path.name.startswith("_"):
+                    continue
+                art = read_article(path)
+                rel = path.relative_to(ROOT)
+                if art.category != category:
+                    self.warn(str(rel), f"category `{art.category}` does not match the folder {folder}/")
+                if title_slug(art.title) != art.slug:
+                    self.warn(str(rel), f"the title slugs to {title_slug(art.title)}.md")
+                if art.title in self.articles:
+                    raise BuildError(f"{rel}: the title `{art.title}` is already used by "
+                                     f"{self.articles[art.title].path.relative_to(ROOT)}")
+                self.articles[art.title] = art
+        if MAIN_PAGE not in self.articles:
+            raise BuildError(f"there is no article titled `{MAIN_PAGE}`")
+        for name in self.hidden | self.quarantine:
+            if name not in self.articles:
+                self.warn("config.yml", f"`{name}` is not an article title")
+
+        slugs = {a.slug for a in self.articles.values()}
+        for art in self.articles.values():
+            for entry in art.meta.get("redirects") or []:
+                name, _, heading = str(entry).partition("#")
+                name, heading = name.strip(), heading.strip() or None
+                slug = url_slug(name)
+                where = f"{art.title} (redirect `{entry}`)"
+                if heading and heading not in art.anchors:
+                    self.warn(where, f"there is no heading `{heading}`; it will lead to the top")
+                    heading = None
+                if slug == art.slug and not heading:
+                    continue  # the name already leads here: /wiki/<slug>/ is this article
+                if not slug or slug in slugs:
+                    self.warn(where, f"the address /wiki/{slug}/ is taken by an article; skipped")
+                elif slug in self.redirects and self.redirects[slug][0] is not art:
+                    self.warn(where, f"/wiki/{slug}/ already leads to {self.redirects[slug][0].title}; skipped")
+                else:
+                    self.redirects[slug] = (art, heading, name)
+
+    # ---- links --------------------------------------------------------------
+
+    def link(self, target: str, heading: str | None, env: dict) -> tuple[str, bool]:
+        """The href for a wiki-link, relative to the page being rendered."""
+        art = self.articles.get(target)
+        if art is None:
+            self.warn(env["where"], f"[[{target}]] does not match any article title")
+            return "#", False
+        href = env["root"] + art.url or "./"
+        if heading:
+            anc = art.anchors.get(heading)
+            if anc is None:
+                self.warn(env["where"], f"[[{target}#{heading}]]: {target} has no such heading")
+            else:
+                href += "#" + anc
+        env.setdefault("links", []).append(target)
+        return href, True
+
+    def _make_markdown(self) -> MarkdownIt:
+        md = MarkdownIt("commonmark", {"html": True}).enable("table")
+        site = self
+
+        def wikilink(state, silent):
+            if not state.src.startswith("[[", state.pos):
+                return False
+            m = WIKILINK_RE.match(state.src, state.pos)
+            if not m:
+                return False
+            if not silent:
+                target, heading, text = (g.strip() if g else None for g in m.groups())
+                href, ok = site.link(target, heading, state.env)
+                token = state.push("link_open", "a", 1)
+                token.attrSet("href", href)
+                if not ok:
+                    token.attrSet("class", "redlink")
+                    token.attrSet("title", f"{target} (no such article)")
+                state.push("text", "", 0).content = text or (f"{target} § {heading}" if heading else target)
+                state.push("link_close", "a", -1)
+            state.pos = m.end()
+            return True
+
+        def heading_ids(state):
+            heads = [(i, state.tokens[i + 1].content) for i, t in enumerate(state.tokens)
+                     if t.type == "heading_open"]
+            for (i, text), anc in zip(heads, unique_anchors(t for _, t in heads)):
+                state.tokens[i].attrSet("id", anc)
+
+        md.inline.ruler.before("link", "wikilink", wikilink)
+        md.core.ruler.push("heading_ids", heading_ids)
+        return md
+
+    def inline(self, text: str, env: dict) -> str:
+        return self.md.renderInline(str(text), env)
+
+    # ---- images -------------------------------------------------------------
+
+    def image(self, name: str, where: str) -> dict | None:
+        """Web copies of an ARTWORKS/ file: {src, srcset, width, height, original},
+        all relative to the site root. SVGs are used as they are."""
+        if name in self.media:
+            return self.media[name]
+        src = ARTWORKS / name
+        if not src.is_file():
+            self.warn(where, f"image `{name}` is not in ARTWORKS/")
+            self.media[name] = None
+            return None
+        media = self.out / "media"
+        original = media / "original" / name
+        self._copy(src, original)
+        info = {"original": f"media/original/{name}", "src": f"media/original/{name}",
+                "srcset": None, "width": None, "height": None}
+        if src.suffix.lower() != ".svg":
+            with Image.open(src) as im:
+                im = ImageOps.exif_transpose(im)
+                width, height = im.size
+                alpha = im.mode in ("RGBA", "LA", "PA") or "transparency" in im.info
+                srcset = []
+                for target in WEB_WIDTHS:
+                    w = min(target, width)
+                    h = round(height * w / width)
+                    dest = media / f"{src.stem}-{target}.webp"
+                    if not dest.exists() or dest.stat().st_mtime < src.stat().st_mtime:
+                        dest.parent.mkdir(parents=True, exist_ok=True)
+                        copy = im.convert("RGBA" if alpha else "RGB").resize((w, h), Image.LANCZOS)
+                        copy.save(dest, "WEBP", quality=82, method=4)
+                    self.media_written.add(dest)
+                    srcset.append(f"media/{dest.name}")
+            info.update(src=srcset[0], srcset=srcset, width=WEB_WIDTHS[0],
+                        height=round(height * WEB_WIDTHS[0] / width))
+        self.media[name] = info
+        return info
+
+    def _copy(self, src: Path, dest: Path) -> None:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists() or dest.stat().st_mtime < src.stat().st_mtime or dest.stat().st_size != src.stat().st_size:
+            shutil.copy2(src, dest)
+        self.media_written.add(dest)
+
+    def image_box(self, data: dict, env: dict, alt: str, css: str) -> str:
+        """The image part of an infobox or a figure: picture, optional caption,
+        and the "Artwork by" credit (_FORMAT 4 and 5.6)."""
+        info = self.image(str(data.get("image") or ""), env["where"])
+        if info is None:
+            return ""
+        caption = str(data.get("image_caption") or "").strip()
+        author = str(data.get("artwork_author") or "").strip()
+        link = str(data.get("artwork_author_link") or "").strip()
+        return self.jinja.get_template("_image.html").render(
+            root=env["root"], info=info, css=css,
+            alt=plain_text(self.inline(caption, env)) if caption else alt,
+            caption=self.inline(caption, env) if caption else "",
+            author=author, link=link,
+        )
+
+    # ---- rendering an article -------------------------------------------------
+
+    def render_body(self, art: Article, env: dict) -> str:
+        """The article body as HTML: image blocks moved to the top of the section
+        they close, hatnotes marked, then the Markdown rendered."""
+        lines = art.body.split("\n")
+        fenced = fenced_lines(lines)
+        headings = [i for i, line in enumerate(lines) if i not in fenced and HEADING_RE.match(line)]
+
+        insert_at: dict[int, list[str]] = defaultdict(list)
+        drop: set[int] = set()
+        i = 0
+        while i < len(lines):
+            m = FENCE_RE.match(lines[i]) if i in fenced else None
+            if not m:
+                i += 1
+                continue
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("```"):
+                j += 1
+            if m.group(1) == "image":
+                try:
+                    data = yaml.safe_load("\n".join(lines[i + 1 : j])) or {}
+                except yaml.YAMLError as exc:
+                    self.warn(art.title, f"an image block is not valid YAML: {exc}")
+                    data = {}
+                drop.update(range(i, j + 1))
+                before = [h for h in headings if h < i]
+                if before:  # D3: to the top of the section it closes, after any hatnote
+                    point = before[-1] + 1
+                    k = point
+                    while k < len(lines) and not lines[k]:
+                        k += 1
+                    if k < len(lines) and HATNOTE_RE.match(lines[k]):
+                        point = k + 1
+                else:
+                    point = i
+                figure = self.image_box(data, env, f"Artwork from {art.title}", "figure")
+                if figure:
+                    # one line: an HTML block in Markdown ends at the first blank line
+                    insert_at[point].append(" ".join(ln.strip() for ln in figure.splitlines() if ln.strip()))
+            i = j + 1
+
+        out: list[str] = []
+        for k in range(len(lines) + 1):
+            for figure in insert_at.get(k, []):
+                out += ["", figure, ""]
+            if k == len(lines) or k in drop:
+                continue
+            line = lines[k]
+            m = HATNOTE_RE.match(line) if k not in fenced else None
+            if m:
+                line = f'<div class="hatnote" role="note">{self.inline(m.group(1), env)}</div>'
+            out.append(line)
+
+        body = self.md.render("\n".join(out), env)
+        if art.meta.get("canon") and "Background" in art.anchors:
+            target, _, heading = self.config["canon_link"].partition("#")
+            href, _ = self.link(target, heading or None, env)
+            anc = art.anchors["Background"]
+            body = body.replace(
+                f'<h2 id="{anc}">Background</h2>',
+                f'<h2 id="{anc}">Background <a class="tag" href="{href}" '
+                f'title="This section summarises the original Star Wars canon">Canon</a></h2>', 1)
+        return body
+
+    def render_infobox(self, art: Article, env: dict) -> str:
+        box = art.infobox
+        if not box:
+            return ""
+        labels = self.config.get("labels") or {}
+        rows = []
+        for key, value in box.items():
+            if key in IMAGE_KEYS or value in (None, "", []):
+                continue
+            if key == "name" and str(value) == art.title:
+                continue  # the title band already says it
+            items = [self.inline(v, env) for v in (value if isinstance(value, list) else [value])
+                     if str(v).strip()]
+            if not items:
+                continue
+            label = labels.get(key, key.replace("_", " ").capitalize())
+            if isinstance(label, list):
+                label = label[1] if len(items) > 1 and len(label) > 1 else label[0]
+            rows.append((label, items))
+        image = self.image_box(box, env, f"Artwork of {art.title}", "infobox-image") if box.get("image") else ""
+        return self.jinja.get_template("_infobox.html").render(title=art.title, image=image, rows=rows)
+
+    def toc(self, art: Article) -> list[dict]:
+        entries: list[dict] = []
+        for level, text, anc in art.headings:
+            if level == 2 or not entries:
+                entries.append({"text": text, "anchor": anc, "children": []})
+            else:
+                entries[-1]["children"].append({"text": text, "anchor": anc})
+        return entries
+
+    def chrome(self, root: str) -> dict:
+        """Template values shared by every page: sidebar links and categories."""
+        nav = []
+        for title in self.config.get("sidebar_links") or []:
+            art = self.articles.get(title)
+            if art:
+                nav.append({"title": title, "href": root + art.url or "./"})
+        cats = [{"label": c["label"], "href": f"{root}category/{FOLDERS[key]}/"}
+                for key, c in (self.config.get("categories") or {}).items()]
+        return {"root": root, "site_name": self.config["site_name"], "nav": nav,
+                "categories": cats, "footer": self.config.get("footer", "")}
+
+    def render_article(self, art: Article) -> str:
+        env = {"root": art.root, "where": art.title, "links": []}
+        infobox = self.render_infobox(art, env)
+        body = self.render_body(art, env)
+        cut = body.find("<h2")
+        lead, rest = (body, "") if cut < 0 else (body[:cut], body[cut:])
+        art.meta["_links"] = env["links"]
+        cat = (self.config.get("categories") or {}).get(art.category)
+        return self.jinja.get_template("article.html").render(
+            **self.chrome(art.root),
+            title=art.title,
+            is_main=art.title == MAIN_PAGE,
+            description=first_sentences(plain_text(lead)),
+            category=cat and {"label": cat["singular"],
+                              "href": f"{art.root}category/{FOLDERS[art.category]}/"},
+            infobox=infobox, lead=lead, rest=rest, toc=self.toc(art),
+        )
+
+    # ---- writing ----------------------------------------------------------------
+
+    def write(self, rel: str, text: str) -> None:
+        dest = self.out / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(text, encoding="utf-8")
+
+    def build(self) -> None:
+        self.load()
+        if self.out.exists():  # keep media/ so unchanged images are not resized again
+            for child in self.out.iterdir():
+                if child.name != "media":
+                    shutil.rmtree(child) if child.is_dir() else child.unlink()
+        self.out.mkdir(parents=True, exist_ok=True)
+
+        for art in self.articles.values():
+            self.write(art.url + "index.html", self.render_article(art))
+
+        redirect = self.jinja.get_template("redirect.html")
+        for slug, (art, heading, name) in self.redirects.items():
+            target = "../../" + art.url + "?from=" + urllib.parse.quote(name)
+            if heading:
+                target += "#" + art.anchors[heading]
+            self.write(f"wiki/{slug}/index.html",
+                       redirect.render(name=name, title=art.title, target=target))
+
+        static = self.out / "static"
+        static.mkdir(exist_ok=True)
+        for src in sorted((HERE / "static").iterdir()):
+            if src.is_file():
+                shutil.copy2(src, static / src.name)
+        for name, src in LOGOS.items():
+            shutil.copy2(src, static / name)
+        (self.out / ".nojekyll").write_text("", encoding="utf-8")
+
+        for path in (self.out / "media").rglob("*"):  # drop copies of images no longer used
+            if path.is_file() and path not in self.media_written:
+                path.unlink()
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Build the Low Republic wiki.")
+    parser.add_argument("--out", type=Path, default=HERE / "_site", help="output folder")
+    parser.add_argument("--strict", action="store_true", help="exit with an error if anything is unresolved")
+    args = parser.parse_args()
+
+    config = yaml.safe_load((HERE / "config.yml").read_text(encoding="utf-8"))
+    site = Site(config, args.out.resolve())
+    try:
+        site.build()
+    except BuildError as exc:
+        print(f"BUILD FAILED\n{exc}", file=sys.stderr)
+        return 2
+
+    print(f"Built {len(site.articles)} articles and pages and {len(site.redirects)} redirects "
+          f"into {site.out}")
+    if site.warnings:
+        print(f"\n{len(site.warnings)} warning(s):")
+        for w in site.warnings:
+            print("  -", w)
+        return 1 if args.strict else 0
+    print("No warnings: every link, heading, redirect and image resolved.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

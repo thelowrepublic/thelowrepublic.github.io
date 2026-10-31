@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% macro toc_list(entries) %}
+<ol class="toc-list">
+  <li><a href="#top">(Top)</a></li>
+  {% for e in entries %}
+  <li><a href="#{{ e.anchor }}">{{ e.text }}</a>
+    {% if e.children %}
+    <ol>
+      {% for c in e.children %}
+      <li><a href="#{{ c.anchor }}">{{ c.text }}</a></li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% endmacro %}
+
+{% block sidebar_extra %}
+{% if toc and not is_main %}
+<div class="toc toc-sidebar">
+  <h2 class="nav-heading">Contents</h2>
+  {{ toc_list(toc) }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<article class="article{% if is_main %} main-page{% endif %}" id="top">
+  <header class="page-head">
+    <h1>{{ title }}</h1>
+    <p class="page-meta">
+      {% if category %}<a href="{{ category.href }}">{{ category.label }}</a>{% endif %}
+      <span class="redirect-note" hidden></span>
+    </p>
+  </header>
+  <div class="article-body">
+    {{ infobox|safe }}
+    <div class="lead">
+    {{ lead|safe }}
+    </div>
+    {% if toc and not is_main %}
+    <details class="toc toc-inline">
+      <summary>Contents</summary>
+      {{ toc_list(toc) }}
+    </details>
+    {% endif %}
+    {{ rest|safe }}
+  </div>
+</article>
+{% endblock %}

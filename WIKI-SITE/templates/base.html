@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if is_main %}{{ site_name }}{% else %}{{ title }} · {{ site_name }}{% endif %}</title>
+{% if description %}<meta name="description" content="{{ description }}">
+{% endif %}
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-inner">
+  <button class="menu-button" type="button" aria-label="Menu" aria-controls="sidebar" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <a class="logo" href="{{ root or './' }}"><img src="{{ root }}static/logo-wide.png" alt="{{ site_name }}" width="2100" height="213"></a>
+  <form class="search" action="{{ root }}search/" role="search">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off">
+  </form>
+  </div>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Site">
+    <ul class="nav-list">
+      {% for item in nav %}
+      <li><a href="{{ item.href }}"{% if item.title == title %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <h2 class="nav-heading">Browse</h2>
+    <ul class="nav-list">
+      {% for c in categories %}
+      <li><a href="{{ c.href }}">{{ c.label }}</a></li>
+      {% endfor %}
+    </ul>
+    {% block sidebar_extra %}{% endblock %}
+  </nav>
+  <div class="nav-scrim" hidden></div>
+  <main id="content" class="content">
+    {% block content %}{% endblock %}
+    <footer class="footer">
+      <p>{{ footer }}</p>
+    </footer>
+  </main>
+</div>
+<script src="{{ root }}static/site.js" defer></script>
+</body>
+</html>

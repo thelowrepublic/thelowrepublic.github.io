@@ -1,0 +1,16 @@
+<aside class="infobox" aria-label="Summary">
+  <div class="infobox-title">{{ title }}</div>
+  {{ image|safe }}
+  {% if rows %}
+  <table>
+    <tbody>
+      {% for label, items in rows %}
+      <tr>
+        <th scope="row">{{ label }}</th>
+        <td>{% if items|length == 1 %}{{ items[0]|safe }}{% else %}<ul>{% for item in items %}<li>{{ item|safe }}</li>{% endfor %}</ul>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</aside>

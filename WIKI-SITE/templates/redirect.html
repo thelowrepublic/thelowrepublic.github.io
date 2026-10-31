@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ name }}</title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url={{ target }}">
+<script>location.replace({{ target|tojson }});</script>
+</head>
+<body style="background:#0f0f10;color:#f4f4f4;font:16px/1.6 sans-serif;padding:24px">
+<p>{{ name }} leads to <a href="{{ target }}" style="color:#8fb4ff">{{ title }}</a>.</p>
+</body>
+</html>

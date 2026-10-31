@@ -1,0 +1,77 @@
+# Settings for the Low Republic wiki build (WIKI-SITE/build.py).
+# Safe to edit by hand. Article titles must match the `title` in the article exactly.
+
+site_name: The Low Republic
+footer: >-
+  The Low Republic is a fan-made alternate universe of Star Wars, written by Pablito and Hyerodrimm.
+  Star Wars and all related names are the property of Lucasfilm and Disney. This is a non-commercial
+  fan project. Artwork belongs to the artists credited beside it.
+
+# Links at the top of the sidebar, in order. Each is an article title.
+sidebar_links: [Main Page, The History, Timeline, Glossary, Canon and sources]
+
+# The four browsable categories: category key -> label shown in the sidebar and under titles.
+categories:
+  history: {label: History, singular: History}
+  faction: {label: Factions, singular: Faction}
+  character: {label: Characters, singular: Character}
+  place: {label: Places, singular: Place}
+
+# Kept out of every generated list, index and backlink. Still reachable by URL, redirects and search.
+hidden: [Vesk Tolloran]
+
+# No generated feature may join two of these (handoff brief, "No automatic links between the Union articles").
+quarantine:
+  - Orson Krennic
+  - The Republic Remade
+  - The Secessions
+  - The Greater Seswenna Union
+  - Dedra Meero
+  - Thrawn
+  - Deran Kolt
+  - Eriadu
+
+# Display labels for infobox keys. A pair gives [singular, plural]; the plural is used for a list
+# with more than one item. Keys not listed here are shown with their underscores turned into spaces.
+labels:
+  name: Full name
+  also_known_as: Also known as
+  designation: Designation
+  species: Species
+  model: Model
+  homeworld: Homeworld
+  born: Born
+  died: Died
+  affiliation: Affiliation
+  position: Position
+  formerly: Formerly
+  senate_stance: Senate stance
+  schism_camp: Schism camp
+  type: Type
+  founded: Founded
+  founder: [Founder, Founders]
+  leader: [Leader, Leaders]
+  seat: Seat
+  territory: Territory
+  strength: Strength
+  affiliated_with: Affiliated with
+  predecessor: Predecessor
+  status: Status
+  date: Date
+  place: Place
+  participants: Participants
+  key_figures: Key figures
+  drafted_by: Drafted by
+  carried_by: Carried by
+  result: Result
+  losses: Losses
+  preceded_by: Preceded by
+  followed_by: Followed by
+  region: Region
+  sector: Sector
+  held_by: Held by
+  population: Population
+  locations: Locations
+
+# Where the "Canon" tag beside a Background heading points.
+canon_link: "Canon and sources#How the articles use canon"
