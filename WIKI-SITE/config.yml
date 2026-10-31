@@ -2,6 +2,9 @@
 # Safe to edit by hand. Article titles must match the `title` in the article exactly.
 
 site_name: The Low Republic
+# The path the site is served from: "/" for https://thelowrepublic.github.io/. Only the
+# not-found page uses it, because it is shown at whatever address was missing.
+site_path: /
 footer: >-
   The Low Republic is a fan-made alternate universe of Star Wars, written by Pablito and Hyerodrimm.
   Star Wars and all related names are the property of Lucasfilm and Disney. This is a non-commercial
@@ -79,8 +82,9 @@ canon_link: "Canon and sources#How the articles use canon"
 # Artwork credits. An image whose artwork_author is empty is credited to this name, with no link,
 # because most uncredited images are official Star Wars art.
 default_artwork_author: Lucasfilm and Disney
-# Images whose artist is genuinely unknown: they get no credit line instead of the default above.
+# Images whose artist is genuinely unknown: credited with the label below instead of the default above.
 unknown_artist_images: [ilai-vess.jpg]
+unknown_artist_label: unknown artist
 
 # The notice a visitor must acknowledge before entering the wiki. Once acknowledged it is remembered
 # in that browser. Raise `version` after changing the text, so returning visitors see it again.

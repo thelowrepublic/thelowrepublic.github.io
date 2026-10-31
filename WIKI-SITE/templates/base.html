@@ -68,9 +68,10 @@
     {% block content %}{% endblock %}
     <footer class="footer">
       <p>{{ footer }}</p>
-      {% if disclaimer %}
-      <p class="footer-links"><button type="button" class="link-button" data-open-disclaimer>Disclaimer</button></p>
-      {% endif %}
+      <p class="footer-links">
+        {% if disclaimer %}<button type="button" class="link-button" data-open-disclaimer>Disclaimer</button><span class="sep"> · </span>{% endif %}
+        <a href="{{ credits_href }}">Art credits</a>
+      </p>
     </footer>
   </main>
 </div>

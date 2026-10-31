@@ -48,7 +48,11 @@ FOLDERS = {
     "page": "pages",
 }
 MAIN_PAGE = "Main Page"
+HISTORY_PAGE = "The History"  # the masterdoc as one page; `sources` codes point into it
 IMAGE_KEYS = ("image", "image_caption", "artwork_author", "artwork_author_link")
+# Tag vocabularies of _FORMAT 3.4, in display order, for the category filters.
+PERIODS = ["Before 19 BBY", "Long War", "15 BBY–0 ABY", "Shadow War"]
+REGIONS = ["Core", "Inner Rim", "Mid Rim", "Outer Rim", "Hutt Space", "Wild Space"]
 WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300px box
 LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
 
@@ -126,6 +130,20 @@ def plain_text(fragment: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
 
 
+def first_sentence(text: str, limit: int = 240) -> str:
+    """The lead's first sentence, for category listings."""
+    text = " ".join(text.split())
+    m = re.match(r"(.{30,}?[.!?])(?:\s+(?=[A-Z\"'‘“])|$)", text)
+    sentence = m.group(1) if m else text
+    return sentence if len(sentence) <= limit else sentence[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def sort_key(art) -> str:
+    """Alphabetical order that ignores a leading "The", as an index would."""
+    title = re.sub(r"^The\s+", "", art.title)
+    return strip_accents(title).casefold()
+
+
 def first_sentences(text: str, limit: int = 220) -> str:
     text = " ".join(text.split())
     if len(text) <= limit:
@@ -147,6 +165,7 @@ class Article:
     slug: str
     headings: list = field(default_factory=list)  # (level, text, anchor)
     anchors: dict = field(default_factory=dict)  # heading text -> anchor
+    excerpt: str = ""  # the lead's first sentence, filled in when the page is rendered
 
     @property
     def title(self) -> str:
@@ -233,6 +252,8 @@ class Site:
         self.media_written: set[Path] = set()
         self.hidden = set(config.get("hidden") or [])
         self.quarantine = set(config.get("quarantine") or [])
+        self.sections: dict[str, dict] = {}  # source code ("X.4", "XV", "Pref") -> heading on The History
+        self.credits: dict[str, dict] = {}  # artist -> {"link", "count"}, for the art credits page
         self.md = self._make_markdown()
         self.jinja = Environment(
             loader=FileSystemLoader(HERE / "templates"),
@@ -285,6 +306,35 @@ class Site:
                     self.warn(where, f"/wiki/{slug}/ already leads to {self.redirects[slug][0].title}; skipped")
                 else:
                     self.redirects[slug] = (art, heading, name)
+        self._index_history()
+
+    def _index_history(self) -> None:
+        """Map source codes to The History's headings: `Pref` is the preface, `XI` a whole
+        chapter (`## XI. ...`), `XI.2` the second `###` under it (_FORMAT 3.3, handoff brief)."""
+        hist = self.articles.get(HISTORY_PAGE)
+        if hist is None:
+            self.warn("build", f"there is no `{HISTORY_PAGE}` page, so no \"In the history\" boxes")
+            return
+        chapter, count = None, 0
+        for order, (level, text, anc) in enumerate(hist.headings):
+            if level == 2:
+                m = re.match(r"^([IVXLC]+)\.\s+(.+)$", text)
+                chapter, count = (m.group(1), 0) if m else (None, 0)
+                if m:
+                    self.sections[chapter] = {"anchor": anc, "title": m.group(2), "order": order}
+                elif text == "Preface":
+                    self.sections["Pref"] = {"anchor": anc, "title": "Preface", "order": order}
+            elif level == 3 and chapter:
+                count += 1
+                self.sections[f"{chapter}.{count}"] = {"anchor": anc, "title": text, "order": order}
+        for art in self.articles.values():
+            for code in art.meta.get("sources") or []:
+                code = str(code).strip()
+                if code.startswith("R:"):
+                    if code[2:].strip() not in self.articles:
+                        self.warn(art.title, f"source `{code}`: no article has that title")
+                elif code not in self.sections:
+                    self.warn(art.title, f"source `{code}` matches no heading on {HISTORY_PAGE}")
 
     # ---- links --------------------------------------------------------------
 
@@ -400,8 +450,15 @@ class Site:
         caption = str(data.get("image_caption") or "").strip()
         author = str(data.get("artwork_author") or "").strip()
         link = str(data.get("artwork_author_link") or "").strip()
-        if not author and str(data.get("image")) not in (self.config.get("unknown_artist_images") or []):
-            author = str(self.config.get("default_artwork_author") or "")  # official art, as a rule
+        if not author:
+            if str(data.get("image")) in (self.config.get("unknown_artist_images") or []):
+                author = str(self.config.get("unknown_artist_label") or "")
+            else:
+                author = str(self.config.get("default_artwork_author") or "")  # official art, as a rule
+        if author and author != self.config.get("unknown_artist_label"):
+            credit = self.credits.setdefault(author, {"link": "", "count": 0})
+            credit["count"] += 1
+            credit["link"] = credit["link"] or link
         return self.jinja.get_template("_image.html").render(
             root=env["root"], info=info, css=css,
             alt=plain_text(self.inline(caption, env)) if caption else alt,
@@ -497,6 +554,49 @@ class Site:
         image = self.image_box(box, env, f"Artwork of {art.title}", "infobox-image") if box.get("image") else ""
         return self.jinja.get_template("_infobox.html").render(title=art.title, image=image, rows=rows)
 
+    def history_box(self, art: Article, env: dict) -> str:
+        """The "In the history" box (handoff brief): the passages of The History that the
+        article draws on, in the history's order, and the register entries it uses."""
+        hist = self.articles.get(HISTORY_PAGE)
+        if art.category == "page" or hist is None:
+            return ""
+        passages, register, seen = [], [], set()
+        for code in art.meta.get("sources") or []:
+            code = str(code).strip()
+            if code in seen:
+                continue
+            seen.add(code)
+            if code.startswith("R:"):
+                title = code[2:].strip()
+                target = self.articles.get(title)
+                linkable = (target is not None and target is not art and title not in self.hidden
+                            and not (art.title in self.quarantine and title in self.quarantine))
+                href = self.link(title, None, env)[0] if linkable else None
+                register.append({"title": title, "href": href, "self": target is art})
+            elif code in self.sections:
+                sec = self.sections[code]
+                passages.append({"code": "" if code == "Pref" else code, "title": sec["title"],
+                                 "href": f"{env['root']}{hist.url}#{sec['anchor']}", "order": sec["order"]})
+        if not passages and not register:
+            return ""
+        passages.sort(key=lambda p: p["order"])
+        return self.jinja.get_template("_history_box.html").render(
+            passages=passages, register=register, history_href=env["root"] + hist.url)
+
+    def chain_nav(self, art: Article, env: dict) -> str:
+        """Previous and next links for history articles, from preceded_by and followed_by
+        (_FORMAT 4.3.1). Where the chain branches, every branch is listed."""
+        box = art.infobox or {}
+        if art.category != "history" or not (box.get("preceded_by") or box.get("followed_by")):
+            return ""
+
+        def items(key):
+            value = box.get(key) or []
+            return [self.inline(v, env) for v in (value if isinstance(value, list) else [value])]
+
+        return self.jinja.get_template("_chain_nav.html").render(
+            previous=items("preceded_by"), following=items("followed_by"))
+
     def toc(self, art: Article) -> list[dict]:
         entries: list[dict] = []
         for level, text, anc in art.headings:
@@ -527,16 +627,27 @@ class Site:
         }
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
                 "categories": cats, "footer": self.config.get("footer", ""),
-                "disclaimer": disclaimer}
+                "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/"}
 
     def render_article(self, art: Article) -> str:
         env = {"root": art.root, "where": art.title, "links": []}
         infobox = self.render_infobox(art, env)
         body = self.render_body(art, env)
+        if art.title == HISTORY_PAGE:  # a small code marker ("X.4") on each section heading
+            for code, sec in self.sections.items():
+                if "." in code:
+                    body = body.replace(f'<h3 id="{sec["anchor"]}">',
+                                        f'<h3 id="{sec["anchor"]}"><span class="section-code">{code}</span> ', 1)
         cut = body.find("<h2")
         lead, rest = (body, "") if cut < 0 else (body[:cut], body[cut:])
+        art.excerpt = first_sentence(plain_text(lead))
+        after = self.chain_nav(art, env) + self.history_box(art, env)
         art.meta["_links"] = env["links"]
         cat = (self.config.get("categories") or {}).get(art.category)
+        sections = []
+        if art.title == MAIN_PAGE:  # the Main Page lays its sections out as cards
+            sections = [s for s in re.split(r"(?=<h2)", rest) if s.strip()]
+            rest = ""
         return self.jinja.get_template("article.html").render(
             **self.chrome(art.root),
             title=art.title,
@@ -545,7 +656,65 @@ class Site:
             category=cat and {"label": cat["singular"],
                               "href": f"{art.root}category/{FOLDERS[art.category]}/"},
             infobox=infobox, lead=lead, rest=rest, toc=self.toc(art),
+            sections=sections, after=after,
         )
+
+    def listed(self) -> list[Article]:
+        """Articles that generated lists may show: everything but the hidden ones."""
+        return [a for a in self.articles.values() if a.title not in self.hidden]
+
+    def render_category(self, key: str) -> str:
+        """An alphabetical index of one category, grouped by letter (a leading "The" is
+        ignored for sorting), with period and region filters. Hidden articles are left out."""
+        root = "../../"
+        label = self.config["categories"][key]
+        arts = sorted((a for a in self.listed() if a.category == key), key=sort_key)
+        groups: dict[str, list] = {}
+        periods, regions = set(), set()
+        for art in arts:
+            tags = art.meta.get("tags") or {}
+            p, r = list(tags.get("period") or []), list(tags.get("region") or [])
+            periods.update(p)
+            regions.update(r)
+            letter = sort_key(art)[:1].upper()
+            groups.setdefault(letter if letter.isalpha() else "#", []).append({
+                "title": art.title, "href": root + art.url, "excerpt": art.excerpt,
+                "periods": "|".join(p), "regions": "|".join(r),
+            })
+        return self.jinja.get_template("category.html").render(
+            **self.chrome(root), title=label["label"],
+            description=f"Every {label['singular'].lower()} article in The Low Republic wiki.",
+            count=len(arts), singular=label["singular"].lower(), groups=groups,
+            periods=[p for p in PERIODS if p in periods] + sorted(periods - set(PERIODS)),
+            regions=[r for r in REGIONS if r in regions] + sorted(regions - set(REGIONS)),
+        )
+
+    def render_page(self, title: str, root: str, body: str, description: str = "") -> str:
+        """A generated page (art credits, not found) in the article layout."""
+        return self.jinja.get_template("article.html").render(
+            **self.chrome(root), title=title, is_main=False, description=description,
+            category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="")
+
+    def render_credits(self) -> str:
+        """Artists and their links only. Listing each artist's articles would group some of
+        the quarantined articles (handoff brief), and every image is credited where it appears."""
+        root = "../../"
+        env = {"root": root, "where": "art credits", "links": []}
+        artists = sorted(self.credits.items(), key=lambda kv: kv[0].casefold())
+        contact = (self.config.get("disclaimer") or {}).get("contact")
+        return self.render_page("Art credits", root, self.jinja.get_template("_credits.html").render(
+            artists=artists, contact=self.inline(contact, env) if contact else ""),
+            "The artists whose work appears on The Low Republic wiki.")
+
+    def render_not_found(self) -> str:
+        """404.html is served at whatever address was missing, so its links start from the
+        site's own path (config `site_path`) instead of being relative."""
+        root = str(self.config.get("site_path") or "/")
+        env = {"root": root, "where": "404 page", "links": []}
+        body = self.md.render(
+            "There is no page at this address. It may have been renamed, or the link may be mistyped.\n\n"
+            f"Try the search box at the top of the page, or start again from the [[{MAIN_PAGE}]].", env)
+        return self.render_page("Page not found", root, body)
 
     # ---- writing ----------------------------------------------------------------
 
@@ -564,6 +733,10 @@ class Site:
 
         for art in self.articles.values():
             self.write(art.url + "index.html", self.render_article(art))
+        for key in self.config.get("categories") or {}:  # after the articles: needs their excerpts
+            self.write(f"category/{FOLDERS[key]}/index.html", self.render_category(key))
+        self.write("wiki/art-credits/index.html", self.render_credits())
+        self.write("404.html", self.render_not_found())
 
         redirect = self.jinja.get_template("redirect.html")
         for slug, (art, heading, name) in self.redirects.items():

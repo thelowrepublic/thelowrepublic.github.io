@@ -27,7 +27,35 @@
 {% endblock %}
 
 {% block content %}
-<article class="article{% if is_main %} main-page{% endif %}" id="top">
+{% if is_main %}
+<article class="article main-page" id="top">
+  <h1 class="visually-hidden">{{ site_name }}</h1>
+  <div class="main-hero">
+    <img class="main-logo" src="{{ root }}static/logo-tall.png" alt="" width="1017" height="296">
+    <div class="article-body main-intro">
+      {{ lead|safe }}
+    </div>
+  </div>
+  {% if sections %}
+  <div class="article-body main-card main-card-wide">
+    {{ sections[0]|safe }}
+  </div>
+  {# the next section fills the left column; any others stack on the right #}
+  <div class="main-cards">
+    {% for column in [sections[1:2], sections[2:]] if column %}
+    <div class="main-column">
+      {% for s in column %}
+      <section class="article-body main-card">
+        {{ s|safe }}
+      </section>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>
+{% else %}
+<article class="article" id="top">
   <header class="page-head">
     <h1>{{ title }}</h1>
     <p class="page-meta">
@@ -40,7 +68,7 @@
     <div class="lead">
     {{ lead|safe }}
     </div>
-    {% if toc and not is_main %}
+    {% if toc %}
     <details class="toc toc-inline">
       <summary>Contents</summary>
       {{ toc_list(toc) }}
@@ -48,5 +76,11 @@
     {% endif %}
     {{ rest|safe }}
   </div>
+  {% if after %}
+  <div class="article-after">
+    {{ after|safe }}
+  </div>
+  {% endif %}
 </article>
+{% endif %}
 {% endblock %}

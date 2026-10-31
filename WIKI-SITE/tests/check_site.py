@@ -5,6 +5,7 @@
 - every internal link, image and stylesheet points at a file that exists,
   and every #anchor exists on the page it points to
 - no page links to a hidden article except its own page and its redirect stubs
+- no generated box on a quarantined article links to another quarantined article
 
 Pages that later phases will add (category pages, search) are reported
 separately as "not built yet" rather than as failures.
@@ -22,7 +23,7 @@ import yaml
 
 HERE = Path(__file__).resolve().parent.parent
 SITE = HERE / "_site"
-NOT_YET = ("category/", "search/")  # added in Phases 3 and 4
+NOT_YET = ("search/",)  # added in Phase 4
 
 ATTR_RE = re.compile(r'\b(?:href|src)="([^"]+)"')
 SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"')
@@ -48,7 +49,12 @@ def main() -> int:
             checked += 1
             path, _, frag = ref.partition("#")
             path = urllib.parse.unquote(path.split("?")[0])
-            target = (page.parent / path).resolve() if path else page
+            if path.startswith("/"):  # root-relative (only the 404 page uses these)
+                site_path = str(config.get("site_path") or "/")
+                path = path[len(site_path):] if path.startswith(site_path) else path.lstrip("/")
+                target = (SITE / path).resolve()
+            else:
+                target = (page.parent / path).resolve() if path else page
             if target.is_dir():
                 target = target / "index.html"
             rel = target.relative_to(SITE.resolve()).as_posix() if target.is_relative_to(SITE.resolve()) else str(target)
@@ -73,6 +79,20 @@ def main() -> int:
             if needle in text and 'http-equiv="refresh"' not in text:
                 failures.append(f"{rel}: links to the hidden article {title}")
 
+    # Union quarantine: generated parts (the boxes after the article text) never join two of them
+    quarantine = config.get("quarantine") or []
+    slugs = {t: re.sub(r"[^a-z0-9-]", "", t.lower().replace(" ", "-")) for t in quarantine}
+    for title, slug in slugs.items():
+        page = SITE / "wiki" / slug / "index.html"
+        if not page.exists():
+            failures.append(f"quarantined article {title} was not built")
+            continue
+        text = page.read_text(encoding="utf-8")
+        generated = text.split('<div class="article-after">', 1)[1] if '<div class="article-after">' in text else ""
+        for other, other_slug in slugs.items():
+            if other != title and f"wiki/{other_slug}/" in generated:
+                failures.append(f"wiki/{slug}/: a generated box links to {other} (Union quarantine)")
+
     print(f"Checked {checked} internal references on {len(pages)} pages.")
     for where, n in sorted(not_yet.items()):
         print(f"  not built yet (later phase): {where} ({n} links)")
@@ -81,7 +101,8 @@ def main() -> int:
         for f in failures:
             print("  -", f)
         return 1
-    print("All internal links, anchors and images resolve; no page links to a hidden article.")
+    print("All internal links, anchors and images resolve; no page links to a hidden article;"
+          " no generated box joins two quarantined articles.")
     return 0
 
 

@@ -1,6 +1,8 @@
 # The Low Republic wiki: analysis and game plan
 
-Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phase 1 (look and feel) is built. The site is live at https://jakubpawelec.github.io/the-low-republic-wiki/ and republishes on every push to `main`.
+Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 (look and feel), 2 (the generator) and 3 (navigation and reference pages) are built. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
+
+The repository moved on 31 October 2026 from `JakubPawelec/the-low-republic-wiki` to `thelowrepublic/thelowrepublic.github.io`, so that the address carries no personal account name. The old address no longer works.
 
 Everything for the website lives in this `WIKI-SITE/` folder. The one exception is the GitHub Actions workflow file, which GitHub requires to be in `.github/workflows/`. `ARTICLES/`, `ARTWORKS/` and the two logos are read-only input. The build never writes to them.
 
@@ -62,7 +64,7 @@ The full numbers are in `analysis/survey-report.md`, produced by `analysis/surve
 
 ### URLs
 
-The site lives at `https://jakubpawelec.github.io/the-low-republic-wiki/`. All links are generated relative to that base, so a custom domain later is a one-line change.
+The site lives at `https://thelowrepublic.github.io/`. All links are relative, so a custom domain later needs no code change. Only the not-found page uses the site's own path (`site_path` in `config.yml`).
 
 | Page | URL |
 |---|---|
@@ -71,7 +73,7 @@ The site lives at `https://jakubpawelec.github.io/the-low-republic-wiki/`. All l
 | Redirect name | `/wiki/<redirect-slug>/`, a stub that forwards, for example `/wiki/darth-sidious/` |
 | Category index | `/category/characters/`, `/category/factions/`, `/category/history/`, `/category/places/` |
 | Search results | `/search/?q=...` |
-| Art credits | `/wiki/art-credits/` (generated) |
+| Art credits | `/wiki/art-credits/` (generated: artists and their links only) |
 | Not found | `404.html` |
 
 The URLs are flat and use the slugs the authors already defined, so moving an article between folders (as with the Ossus split) never breaks a link.
@@ -255,6 +257,10 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D12 | Clicking an image (authors' instruction) | Opens a lightbox: the page darkens, the image is scaled to the window's height (a 1600 px web copy), "Open full image" at the image's top right opens the original in a new tab, and the credit sits underneath. A click on the dark background, or Esc, closes it. |
 | D13 | Entry disclaimer (authors' instruction) | A full-screen notice with an Acknowledge button: non-commercial fan work, Star Wars owned by Lucasfilm and Disney, other material owned by its authors, artwork credited where possible, artists may ask the owner to alter or remove their work. It appears on the first page a new visitor opens and is remembered in that browser; the footer's "Disclaimer" link shows it again. Text, contact line and version live in `config.yml`. |
 | D14 | Per-image placement | Where the authors want a figure beside a different section, the image block is moved in the article itself, as was done for the Death Watch image in The Shadow Collective (31 October 2026), now closing "How the Collective thrives". |
+| D15 | Images by an unknown artist (authors' instruction) | Credited "Artwork by unknown artist" (`unknown_artist_label`), for the images listed in `unknown_artist_images`. The article keeps its empty artist keys, as the format requires. |
+| D16 | Main Page | The authors' text, untouched: the tall logo, the lead and quote, the first section as a full-width card, the next section in the left column and the rest stacked on the right. Phones show one column. |
+| D17 | "In the history" box | Passages are listed in the history's own order, each with its code ("X.4") and linking to that section of The History. Register entries link to the figure's article, except an article's own entry (shown in bold), a hidden article, or another quarantined article on a quarantined page (plain text). |
+| D18 | Category pages | Alphabetical, ignoring a leading "The", grouped by letter with a jump bar; each entry shows the lead's first sentence; period and region filters. Hidden articles are left out. |
 
 ---
 

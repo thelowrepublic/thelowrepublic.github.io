@@ -1,0 +1,7 @@
+<p>The artwork on this wiki is the work of the artists below. Every image is also credited where it appears, and clicking it shows the artwork larger, with a link to the full-size original.</p>
+<ul class="credits-list">
+  {% for name, c in artists %}
+  <li>{% if c.link %}<a href="{{ c.link }}" target="_blank" rel="noopener">{{ name }}</a>{% else %}{{ name }}{% endif %} <span class="muted">({{ c.count }} image{% if c.count != 1 %}s{% endif %})</span></li>
+  {% endfor %}
+</ul>
+<p>If you are the author of an artwork shown here and wish it altered or removed, please contact the owner of this wiki.{% if contact %} {{ contact|safe }}{% endif %}</p>

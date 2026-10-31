@@ -1,0 +1,14 @@
+<nav class="chain-nav" aria-label="The history in order">
+  <div class="chain-side chain-previous">
+    {% if previous %}
+    <span class="box-label"><span aria-hidden="true">← </span>Preceded by</span>
+    <ul>{% for item in previous %}<li>{{ item|safe }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+  <div class="chain-side chain-following">
+    {% if following %}
+    <span class="box-label">Followed by<span aria-hidden="true"> →</span></span>
+    <ul>{% for item in following %}<li>{{ item|safe }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+</nav>

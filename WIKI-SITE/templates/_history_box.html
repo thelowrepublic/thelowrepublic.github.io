@@ -1,0 +1,17 @@
+<aside class="history-box" aria-label="In the history">
+  <h2 class="box-title">In the history</h2>
+  <p class="box-note">This article draws on these passages of <a href="{{ history_href }}">The History</a>.</p>
+  {% if passages %}
+  <ul class="history-passages">
+    {% for p in passages %}
+    <li><a href="{{ p.href }}">{% if p.code %}<span class="section-code">{{ p.code }}</span> {% endif %}{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if register %}
+  <p class="history-register">
+    <span class="box-label" title="The history's Chapter XIV. Each figure in it has an article of their own.">Biographical register:</span>
+    {% for r in register %}{% if r.href %}<a href="{{ r.href }}">{{ r.title }}</a>{% elif r.self %}<strong>{{ r.title }}</strong>{% else %}{{ r.title }}{% endif %}{% if not loop.last %}<span class="sep"> · </span>{% endif %}{% endfor %}
+  </p>
+  {% endif %}
+</aside>

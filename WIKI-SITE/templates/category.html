@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="article category-page" id="top">
+  <header class="page-head">
+    <h1>{{ title }}</h1>
+    <p class="page-meta">Category</p>
+  </header>
+  <div class="article-body">
+    <p class="category-intro">All {{ count }} {{ singular }} articles, in alphabetical order.</p>
+
+    <div class="category-tools">
+      <nav class="letter-bar" aria-label="Jump to letter">
+        {% for letter in groups %}<a href="#letter-{{ letter|lower }}" data-letter="{{ letter }}">{{ letter }}</a>{% endfor %}
+      </nav>
+      <form class="filters" hidden>
+        {% if periods|length > 1 %}
+        <label>Period
+          <select name="period">
+            <option value="">Any</option>
+            {% for p in periods %}<option>{{ p }}</option>{% endfor %}
+          </select>
+        </label>
+        {% endif %}
+        {% if regions|length > 1 %}
+        <label>Region
+          <select name="region">
+            <option value="">Any</option>
+            {% for r in regions %}<option>{{ r }}</option>{% endfor %}
+          </select>
+        </label>
+        {% endif %}
+        <output class="filter-count" aria-live="polite"></output>
+      </form>
+    </div>
+
+    {% for letter, items in groups.items() %}
+    <section class="letter-group" data-letter="{{ letter }}">
+      <h2 id="letter-{{ letter|lower }}">{{ letter }}</h2>
+      <ul class="category-list">
+        {% for item in items %}
+        <li data-periods="{{ item.periods }}" data-regions="{{ item.regions }}">
+          <a class="category-title" href="{{ item.href }}">{{ item.title }}</a>
+          {% if item.excerpt %}<span class="category-excerpt">{{ item.excerpt }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+    <p class="filter-empty" hidden>No articles match these filters.</p>
+  </div>
+</article>
+{% endblock %}

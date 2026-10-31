@@ -160,7 +160,41 @@
     if (html.classList.contains("gate-open")) setOpen(true);
   }
 
+  // ---- Category pages: filter by period and region -------------------------------
+  function setupFilters() {
+    const form = document.querySelector(".filters");
+    if (!form) return;
+    form.hidden = false;
+    const items = Array.from(document.querySelectorAll(".category-list li"));
+    const groups = Array.from(document.querySelectorAll(".letter-group"));
+    const letters = Array.from(document.querySelectorAll(".letter-bar a"));
+    const count = form.querySelector(".filter-count");
+    const empty = document.querySelector(".filter-empty");
+    const value = (name) => (form.elements[name] ? form.elements[name].value : "");
+    const apply = () => {
+      const period = value("period"), region = value("region");
+      let shown = 0;
+      for (const li of items) {
+        const ok = (!period || li.dataset.periods.split("|").includes(period)) &&
+                   (!region || li.dataset.regions.split("|").includes(region));
+        li.hidden = !ok;
+        if (ok) shown++;
+      }
+      for (const g of groups) g.hidden = !g.querySelector("li:not([hidden])");
+      for (const a of letters) {
+        const g = groups.find((x) => x.dataset.letter === a.dataset.letter);
+        a.classList.toggle("empty", !g || g.hidden);
+      }
+      count.textContent = period || region ? "Showing " + shown + " of " + items.length : "";
+      if (empty) empty.hidden = shown > 0;
+    };
+    form.addEventListener("change", apply);
+    form.addEventListener("submit", (e) => e.preventDefault());
+    apply();
+  }
+
   setupDisclaimer();
+  setupFilters();
   setupMenu();
   setupRedirectNote();
   setupContents();
