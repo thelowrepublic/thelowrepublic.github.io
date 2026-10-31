@@ -8,8 +8,34 @@
 {% endif %}
 <meta name="color-scheme" content="dark">
 <link rel="stylesheet" href="{{ root }}static/style.css">
+{% if disclaimer and (disclaimer.show_on == "all" or is_main) %}
+<script>
+/* Show the entry notice before the page is drawn, until this browser has acknowledged it. */
+(function () {
+  var html = document.documentElement;
+  try {
+    if (localStorage.getItem("lowrepublic-disclaimer") !== {{ disclaimer.version|tojson }}) html.classList.add("gate-open");
+  } catch (e) { html.classList.add("gate-open"); }
+})();
+</script>
+{% endif %}
 </head>
 <body>
+{% if disclaimer %}
+<div class="gate" id="disclaimer" role="dialog" aria-modal="true" aria-labelledby="gate-title" data-version="{{ disclaimer.version }}">
+  <div class="gate-card">
+    <img class="gate-logo" src="{{ root }}static/logo-tall.png" alt="{{ site_name }}" width="1017" height="296">
+    <h2 id="gate-title" class="gate-title">{{ disclaimer.title }}</h2>
+    {% for p in disclaimer.paragraphs %}
+    <p>{{ p|safe }}</p>
+    {% endfor %}
+    {% if disclaimer.contact %}
+    <p class="gate-contact">{{ disclaimer.contact|safe }}</p>
+    {% endif %}
+    <button type="button" class="gate-button">{{ disclaimer.button }}</button>
+  </div>
+</div>
+{% endif %}
 <a class="skip-link" href="#content">Skip to content</a>
 <header class="topbar">
   <div class="topbar-inner">
@@ -42,6 +68,9 @@
     {% block content %}{% endblock %}
     <footer class="footer">
       <p>{{ footer }}</p>
+      {% if disclaimer %}
+      <p class="footer-links"><button type="button" class="link-button" data-open-disclaimer>Disclaimer</button></p>
+      {% endif %}
     </footer>
   </main>
 </div>

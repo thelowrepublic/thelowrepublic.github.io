@@ -1,5 +1,5 @@
 <figure class="{{ css }}">
-<a class="image-link" href="{{ root }}{{ info.original }}" title="Open the full-size artwork"><img src="{{ root }}{{ info.src }}"{% if info.srcset %} srcset="{{ root }}{{ info.srcset[0] }} 1x, {{ root }}{{ info.srcset[1] }} 2x"{% endif %}{% if info.width %} width="{{ info.width }}" height="{{ info.height }}"{% endif %} alt="{{ alt }}"{% if css == "figure" %} loading="lazy"{% endif %} decoding="async"></a>
+<a class="image-link" href="{{ root }}{{ info.original }}" data-large="{{ root }}{{ info.large }}"{% if info.large_w %} data-w="{{ info.large_w }}" data-h="{{ info.large_h }}"{% endif %} title="View larger"><img src="{{ root }}{{ info.src }}"{% if info.srcset %} srcset="{{ root }}{{ info.srcset[0] }} 1x, {{ root }}{{ info.srcset[1] }} 2x"{% endif %}{% if info.width %} width="{{ info.width }}" height="{{ info.height }}"{% endif %} alt="{{ alt }}"{% if css == "figure" %} loading="lazy"{% endif %} decoding="async"></a>
 {% if caption or author %}
 <figcaption>
 {% if caption %}<span class="caption">{{ caption|safe }}</span>{% endif %}

@@ -75,3 +75,31 @@ labels:
 
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"
+
+# Artwork credits. An image whose artwork_author is empty is credited to this name, with no link,
+# because most uncredited images are official Star Wars art.
+default_artwork_author: Lucasfilm and Disney
+# Images whose artist is genuinely unknown: they get no credit line instead of the default above.
+unknown_artist_images: [ilai-vess.jpg]
+
+# The notice a visitor must acknowledge before entering the wiki. Once acknowledged it is remembered
+# in that browser. Raise `version` after changing the text, so returning visitors see it again.
+# show_on: "all" shows it on whichever page a new visitor opens first; "main" only on the Main Page.
+# Paragraphs may use Markdown, for example [a link](https://example.com) or [[Article title]].
+disclaimer:
+  version: 1
+  show_on: all
+  title: Before you enter
+  paragraphs:
+    - >-
+      The Low Republic is a non-commercial fan work. It is not affiliated with, endorsed by or
+      connected to Lucasfilm or Disney.
+    - >-
+      Star Wars and all related names, characters and properties are owned by Lucasfilm and Disney.
+      All other copyrighted material on this site remains the property of its respective authors.
+    - >-
+      All artwork has been credited to its artist wherever possible. If you are the author of an
+      artwork shown here and wish it altered or removed, please contact the owner of this wiki.
+  # How to reach the owner, shown under the paragraphs when filled in (Markdown allowed).
+  contact: ""
+  button: Acknowledge

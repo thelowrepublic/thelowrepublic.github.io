@@ -50,6 +50,7 @@ FOLDERS = {
 MAIN_PAGE = "Main Page"
 IMAGE_KEYS = ("image", "image_caption", "artwork_author", "artwork_author_link")
 WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300px box
+LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
 
 WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
 HATNOTE_RE = re.compile(r"^\*((?:Main articles?|See also|Further information): .+)\*$")
@@ -98,6 +99,27 @@ def unique_anchors(texts):
         seen[base] = seen.get(base, 0) + 1
         out.append(base if seen[base] == 1 else f"{base}-{seen[base]}")
     return out
+
+
+def svg_size(path: Path) -> tuple[int | None, int | None]:
+    """The width and height of an SVG, from its width/height attributes or its viewBox."""
+    head = path.read_text(encoding="utf-8", errors="ignore")[:8000]
+    tag = re.search(r"<svg\b[^>]*>", head, re.S)
+    if not tag:
+        return None, None
+    tag = tag.group(0)
+
+    def number(attr):
+        m = re.search(rf'(?<![\w-]){attr}\s*=\s*["\']\s*([\d.]+)\s*(?:px)?\s*["\']', tag)
+        return float(m.group(1)) if m else None
+
+    width, height = number("width"), number("height")
+    if not (width and height):
+        m = re.search(r'viewBox\s*=\s*["\']([^"\']+)["\']', tag)
+        parts = re.split(r"[\s,]+", m.group(1).strip()) if m else []
+        if len(parts) == 4:
+            width, height = float(parts[2]), float(parts[3])
+    return (round(width), round(height)) if width and height else (None, None)
 
 
 def plain_text(fragment: str) -> str:
@@ -334,25 +356,32 @@ class Site:
         original = media / "original" / name
         self._copy(src, original)
         info = {"original": f"media/original/{name}", "src": f"media/original/{name}",
-                "srcset": None, "width": None, "height": None}
-        if src.suffix.lower() != ".svg":
+                "srcset": None, "width": None, "height": None,
+                "large": f"media/original/{name}", "large_w": None, "large_h": None}
+        if src.suffix.lower() == ".svg":
+            info["large_w"], info["large_h"] = svg_size(src)
+        else:
             with Image.open(src) as im:
                 im = ImageOps.exif_transpose(im)
                 width, height = im.size
                 alpha = im.mode in ("RGBA", "LA", "PA") or "transparency" in im.info
-                srcset = []
-                for target in WEB_WIDTHS:
-                    w = min(target, width)
+                scale = min(1.0, LARGE_SIDE / max(width, height))
+                sizes = [(f"{target}", min(target, width)) for target in WEB_WIDTHS]
+                sizes.append(("large", round(width * scale)))
+                made = {}
+                for label, w in sizes:
                     h = round(height * w / width)
-                    dest = media / f"{src.stem}-{target}.webp"
+                    dest = media / f"{src.stem}-{label}.webp"
                     if not dest.exists() or dest.stat().st_mtime < src.stat().st_mtime:
                         dest.parent.mkdir(parents=True, exist_ok=True)
                         copy = im.convert("RGBA" if alpha else "RGB").resize((w, h), Image.LANCZOS)
-                        copy.save(dest, "WEBP", quality=82, method=4)
+                        copy.save(dest, "WEBP", quality=84 if label == "large" else 82, method=4)
                     self.media_written.add(dest)
-                    srcset.append(f"media/{dest.name}")
-            info.update(src=srcset[0], srcset=srcset, width=WEB_WIDTHS[0],
-                        height=round(height * WEB_WIDTHS[0] / width))
+                    made[label] = (f"media/{dest.name}", w, h)
+            info.update(src=made[str(WEB_WIDTHS[0])][0],
+                        srcset=[made[str(t)][0] for t in WEB_WIDTHS],
+                        width=WEB_WIDTHS[0], height=round(height * WEB_WIDTHS[0] / width),
+                        large=made["large"][0], large_w=made["large"][1], large_h=made["large"][2])
         self.media[name] = info
         return info
 
@@ -371,6 +400,8 @@ class Site:
         caption = str(data.get("image_caption") or "").strip()
         author = str(data.get("artwork_author") or "").strip()
         link = str(data.get("artwork_author_link") or "").strip()
+        if not author and str(data.get("image")) not in (self.config.get("unknown_artist_images") or []):
+            author = str(self.config.get("default_artwork_author") or "")  # official art, as a rule
         return self.jinja.get_template("_image.html").render(
             root=env["root"], info=info, css=css,
             alt=plain_text(self.inline(caption, env)) if caption else alt,
@@ -484,8 +515,19 @@ class Site:
                 nav.append({"title": title, "href": root + art.url or "./"})
         cats = [{"label": c["label"], "href": f"{root}category/{FOLDERS[key]}/"}
                 for key, c in (self.config.get("categories") or {}).items()]
+        notice = self.config.get("disclaimer") or {}
+        env = {"root": root, "where": "config.yml (disclaimer)", "links": []}
+        disclaimer = notice and {
+            "version": str(notice.get("version", 1)),
+            "title": notice.get("title", ""),
+            "paragraphs": [self.inline(p, env) for p in notice.get("paragraphs") or []],
+            "contact": self.inline(notice["contact"], env) if notice.get("contact") else "",
+            "button": notice.get("button") or "Acknowledge",
+            "show_on": notice.get("show_on", "all"),
+        }
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
-                "categories": cats, "footer": self.config.get("footer", "")}
+                "categories": cats, "footer": self.config.get("footer", ""),
+                "disclaimer": disclaimer}
 
     def render_article(self, art: Article) -> str:
         env = {"root": art.root, "where": art.title, "links": []}

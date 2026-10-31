@@ -251,7 +251,10 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D8 | Hidden article extras | No `noindex`. He is published despite his `reviewed` status. |
 | D9 | "In the history" box | At the foot of each article, after See also. Not on the five pages. |
 | D10 | "What links here" pages | Left out for now. They can be added later with both rules applied. |
-| D11 | Image credits (authors' instruction) | Every infobox and figure ends with "Artwork by *author*", the name linked to `artwork_author_link`. The optional `image_caption` sits above that line. |
+| D11 | Image credits (authors' instruction) | Every infobox and figure ends with "Artwork by *author*", the name linked to `artwork_author_link`. The optional `image_caption` sits above that line. An image with no `artwork_author` is credited to "Lucasfilm and Disney" (`default_artwork_author` in `config.yml`), except images listed in `unknown_artist_images` (Ilai Vess's), which get no credit line. |
+| D12 | Clicking an image (authors' instruction) | Opens a lightbox: the page darkens, the image is scaled to the window's height (a 1600 px web copy), "Open full image" at the image's top right opens the original in a new tab, and the credit sits underneath. A click on the dark background, or Esc, closes it. |
+| D13 | Entry disclaimer (authors' instruction) | A full-screen notice with an Acknowledge button: non-commercial fan work, Star Wars owned by Lucasfilm and Disney, other material owned by its authors, artwork credited where possible, artists may ask the owner to alter or remove their work. It appears on the first page a new visitor opens and is remembered in that browser; the footer's "Disclaimer" link shows it again. Text, contact line and version live in `config.yml`. |
+| D14 | Per-image placement | Where the authors want a figure beside a different section, the image block is moved in the article itself, as was done for the Death Watch image in The Shadow Collective (31 October 2026), now closing "How the Collective thrives". |
 
 ---
 

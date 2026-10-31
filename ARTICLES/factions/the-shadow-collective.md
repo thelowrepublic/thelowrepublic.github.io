@@ -62,13 +62,6 @@ The Collective's advantage is that almost everything it fields costs next to not
 
 [[Kalani]], a super tactical droid, was found in 4 BBY on Agamar along with a small army of fully functional battle droids. When questioned why his army was still operating, he claimed to have intercepted the shutdown signal that was sent out at the end of the Long War and prevented it from reaching any of the droids under his command. Recruiting him was as simple as treating him like the general he was. Now he holds that rank under the Collective and has commanded ground actions in sixteen systems. The Republic considers the rank a piece of theatre. Kalani has twice refused reckless orders on the grounds that they would have destroyed units under his command. Reports of his behaviour during the Clone Wars were the basis of four out of nine of the [[The Republic Remade#The droid papers|droid papers]] of 6 BBY.
 
-```image
-image: "the-shadow-collective-death-watch.jpg"
-image_caption: ""
-artwork_author: "Adam Hartel"
-artwork_author_link: "https://www.artstation.com/adamhartel"
-```
-
 ## How the Collective thrives
 
 The Collective has absorbed several hundred local syndicates and crime families since 12 BBY and has rarely turned one away. They remain what they were, criminals through and through. Every one of them runs protection, moves contraband and kills people who become inconvenient. What changed is the standard they are measured against. A syndicate that keeps a hospital open and a port running has outdone forty years of Republic rule.
@@ -76,6 +69,13 @@ The Collective has absorbed several hundred local syndicates and crime families 
 There is no law underneath, only temperament. Some bosses behave like landlords who intend to keep their property nice and orderly. They repair what they use and pay for schools their own people attend. They still take far more out than they put back in, but that is more than the Republic ever gave. Others are warlords and rule accordingly, with a whip and an iron fist. A world's fortune depends entirely on which of them it fell to.
 
 [[Maul]] does not regulate this and does not care to. Every one of them is a criminal, and the only thing that can be asked of a criminal is if the money is right. And it always is. [[Nadi Orl]] audits all of them quarterly and checks if the ledgers are in order. If anything is amiss, they are warned once and severely fined. If they fail again, they are eliminated and replaced.
+
+```image
+image: "the-shadow-collective-death-watch.jpg"
+image_caption: ""
+artwork_author: "Adam Hartel"
+artwork_author_link: "https://www.artstation.com/adamhartel"
+```
 
 ## The Hutts
 
