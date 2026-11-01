@@ -135,7 +135,7 @@ Minimal and Wikipedia-shaped, in dark mode. These are starting values, to be tun
 | Link | `#8fb4ff` (pale blue) | links (D5) |
 | Red link | `#ff8a80` | a link the build could not resolve |
 
-- **Type:** a serif for the title and section headings, as Wikipedia does, and a clean sans-serif for body text. The logo stays the only Star Wars-style lettering.
+- **Type:** Orbitron for the title, section headings and infobox titles, and Barlow for body text (D21). The logo stays the only Star Wars-style lettering.
 - **Infobox:** about 300 px wide, floated right with a 1.5 em gap on the left so text wraps cleanly. From top to bottom: a light grey title band (the `name`, or the title), the image (natural shape), the optional `image_caption`, then the credit line "Artwork by *author*" with the author's name linked to `artwork_author_link`, then label/value rows. With no link the name is plain text; with no author there is no credit line. List values sit one per line. Fields that are not present are simply not drawn.
 - **Image figures:** the same frame as the infobox, about 260 px wide. They use `clear: right`, so they stack below the infobox instead of squeezing beside it.
 - **Section rules:** the thin line under each `##` heading stops at the edge of a floated box instead of running under it.
@@ -263,6 +263,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D18 | Category pages | Alphabetical, ignoring a leading "The", grouped by letter with a jump bar; each entry shows the lead's first sentence; period and region filters. Hidden articles are left out. |
 | D19 | The history page (authors' instruction, 1 November 2026) | Renamed from "The History" to **The Entire History** (`pages/the-entire-history.md`), with "The History" kept as a redirect. A "Before you read" box above its first paragraph says it holds the entire lore and advises reading the individual articles instead (`notices` in `config.yml`). It sits in the sidebar between Glossary and Canon and sources. |
 | D20 | Art credits page (authors' instruction, 1 November 2026) | Each artist with their link, image count and the articles their work appears in. Hidden articles are never listed. |
+| D21 | Fonts (authors' choice, 1 November 2026) | **Orbitron** for headings, infobox titles and the disclaimer title; **Barlow** for all other text. Both are self-hosted from `WIKI-SITE/static/fonts/` (SIL Open Font License, licence files alongside), so visitors' browsers make no requests to Google. |
 
 ---
 

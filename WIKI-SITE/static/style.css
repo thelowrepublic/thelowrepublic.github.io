@@ -1,5 +1,26 @@
 /* The Low Republic wiki: dark, minimal, Wikipedia-shaped. */
 
+/* Self-hosted fonts (SIL Open Font License, see fonts/OFL-*.txt). Downloaded from Google Fonts.
+   Orbitron: headings and infobox titles. Barlow: body text. */
+@font-face { font-family: 'Barlow'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(fonts/barlow-400-italic-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Barlow'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url(fonts/barlow-400-italic-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/barlow-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(fonts/barlow-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/barlow-600-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url(fonts/barlow-600-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(fonts/barlow-700-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(fonts/barlow-700-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Orbitron'; font-style: normal; font-weight: 400 900; font-display: swap;
+  src: url(fonts/orbitron-400-900-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
   --bg: #0f0f10;
   --surface: #18181a;
@@ -12,8 +33,9 @@
   --link: #8fb4ff;
   --redlink: #ff8a80;
 
-  --serif: "Linux Libertine", "Libertinus Serif", Georgia, "Times New Roman", serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Orbitron for headings and infobox titles, Barlow for everything else (authors' choice, 1 November 2026) */
+  --heading: "Orbitron", "Segoe UI", Roboto, Arial, sans-serif;
+  --sans: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --topbar-h: 56px;
   --sidebar-w: 232px;
@@ -31,7 +53,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.65 var(--sans);
+  font: 16.5px/1.65 var(--sans);
 }
 
 a { color: var(--link); text-decoration: none; }
@@ -141,15 +163,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .page-head { border-bottom: 1px solid var(--rule); margin-bottom: 18px; }
 .page-head h1 {
   margin: 0;
-  font: 400 2.15rem/1.25 var(--serif);
-  letter-spacing: 0.005em;
+  font: 600 1.95rem/1.25 var(--heading);
+  letter-spacing: 0.02em;
 }
 .page-meta { margin: 4px 0 8px; font-size: 13px; color: var(--muted); min-height: 1em; }
 .page-meta a { color: var(--muted); }
 .page-meta a:hover { color: var(--text); }
 .page-meta a + .redirect-note::before { content: "· "; }
 
-.article-body { font-size: 16px; }
+.article-body { font-size: 16.5px; }
 .article-body::after { content: ""; display: block; clear: both; }
 
 .article-body p { margin: 0 0 0.9em; }
@@ -161,12 +183,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .article-body h2 {
   margin: 1.5em 0 0.55em;
   padding-bottom: 3px;
-  font: 400 1.6rem/1.3 var(--serif);
+  font: 600 1.35rem/1.35 var(--heading);
+  letter-spacing: 0.02em;
   border-bottom: 1px solid var(--rule);
 }
 .article-body h3 {
   margin: 1.3em 0 0.4em;
-  font: 700 1.08rem/1.4 var(--sans);
+  font: 600 1.02rem/1.45 var(--heading);
+  letter-spacing: 0.02em;
 }
 #top { scroll-margin-top: calc(var(--topbar-h) + 16px); }
 
@@ -179,8 +203,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   padding: 0.2em 0 0.2em 1.1em;
   border-left: 3px solid var(--accent);
   color: var(--text);
-  font-family: var(--serif);
-  font-size: 1.08rem;
+  font-size: 1.15rem;
 }
 .article-body blockquote p:last-child { margin-bottom: 0; }
 
@@ -247,11 +270,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   border: 1px solid var(--border);
 }
 
-.infobox { width: var(--box-w); font-size: 13.5px; line-height: 1.45; }
+.infobox { width: var(--box-w); font-size: 14px; line-height: 1.45; }
 .infobox-title {
   padding: 8px 12px;
   text-align: center;
-  font: 700 1.05rem/1.3 var(--serif);
+  font: 600 1rem/1.3 var(--heading);
+  letter-spacing: 0.03em;
   color: #121214;
   background: var(--accent);
 }
@@ -338,7 +362,7 @@ html.gate-open .gate {
   border-radius: 6px;
 }
 .gate-logo { display: block; width: 260px; max-width: 80%; height: auto; margin: 0 auto 26px; }
-.gate-title { margin: 0 0 14px; font: 400 1.6rem/1.3 var(--serif); }
+.gate-title { margin: 0 0 16px; font: 600 1.35rem/1.3 var(--heading); letter-spacing: 0.02em; }
 .gate-card p { margin: 0 0 0.85em; font-size: 15px; line-height: 1.6; color: var(--text); text-align: left; }
 .gate-card .gate-contact { color: var(--muted); }
 .gate-button {
@@ -413,7 +437,7 @@ html.gate-open .gate {
 .chain-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .chain-following { text-align: right; }
 .chain-nav ul { list-style: none; margin: 4px 0 0; padding: 0; }
-.chain-nav li { margin: 3px 0; font-size: 15.5px; font-family: var(--serif); }
+.chain-nav li { margin: 3px 0; font-size: 16px; font-weight: 600; }
 
 /* ---- Category pages ------------------------------------------------------- */
 
@@ -442,7 +466,7 @@ html.gate-open .gate {
   border-radius: 4px;
 }
 .filter-count { font-size: 13px; }
-.category-page .article-body h2 { margin-top: 1.1em; font-size: 1.35rem; }
+.category-page .article-body h2 { margin-top: 1.1em; font-size: 1.2rem; }
 .article-body .category-list { list-style: none; margin: 0; padding: 0; }
 .category-list li { margin: 0; padding: 7px 0; }
 .category-title { font-weight: 600; }
@@ -465,7 +489,7 @@ html.gate-open .gate {
   background: var(--surface);
   border: 1px solid var(--border);
 }
-.article-body.main-card h2 { margin: 0.7em 0 0.5em; font-size: 1.35rem; }
+.article-body.main-card h2 { margin: 0.7em 0 0.5em; font-size: 1.2rem; }
 .article-body.main-card h3 {
   margin: 1.1em 0 0.3em;
   font-size: 11.5px;
@@ -542,8 +566,8 @@ html.gate-open .gate {
   .search { order: 3; flex: 1 0 100%; margin: 0; }
   .search input { width: 100%; }
   .content { padding: 14px 16px 0; }
-  .page-head h1 { font-size: 1.8rem; }
-  .article-body h2 { font-size: 1.4rem; }
+  .page-head h1 { font-size: 1.6rem; }
+  .article-body h2 { font-size: 1.2rem; }
 
   /* lead first, then the infobox, then the contents, then the sections */
   .article-body { display: flex; flex-direction: column; }

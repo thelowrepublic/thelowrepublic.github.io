@@ -758,10 +758,8 @@ class Site:
                        redirect.render(name=name, title=art.title, target=target))
 
         static = self.out / "static"
-        static.mkdir(exist_ok=True)
-        for src in sorted((HERE / "static").iterdir()):
-            if src.is_file():
-                shutil.copy2(src, static / src.name)
+        shutil.copytree(HERE / "static", static, dirs_exist_ok=True,
+                        ignore=shutil.ignore_patterns("_*"))  # _fontface.css is merged into style.css
         for name, src in LOGOS.items():
             shutil.copy2(src, static / name)
         (self.out / ".nojekyll").write_text("", encoding="utf-8")
