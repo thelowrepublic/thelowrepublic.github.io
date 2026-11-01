@@ -11,7 +11,7 @@ tags:
   period: [15 BBY–0 ABY, Shadow War]
 redirects: [SIS, Strategic Information Service]
 infobox:
-  image: ""
+  image: "republic-intelligence.svg"
   image_caption: ""
   artwork_author: ""
   artwork_author_link: ""
