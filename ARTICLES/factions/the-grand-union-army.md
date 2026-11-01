@@ -47,7 +47,7 @@ The Union did not keep the blue uniforms of the [[The Republic Corps|Corps]]. It
 
 ```image
 image: "the-grand-union-army-elite-guard.jpg"
-image_caption: ""
+image_caption: "Union Elite Guard"
 artwork_author: "Emre Yasar"
 artwork_author_link: "https://www.artstation.com/emreyasardesign"
 ```
