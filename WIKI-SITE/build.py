@@ -48,7 +48,6 @@ FOLDERS = {
     "page": "pages",
 }
 MAIN_PAGE = "Main Page"
-HISTORY_PAGE = "The History"  # the masterdoc as one page; `sources` codes point into it
 IMAGE_KEYS = ("image", "image_caption", "artwork_author", "artwork_author_link")
 # Tag vocabularies of _FORMAT 3.4, in display order, for the category filters.
 PERIODS = ["Before 19 BBY", "Long War", "15 BBY–0 ABY", "Shadow War"]
@@ -252,8 +251,10 @@ class Site:
         self.media_written: set[Path] = set()
         self.hidden = set(config.get("hidden") or [])
         self.quarantine = set(config.get("quarantine") or [])
-        self.sections: dict[str, dict] = {}  # source code ("X.4", "XV", "Pref") -> heading on The History
-        self.credits: dict[str, dict] = {}  # artist -> {"link", "count"}, for the art credits page
+        # the masterdoc as one page; `sources` codes point into it (config `history_page`)
+        self.history_page = str(config.get("history_page") or "The Entire History")
+        self.sections: dict[str, dict] = {}  # source code ("X.4", "XV", "Pref") -> heading on that page
+        self.credits: dict[str, dict] = {}  # artist -> {"link", "articles": {title: count}}
         self.md = self._make_markdown()
         self.jinja = Environment(
             loader=FileSystemLoader(HERE / "templates"),
@@ -309,11 +310,11 @@ class Site:
         self._index_history()
 
     def _index_history(self) -> None:
-        """Map source codes to The History's headings: `Pref` is the preface, `XI` a whole
+        """Map source codes to the history page's headings: `Pref` is the preface, `XI` a whole
         chapter (`## XI. ...`), `XI.2` the second `###` under it (_FORMAT 3.3, handoff brief)."""
-        hist = self.articles.get(HISTORY_PAGE)
+        hist = self.articles.get(self.history_page)
         if hist is None:
-            self.warn("build", f"there is no `{HISTORY_PAGE}` page, so no \"In the history\" boxes")
+            self.warn("config.yml", f"there is no `{self.history_page}` page (history_page), so no \"In the history\" boxes")
             return
         chapter, count = None, 0
         for order, (level, text, anc) in enumerate(hist.headings):
@@ -334,7 +335,7 @@ class Site:
                     if code[2:].strip() not in self.articles:
                         self.warn(art.title, f"source `{code}`: no article has that title")
                 elif code not in self.sections:
-                    self.warn(art.title, f"source `{code}` matches no heading on {HISTORY_PAGE}")
+                    self.warn(art.title, f"source `{code}` matches no heading on {self.history_page}")
 
     # ---- links --------------------------------------------------------------
 
@@ -455,9 +456,10 @@ class Site:
                 author = str(self.config.get("unknown_artist_label") or "")
             else:
                 author = str(self.config.get("default_artwork_author") or "")  # official art, as a rule
-        if author and author != self.config.get("unknown_artist_label"):
-            credit = self.credits.setdefault(author, {"link": "", "count": 0})
-            credit["count"] += 1
+        art = env.get("article")
+        if author and author != self.config.get("unknown_artist_label") and art and art.title not in self.hidden:
+            credit = self.credits.setdefault(author, {"link": "", "articles": {}})
+            credit["articles"][art.title] = credit["articles"].get(art.title, 0) + 1
             credit["link"] = credit["link"] or link
         return self.jinja.get_template("_image.html").render(
             root=env["root"], info=info, css=css,
@@ -555,9 +557,9 @@ class Site:
         return self.jinja.get_template("_infobox.html").render(title=art.title, image=image, rows=rows)
 
     def history_box(self, art: Article, env: dict) -> str:
-        """The "In the history" box (handoff brief): the passages of The History that the
+        """The "In the history" box (handoff brief): the passages of the history page that the
         article draws on, in the history's order, and the register entries it uses."""
-        hist = self.articles.get(HISTORY_PAGE)
+        hist = self.articles.get(self.history_page)
         if art.category == "page" or hist is None:
             return ""
         passages, register, seen = [], [], set()
@@ -581,7 +583,7 @@ class Site:
             return ""
         passages.sort(key=lambda p: p["order"])
         return self.jinja.get_template("_history_box.html").render(
-            passages=passages, register=register, history_href=env["root"] + hist.url)
+            passages=passages, register=register, history_href=env["root"] + hist.url, history_title=hist.title)
 
     def chain_nav(self, art: Article, env: dict) -> str:
         """Previous and next links for history articles, from preceded_by and followed_by
@@ -630,10 +632,10 @@ class Site:
                 "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/"}
 
     def render_article(self, art: Article) -> str:
-        env = {"root": art.root, "where": art.title, "links": []}
+        env = {"root": art.root, "where": art.title, "links": [], "article": art}
         infobox = self.render_infobox(art, env)
         body = self.render_body(art, env)
-        if art.title == HISTORY_PAGE:  # a small code marker ("X.4") on each section heading
+        if art.title == self.history_page:  # a small code marker ("X.4") on each section heading
             for code, sec in self.sections.items():
                 if "." in code:
                     body = body.replace(f'<h3 id="{sec["anchor"]}">',
@@ -644,6 +646,9 @@ class Site:
         after = self.chain_nav(art, env) + self.history_box(art, env)
         art.meta["_links"] = env["links"]
         cat = (self.config.get("categories") or {}).get(art.category)
+        notice = (self.config.get("notices") or {}).get(art.title)
+        if notice:  # a box above the lead, from config `notices`
+            notice = {"label": notice.get("label", ""), "text": self.md.render(str(notice.get("text", "")), env)}
         sections = []
         if art.title == MAIN_PAGE:  # the Main Page lays its sections out as cards
             sections = [s for s in re.split(r"(?=<h2)", rest) if s.strip()]
@@ -656,7 +661,7 @@ class Site:
             category=cat and {"label": cat["singular"],
                               "href": f"{art.root}category/{FOLDERS[art.category]}/"},
             infobox=infobox, lead=lead, rest=rest, toc=self.toc(art),
-            sections=sections, after=after,
+            sections=sections, after=after, notice=notice,
         )
 
     def listed(self) -> list[Article]:
@@ -693,14 +698,20 @@ class Site:
         """A generated page (art credits, not found) in the article layout."""
         return self.jinja.get_template("article.html").render(
             **self.chrome(root), title=title, is_main=False, description=description,
-            category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="")
+            category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="", notice=None)
 
     def render_credits(self) -> str:
-        """Artists and their links only. Listing each artist's articles would group some of
-        the quarantined articles (handoff brief), and every image is credited where it appears."""
+        """Each artist, their link, and the articles their work appears in. The authors accepted
+        that this lists some quarantined articles side by side (1 November 2026); hidden
+        articles are never listed."""
         root = "../../"
         env = {"root": root, "where": "art credits", "links": []}
-        artists = sorted(self.credits.items(), key=lambda kv: kv[0].casefold())
+        artists = []
+        for name, credit in sorted(self.credits.items(), key=lambda kv: kv[0].casefold()):
+            works = sorted((self.articles[t] for t in credit["articles"]), key=sort_key)
+            artists.append((name, {"link": credit["link"], "count": sum(credit["articles"].values()),
+                                   "articles": [{"title": a.title, "href": root + a.url,
+                                                 "count": credit["articles"][a.title]} for a in works]}))
         contact = (self.config.get("disclaimer") or {}).get("contact")
         return self.render_page("Art credits", root, self.jinja.get_template("_credits.html").render(
             artists=artists, contact=self.inline(contact, env) if contact else ""),

@@ -223,6 +223,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 }
 .tag:hover { color: var(--text); border-color: var(--rule); text-decoration: none; }
 
+/* ---- Notice box above an article's first paragraph ------------------- */
+
+.notice {
+  clear: both;
+  margin: 0 0 1.4em;
+  padding: 12px 16px 2px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  font-size: 15px;
+}
+.notice .box-title { margin-bottom: 6px; }
+.notice p { margin: 0 0 0.7em; }
+
 /* ---- Infobox and figures -------------------------------------------- */
 
 .infobox, .figure {
@@ -435,12 +449,16 @@ html.gate-open .gate {
 .category-excerpt { display: block; font-size: 14px; line-height: 1.45; color: var(--muted); }
 .filter-empty { margin-top: 1.5em; color: var(--muted); }
 .credits-list .muted, .muted { color: var(--muted); }
+.article-body .credits-list { list-style: none; padding: 0; }
+.credits-list li { margin: 0 0 0.9em; }
+.credit-name { font-weight: 600; }
+.credit-works { display: block; font-size: 14.5px; line-height: 1.55; }
 
 /* ---- Main Page --------------------------------------------------------------- */
 
 .main-hero { padding: 6px 0 2px; }
 .main-logo { display: block; width: 380px; max-width: 80%; height: auto; margin: 14px auto 22px; }
-.main-intro { max-width: 780px; margin: 0 auto 28px; font-size: 16.5px; }
+.main-intro { margin: 0 0 28px; font-size: 16.5px; } /* the same width as the cards below */
 .main-card {
   margin-bottom: 20px;
   padding: 2px 22px 12px;

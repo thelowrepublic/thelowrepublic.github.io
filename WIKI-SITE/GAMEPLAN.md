@@ -14,12 +14,12 @@ Everything for the website lives in this `WIKI-SITE/` folder. The one exception 
 
 | Item | Finding |
 |---|---|
-| Articles | 120 files: 65 characters, 19 factions, 10 history, 21 places, 5 pages. About 94,000 words. The History alone is 21,700. |
+| Articles | 120 files: 65 characters, 19 factions, 10 history, 21 places, 5 pages. About 94,000 words. The Entire History alone is 21,700. |
 | Status | 119 `approved`. Only Vesk Tolloran is `reviewed`. |
 | Front matter | All 120 parse cleanly as YAML. Every value comes through as text, with no accidental numbers, dates or booleans. |
 | Wiki-links | 2,643 links and 67 distinct section links. **Every title and every heading resolves.** |
 | Redirects | 233 names on 66 articles. No clashes with titles, and every `Name#Heading` target exists. |
-| Sources | 710 codes. Every chapter/section code maps to a heading on The History, and every `R:` code maps to an article. |
+| Sources | 710 codes. Every chapter/section code maps to a heading on The Entire History, and every `R:` code maps to an article. |
 | Images | 42 infobox images and 5 body image blocks. All 47 files exist and none are unused. 37 JPG, 7 SVG, 2 WebP, 1 PNG. **No captions are filled in yet.** |
 | Markdown used | Paragraphs, `##`/`###`, bullet lists and hatnotes everywhere. Only Main Page has a block quote and a numbered list, and only Glossary has a table. No raw HTML, no em dashes, no stray italics. |
 | Logos | `lowrepubliclogowide.png` (2100×213) and `lowrepubliclogotall.png` (1017×296). Both are light grey on transparent, which suits a dark theme. |
@@ -49,7 +49,7 @@ The full numbers are in `analysis/survey-report.md`, produced by `analysis/surve
 | `tags` | Feeds the period and region filters on the category pages (D6). Never used to suggest articles. |
 | `redirects` | A search name, plus a tiny forwarding page at `/wiki/<redirect-slug>/` that sends the reader to the article (and to the section, for `Name#Heading`). The article then shows "(Redirected from *Name*)", as Wikipedia does. |
 | `infobox` | The box floated to the top right, described in section 4. |
-| `sources` | The **"In the history"** box at the foot of the article. Each code links to its section of The History, for example "X.4 · The Jedi who went". `R:` codes appear as "Register entry: Qi'ra" and link to that article, except where the quarantine forbids it (section 6). Pages do not get the box, because Timeline alone cites 84 codes. |
+| `sources` | The **"In the history"** box at the foot of the article. Each code links to its section of The Entire History, for example "X.4 · The Jedi who went". `R:` codes appear as "Register entry: Qi'ra" and link to that article, except where the quarantine forbids it (section 6). Pages do not get the box, because Timeline alone cites 84 codes. |
 | Lead (text before the first heading) | Rendered as is. The bold subject name stays bold. |
 | `## Section` / `### Subsection` | H2 / H3, each with a stable anchor made from its text: `The schism, 14–8 BBY` becomes `#the-schism-14-8-bby`. These anchors drive the table of contents and every `[[Title#Heading]]` link. |
 | `*Main article: [[X]]*` directly under a heading | A hatnote: indented, smaller and grey, like Wikipedia's. A section link displays as "The Death of Palpatine § The escape of Maul". |
@@ -73,7 +73,7 @@ The site lives at `https://thelowrepublic.github.io/`. All links are relative, s
 | Redirect name | `/wiki/<redirect-slug>/`, a stub that forwards, for example `/wiki/darth-sidious/` |
 | Category index | `/category/characters/`, `/category/factions/`, `/category/history/`, `/category/places/` |
 | Search results | `/search/?q=...` |
-| Art credits | `/wiki/art-credits/` (generated: artists and their links only) |
+| Art credits | `/wiki/art-credits/` (generated: each artist, their link and the articles their work appears in) |
 | Not found | `404.html` |
 
 The URLs are flat and use the slugs the authors already defined, so moving an article between folders (as with the Ossus split) never breaks a link.
@@ -85,7 +85,7 @@ The URLs are flat and use the slugs the authors already defined, so moving an ar
 │ [THE LOW REPUBLIC  (wide logo)]                    [ Search the wiki…  ] │
 ├──────────────┬───────────────────────────────────────────────────────────┤
 │ Main Page    │  Maul                                                     │
-│ The History  │  Character                                                │
+│ The Entire History  │  Character                                                │
 │ Timeline     │  ═════════════════════════════════════════════════════    │
 │ Glossary     │  Maul is the Zabrak warlord at the head    ┌────────────┐ │
 │ Canon and    │  of the Shadow Collective, a galaxy-       │    Maul    │ │
@@ -111,10 +111,10 @@ The URLs are flat and use the slugs the authors already defined, so moving an ar
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-- **Sidebar:** fixed links, the four categories, and the article's table of contents, which stays on screen as the reader scrolls (like Wikipedia's 2022 layout). Long pages such as The History and Timeline need it most.
+- **Sidebar:** fixed links, the four categories, and the article's table of contents, which stays on screen as the reader scrolls (like Wikipedia's 2022 layout). Long pages such as The Entire History and Timeline need it most.
 - **Main Page:** keeps the authors' text untouched. The template adds the tall logo on top and lays the `##` sections ("The history", "The powers of the galaxy", "People", "Places", "Reference") out as cards in a two-column grid.
 - **History articles:** the infobox shows "Preceded by" and "Followed by". A navigation bar at the foot repeats them as ← previous / next →. Where the chain branches, all branches are listed, as in The Death of Palpatine → The Long War · The Kamino Findings · The Reckoning of the Jedi.
-- **The History:** chapter and section headings each carry a small grey code marker ("X.4"). Readers arriving from an "In the history" box can then see exactly where they landed.
+- **The Entire History:** chapter and section headings each carry a small grey code marker ("X.4"). Readers arriving from an "In the history" box can then see exactly where they landed.
 - **Category pages:** an alphabetical list with each article's first sentence. Filters by period and region (D6).
 - **Mobile (under about 750 px):** the sidebar becomes a menu button, the table of contents becomes a collapsible "Contents" block under the lead, and the infobox and figures stop floating and sit full width in the text flow. The lead comes first, then the infobox, as on Wikipedia's mobile site, so a reader is not met by a full-screen portrait before the first sentence.
 
@@ -176,7 +176,7 @@ WIKI-SITE/
 1. **Find** every `.md` in `ARTICLES/{history,factions,characters,places,pages}/`, skipping any name that starts with `_`.
 2. **Normalise:** UTF-8 with any BOM stripped, CRLF changed to LF, and trailing spaces removed.
 3. **Parse** the front matter. A file that does not parse stops the build, so the live site stays on the last good version and no article silently disappears.
-4. **Index:** titles, slugs, the heading anchors of every article, redirects, and the chapter/section map of The History for source codes.
+4. **Index:** titles, slugs, the heading anchors of every article, redirects, and the chapter/section map of The Entire History for source codes.
 5. **Render each body:** lift out image blocks, mark hatnotes, resolve wiki-links, convert the Markdown, give headings their anchors, and tag the canon Background.
 6. **Render the boxes:** the infobox, the "In the history" box, and the history chain.
 7. **Generate site-wide pages:** Main Page, category pages, redirect stubs, the search index, the random-article list, art credits, 404 and sitemap.
@@ -209,9 +209,9 @@ The eight articles are listed in `config.yml`. No generated feature may place tw
 
 - **Tags:** "Greater Seswenna Union" is the affiliation tag of six of the eight, plus Vesk Tolloran. An affiliation tag page would break both rules at once. This is decision D6.
 - **"In the history" box:** The Greater Seswenna Union cites `R:Deran Kolt` and `R:Thrawn`, Thrawn cites `R:Deran Kolt`, and Deran Kolt cites `R:Thrawn`. Generated links there would join them, so on the quarantined articles those register entries are shown as plain text with no link.
-- **Art credits:** one artist drew Dedra Meero, Orson Krennic and Thrawn. A credits page that listed each artist's articles would group three of them, so it lists artists and their portfolio links only. Each image is already credited in its own infobox.
+- **Art credits:** one artist drew Dedra Meero, Orson Krennic and Thrawn, so the credits page lists three of them together. The authors accepted this on 1 November 2026. Hidden articles are left off the page.
 - **Backlinks:** if a "What links here" feature is built, it drops any entry where both pages are in the quarantine.
-- **Search results** answer the reader's own query and are not suggestions, so they are left alone. The History page is exempt, as the brief says.
+- **Search results** answer the reader's own query and are not suggestions, so they are left alone. The Entire History page is exempt, as the brief says.
 
 ### Automated checks after every build
 
@@ -229,7 +229,7 @@ The eight articles are listed in `config.yml`. No generated feature may place tw
 | 0 | **Decisions** | Your answers to section 8. You confirm Settings → Pages → Source is **GitHub Actions**. | You reply |
 | 1 | **Look and feel prototype** | The real templates and CSS, rendering four sample articles: Maul (portrait infobox), The Republic Corps (two image blocks), The Battle of Yavin (history infobox and chain) and Mandalore (emblem and place-style infobox). Desktop and phone screenshots sent here. | You approve the look |
 | 2 | **The generator** | All 120 articles and pages built: infoboxes, figures, hatnotes, links, anchors, a canon tag, redirects. Clean link report. | Screenshots, spot checks |
-| 3 | **Navigation and reference pages** | Sidebar and table of contents, Main Page layout, category pages, The History with code markers, Timeline, Glossary, history chain bar, "In the history" boxes, art credits, 404. | Screenshots |
+| 3 | **Navigation and reference pages** | Sidebar and table of contents, Main Page layout, category pages, The Entire History with code markers, Timeline, Glossary, history chain bar, "In the history" boxes, art credits, 404. | Screenshots |
 | 4 | **Search** | Search box with suggestions (titles and redirects), a full results page, random article. | You try it |
 | 5 | **Rules and tests** | Every check in section 6 automated, failing loudly if a rule is broken. | Test output |
 | 6 | **Go live** | The Actions workflow. A pull request to `main` for you to merge, after which the site is live. A check on desktop and phone. | You merge |
@@ -258,9 +258,11 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D13 | Entry disclaimer (authors' instruction) | A full-screen notice with an Acknowledge button: non-commercial fan work, Star Wars owned by Lucasfilm and Disney, other material owned by its authors, artwork credited where possible, artists may ask the owner to alter or remove their work. It appears on the first page a new visitor opens and is remembered in that browser; the footer's "Disclaimer" link shows it again. Text, contact line and version live in `config.yml`. |
 | D14 | Per-image placement | Where the authors want a figure beside a different section, the image block is moved in the article itself, as was done for the Death Watch image in The Shadow Collective (31 October 2026), now closing "How the Collective thrives". |
 | D15 | Images by an unknown artist (authors' instruction) | Credited "Artwork by unknown artist" (`unknown_artist_label`), for the images listed in `unknown_artist_images`. The article keeps its empty artist keys, as the format requires. |
-| D16 | Main Page | The authors' text, untouched: the tall logo, the lead and quote, the first section as a full-width card, the next section in the left column and the rest stacked on the right. Phones show one column. |
-| D17 | "In the history" box | Passages are listed in the history's own order, each with its code ("X.4") and linking to that section of The History. Register entries link to the figure's article, except an article's own entry (shown in bold), a hidden article, or another quarantined article on a quarantined page (plain text). |
+| D16 | Main Page | The authors' text, untouched: the tall logo, the lead and quote (as wide as the cards below, authors' instruction), the first section as a full-width card, the next section in the left column and the rest stacked on the right. Phones show one column. |
+| D17 | "In the history" box | Passages are listed in the history's own order, each with its code ("X.4") and linking to that section of The Entire History. Register entries link to the figure's article, except an article's own entry (shown in bold), a hidden article, or another quarantined article on a quarantined page (plain text). |
 | D18 | Category pages | Alphabetical, ignoring a leading "The", grouped by letter with a jump bar; each entry shows the lead's first sentence; period and region filters. Hidden articles are left out. |
+| D19 | The history page (authors' instruction, 1 November 2026) | Renamed from "The History" to **The Entire History** (`pages/the-entire-history.md`), with "The History" kept as a redirect. A "Before you read" box above its first paragraph says it holds the entire lore and advises reading the individual articles instead (`notices` in `config.yml`). It sits in the sidebar between Glossary and Canon and sources. |
+| D20 | Art credits page (authors' instruction, 1 November 2026) | Each artist with their link, image count and the articles their work appears in. Hidden articles are never listed. |
 
 ---
 

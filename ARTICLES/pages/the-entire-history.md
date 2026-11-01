@@ -1,11 +1,12 @@
 ---
-title: The History
+title: The Entire History
 category: page
 tier: none
 batch: 11
 status: approved
 sources: [Pref, I.1, I.2, I.3, I.4, II.1, II.2, II.3, III.1, III.2, III.3, III.4, III.5, III.6, IV.1, IV.2, IV.3, V.1, V.2, V.3, V.4, V.5, V.6, V.7, VI.1, VI.2, VI.3, VI.4, VI.5, VI.6, VII.1, VII.2, VII.3, VII.4, VII.5, VIII.1, VIII.2, VIII.3, IX.1, IX.2, IX.3, X.1, X.2, X.3, X.4, X.5, XI.1, XI.2, XI.3, XI.4, XI.5, XI.6, XII.1, XII.2, XII.3, XII.4, XII.5, XII.6, XII.7, XII.8, XII.9, XII.10, XII.11, XII.12, XIII.1, XIII.2, XIII.3, XIII.4, XIII.5, XIII.6, XIII.7, XIII.8, XIII.9, XV]
 canon: false
+redirects: [The History]
 ---
 
 **The Low Republic: A History of the Galaxy, 19 BBY – 2 ABY**, by Pablito and Hyerodrimm, is the history this wiki is built from. It is given here chapter by chapter, with the authors' corrections. Each chapter or section names the article that covers it. The biographical register, Chapter XIV, is not carried here: each figure in it has an article of their own.

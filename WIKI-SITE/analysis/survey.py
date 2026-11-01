@@ -264,8 +264,8 @@ def main():
     print(f"- {n_red} redirect names on {sum(1 for a in articles.values() if a['meta'].get('redirects'))} articles")
 
     # ---- sources ------------------------------------------------------------
-    print("\n## Source codes -> The History anchors\n")
-    hist = articles["The History"]["body"].split("\n")
+    print("\n## Source codes -> The Entire History anchors\n")
+    hist = articles["The Entire History"]["body"].split("\n")
     chapters = {}
     current = None
     for line in hist:
@@ -275,7 +275,7 @@ def main():
             chapters[current] = [m.group(0)[3:]]
         elif line.startswith("### ") and current:
             chapters[current].append(line[4:])
-    print(f"- chapters on The History: {list(chapters)}")
+    print(f"- chapters on The Entire History: {list(chapters)}")
     bad = collections.Counter()
     codes = collections.Counter()
     for t, a in articles.items():

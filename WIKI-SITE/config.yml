@@ -11,7 +11,20 @@ footer: >-
   fan project. Artwork belongs to the artists credited beside it.
 
 # Links at the top of the sidebar, in order. Each is an article title.
-sidebar_links: [Main Page, The History, Timeline, Glossary, Canon and sources]
+sidebar_links: [Main Page, Timeline, Glossary, The Entire History, Canon and sources]
+
+# The page that carries the whole history, which the `sources` codes point into.
+history_page: The Entire History
+
+# Boxes shown at the top of an article, above its first paragraph: article title -> label and
+# text (Markdown, so [[links]] work).
+notices:
+  The Entire History:
+    label: Before you read
+    text: >-
+      This article contains the entirety of the Low Republic lore, from start to finish.
+      It is advised to read the lore through the individual articles instead, starting
+      from the [[Main Page]].
 
 # The four browsable categories: category key -> label shown in the sidebar and under titles.
 categories:
