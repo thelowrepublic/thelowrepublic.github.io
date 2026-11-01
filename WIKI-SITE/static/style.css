@@ -645,37 +645,16 @@ html.gate-open .gate {
     animation: tr-slide calc(320ms * var(--tr-scale)) cubic-bezier(.2, .75, .25, 1) backwards;
   }
 
-  /* record: the title types out, then each block prints in turn, top to bottom,
-     and the infobox fills in field by field */
-  .animate-in[data-transition="record"] .page-head h1 {
-    animation: tr-type calc(300ms * var(--tr-scale)) steps(22, end) backwards;
+  /* record: every line of text on the page types itself out at the same moment, left to right,
+     very fast; boxes, lines and pictures are there from the start */
+  .animate-in[data-transition="record"] .content :is(h1, h2, h3, h4, p, li, th, td, dt, dd, figcaption,
+      summary, .hatnote, .infobox-title, .chain-side > .box-label, .letter-bar):not(.visually-hidden):not(.tr-skip) {
+    animation: tr-type calc(380ms * var(--tr-scale)) steps(48, end) backwards;
   }
-  .animate-in[data-transition="record"] .page-meta,
-  .animate-in[data-transition="record"] .content > .article > :not(.page-head):not(.article-body),
-  .animate-in[data-transition="record"] .article-body > * {
-    animation: tr-print calc(220ms * var(--tr-scale)) steps(6, end) backwards;
-    animation-delay: calc((120ms + var(--i, 0) * 40ms) * var(--tr-scale));
-  }
-  .animate-in[data-transition="record"] .article-body > :is(h2, h3) { animation-name: tr-type; }
-  .animate-in[data-transition="record"] .infobox tr {
-    animation: tr-type calc(160ms * var(--tr-scale)) steps(8, end) backwards;
-    animation-delay: calc((220ms + var(--j, 0) * 35ms) * var(--tr-scale));
-  }
-  /* position in the page, for the delays (capped, so long pages never wait) */
-  .article-body > :nth-child(2), .article > :nth-child(2) { --i: 1; }
-  .article-body > :nth-child(3), .article > :nth-child(3) { --i: 2; }
-  .article-body > :nth-child(4), .article > :nth-child(4) { --i: 3; }
-  .article-body > :nth-child(5), .article > :nth-child(5) { --i: 4; }
-  .article-body > :nth-child(6), .article > :nth-child(6) { --i: 5; }
-  .article-body > :nth-child(7), .article > :nth-child(7) { --i: 6; }
-  .article-body > :nth-child(8), .article > :nth-child(8) { --i: 7; }
-  .article-body > :nth-child(9), .article > :nth-child(9) { --i: 8; }
-  .article-body > :nth-child(n+10), .article > :nth-child(n+10) { --i: 9; }
-  .infobox tr:nth-child(2) { --j: 1; } .infobox tr:nth-child(3) { --j: 2; }
-  .infobox tr:nth-child(4) { --j: 3; } .infobox tr:nth-child(5) { --j: 4; }
-  .infobox tr:nth-child(6) { --j: 5; } .infobox tr:nth-child(7) { --j: 6; }
-  .infobox tr:nth-child(n+8) { --j: 7; }
 }
-@keyframes tr-slide { from { transform: translateX(-56px); clip-path: inset(0 0 0 56px); opacity: .15; } }
-@keyframes tr-type { from { clip-path: inset(0 100% 0 0); } }
-@keyframes tr-print { from { clip-path: inset(0 0 100% 0); } }
+/* both ends are given: a clip cannot be animated to "no clip", only to an inset of 0 */
+@keyframes tr-slide {
+  from { transform: translateX(-56px); clip-path: inset(0 0 0 56px); opacity: .15; }
+  to { transform: none; clip-path: inset(0 0 0 0); opacity: 1; }
+}
+@keyframes tr-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
