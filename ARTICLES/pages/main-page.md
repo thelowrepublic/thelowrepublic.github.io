@@ -29,8 +29,6 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 9. [[The Secessions]]. Eleven sectors left the Republic in 1 and 2 ABY.
 10. [[The Shadow War]]. The war against the Shadow Collective, which the Senate never declared.
 
-The whole history, chapter by chapter, is on one page: [[The Entire History]].
-
 ## The powers of the galaxy
 
 ### The Republic
