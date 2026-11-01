@@ -28,7 +28,10 @@ infobox:
 
 After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic finally showed up on Ferrix to set up a garrison. The [[The Republic Corps|Republic Corps]] found out about the criminals running the planet and quickly exterminated all Collective assets on Ferrix, handing the planet back to a new batch of paper pushers from the Corporate Sector. It was clear they needed a foothold along the Hydian Way, but they defended their actions as 'following up on requests for aid from years ago'.
 
+The Republic's response on Ferrix set a precedent, which a month later led to the formation of the [[The Corporate Security Alliance|Corporate Security Alliance]].
+
 ## See also
 
 - [[Cassian Andor]]
 - [[The Shadow Collective]]
+- [[The Corporate Security Alliance]]
