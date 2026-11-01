@@ -35,7 +35,7 @@ SITE = HERE / "_site"
 sys.path.insert(0, str(HERE))
 import build  # noqa: E402  (the generator: reused to know what should have been built)
 
-ATTR_RE = re.compile(r'\b(?:href|src)="([^"]+)"')
+ATTR_RE = re.compile(r'\b(?:href|src|poster)="([^"]+)"')
 SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"')
 ID_RE = re.compile(r'\bid="([^"]+)"')
 CSS_URL_RE = re.compile(r"url\(\s*['\"]?([^'\")]+)['\"]?\s*\)")
@@ -110,6 +110,16 @@ class Checks:
                       "wiki/art-credits/index.html"):
             if not (self.out / extra).exists():
                 failures.append(f"/{extra} was not built")
+        main = self.text.get(self.out / "index.html", "")
+        media = self.config.get("main_page") or {}
+        if (media.get("video") or {}).get("file") and "<video" not in main:
+            failures.append("the Main Page has no video (config main_page.video)")
+        if (media.get("video") or {}).get("file") and 'poster="' not in main:
+            failures.append("the Main Page video has no still image (is ffmpeg installed?)")
+        if (media.get("map") or {}).get("file") and 'class="article-body main-card main-card-wide main-map"' not in main:
+            failures.append("the Main Page has no map (config main_page.map)")
+        if self.config.get("icon") and not (self.out / "favicon.ico").exists():
+            failures.append("no favicon.ico (config icon)")
         for key in self.config.get("categories") or {}:
             page = self.out / "category" / build.FOLDERS[key] / "index.html"
             if not page.exists():

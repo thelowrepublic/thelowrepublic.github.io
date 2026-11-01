@@ -92,6 +92,22 @@ labels:
   population: Population
   locations: Locations
 
+# The browser-tab icon: a square PNG in the main folder of the repository. The build makes every
+# size browsers and phones ask for (favicon.ico, 32 px, the iPhone and Android home-screen icons).
+icon: lowrepublicicon.png
+
+# Extra media on the Main Page, from the main folder of the repository.
+main_page:
+  # Shown between the opening text and "The history". It never plays by itself.
+  video:
+    file: lowrepubliccrawl.mp4
+    title: The Low Republic opening crawl   # read out by screen readers
+    poster_time: 2                          # seconds in: the still shown before it is played
+  # A full-width box at the end of the page.
+  map:
+    file: lowrepublicmap.jpg
+    title: Map of the galaxy
+
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"
 

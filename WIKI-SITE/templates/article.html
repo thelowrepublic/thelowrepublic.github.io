@@ -36,6 +36,15 @@
       {{ lead|safe }}
     </div>
   </div>
+  {% if media.video %}
+  <figure class="main-video">
+    <video controls preload="metadata" playsinline width="{{ media.video.width }}" height="{{ media.video.height }}"
+           {% if media.video.poster %}poster="{{ root }}{{ media.video.poster }}" {% endif %}aria-label="{{ media.video.title }}">
+      <source src="{{ root }}{{ media.video.src }}" type="video/mp4">
+      <p>Your browser cannot play this video. <a href="{{ root }}{{ media.video.src }}">Download it</a> instead.</p>
+    </video>
+  </figure>
+  {% endif %}
   {% if sections %}
   <div class="article-body main-card main-card-wide">
     {{ sections[0]|safe }}
@@ -52,6 +61,17 @@
     </div>
     {% endfor %}
   </div>
+  {% endif %}
+  {% if media.map %}
+  <section class="article-body main-card main-card-wide main-map">
+    {% if media.map.title %}<h2 id="map">{{ media.map.title }}</h2>{% endif %}
+    <figure>
+      <a class="image-link" href="{{ root }}{{ media.map.original }}" data-large="{{ root }}{{ media.map.large }}"
+         data-w="{{ media.map.large_w }}" data-h="{{ media.map.large_h }}" title="View larger"><img
+         src="{{ root }}{{ media.map.src }}" srcset="{{ root }}{{ media.map.srcset[0] }} 1x, {{ root }}{{ media.map.srcset[1] }} 2x"
+         width="{{ media.map.width }}" height="{{ media.map.height }}" alt="{{ media.map.title }}" loading="lazy" decoding="async"></a>
+    </figure>
+  </section>
   {% endif %}
 </article>
 {% else %}

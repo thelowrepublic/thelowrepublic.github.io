@@ -20,6 +20,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import unicodedata
 import urllib.parse
@@ -56,6 +57,9 @@ PERIODS = ["Before 19 BBY", "Long War", "15 BBY–0 ABY", "Shadow War"]
 REGIONS = ["Core", "Inner Rim", "Mid Rim", "Outer Rim", "Hutt Space", "Wild Space"]
 WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300px box
 LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
+MAP_WIDTHS = (960, 1920)  # web copies of the Main Page map: 1x and 2x for the full-width box
+FFMPEG = shutil.which("ffmpeg")  # optional: faster-starting video and its still image
+PAGE_BACKGROUND = "#0f0f10"  # matches --bg in style.css
 
 WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
 HATNOTE_RE = re.compile(r"^\*((?:Main articles?|See also|Further information): .+)\*$")
@@ -642,7 +646,8 @@ class Site:
         nav.append({"title": "Random article", "href": f"{root}random/"})
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
                 "categories": cats, "footer": self.config.get("footer", ""),
-                "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/"}
+                "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/",
+                "has_icon": bool(self.config.get("icon"))}
 
     def render_article(self, art: Article) -> str:
         env = {"root": art.root, "where": art.title, "links": [], "article": art}
@@ -663,10 +668,11 @@ class Site:
         notice = (self.config.get("notices") or {}).get(art.title)
         if notice:  # a box above the lead, from config `notices`
             notice = {"label": notice.get("label", ""), "text": self.md.render(str(notice.get("text", "")), env)}
-        sections = []
+        sections, media = [], {}
         if art.title == MAIN_PAGE:  # the Main Page lays its sections out as cards
             sections = [s for s in re.split(r"(?=<h2)", rest) if s.strip()]
             rest = ""
+            media = self.main_media()
         return self.jinja.get_template("article.html").render(
             **self.chrome(art.root),
             title=art.title,
@@ -675,7 +681,7 @@ class Site:
             category=cat and {"label": cat["singular"],
                               "href": f"{art.root}category/{FOLDERS[art.category]}/"},
             infobox=infobox, lead=lead, rest=rest, toc=self.toc(art),
-            sections=sections, after=after, notice=notice,
+            sections=sections, after=after, notice=notice, media=media,
         )
 
     def listed(self) -> list[Article]:
@@ -712,7 +718,7 @@ class Site:
         """A generated page (art credits, not found) in the article layout."""
         return self.jinja.get_template("article.html").render(
             **self.chrome(root), title=title, is_main=False, description=description,
-            category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="", notice=None)
+            category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="", notice=None, media={})
 
     def render_credits(self) -> str:
         """Each artist, their link, and the articles their work appears in. The authors accepted
@@ -730,6 +736,99 @@ class Site:
         return self.render_page("Art credits", root, self.jinja.get_template("_credits.html").render(
             artists=artists, contact=self.inline(contact, env) if contact else ""),
             "The artists whose work appears on The Low Republic wiki.")
+
+    def fresh(self, src: Path, dest: Path) -> bool:
+        """True if dest exists and is newer than src (so it need not be made again)."""
+        return dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime
+
+    def main_media(self) -> dict:
+        """The Main Page's video and map (config `main_page`), copied into media/.
+        With ffmpeg, the video is rearranged so playback starts before the whole file
+        has downloaded (no re-encoding) and a still frame is made to show before play."""
+        cfg = self.config.get("main_page") or {}
+        media = self.out / "media"
+        media.mkdir(parents=True, exist_ok=True)
+        found: dict = {}
+
+        video = cfg.get("video") or {}
+        src = ROOT / str(video.get("file") or "")
+        if video.get("file") and not src.is_file():
+            self.warn("config.yml", f"main_page video `{video['file']}` is not in the repository")
+        elif video.get("file"):
+            dest = media / src.name
+            if not self.fresh(src, dest):
+                done = FFMPEG and subprocess.run(
+                    [FFMPEG, "-v", "error", "-y", "-i", str(src), "-c", "copy", "-movflags", "+faststart", str(dest)],
+                    check=False).returncode == 0
+                if not done:
+                    shutil.copy2(src, dest)
+            self.media_written.add(dest)
+            when = float(video.get("poster_time", 0) or 0)
+            poster = media / f"{src.stem}-poster-{when:g}s.jpg"
+            if FFMPEG and not self.fresh(src, poster):
+                subprocess.run([FFMPEG, "-v", "error", "-y", "-ss", f"{when:g}", "-i", str(src), "-frames:v", "1",
+                                "-vf", "scale=1280:-2", "-q:v", "3", str(poster)], check=False)
+            size = (1920, 1080)
+            if poster.exists():
+                self.media_written.add(poster)
+                with Image.open(poster) as im:
+                    size = im.size
+            else:
+                print(f"note: no still image for {src.name} (ffmpeg not found); the video still works")
+            found["video"] = {"src": f"media/{dest.name}", "title": video.get("title", ""),
+                              "poster": f"media/{poster.name}" if poster.exists() else "",
+                              "width": size[0], "height": size[1]}
+
+        mapcfg = cfg.get("map") or {}
+        src = ROOT / str(mapcfg.get("file") or "")
+        if mapcfg.get("file") and not src.is_file():
+            self.warn("config.yml", f"main_page map `{mapcfg['file']}` is not in the repository")
+        elif mapcfg.get("file"):
+            original = media / "original" / src.name
+            self._copy(src, original)
+            with Image.open(src) as im:
+                im = ImageOps.exif_transpose(im)
+                width, height = im.size
+                copies = []
+                for target in MAP_WIDTHS:
+                    w = min(target, width)
+                    h = round(height * w / width)
+                    dest = media / f"{src.stem}-{target}.webp"
+                    if not self.fresh(src, dest):
+                        im.convert("RGB").resize((w, h), Image.LANCZOS).save(dest, "WEBP", quality=86, method=4)
+                    self.media_written.add(dest)
+                    copies.append((f"media/{dest.name}", w, h))
+            found["map"] = {"title": mapcfg.get("title", ""), "original": f"media/original/{src.name}",
+                            "src": copies[0][0], "srcset": [c[0] for c in copies],
+                            "width": copies[0][1], "height": copies[0][2],
+                            "large": copies[-1][0], "large_w": copies[-1][1], "large_h": copies[-1][2]}
+        return found
+
+    def write_icons(self) -> None:
+        """Every icon size from the one square PNG in config `icon`."""
+        name = self.config.get("icon")
+        if not name:
+            return
+        src = ROOT / str(name)
+        if not src.is_file():
+            self.warn("config.yml", f"icon `{name}` is not in the repository")
+            return
+        icons = self.out / "static" / "icons"
+        icons.mkdir(parents=True, exist_ok=True)
+        with Image.open(src) as im:
+            im = im.convert("RGBA")
+            im.save(self.out / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
+            for size in (16, 32, 192, 512):
+                im.resize((size, size), Image.LANCZOS).save(icons / f"icon-{size}.png")
+            # iPhones show transparency as black and round the corners themselves
+            flat = Image.new("RGBA", im.size, PAGE_BACKGROUND)
+            flat.alpha_composite(im)
+            flat.convert("RGB").resize((180, 180), Image.LANCZOS).save(icons / "apple-touch-icon.png")
+        manifest = {"name": self.config["site_name"], "short_name": self.config["site_name"],
+                    "icons": [{"src": f"static/icons/icon-{s}.png", "sizes": f"{s}x{s}", "type": "image/png"}
+                              for s in (192, 512)],
+                    "theme_color": PAGE_BACKGROUND, "background_color": PAGE_BACKGROUND, "display": "browser"}
+        (self.out / "site.webmanifest").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     def write_search(self) -> None:
         """search/titles.json (titles and redirect names, for suggestions as you type),
@@ -805,6 +904,7 @@ class Site:
                         ignore=shutil.ignore_patterns("_*"))  # _fontface.css is merged into style.css
         for name, src in LOGOS.items():
             shutil.copy2(src, static / name)
+        self.write_icons()
         (self.out / ".nojekyll").write_text("", encoding="utf-8")
 
         for path in (self.out / "media").rglob("*"):  # drop copies of images no longer used

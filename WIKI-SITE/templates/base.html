@@ -7,6 +7,13 @@
 {% if description %}<meta name="description" content="{{ description }}">
 {% endif %}
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0f0f10">
+{% if has_icon %}
+<link rel="icon" href="{{ root }}favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ root }}static/icons/icon-32.png">
+<link rel="apple-touch-icon" href="{{ root }}static/icons/apple-touch-icon.png">
+<link rel="manifest" href="{{ root }}site.webmanifest">
+{% endif %}
 <link rel="stylesheet" href="{{ root }}static/style.css">
 {% if disclaimer and (disclaimer.show_on == "all" or is_main) %}
 <script>
