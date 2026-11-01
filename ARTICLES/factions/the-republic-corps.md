@@ -53,7 +53,7 @@ This is the main reason the [[The Long War|Long War]] ended when it did. The Sep
 
 ```image
 image: "the-republic-corps-captain.jpg"
-image_caption: ""
+image_caption: "Republic Corps Captain"
 artwork_author: "MandaloArt"
 artwork_author_link: "https://www.instagram.com/mandalo_art"
 ```
@@ -84,7 +84,7 @@ Ten commandos make a squad, led by a sergeant. A hundred sergeants and their squ
 
 ```image
 image: "the-republic-corps-marshal.jpg"
-image_caption: ""
+image_caption: "Republic Corps Marshal"
 artwork_author: "MandaloArt"
 artwork_author_link: "https://www.instagram.com/mandalo_art"
 ```
