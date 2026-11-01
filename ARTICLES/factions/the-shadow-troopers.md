@@ -21,7 +21,7 @@ infobox:
   status: Survives as a Collective tradition
 ---
 
-The **Shadow Troopers** were the Republic's secret [[Clones|clone]] units, kept for work it could not admit to. After their discharge they went over to [[Maul]], and their black and red is now worn by most clones in the [[The Shadow Collective|Shadow Collective]].
+The **Shadow Troopers** were the Republic's secret [[Clones|clone]] units, kept for work it could not admit to. After their discharge they went over to [[Maul]], and their black and red is now worn by most clones in the [[The Shadow Collective|Shadow Collective]]. Many clones that work for the Collective call themselves Shadow Troopers, finding purpose in shared identity and defiance against the Republic.
 
 ## History
 
@@ -31,7 +31,7 @@ And for all their work and discretion, they were discharged just like everybody 
 
 ```image
 image: "the-shadow-troopers-commando.jpg"
-image_caption: ""
+image_caption: "Shadow Trooper Commando"
 artwork_author: "MandaloArt"
 artwork_author_link: "https://www.instagram.com/mandalo_art"
 ```
