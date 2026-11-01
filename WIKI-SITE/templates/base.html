@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-GB" data-root="{{ root }}">
+<html lang="en-GB" data-root="{{ root }}"{% if transition %} data-transition="{{ transition }}"{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +30,20 @@
 <link rel="manifest" href="{{ root }}site.webmanifest">
 {% endif %}
 <link rel="stylesheet" href="{{ root }}static/style.css">
+{% if transition %}
+<script>
+/* Page transition (config page_transition): only after following a link from another page of
+   this wiki; never on arrival from outside, back/forward, reload, a #section link, or reduced motion. */
+(function () {
+  try {
+    var nav = performance.getEntriesByType("navigation")[0];
+    var inside = document.referrer && new URL(document.referrer).origin === location.origin;
+    if (inside && (!nav || nav.type === "navigate") && !location.hash &&
+        !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("animate-in");
+  } catch (e) {}
+})();
+</script>
+{% endif %}
 {% if disclaimer and (disclaimer.show_on == "all" or is_main) %}
 <script>
 /* Show the entry notice before the page is drawn, until this browser has acknowledged it. */

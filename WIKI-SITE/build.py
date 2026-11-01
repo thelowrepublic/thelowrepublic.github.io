@@ -58,6 +58,7 @@ WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300
 LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
 MAP_WIDTHS = (960, 1920)  # web copies of the Main Page map: 1x and 2x for the full-width box
 PAGE_BACKGROUND = "#0f0f10"  # matches --bg in style.css
+TRANSITIONS = ("slide", "record", "none")  # config page_transition
 
 WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
 HATNOTE_RE = re.compile(r"^\*((?:Main articles?|See also|Further information): .+)\*$")
@@ -682,7 +683,12 @@ class Site:
             "show_on": notice.get("show_on", "all"),
         }
         nav.append({"title": "Random article", "href": f"{root}random/"})
+        transition = str(self.config.get("page_transition") or "none")
+        if transition not in TRANSITIONS:
+            self.warn("config.yml", f"page_transition `{transition}` is not one of {', '.join(TRANSITIONS)}")
+            transition = "none"
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
+                "transition": "" if transition == "none" else transition,
                 "categories": cats, "footer": self.config.get("footer", ""),
                 "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/",
                 "has_icon": bool(self.config.get("icon"))}

@@ -112,6 +112,12 @@ main_page:
     file: lowrepublicmap.jpg
     title: Map of the galaxy
 
+# Animation when a reader follows a link to another page of the wiki: slide (the page slides out
+# from behind the sidebar), record (the page writes itself in, block by block) or none. It never
+# plays for visitors arriving from outside, on back/forward or reload, or when their device asks
+# for reduced motion.
+page_transition: record
+
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"
 
