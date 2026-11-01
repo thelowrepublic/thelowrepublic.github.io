@@ -13,7 +13,7 @@ redirects: ["withdrawalists#The withdrawalists"]
 infobox:
   image: "order-of-voss.svg"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Force order
   seat: "[[Voss]]"

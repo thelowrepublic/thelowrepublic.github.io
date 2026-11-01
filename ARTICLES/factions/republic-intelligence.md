@@ -13,7 +13,7 @@ redirects: [SIS, Strategic Information Service]
 infobox:
   image: "republic-intelligence.svg"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Intelligence service
   also_known_as: [Strategic Information Service, SIS]

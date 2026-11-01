@@ -65,7 +65,10 @@ class Reading(unittest.TestCase):
         self.assertNotIn("\r", art.body)
 
     def test_all_articles_parse(self):
-        self.assertEqual(len(SITE.articles), 120)
+        # every article file is read (counted from the folders, so new articles never break this)
+        files = [p for folder in build.FOLDERS.values() for p in (build.ARTICLES / folder).glob("*.md")
+                 if not p.name.startswith("_")]
+        self.assertEqual(len(SITE.articles), len(files))
         self.assertIn(CONFIG["history_page"], SITE.articles)
 
 

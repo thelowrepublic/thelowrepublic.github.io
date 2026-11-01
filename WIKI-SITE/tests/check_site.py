@@ -289,12 +289,12 @@ class Checks:
             self.say(f"{'PASS' if not failures else 'FAIL'}  {name:<13} {detail}")
             for f in failures[:50]:
                 self.say(f"      - {f}")
-                if IN_ACTIONS:  # shown as an error on the workflow run's page
+                if IN_ACTIONS and not self.quiet:  # an error on the run's page (not for the tests' broken copies)
                     print(f"::error title=Wiki check: {name}::{f.replace('%', '%25')}")
             if len(failures) > 50:
                 self.say(f"      … and {len(failures) - 50} more")
             self.results.append((name, failures, detail))
-        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        summary = None if self.quiet else os.environ.get("GITHUB_STEP_SUMMARY")
         if summary:
             with open(summary, "a", encoding="utf-8") as fh:
                 fh.write("### Wiki checks\n\n| Check | Result | Detail |\n|---|---|---|\n")

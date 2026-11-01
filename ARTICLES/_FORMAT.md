@@ -148,6 +148,7 @@ Use only these values.
   - Dathomir-Yavin Accord
   - Kashyyyk Region Coalition
   - Hutt Clans
+  - Corporate Security Alliance
   - Mandalore
   - Path of Light
   - Confederacy
