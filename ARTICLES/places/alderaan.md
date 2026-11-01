@@ -10,9 +10,9 @@ tags:
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
   region: [Core]
 infobox:
-  image: ""
+  image: "alderaan.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Core

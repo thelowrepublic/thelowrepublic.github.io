@@ -11,9 +11,9 @@ tags:
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
 redirects: ["Voss veil#The veil"]
 infobox:
-  image: ""
+  image: "voss.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
 ---

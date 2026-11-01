@@ -12,9 +12,9 @@ tags:
   region: [Outer Rim]
 redirects: ["Dathomir massacre#The massacre", "Massacre of Dathomir#The massacre", "Nightbrothers#The return", Dathomiri, Dathomirian]
 infobox:
-  image: ""
+  image: "dathomir.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Outer Rim

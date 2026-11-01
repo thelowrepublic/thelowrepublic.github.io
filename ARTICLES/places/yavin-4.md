@@ -12,9 +12,9 @@ tags:
   region: [Outer Rim]
 redirects: [Naga Sadow, Massassi temples, Yavin Prime]
 infobox:
-  image: ""
+  image: "yavin-4.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Moon
   also_known_as: [The fourth moon of Yavin Prime]

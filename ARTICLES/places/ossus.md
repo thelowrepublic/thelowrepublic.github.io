@@ -11,9 +11,9 @@ tags:
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
 redirects: ["Temple Troopers#The clone settlements", "Jedi sheriffs#In 2 ABY"]
 infobox:
-  image: ""
+  image: "ossus.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   locations: [Jedi Temple, the ruins of the old library, the settlements]

@@ -11,9 +11,9 @@ tags:
   period: [Shadow War]
 redirects: [Ysalamiri]
 infobox:
-  image: ""
+  image: "myrkr.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
 ---

@@ -11,9 +11,9 @@ tags:
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
   region: [Outer Rim]
 infobox:
-  image: ""
+  image: "raxus.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Outer Rim

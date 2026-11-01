@@ -12,9 +12,9 @@ tags:
   region: [Outer Rim]
 redirects: [Geonosians, Geonosian]
 infobox:
-  image: ""
+  image: "geonosis.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Outer Rim

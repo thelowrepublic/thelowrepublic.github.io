@@ -11,9 +11,9 @@ tags:
   period: [15 BBY–0 ABY, Shadow War]
   region: [Outer Rim]
 infobox:
-  image: ""
+  image: "eriadu.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Outer Rim

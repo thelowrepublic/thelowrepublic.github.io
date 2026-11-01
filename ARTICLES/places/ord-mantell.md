@@ -11,9 +11,9 @@ tags:
   period: [Long War, Shadow War]
   region: [Mid Rim]
 infobox:
-  image: ""
+  image: "ord-mantell.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Mid Rim

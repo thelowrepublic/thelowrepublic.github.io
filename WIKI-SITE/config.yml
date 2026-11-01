@@ -105,11 +105,14 @@ icon: lowrepublicicon.png
 
 # Extra media on the Main Page, from the main folder of the repository.
 main_page:
-  # Shown between the opening text and "The history". It never plays by itself.
+  # Shown on the Main Page (see placement). It never plays by itself.
   video:
     file: lowrepubliccrawl.mp4
     title: The Low Republic opening crawl   # read out by screen readers
     poster_time: 2                          # seconds in: the still shown before it is played
+    # Where it sits: below_logo (between the logo and the opening text) or
+    # before_history (after the opening text and quote, above "The history").
+    placement: below_logo
   # A full-width box at the end of the page.
   map:
     file: lowrepublicmap.jpg

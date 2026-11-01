@@ -12,9 +12,9 @@ tags:
   region: [Mid Rim]
 redirects: [Chommell, Chommell sector, Otoh Gunga, Gungans]
 infobox:
-  image: ""
+  image: "naboo.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Mid Rim

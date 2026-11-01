@@ -10,9 +10,9 @@ tags:
   affiliation: [Galactic Republic, Shadow Collective]
   period: [15 BBY–0 ABY, Shadow War]
 infobox:
-  image: ""
+  image: "ferrix.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   held_by: [Administrators from the Corporate Sector]

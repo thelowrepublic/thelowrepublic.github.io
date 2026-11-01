@@ -12,9 +12,9 @@ tags:
   region: [Outer Rim]
 redirects: [Kala'uun]
 infobox:
-  image: ""
+  image: "ryloth.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Outer Rim

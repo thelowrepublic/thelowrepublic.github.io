@@ -286,6 +286,9 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D28 | Author's name (authors' instruction, 1 November 2026) | Spelled **HyeroDrimm** everywhere: the site footer and the articles Canon and sources and The Entire History. |
 | D29 | Contact (authors' instruction, 1 November 2026) | Not in the disclaimer. The Art credits page ends with "please contact the owner of this wiki on Discord", linked to the owner's Discord profile (config `art_credits`). |
 | D30 | Link previews and sitemap (1 November 2026) | Every page carries Open Graph and Twitter tags with its full address (config `site_url`) and its first sentence. The preview picture is the article's own artwork when it is a JPG, PNG or WebP, otherwise the card `WIKI-SITE/assets/social-card.png` (wide logo, sand line, "WIKI"; config `social_image`). `sitemap.xml` lists every listed article and page, the category pages and the credits page; `robots.txt` points to it. Hidden articles are in neither. |
+| D31 | Planet pictures (authors' files, 1 November 2026) | 18 WebP images in `ARTWORKS/`, named after their place articles, are each article's infobox image, credited explicitly to "Lucasfilm and Disney" as the format does for official art. Murkhana and Nal Kaddan have no picture yet; Galactic regions has no infobox. |
+| D32 | Emblem outlines (authors' instruction, 1 November 2026) | `the-shadow-collective.svg` and `the-nightsisters.svg` carry the same thin white outline as `mandalore.svg` (`stroke="#fff" stroke-width="4"` on their shape, with the viewBox widened by 2 units on each side so the outline is never clipped). |
+| D33 | Main Page video position (authors' instruction, 1 November 2026, on trial) | Moved between the logo and the opening text. `placement` in config `main_page.video` switches it: `below_logo`, or `before_history` for its first position above "The history". |
 
 ---
 

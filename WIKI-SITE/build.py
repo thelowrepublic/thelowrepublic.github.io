@@ -813,6 +813,7 @@ class Site:
             else:
                 print(f"note: no still image for {src.name} (ffmpeg not found); the video still works")
             found["video"] = {"src": f"media/{dest.name}", "title": video.get("title", ""),
+                              "placement": str(video.get("placement") or "before_history"),
                               "poster": f"media/{poster.name}" if poster.exists() else "",
                               "width": size[0], "height": size[1]}
 

@@ -94,7 +94,7 @@ These files sit in the main folder of the repository. Replace a file with one of
 
 When a page is shared, the preview shows the article's own artwork if it has a JPG, PNG or WebP image, and the card otherwise. The text under it is the article's first sentence.
 
-**The video:** use MP4 (H.264), under about 50 MB. It never plays by itself. The site shows a still image from it before it is played; `poster_time` sets which second the still is taken from.
+**The video:** use MP4 (H.264), under about 50 MB. It never plays by itself. The site shows a still image from it before it is played; `poster_time` sets which second the still is taken from. `placement` sets where it sits: `below_logo` (under the logo, above the opening text) or `before_history` (after the opening text and quote, above "The history").
 
 ---
 

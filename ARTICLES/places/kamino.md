@@ -11,9 +11,9 @@ tags:
   region: [Wild Space]
 redirects: [Kaminoans]
 infobox:
-  image: ""
+  image: "kamino.webp"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Planet
   region: Wild Space
