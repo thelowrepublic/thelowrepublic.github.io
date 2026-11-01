@@ -98,6 +98,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   border: 1px solid var(--border);
   border-radius: 4px;
 }
+.search { position: relative; }
 .search input::placeholder { color: var(--muted); }
 .search input:focus { border-color: var(--accent); outline: none; }
 
@@ -438,6 +439,40 @@ html.gate-open .gate {
 .chain-following { text-align: right; }
 .chain-nav ul { list-style: none; margin: 4px 0 0; padding: 0; }
 .chain-nav li { margin: 3px 0; font-size: 16px; font-weight: 600; }
+
+/* ---- Search: suggestions and results --------------------------------------- */
+
+.suggestions {
+  position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 30;
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+  margin: 0; padding: 4px 0;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+.suggestions[hidden] { display: none; }
+.suggestions a { display: block; padding: 6px 12px; color: var(--text); line-height: 1.35; }
+.suggestions a:hover, .suggestions [aria-selected="true"] a { background: var(--surface-2); text-decoration: none; }
+.suggestion-title { display: block; font-weight: 600; }
+.suggestion-meta {
+  display: block;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font-size: 13px; color: var(--muted);
+}
+.suggestion-all { border-top: 1px solid var(--border); margin-top: 4px; }
+.suggestion-all a { padding: 8px 12px; font-size: 14px; color: var(--link); }
+
+.search-summary { color: var(--muted); }
+.search-summary strong { color: var(--text); }
+.article-body .search-results-list { list-style: none; margin: 0; padding: 0; }
+.search-results-list li { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.result-title { font-size: 1.08rem; font-weight: 600; }
+.result-meta { margin-left: 6px; font-size: 13px; color: var(--muted); }
+.result-snippet { margin: 4px 0 0; font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+.result-snippet mark { color: var(--text); background: rgba(143, 180, 255, 0.22); border-radius: 2px; padding: 0 1px; }
 
 /* ---- Category pages ------------------------------------------------------- */
 

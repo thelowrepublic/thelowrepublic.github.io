@@ -7,8 +7,8 @@
 - no page links to a hidden article except its own page and its redirect stubs
 - no generated box on a quarantined article links to another quarantined article
 
-Pages that later phases will add (category pages, search) are reported
-separately as "not built yet" rather than as failures.
+The random-article page lists its candidates as addresses inside a script, so
+the hidden-article check covers it too.
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ import yaml
 
 HERE = Path(__file__).resolve().parent.parent
 SITE = HERE / "_site"
-NOT_YET = ("search/",)  # added in Phase 4
+NOT_YET = ()  # every page the site links to is built
 
 ATTR_RE = re.compile(r'\b(?:href|src)="([^"]+)"')
 SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"')

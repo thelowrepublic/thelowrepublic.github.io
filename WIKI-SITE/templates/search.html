@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="article search-page" id="top">
+  <header class="page-head">
+    <h1>Search</h1>
+    <p class="page-meta">Results from every article on the wiki</p>
+  </header>
+  <div class="article-body">
+    <div class="search-results" aria-live="polite">
+      <p class="search-summary">Type in the search box at the top of the page.</p>
+    </div>
+    <noscript><p>Search needs JavaScript. You can also browse the categories in the sidebar.</p></noscript>
+  </div>
+</article>
+{% endblock %}

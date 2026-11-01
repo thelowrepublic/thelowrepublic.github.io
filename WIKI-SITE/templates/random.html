@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Random article</title>
+<script>
+/* Open a random article. Reference pages and hidden articles are not in the list. */
+(function () {
+  var pages = {{ urls|tojson }};
+  location.replace("../" + pages[Math.floor(Math.random() * pages.length)]);
+})();
+</script>
+</head>
+<body style="background:#0f0f10;color:#f4f4f4;font:16px/1.6 sans-serif;padding:24px">
+<p>Opening a random article… This needs JavaScript; otherwise browse the <a href="../category/characters/" style="color:#8fb4ff">categories</a>.</p>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # The Low Republic wiki: analysis and game plan
 
-Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 (look and feel), 2 (the generator) and 3 (navigation and reference pages) are built. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
+Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 (look and feel), 2 (the generator), 3 (navigation and reference pages) and 4 (search) are built. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
 
 The repository moved on 31 October 2026 from `JakubPawelec/the-low-republic-wiki` to `thelowrepublic/thelowrepublic.github.io`, so that the address carries no personal account name. The old address no longer works.
 
@@ -264,6 +264,8 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D19 | The history page (authors' instruction, 1 November 2026) | Renamed from "The History" to **The Entire History** (`pages/the-entire-history.md`), with "The History" kept as a redirect. A "Before you read" box above its first paragraph says it holds the entire lore and advises reading the individual articles instead (`notices` in `config.yml`). It sits in the sidebar between Glossary and Canon and sources. |
 | D20 | Art credits page (authors' instruction, 1 November 2026) | Each artist with their link, image count and the articles their work appears in. Hidden articles are never listed. |
 | D21 | Fonts (authors' choice, 1 November 2026) | **Orbitron** for headings, infobox titles and the disclaimer title; **Barlow** for all other text. Both are self-hosted from `WIKI-SITE/static/fonts/` (SIL Open Font License, licence files alongside), so visitors' browsers make no requests to Google. |
+| D22 | Search (Phase 4) | Suggestions under the search box as you type, from titles and redirect names, ignoring capitals, accents and apostrophes. A redirect name is shown ("Darth Sidious → The Death of Palpatine") only when the title itself does not match. Enter opens an exact title or redirect match, otherwise the results page (`/search/?q=`), which ranks every article containing all the words, with highlighted snippets from the prose. The Entire History is ranked after the articles. Every article is searchable, Vesk Tolloran included (D7). Data: `search/titles.json` (26 KB) and `search/text.json` (about 550 KB, loaded only on the results page). |
+| D23 | Random article | A sidebar link to `/random/`, which opens a random article: not the five pages, and never a hidden article. |
 
 ---
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-GB" data-root="{{ root }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,9 @@
   </button>
   <a class="logo" href="{{ root or './' }}"><img src="{{ root }}static/logo-wide.png" alt="{{ site_name }}" width="2100" height="213"></a>
   <form class="search" action="{{ root }}search/" role="search">
-    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off">
+    <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"
+           role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggestions">
+    <ul class="suggestions" id="search-suggestions" role="listbox" aria-label="Suggestions" hidden></ul>
   </form>
   </div>
 </header>
@@ -76,5 +78,6 @@
   </main>
 </div>
 <script src="{{ root }}static/site.js" defer></script>
+<script src="{{ root }}static/search.js" defer></script>
 </body>
 </html>

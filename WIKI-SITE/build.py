@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 import shutil
 import sys
@@ -125,6 +126,15 @@ def svg_size(path: Path) -> tuple[int | None, int | None]:
     return (round(width), round(height)) if width and height else (None, None)
 
 
+def search_text(fragment: str) -> str:
+    """Plain text for the search index. Images and their credits are left out; inline tags
+    vanish ("<a>Dathomir</a>." stays "Dathomir."), block tags become spaces."""
+    fragment = re.sub(r"<figure\b.*?</figure>", " ", fragment, flags=re.S)
+    fragment = re.sub(r"<h[1-6]\b.*?</h[1-6]>", " ", fragment, flags=re.S)  # headings are indexed apart
+    fragment = re.sub(r"</?(?:a|strong|em|b|i|span|mark|sup|sub|code)\b[^>]*>", "", fragment)
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", fragment)).split())
+
+
 def plain_text(fragment: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
 
@@ -165,6 +175,7 @@ class Article:
     headings: list = field(default_factory=list)  # (level, text, anchor)
     anchors: dict = field(default_factory=dict)  # heading text -> anchor
     excerpt: str = ""  # the lead's first sentence, filled in when the page is rendered
+    text: str = ""  # the infobox and body as plain text, for the search index
 
     @property
     def title(self) -> str:
@@ -627,6 +638,7 @@ class Site:
             "button": notice.get("button") or "Acknowledge",
             "show_on": notice.get("show_on", "all"),
         }
+        nav.append({"title": "Random article", "href": f"{root}random/"})
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
                 "categories": cats, "footer": self.config.get("footer", ""),
                 "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/"}
@@ -643,6 +655,7 @@ class Site:
         cut = body.find("<h2")
         lead, rest = (body, "") if cut < 0 else (body[:cut], body[cut:])
         art.excerpt = first_sentence(plain_text(lead))
+        art.text = search_text(body) + " " + search_text(infobox)  # prose first, for snippets
         after = self.chain_nav(art, env) + self.history_box(art, env)
         art.meta["_links"] = env["links"]
         cat = (self.config.get("categories") or {}).get(art.category)
@@ -717,6 +730,33 @@ class Site:
             artists=artists, contact=self.inline(contact, env) if contact else ""),
             "The artists whose work appears on The Low Republic wiki.")
 
+    def write_search(self) -> None:
+        """search/titles.json (titles and redirect names, for suggestions as you type),
+        search/text.json (every article's plain text, for the results page), the results
+        page itself, and random/, which opens a random article. The authors want every
+        article findable by search, the hidden one included; it stays out of random/."""
+        cats = self.config.get("categories") or {}
+        titles, texts = [], []
+        for art in sorted(self.articles.values(), key=sort_key):
+            redirects = []
+            for entry in art.meta.get("redirects") or []:
+                name, _, heading = str(entry).partition("#")
+                anc = art.anchors.get(heading.strip(), "") if heading.strip() else ""
+                redirects.append([name.strip(), anc])
+            label = cats.get(art.category, {}).get("singular", "Page")
+            entry = {"t": art.title, "u": art.url, "c": label, "x": art.excerpt, "r": redirects}
+            if art.title == self.history_page:
+                entry["w"] = 0.25  # holds everything; rank it after the articles (its notice says so too)
+            titles.append(entry)
+            texts.append({"u": art.url, "h": [h for _, h, _ in art.headings], "b": art.text})
+        dump = lambda data: json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+        self.write("search/titles.json", dump(titles))
+        self.write("search/text.json", dump(texts))
+        self.write("search/index.html", self.jinja.get_template("search.html").render(
+            **self.chrome("../"), title="Search", description="Search The Low Republic wiki."))
+        pool = [a.url for a in self.listed() if a.category != "page"]
+        self.write("random/index.html", self.jinja.get_template("random.html").render(urls=pool))
+
     def render_not_found(self) -> str:
         """404.html is served at whatever address was missing, so its links start from the
         site's own path (config `site_path`) instead of being relative."""
@@ -747,6 +787,7 @@ class Site:
         for key in self.config.get("categories") or {}:  # after the articles: needs their excerpts
             self.write(f"category/{FOLDERS[key]}/index.html", self.render_category(key))
         self.write("wiki/art-credits/index.html", self.render_credits())
+        self.write_search()
         self.write("404.html", self.render_not_found())
 
         redirect = self.jinja.get_template("redirect.html")
