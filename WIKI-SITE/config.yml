@@ -6,7 +6,7 @@ site_name: The Low Republic
 # not-found page uses it, because it is shown at whatever address was missing.
 site_path: /
 footer: >-
-  The Low Republic is a fan-made alternate universe of Star Wars, written by Pablito and Hyerodrimm.
+  The Low Republic is a fan-made alternate universe of Star Wars, written by Pablito and HyeroDrimm.
   Star Wars and all related names are the property of Lucasfilm and Disney. This is a non-commercial
   fan project. Artwork belongs to the artists credited beside it.
 
@@ -111,6 +111,11 @@ main_page:
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"
 
+# The Art credits page: where artists can ask for an image to be altered or removed.
+art_credits:
+  contact_url: "https://discord.com/users/603185491847675915"
+  contact_via: Discord
+
 # Artwork credits. An image whose artwork_author is empty is credited to this name, with no link,
 # because most uncredited images are official Star Wars art.
 default_artwork_author: Lucasfilm and Disney
@@ -136,6 +141,4 @@ disclaimer:
     - >-
       All artwork has been credited to its artist wherever possible. If you are the author of an
       artwork shown here and wish it altered or removed, please contact the owner of this wiki.
-  # How to reach the owner, shown under the paragraphs when filled in (Markdown allowed).
-  contact: ""
   button: Acknowledge

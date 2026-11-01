@@ -36,9 +36,6 @@
     {% for p in disclaimer.paragraphs %}
     <p>{{ p|safe }}</p>
     {% endfor %}
-    {% if disclaimer.contact %}
-    <p class="gate-contact">{{ disclaimer.contact|safe }}</p>
-    {% endif %}
     <button type="button" class="gate-button">{{ disclaimer.button }}</button>
   </div>
 </div>

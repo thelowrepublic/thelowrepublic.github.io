@@ -8,4 +8,4 @@
   </li>
   {% endfor %}
 </ul>
-<p>If you are the author of an artwork shown here and wish it altered or removed, please contact the owner of this wiki.{% if contact %} {{ contact|safe }}{% endif %}</p>
+<p class="credits-contact">If you are the author of an artwork shown here and wish it altered or removed, please {% if contact_url %}<a href="{{ contact_url }}" target="_blank" rel="noopener">contact the owner of this wiki{% if contact_via %} on {{ contact_via }}{% endif %}</a>{% else %}contact the owner of this wiki{% endif %}.</p>

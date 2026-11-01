@@ -107,7 +107,7 @@ The URLs are flat and use the slugs the authors already defined, so moving an ar
 │              │  └─────────────────────────────────────────────────────┘  │
 ├──────────────┴───────────────────────────────────────────────────────────┤
 │ The Low Republic is a fan-made alternate universe by Pablito and         │
-│ Hyerodrimm. Star Wars is © Lucasfilm and Disney. · Art credits           │
+│ HyeroDrimm. Star Wars is © Lucasfilm and Disney. · Art credits           │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -129,7 +129,8 @@ Minimal and Wikipedia-shaped, in dark mode. These are starting values, to be tun
 | Background | `#0f0f10` | the page |
 | Surface | `#18181a` | infobox, figures, "In the history" box, tables |
 | Border | `#3a3a3e` | box outlines, table rules |
-| Accent (light grey) | `#c8c8cc` | heading rules, infobox title band, active contents entry, focus rings |
+| Accent (light grey) | `#c8c8cc` | sidebar links and small labels (text) |
+| Detail (Tatooine sand) | `#c8b992` | every light element that is not text: infobox title bands, the line under page titles (full) and section headings (55%), the active contents entry, quote and notice bars, the Acknowledge button, the menu icon, focus rings (D27) |
 | Text | `#f4f4f4` | body text (white, a hair softened so it is easy on the eyes) |
 | Muted | `#a6a6ad` | captions, infobox labels, hatnotes, credits |
 | Link | `#8fb4ff` (pale blue) | links (D5) |
@@ -280,6 +281,9 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D24 | The Entire History and search (authors' instruction, 1 November 2026) | Left out of search entirely: no suggestions, no results (`search_exclude` in `config.yml`). |
 | D25 | Tab icon (authors' file, 1 November 2026) | `lowrepublicicon.png` (512 px, dark rounded square with "LR") in the main folder. The build makes `favicon.ico` (16, 32, 48 px), 16 and 32 px PNGs, the 180 px iPhone icon (on the page colour) and 192 and 512 px icons with a web manifest for Android (config `icon`). |
 | D26 | Main Page video and map (authors' instruction, 1 November 2026) | `lowrepubliccrawl.mp4` sits between the opening text and "The history", 720 px wide, with controls and sound; it never plays by itself and loads only its header until played. With ffmpeg the build rearranges the site's copy so it starts promptly (no re-encoding) and takes the still image from 2 seconds in. `lowrepublicmap.jpg` closes the page as a full-width box titled "Map of the galaxy", shown at the box's width (readers scroll down through it); clicking it opens the lightbox and the full-size original. Both are set in config `main_page`. |
+| D27 | Detail colour (authors' choice, 1 November 2026) | **Tatooine sand `#C8B992`** for every light element that is not text, as in Mockup A; the logos keep their own light grey. Chosen over Star Wars yellow `#FFE81F`, which was too bright for the palette. Set once as `--detail` in `style.css`. |
+| D28 | Author's name (authors' instruction, 1 November 2026) | Spelled **HyeroDrimm** everywhere: the site footer and the articles Canon and sources and The Entire History. |
+| D29 | Contact (authors' instruction, 1 November 2026) | Not in the disclaimer. The Art credits page ends with "please contact the owner of this wiki on Discord", linked to the owner's Discord profile (config `art_credits`). |
 
 ---
 

@@ -639,7 +639,6 @@ class Site:
             "version": str(notice.get("version", 1)),
             "title": notice.get("title", ""),
             "paragraphs": [self.inline(p, env) for p in notice.get("paragraphs") or []],
-            "contact": self.inline(notice["contact"], env) if notice.get("contact") else "",
             "button": notice.get("button") or "Acknowledge",
             "show_on": notice.get("show_on", "all"),
         }
@@ -732,9 +731,9 @@ class Site:
             artists.append((name, {"link": credit["link"], "count": sum(credit["articles"].values()),
                                    "articles": [{"title": a.title, "href": root + a.url,
                                                  "count": credit["articles"][a.title]} for a in works]}))
-        contact = (self.config.get("disclaimer") or {}).get("contact")
+        contact = self.config.get("art_credits") or {}
         return self.render_page("Art credits", root, self.jinja.get_template("_credits.html").render(
-            artists=artists, contact=self.inline(contact, env) if contact else ""),
+            artists=artists, contact_url=contact.get("contact_url", ""), contact_via=contact.get("contact_via", "")),
             "The artists whose work appears on The Low Republic wiki.")
 
     def fresh(self, src: Path, dest: Path) -> bool:

@@ -9,7 +9,7 @@ canon: false
 redirects: [The History]
 ---
 
-**The Low Republic: A History of the Galaxy, 19 BBY – 2 ABY**, by Pablito and Hyerodrimm, is the history this wiki is built from. It is given here chapter by chapter, with the authors' corrections. Each chapter or section names the article that covers it. The biographical register, Chapter XIV, is not carried here: each figure in it has an article of their own.
+**The Low Republic: A History of the Galaxy, 19 BBY – 2 ABY**, by Pablito and HyeroDrimm, is the history this wiki is built from. It is given here chapter by chapter, with the authors' corrections. Each chapter or section names the article that covers it. The biographical register, Chapter XIV, is not carried here: each figure in it has an article of their own.
 
 ## Preface
 
