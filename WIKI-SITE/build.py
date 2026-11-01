@@ -448,7 +448,8 @@ class Site:
             info.update(src=made[str(WEB_WIDTHS[0])][0],
                         srcset=[made[str(t)][0] for t in WEB_WIDTHS],
                         width=WEB_WIDTHS[0], height=round(height * WEB_WIDTHS[0] / width),
-                        large=made["large"][0], large_w=made["large"][1], large_h=made["large"][2])
+                        large=made["large"][0], large_w=made["large"][1], large_h=made["large"][2],
+                        original_w=width, original_h=height)
         self.media[name] = info
         return info
 
@@ -624,6 +625,43 @@ class Site:
                 entries[-1]["children"].append({"text": text, "anchor": anc})
         return entries
 
+    def site_url(self) -> str:
+        url = str(self.config.get("site_url") or "")
+        return url if not url or url.endswith("/") else url + "/"
+
+    def share_card(self) -> dict | None:
+        """The default link-preview picture (config `social_image`), copied into media/."""
+        if hasattr(self, "_card"):
+            return self._card
+        self._card = None
+        name = self.config.get("social_image")
+        src = ROOT / str(name or "")
+        if name and not src.is_file():
+            self.warn("config.yml", f"social_image `{name}` is not in the repository")
+        elif name:
+            dest = self.out / "media" / "social" / src.name
+            self._copy(src, dest)
+            with Image.open(src) as im:
+                w, h = im.size
+            self._card = {"url": self.site_url() + f"media/social/{src.name}", "width": w, "height": h,
+                          "alt": self.config["site_name"]}
+        return self._card
+
+    def meta(self, path: str | None, art: Article | None = None) -> dict:
+        """Values for the link-preview tags (Open Graph): the page's full address, and its
+        picture: the article's own artwork when it has a photo-like image, else the card."""
+        share = None
+        box = (art.infobox or {}) if art else {}
+        if box.get("image") and self.site_url():
+            info = self.image(str(box["image"]), art.title)
+            if info and info.get("original_w"):
+                share = {"url": self.site_url() + info["original"], "width": info["original_w"],
+                         "height": info["original_h"], "alt": f"Artwork of {art.title}"}
+        if share is None and self.site_url():
+            share = self.share_card()
+        page_url = self.site_url() + path if (path is not None and self.site_url()) else ""
+        return {"page_url": page_url, "share": share}
+
     def chrome(self, root: str) -> dict:
         """Template values shared by every page: sidebar links and categories."""
         nav = []
@@ -673,7 +711,7 @@ class Site:
             rest = ""
             media = self.main_media()
         return self.jinja.get_template("article.html").render(
-            **self.chrome(art.root),
+            **self.chrome(art.root), **self.meta(art.url, art),
             title=art.title,
             is_main=art.title == MAIN_PAGE,
             description=first_sentences(plain_text(lead)),
@@ -706,17 +744,17 @@ class Site:
                 "periods": "|".join(p), "regions": "|".join(r),
             })
         return self.jinja.get_template("category.html").render(
-            **self.chrome(root), title=label["label"],
+            **self.chrome(root), **self.meta(f"category/{FOLDERS[key]}/"), title=label["label"],
             description=f"Every {label['singular'].lower()} article in The Low Republic wiki.",
             count=len(arts), singular=label["singular"].lower(), groups=groups,
             periods=[p for p in PERIODS if p in periods] + sorted(periods - set(PERIODS)),
             regions=[r for r in REGIONS if r in regions] + sorted(regions - set(REGIONS)),
         )
 
-    def render_page(self, title: str, root: str, body: str, description: str = "") -> str:
+    def render_page(self, title: str, root: str, body: str, description: str = "", path: str | None = None) -> str:
         """A generated page (art credits, not found) in the article layout."""
         return self.jinja.get_template("article.html").render(
-            **self.chrome(root), title=title, is_main=False, description=description,
+            **self.chrome(root), **self.meta(path), title=title, is_main=False, description=description,
             category=None, infobox="", lead=body, rest="", toc=[], sections=[], after="", notice=None, media={})
 
     def render_credits(self) -> str:
@@ -734,7 +772,7 @@ class Site:
         contact = self.config.get("art_credits") or {}
         return self.render_page("Art credits", root, self.jinja.get_template("_credits.html").render(
             artists=artists, contact_url=contact.get("contact_url", ""), contact_via=contact.get("contact_via", "")),
-            "The artists whose work appears on The Low Republic wiki.")
+            "The artists whose work appears on The Low Republic wiki.", "wiki/art-credits/")
 
     def fresh(self, src: Path, dest: Path) -> bool:
         """True if dest exists and is newer than src (so it need not be made again)."""
@@ -853,9 +891,22 @@ class Site:
         self.write("search/titles.json", dump(titles))
         self.write("search/text.json", dump(texts))
         self.write("search/index.html", self.jinja.get_template("search.html").render(
-            **self.chrome("../"), title="Search", description="Search The Low Republic wiki."))
+            **self.chrome("../"), **self.meta("search/"), title="Search", description="Search The Low Republic wiki."))
         pool = [a.url for a in self.listed() if a.category != "page"]
         self.write("random/index.html", self.jinja.get_template("random.html").render(urls=pool))
+
+    def write_sitemap(self) -> None:
+        """sitemap.xml for search engines: every listed article and page, the category pages
+        and the credits page. Hidden articles and redirect stubs are left out."""
+        base = self.site_url()
+        if not base:
+            return
+        paths = [a.url for a in sorted(self.listed(), key=lambda a: (a.url != "", a.url))]
+        paths += [f"category/{FOLDERS[k]}/" for k in self.config.get("categories") or {}] + ["wiki/art-credits/"]
+        rows = "".join(f"  <url><loc>{html.escape(base + p)}</loc></url>\n" for p in paths)
+        self.write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
+                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows + "</urlset>\n")
+        self.write("robots.txt", f"User-agent: *\nDisallow: /random/\nDisallow: /search/\nSitemap: {base}sitemap.xml\n")
 
     def render_not_found(self) -> str:
         """404.html is served at whatever address was missing, so its links start from the
@@ -888,6 +939,7 @@ class Site:
             self.write(f"category/{FOLDERS[key]}/index.html", self.render_category(key))
         self.write("wiki/art-credits/index.html", self.render_credits())
         self.write_search()
+        self.write_sitemap()
         self.write("404.html", self.render_not_found())
 
         redirect = self.jinja.get_template("redirect.html")

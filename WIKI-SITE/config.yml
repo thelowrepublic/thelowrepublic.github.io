@@ -5,6 +5,13 @@ site_name: The Low Republic
 # The path the site is served from: "/" for https://thelowrepublic.github.io/. Only the
 # not-found page uses it, because it is shown at whatever address was missing.
 site_path: /
+
+# The site's full address. Link previews (Discord, social media) and the sitemap need it.
+site_url: https://thelowrepublic.github.io/
+
+# The picture shown when a page without artwork of its own is shared (1200 x 630 px is best).
+# A path in the repository; replace the file, or point this at your own, to change it.
+social_image: WIKI-SITE/assets/social-card.png
 footer: >-
   The Low Republic is a fan-made alternate universe of Star Wars, written by Pablito and HyeroDrimm.
   Star Wars and all related names are the property of Lucasfilm and Disney. This is a non-commercial

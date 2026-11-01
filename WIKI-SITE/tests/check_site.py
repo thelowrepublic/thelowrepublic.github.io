@@ -15,6 +15,8 @@ so the live site stays on its last good version.
   quarantine    no generated box on a quarantined article links to another one
   search        search covers every article except those in `search_exclude`
   self-hosted   no page loads anything from another site (fonts included)
+  previews      every article has link-preview tags with a picture on this site,
+                and the sitemap lists every listed page (never a hidden one)
   disclaimer    every article carries the entry disclaimer, and configured
                 notices appear on their articles
 """
@@ -53,6 +55,8 @@ class Checks:
         self.text = {p: p.read_text(encoding="utf-8") for p in self.pages}
         self.ids = {p: set(ID_RE.findall(t)) for p, t in self.text.items()}
         self.results: list[tuple[str, list[str], str]] = []
+        sitemap = self.out / "sitemap.xml"
+        self.sitemap = sitemap.read_text(encoding="utf-8") if sitemap.exists() else ""
 
     def rel(self, path: Path) -> str:
         return path.relative_to(self.out).as_posix()
@@ -163,6 +167,8 @@ class Checks:
                         failures.append(f"{self.rel(page)} names the hidden article as \"{name}\"")
             if f"wiki/{art.slug}/" in random_page:
                 failures.append(f"random/ can pick the hidden article {title}")
+            if f"wiki/{art.slug}/" in self.sitemap:
+                failures.append(f"sitemap.xml lists the hidden article {title}")
             if not any(e["u"] == art.url for e in titles):
                 failures.append(f"{title} is missing from search (the authors want it findable)")
         return failures, f"{len(site.hidden)} hidden article(s) checked against {len(self.pages)} pages"
@@ -199,15 +205,52 @@ class Checks:
     def check_self_hosted(self):
         failures = []
         for page, text in self.text.items():
-            for tag in re.findall(r"<(?:link|script|img|iframe)\b[^>]*>", text):
-                m = re.search(r'\b(?:href|src)="((?:https?:)?//[^"]+)"', tag)
-                if m and not tag.startswith("<a"):
+            for tag in re.findall(r"<(?:link|script|img|iframe|video|source)\b[^>]*>", text):
+                m = re.search(r'\b(?:href|src|poster)="((?:https?:)?//[^"]+)"', tag)
+                if m and 'rel="canonical"' not in tag:  # the canonical link names the page itself
                     failures.append(f"{self.rel(page)} loads {m.group(1)}")
         for css in (self.out / "static").glob("*.css"):
             for ref in CSS_URL_RE.findall(css.read_text(encoding="utf-8")):
                 if re.match(r"^(?:https?:)?//", ref):
                     failures.append(f"{self.rel(css)} loads {ref}")
         return failures, "pages and stylesheets load only the site's own files"
+
+    def check_previews(self):
+        """Every article has its link-preview tags; each preview picture and the sitemap's
+        addresses point at real files on this site."""
+        failures = []
+        base = str(self.config.get("site_url") or "")
+        if base and not base.endswith("/"):
+            base += "/"
+        if not base:
+            return failures, "no site_url: previews skipped"
+
+        def local(url):
+            return self.out / url[len(base):] if url.startswith(base) else None
+
+        for art in self.site.articles.values():
+            text = self.text.get(self.out / art.url / "index.html", "")
+            tags = dict(re.findall(r'<meta property="(og:[a-z:]+)" content="([^"]*)"', text))
+            for key in ("og:title", "og:image", "og:url", "og:description"):
+                if not tags.get(key):
+                    failures.append(f"{art.title}: no {key}")
+            if tags.get("og:url") and tags["og:url"] != base + art.url:
+                failures.append(f"{art.title}: og:url is {tags['og:url']}")
+            image = local(tags.get("og:image", ""))
+            if tags.get("og:image") and (image is None or not image.exists()):
+                failures.append(f"{art.title}: preview picture {tags['og:image']} is not on the site")
+        listed = re.findall(r"<loc>([^<]+)</loc>", self.sitemap)
+        if not listed:
+            failures.append("sitemap.xml is missing or empty")
+        for url in listed:
+            path = local(url)
+            if path is None or not (path / "index.html").exists():
+                failures.append(f"sitemap.xml: {url} has no page")
+        expected = {base + a.url for a in self.site.listed()}
+        missing = expected - set(listed)
+        if missing:
+            failures.append(f"sitemap.xml is missing {sorted(missing)[:5]}")
+        return failures, f"{len(self.site.articles)} pages with previews, {len(listed)} addresses in the sitemap"
 
     def check_disclaimer(self):
         failures = []
@@ -238,7 +281,7 @@ class Checks:
         checks = [("links", self.check_links), ("completeness", self.check_completeness),
                   ("hidden", self.check_hidden), ("quarantine", self.check_quarantine),
                   ("search", self.check_search), ("self-hosted", self.check_self_hosted),
-                  ("disclaimer", self.check_disclaimer)]
+                  ("previews", self.check_previews), ("disclaimer", self.check_disclaimer)]
         total = 0
         for name, check in checks:
             failures, detail = check()

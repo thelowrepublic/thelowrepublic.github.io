@@ -1,6 +1,6 @@
 # The Low Republic wiki: analysis and game plan
 
-Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 to 5 are built: look and feel, the generator, navigation and reference pages, search, and the automated rule checks. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
+Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. All seven phases are done: look and feel, the generator, navigation and reference pages, search, the automated rule checks, going live, and the handover guide (`WIKI-SITE/README.md`). The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
 
 The repository moved on 31 October 2026 from `JakubPawelec/the-low-republic-wiki` to `thelowrepublic/thelowrepublic.github.io`, so that the address carries no personal account name. The old address no longer works.
 
@@ -226,6 +226,7 @@ Every push to `main` runs, in order: the build, the rule checks (`tests/check_si
 | quarantine | No generated box on a quarantined article links to another quarantined article. |
 | search | Search covers every article except those in `search_exclude` (D24). |
 | self-hosted | No page loads anything from another site, fonts included. |
+| previews | Every article has its link-preview tags with a picture that exists on the site; the sitemap lists every listed page and never a hidden one (D30). |
 | disclaimer | Every article carries the entry disclaimer, and every configured notice appears on its article. |
 
 `tests/test_build.py` checks the generator's rules directly (slugs, anchors, links, hatnotes, image placement, credits, the "In the history" box, search text). `tests/test_checks.py` breaks each rule in a copy of the built site and expects the matching check to fail, so a check that silently stopped working would be caught. That test found and fixed one gap on 1 November 2026: a link written as `../vesk-tolloran/` slipped past the first version of the hidden check.
@@ -284,6 +285,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D27 | Detail colour (authors' choice, 1 November 2026) | **Tatooine sand `#C8B992`** for every light element that is not text, as in Mockup A; the logos keep their own light grey. Chosen over Star Wars yellow `#FFE81F`, which was too bright for the palette. Set once as `--detail` in `style.css`. |
 | D28 | Author's name (authors' instruction, 1 November 2026) | Spelled **HyeroDrimm** everywhere: the site footer and the articles Canon and sources and The Entire History. |
 | D29 | Contact (authors' instruction, 1 November 2026) | Not in the disclaimer. The Art credits page ends with "please contact the owner of this wiki on Discord", linked to the owner's Discord profile (config `art_credits`). |
+| D30 | Link previews and sitemap (1 November 2026) | Every page carries Open Graph and Twitter tags with its full address (config `site_url`) and its first sentence. The preview picture is the article's own artwork when it is a JPG, PNG or WebP, otherwise the card `WIKI-SITE/assets/social-card.png` (wide logo, sand line, "WIKI"; config `social_image`). `sitemap.xml` lists every listed article and page, the category pages and the credits page; `robots.txt` points to it. Hidden articles are in neither. |
 
 ---
 

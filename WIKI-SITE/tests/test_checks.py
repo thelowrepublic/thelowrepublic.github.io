@@ -101,6 +101,15 @@ class RuleChecks(unittest.TestCase):
                   '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron"></head>')
         self.assertIn("self-hosted", self.failed())
 
+    def test_previews_catch_a_missing_picture(self):
+        self.edit("wiki/maul/index.html", '<meta property="og:image" ', '<meta property="og:gone" ')
+        self.assertIn("previews", self.failed())
+
+    def test_hidden_catches_the_sitemap(self):
+        self.edit("sitemap.xml", "</urlset>",
+                  "  <url><loc>https://thelowrepublic.github.io/wiki/vesk-tolloran/</loc></url>\n</urlset>")
+        self.assertIn("hidden", self.failed())
+
     def test_disclaimer_catches_a_page_without_it(self):
         self.edit("wiki/maul/index.html", 'id="disclaimer"', 'id="something-else"')
         self.assertIn("disclaimer", self.failed())
