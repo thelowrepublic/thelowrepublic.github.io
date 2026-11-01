@@ -28,7 +28,7 @@ The **Shadow Collective** is what [[Maul]] calls the whole of the organisation h
 
 ## What it is
 
-The Shadow Collective is Maul's whole organisation and his own name for it. It takes in the criminal syndicates, meaning Black Sun, the trading arm that works under the name Crimson Dawn and formerly the Pyke Syndicate, now its cast-offs known as Shadow Pykes. It also takes in the [[Mandalore#The armouries|Mandalorian Death Watch]] under [[Gar Saxon]], salvaged droid formations, clone legions saved from ageing by black market procedures, hired ground troops, and the [[The Nightborn|Nightborn]].
+The Shadow Collective is Maul's whole organisation and his own name for it. It takes in the criminal syndicates, meaning Black Sun, the trading arm that works under the name Crimson Dawn and formerly the Pyke Syndicate, now its cast-offs known as Shadow Pykes. Where Crimson Dawn is the trading arm, Black Sun is the murdering arm, and it holds most of the organisation's enforcers, assassins and ground troops who are not clones or droids. The Collective also takes in the [[Mandalore#The armouries|Mandalorian Death Watch]] under [[Gar Saxon]], salvaged droid formations, clone legions saved from ageing by black market procedures, hired ground troops, and the [[The Nightborn|Nightborn]].
 
 The Nightborn are only one part of it: the order of Force-users based on [[Dathomir]]. They are not the Shadow Collective and they do not run it, though they are its most feared element and the part the Republic talks about most. The difference matters, because the Republic is at war with the Shadow Collective. It has never been at war with the Nightborn and has never outlawed them by name. In practice the distinction has mattered less than it sounds. Nearly every Nightborn the Republic has arrested was taken during a Collective operation. They are charged as criminals or as terrorists, like anyone else on the raid. The exceptions are few and they are the ones that matter. A small number were arrested for what they were and not for anything they had done. Those are the cases Senator [[Ilai Vess|Vess]] keeps track of.
 
@@ -98,6 +98,13 @@ The Shadow Collective has no charter. It takes in whatever the Republic throws o
 The Shadow Collective has no military targets to lose because it has no military assets to defend. No vital worlds. No fleet worth engaging. No depot that matters. What it has instead is presence. Every settled world is a source of money and recruits. A dock that skims cargo. A magistrate on retainer. A quartermaster selling parts out of a garrison store. None of that can be bombed. They latch onto independent infrastructure, embed themselves into it and then benefit from it. They want the Rim booming with commotion, industry and trade, and have even invested their own funds to facilitate it, with the bulk of the credits going into charting new hyperspace routes. They stopped thinking like criminals and started to think like an empire, and it's working.
 
 The difference in approach follows from the difference in cost. The Republic has to be everywhere and can only afford to pick targets. The Collective has no budget unless it actively extorts a population, so it fights only where it's already profitable to stay.
+
+```image
+image: "the-shadow-collective-black-sun.jpg"
+image_caption: "Black Sun Infantry"
+artwork_author: "Lucas Leger"
+artwork_author_link: "https://lucas_725.artstation.com"
+```
 
 ### Quelii
 

@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
   region: [Outer Rim]
 infobox:
-  image: ""
+  image: "merrin.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Jordan Lamarre-Wan"
+  artwork_author_link: "https://www.artstation.com/jroid"
   name: Merrin
   species: Dathomirian
   homeworld: "[[Dathomir]]"
