@@ -17,16 +17,6 @@
 </ol>
 {% endmacro %}
 
-{% macro main_video() %}
-<figure class="main-video">
-  <video controls preload="metadata" playsinline width="{{ media.video.width }}" height="{{ media.video.height }}"
-         {% if media.video.poster %}poster="{{ root }}{{ media.video.poster }}" {% endif %}aria-label="{{ media.video.title }}">
-    <source src="{{ root }}{{ media.video.src }}" type="video/mp4">
-    <p>Your browser cannot play this video. <a href="{{ root }}{{ media.video.src }}">Download it</a> instead.</p>
-  </video>
-</figure>
-{% endmacro %}
-
 {% block sidebar_extra %}
 {% if toc and not is_main %}
 <div class="toc toc-sidebar">
@@ -42,12 +32,10 @@
   <h1 class="visually-hidden">{{ site_name }}</h1>
   <div class="main-hero">
     <img class="main-logo" src="{{ root }}static/logo-tall.png" alt="" width="1017" height="296">
-    {% if media.video and media.video.placement == "below_logo" %}{{ main_video() }}{% endif %}
     <div class="article-body main-intro">
       {{ lead|safe }}
     </div>
   </div>
-  {% if media.video and media.video.placement != "below_logo" %}{{ main_video() }}{% endif %}
   {% if sections %}
   <div class="article-body main-card main-card-wide">
     {{ sections[0]|safe }}

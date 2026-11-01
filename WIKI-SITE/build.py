@@ -20,7 +20,6 @@ import json
 import os
 import re
 import shutil
-import subprocess
 import sys
 import unicodedata
 import urllib.parse
@@ -58,7 +57,6 @@ REGIONS = ["Core", "Inner Rim", "Mid Rim", "Outer Rim", "Hutt Space", "Wild Spac
 WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300px box
 LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
 MAP_WIDTHS = (960, 1920)  # web copies of the Main Page map: 1x and 2x for the full-width box
-FFMPEG = shutil.which("ffmpeg")  # optional: faster-starting video and its still image
 PAGE_BACKGROUND = "#0f0f10"  # matches --bg in style.css
 
 WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
@@ -784,43 +782,11 @@ class Site:
         return dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime
 
     def main_media(self) -> dict:
-        """The Main Page's video and map (config `main_page`), copied into media/.
-        With ffmpeg, the video is rearranged so playback starts before the whole file
-        has downloaded (no re-encoding) and a still frame is made to show before play."""
+        """The Main Page's map (config `main_page`), with web copies in media/."""
         cfg = self.config.get("main_page") or {}
         media = self.out / "media"
         media.mkdir(parents=True, exist_ok=True)
         found: dict = {}
-
-        video = cfg.get("video") or {}
-        src = ROOT / str(video.get("file") or "")
-        if video.get("file") and not src.is_file():
-            self.warn("config.yml", f"main_page video `{video['file']}` is not in the repository")
-        elif video.get("file"):
-            dest = media / src.name
-            if not self.fresh(src, dest):
-                done = FFMPEG and subprocess.run(
-                    [FFMPEG, "-v", "error", "-y", "-i", str(src), "-c", "copy", "-movflags", "+faststart", str(dest)],
-                    check=False).returncode == 0
-                if not done:
-                    shutil.copy2(src, dest)
-            self.media_written.add(dest)
-            when = float(video.get("poster_time", 0) or 0)
-            poster = media / f"{src.stem}-poster-{when:g}s.jpg"
-            if FFMPEG and not self.fresh(src, poster):
-                subprocess.run([FFMPEG, "-v", "error", "-y", "-ss", f"{when:g}", "-i", str(src), "-frames:v", "1",
-                                "-vf", "scale=1280:-2", "-q:v", "3", str(poster)], check=False)
-            size = (1920, 1080)
-            if poster.exists():
-                self.media_written.add(poster)
-                with Image.open(poster) as im:
-                    size = im.size
-            else:
-                print(f"note: no still image for {src.name} (ffmpeg not found); the video still works")
-            found["video"] = {"src": f"media/{dest.name}", "title": video.get("title", ""),
-                              "placement": str(video.get("placement") or "before_history"),
-                              "poster": f"media/{poster.name}" if poster.exists() else "",
-                              "width": size[0], "height": size[1]}
 
         mapcfg = cfg.get("map") or {}
         src = ROOT / str(mapcfg.get("file") or "")

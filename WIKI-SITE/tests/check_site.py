@@ -117,10 +117,6 @@ class Checks:
                 failures.append(f"/{extra} was not built")
         main = self.text.get(self.out / "index.html", "")
         media = self.config.get("main_page") or {}
-        if (media.get("video") or {}).get("file") and "<video" not in main:
-            failures.append("the Main Page has no video (config main_page.video)")
-        if (media.get("video") or {}).get("file") and 'poster="' not in main:
-            failures.append("the Main Page video has no still image (is ffmpeg installed?)")
         if (media.get("map") or {}).get("file") and 'class="article-body main-card main-card-wide main-map"' not in main:
             failures.append("the Main Page has no map (config main_page.map)")
         if self.config.get("icon") and not (self.out / "favicon.ico").exists():

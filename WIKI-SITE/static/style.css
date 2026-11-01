@@ -539,15 +539,6 @@ html.gate-open .gate {
 .main-card ul { columns: 2 170px; column-gap: 24px; }
 .article-body.main-card li { margin: 0; padding: 0.15em 0; break-inside: avoid; } /* padding, not margin: columns drop margins at the top */
 
-/* Main Page video: narrower than the cards, centred */
-.main-video { max-width: 720px; margin: 4px auto 32px; }
-.main-video video {
-  display: block;
-  width: 100%; height: auto;
-  background: #000;
-  border: 1px solid var(--border);
-}
-
 /* Main Page map: a full-width card; the page scrolls through the whole map */
 .main-map figure { margin: 0 0 8px; }
 .main-map img { display: block; width: 100%; height: auto; }

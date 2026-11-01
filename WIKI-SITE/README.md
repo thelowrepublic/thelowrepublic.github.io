@@ -88,13 +88,10 @@ These files sit in the main folder of the repository. Replace a file with one of
 |---|---|---|
 | `lowrepubliclogowide.png`, `lowrepubliclogotall.png` | the logo in the top bar, and on the Main Page and disclaimer | none |
 | `lowrepublicicon.png` | the browser-tab and phone home-screen icons (square, 512 px) | `icon` |
-| `lowrepubliccrawl.mp4` | the video on the Main Page | `main_page: video:` |
 | `lowrepublicmap.jpg` | the map at the end of the Main Page | `main_page: map:` |
 | `WIKI-SITE/assets/social-card.png` | the picture shown when a page without artwork is shared on Discord or social media (1200 × 630 px) | `social_image` |
 
 When a page is shared, the preview shows the article's own artwork if it has a JPG, PNG or WebP image, and the card otherwise. The text under it is the article's first sentence.
-
-**The video:** use MP4 (H.264), under about 50 MB. It never plays by itself. The site shows a still image from it before it is played; `poster_time` sets which second the still is taken from. `placement` sets where it sits: `below_logo` (under the logo, above the opening text) or `before_history` (after the opening text and quote, above "The history").
 
 ---
 
@@ -124,7 +121,7 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `unknown_artist_images`, `unknown_artist_label` | Pictures by an unknown artist, and how they are credited. |
 | `disclaimer` | The notice visitors acknowledge before entering. After changing its text, **raise `version` by one**, so visitors who already acknowledged it see the new text. `show_on: all` shows it on whichever page a new visitor opens first; `main` only on the Main Page. |
 | `icon` | The browser-tab icon file. |
-| `main_page` | The Main Page video and map. |
+| `main_page` | The Main Page map. |
 
 ---
 
@@ -164,7 +161,7 @@ You do not need this: every publish checks everything. It helps if you want to s
 
 6. Open **http://localhost:8000** in your browser. Rebuild (step 4) after each change and refresh the page.
 
-The video's still image needs **ffmpeg**. Without it the build prints a note and the video still works. To run the same checks and tests as GitHub:
+To run the same checks and tests as GitHub:
 
 ```
 python WIKI-SITE/tests/check_site.py
@@ -200,4 +197,3 @@ The built site in `WIKI-SITE/_site/` is never committed; GitHub builds its own c
 - **A rule check failed.** The **Check the site's rules** step lists the rule and the page, for example "names the hidden article". Remove the offending link or name.
 - **A link shows in red.** Its title does not match any article exactly: check the spelling, accents and capitals against the article's `title`.
 - **Visitors do not see a changed disclaimer.** Raise `disclaimer: version:` in the settings.
-- **The video has no still image.** The workflow installs ffmpeg by itself; look at that step in the run.
