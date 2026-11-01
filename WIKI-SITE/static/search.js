@@ -224,7 +224,6 @@
       if (!matched) continue;
       const phrase = fold(query);
       if (terms.length > 1 && doc.folded.includes(phrase)) score += 25;
-      if (e.w) score *= e.w; // The Entire History holds everything: rank it after the articles
       results.push({ e, doc, score });
     }
     results.sort((a, b) => b.score - a.score || a.e.t.localeCompare(b.e.t));

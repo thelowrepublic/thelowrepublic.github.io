@@ -1,6 +1,6 @@
 # The Low Republic wiki: analysis and game plan
 
-Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 (look and feel), 2 (the generator), 3 (navigation and reference pages) and 4 (search) are built. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
+Status: **plan agreed 31 October 2026.** The decisions are recorded in section 8. Phases 1 to 5 are built: look and feel, the generator, navigation and reference pages, search, and the automated rule checks. The site is live at https://thelowrepublic.github.io/ and republishes on every push to `main`.
 
 The repository moved on 31 October 2026 from `JakubPawelec/the-low-republic-wiki` to `thelowrepublic/thelowrepublic.github.io`, so that the address carries no personal account name. The old address no longer works.
 
@@ -215,10 +215,21 @@ The eight articles are listed in `config.yml`. No generated feature may place tw
 
 ### Automated checks after every build
 
-- Vesk Tolloran's title, slug and URL appear in no generated page except his own page and his redirect stubs.
-- No generated box, list or index on any quarantined article links to another quarantined article.
-- Every link, section link, redirect, image and source code resolves.
-- Every infobox image exists and has a web copy.
+Every push to `main` runs, in order: the build, the rule checks (`tests/check_site.py`), and the tests (`python -m unittest discover -s WIKI-SITE/tests -t WIKI-SITE/tests`). A failed rule check or test stops the workflow before it publishes, so the live site stays on its last good version, and the failures appear as errors on the workflow run's page.
+
+| Check | Rule |
+|---|---|
+| links | Every internal link, image, stylesheet and font points at a file that exists, and every `#anchor` exists on its page. |
+| completeness | Every article, redirect, category page and utility page was built; each category page lists exactly its category's listed articles. |
+| hidden | No page links to a hidden article (every link is resolved, however it is written) or names it by its title or redirect names, except its own page and its redirect stubs. It is never in `random/`, and it is in search (D7). |
+| quarantine | No generated box on a quarantined article links to another quarantined article. |
+| search | Search covers every article except those in `search_exclude` (D24). |
+| self-hosted | No page loads anything from another site, fonts included. |
+| disclaimer | Every article carries the entry disclaimer, and every configured notice appears on its article. |
+
+`tests/test_build.py` checks the generator's rules directly (slugs, anchors, links, hatnotes, image placement, credits, the "In the history" box, search text). `tests/test_checks.py` breaks each rule in a copy of the built site and expects the matching check to fail, so a check that silently stopped working would be caught. That test found and fixed one gap on 1 November 2026: a link written as `../vesk-tolloran/` slipped past the first version of the hidden check.
+
+Problems that are the authors' to fix, such as a wiki-link to a title that does not exist, are **warnings**: the page shows a red link, the workflow run's page lists the warning, and the site still publishes.
 
 ---
 
@@ -264,8 +275,9 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D19 | The history page (authors' instruction, 1 November 2026) | Renamed from "The History" to **The Entire History** (`pages/the-entire-history.md`), with "The History" kept as a redirect. A "Before you read" box above its first paragraph says it holds the entire lore and advises reading the individual articles instead (`notices` in `config.yml`). It sits in the sidebar between Glossary and Canon and sources. |
 | D20 | Art credits page (authors' instruction, 1 November 2026) | Each artist with their link, image count and the articles their work appears in. Hidden articles are never listed. |
 | D21 | Fonts (authors' choice, 1 November 2026) | **Orbitron** for headings, infobox titles and the disclaimer title; **Barlow** for all other text. Both are self-hosted from `WIKI-SITE/static/fonts/` (SIL Open Font License, licence files alongside), so visitors' browsers make no requests to Google. |
-| D22 | Search (Phase 4) | Suggestions under the search box as you type, from titles and redirect names, ignoring capitals, accents and apostrophes. A redirect name is shown ("Darth Sidious → The Death of Palpatine") only when the title itself does not match. Enter opens an exact title or redirect match, otherwise the results page (`/search/?q=`), which ranks every article containing all the words, with highlighted snippets from the prose. The Entire History is ranked after the articles. Every article is searchable, Vesk Tolloran included (D7). Data: `search/titles.json` (26 KB) and `search/text.json` (about 550 KB, loaded only on the results page). |
+| D22 | Search (Phase 4) | Suggestions under the search box as you type, from titles and redirect names, ignoring capitals, accents and apostrophes. A redirect name is shown ("Darth Sidious → The Death of Palpatine") only when the title itself does not match. Enter opens an exact title or redirect match, otherwise the results page (`/search/?q=`), which ranks every article containing all the words, with highlighted snippets from the prose. Every article is searchable, Vesk Tolloran included (D7), except The Entire History (D24). Data: `search/titles.json` (26 KB) and `search/text.json` (about 550 KB, loaded only on the results page). |
 | D23 | Random article | A sidebar link to `/random/`, which opens a random article: not the five pages, and never a hidden article. |
+| D24 | The Entire History and search (authors' instruction, 1 November 2026) | Left out of search entirely: no suggestions, no results (`search_exclude` in `config.yml`). |
 
 ---
 

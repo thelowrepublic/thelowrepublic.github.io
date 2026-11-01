@@ -36,8 +36,11 @@ jobs:
       - name: Build the site
         run: python WIKI-SITE/build.py
 
-      - name: Check every link, anchor and image in the built site
+      - name: Check the site's rules (links, hidden article, quarantine, search, ...)
         run: python WIKI-SITE/tests/check_site.py
+
+      - name: Run the tests
+        run: python -m unittest discover -s WIKI-SITE/tests -t WIKI-SITE/tests
 
       - uses: actions/configure-pages@v5
 

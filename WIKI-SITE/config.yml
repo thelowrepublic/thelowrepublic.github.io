@@ -16,6 +16,9 @@ sidebar_links: [Main Page, Timeline, Glossary, The Entire History, Canon and sou
 # The page that carries the whole history, which the `sources` codes point into.
 history_page: The Entire History
 
+# Articles left out of search entirely: no suggestions, no results (authors' decision, 1 November 2026).
+search_exclude: [The Entire History]
+
 # Boxes shown at the top of an article, above its first paragraph: article title -> label and
 # text (Markdown, so [[links]] work).
 notices:

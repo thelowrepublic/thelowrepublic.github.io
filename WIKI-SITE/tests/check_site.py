@@ -1,110 +1,256 @@
-"""Checks on the built site in WIKI-SITE/_site/. Run after build.py:
+"""Rule checks on the built site in WIKI-SITE/_site/. Run after build.py:
 
     python WIKI-SITE/tests/check_site.py
 
-- every internal link, image and stylesheet points at a file that exists,
-  and every #anchor exists on the page it points to
-- no page links to a hidden article except its own page and its redirect stubs
-- no generated box on a quarantined article links to another quarantined article
+Each check below is one rule from GAMEPLAN.md section 6. Any failure makes the
+script exit with an error, which stops the GitHub workflow before it publishes,
+so the live site stays on its last good version.
 
-The random-article page lists its candidates as addresses inside a script, so
-the hidden-article check covers it too.
+  links         every internal link, image, stylesheet and font points at a file
+                that exists, and every #anchor exists on the page it points to
+  completeness  every article, redirect, category and utility page was built, and
+                each category page lists exactly its category's listed articles
+  hidden        no page names or links to a hidden article, except its own page
+                and its redirect stubs; it is out of random/, but in search
+  quarantine    no generated box on a quarantined article links to another one
+  search        search covers every article except those in `search_exclude`
+  self-hosted   no page loads anything from another site (fonts included)
+  disclaimer    every article carries the entry disclaimer, and configured
+                notices appear on their articles
 """
 
 from __future__ import annotations
 
+import json
+import os
 import re
 import sys
 import urllib.parse
-from collections import defaultdict
 from pathlib import Path
 
 import yaml
 
 HERE = Path(__file__).resolve().parent.parent
 SITE = HERE / "_site"
-NOT_YET = ()  # every page the site links to is built
+sys.path.insert(0, str(HERE))
+import build  # noqa: E402  (the generator: reused to know what should have been built)
 
 ATTR_RE = re.compile(r'\b(?:href|src)="([^"]+)"')
 SRCSET_RE = re.compile(r'\bsrcset="([^"]+)"')
 ID_RE = re.compile(r'\bid="([^"]+)"')
+CSS_URL_RE = re.compile(r"url\(\s*['\"]?([^'\")]+)['\"]?\s*\)")
+IN_ACTIONS = os.environ.get("GITHUB_ACTIONS") == "true"
 
 
-def main() -> int:
-    config = yaml.safe_load((HERE / "config.yml").read_text(encoding="utf-8"))
-    pages = sorted(SITE.rglob("*.html"))
-    ids = {p: set(ID_RE.findall(p.read_text(encoding="utf-8"))) for p in pages}
-    failures: list[str] = []
-    not_yet: dict[str, int] = defaultdict(int)
-    checked = 0
+class Checks:
+    def __init__(self, out: Path = SITE, quiet: bool = False):
+        self.out = Path(out)
+        self.quiet = quiet
+        self.config = yaml.safe_load((HERE / "config.yml").read_text(encoding="utf-8"))
+        self.site = build.Site(self.config, self.out)
+        self.site.load()  # the articles and redirects the site was built from
+        self.pages = sorted(self.out.rglob("*.html"))
+        self.text = {p: p.read_text(encoding="utf-8") for p in self.pages}
+        self.ids = {p: set(ID_RE.findall(t)) for p, t in self.text.items()}
+        self.results: list[tuple[str, list[str], str]] = []
 
-    for page in pages:
-        text = page.read_text(encoding="utf-8")
-        refs = ATTR_RE.findall(text)
-        for srcset in SRCSET_RE.findall(text):
-            refs += [part.split()[0] for part in srcset.split(",")]
-        for ref in refs:
-            if re.match(r"^[a-z]+:", ref) or ref.startswith("//"):
-                continue  # external
-            checked += 1
-            path, _, frag = ref.partition("#")
-            path = urllib.parse.unquote(path.split("?")[0])
-            if path.startswith("/"):  # root-relative (only the 404 page uses these)
-                site_path = str(config.get("site_path") or "/")
-                path = path[len(site_path):] if path.startswith(site_path) else path.lstrip("/")
-                target = (SITE / path).resolve()
-            else:
-                target = (page.parent / path).resolve() if path else page
-            if target.is_dir():
-                target = target / "index.html"
-            rel = target.relative_to(SITE.resolve()).as_posix() if target.is_relative_to(SITE.resolve()) else str(target)
-            if not target.exists():
-                if rel.startswith(NOT_YET):
-                    not_yet[rel.split("/")[0] + "/" + rel.split("/")[1] + "/"] += 1
-                else:
-                    failures.append(f"{page.relative_to(SITE)}: {ref} -> missing {rel}")
+    def rel(self, path: Path) -> str:
+        return path.relative_to(self.out).as_posix()
+
+    def resolve(self, page: Path, ref: str) -> tuple[Path, str]:
+        path, _, frag = ref.partition("#")
+        path = urllib.parse.unquote(path.split("?")[0])
+        if path.startswith("/"):  # root-relative: only the 404 page uses these
+            site_path = str(self.config.get("site_path") or "/")
+            path = path[len(site_path):] if path.startswith(site_path) else path.lstrip("/")
+            target = (self.out / path).resolve()
+        else:
+            target = (page.parent / path).resolve() if path else page
+        if target.is_dir():
+            target = target / "index.html"
+        return target, urllib.parse.unquote(frag)
+
+    # ---- the rules -----------------------------------------------------------------
+
+    def check_links(self):
+        failures, count = [], 0
+        for page, text in self.text.items():
+            refs = ATTR_RE.findall(text)
+            for srcset in SRCSET_RE.findall(text):
+                refs += [part.split()[0] for part in srcset.split(",")]
+            for ref in refs:
+                if re.match(r"^[a-z]+:", ref) or ref.startswith("//"):
+                    continue  # external
+                count += 1
+                target, frag = self.resolve(page, ref)
+                if not target.exists():
+                    failures.append(f"{self.rel(page)}: {ref} -> nothing at that address")
+                elif frag and target.suffix == ".html" and frag not in self.ids.get(target, set()):
+                    failures.append(f"{self.rel(page)}: {ref} -> no #{frag} on that page")
+        css_files = list((self.out / "static").glob("*.css"))
+        for css in css_files:
+            for ref in CSS_URL_RE.findall(css.read_text(encoding="utf-8")):
+                if not ref.startswith("data:") and not (css.parent / ref).exists():
+                    failures.append(f"{self.rel(css)}: url({ref}) -> missing")
+        return failures, f"{count} references on {len(self.pages)} pages, {len(css_files)} stylesheet(s)"
+
+    def check_completeness(self):
+        failures = []
+        site = self.site
+        for art in site.articles.values():
+            if not (self.out / art.url / "index.html").exists():
+                failures.append(f"{art.title}: no page at /{art.url}")
+        for slug, (art, _, name) in site.redirects.items():
+            page = self.out / "wiki" / slug / "index.html"
+            if not page.exists():
+                failures.append(f"redirect {name}: no stub at /wiki/{slug}/")
+            elif f"../../{art.url}" not in self.text.get(page, ""):
+                failures.append(f"redirect {name}: /wiki/{slug}/ does not lead to {art.title}")
+        for extra in ("index.html", "404.html", "search/index.html", "random/index.html",
+                      "wiki/art-credits/index.html"):
+            if not (self.out / extra).exists():
+                failures.append(f"/{extra} was not built")
+        for key in self.config.get("categories") or {}:
+            page = self.out / "category" / build.FOLDERS[key] / "index.html"
+            if not page.exists():
+                failures.append(f"category page for {key} was not built")
                 continue
-            if frag and target.suffix == ".html" and urllib.parse.unquote(frag) not in ids.get(target, set()):
-                failures.append(f"{page.relative_to(SITE)}: {ref} -> no #{frag} on {rel}")
+            listed = re.findall(r'class="category-title" href="\.\./\.\./([^"]+)"', self.text[page])
+            expected = sorted(a.url for a in site.articles.values()
+                              if a.category == key and a.title not in site.hidden)
+            if sorted(listed) != expected:
+                missing = set(expected) - set(listed)
+                extra = set(listed) - set(expected)
+                failures.append(f"category {key}: missing {sorted(missing)}, unexpected {sorted(extra)}")
+        return failures, (f"{len(site.articles)} articles, {len(site.redirects)} redirects, "
+                          f"{len(self.config.get('categories') or {})} category pages")
 
-    # hidden articles: nothing links to them but their own page and redirect stubs
-    for title in config.get("hidden") or []:
-        slug = re.sub(r"[^a-z0-9-]", "", title.lower().replace(" ", "-"))
-        needle = f"wiki/{slug}/"
-        for page in pages:
-            rel = page.relative_to(SITE).as_posix()
-            if rel == f"wiki/{slug}/index.html":
+    def check_hidden(self):
+        failures = []
+        site = self.site
+        titles = json.loads((self.out / "search" / "titles.json").read_text(encoding="utf-8"))
+        random_page = self.text.get(self.out / "random" / "index.html", "")
+        for title in sorted(site.hidden):
+            art = site.articles.get(title)
+            if art is None:
+                failures.append(f"hidden article {title} does not exist")
                 continue
-            text = page.read_text(encoding="utf-8")
-            if needle in text and 'http-equiv="refresh"' not in text:
-                failures.append(f"{rel}: links to the hidden article {title}")
+            own = {self.out / art.url / "index.html"} | {
+                self.out / "wiki" / slug / "index.html" for slug, (a, _, _) in site.redirects.items() if a is art}
+            names = [title] + [str(r).partition("#")[0].strip() for r in art.meta.get("redirects") or []]
+            targets = {p.resolve() for p in own}
+            for page, text in self.text.items():
+                if page in own:
+                    continue
+                # every link, however it is written, is resolved to the page it opens
+                linked = any(self.resolve(page, ref)[0] in targets for ref in ATTR_RE.findall(text)
+                             if not re.match(r"^[a-z]+:", ref) and not ref.startswith("//"))
+                if linked or f"wiki/{art.slug}/" in text:  # the second test covers addresses in scripts
+                    failures.append(f"{self.rel(page)} links to the hidden article {title}")
+                lowered = text.lower()
+                for name in names:
+                    if name.lower() in lowered:
+                        failures.append(f"{self.rel(page)} names the hidden article as \"{name}\"")
+            if f"wiki/{art.slug}/" in random_page:
+                failures.append(f"random/ can pick the hidden article {title}")
+            if not any(e["u"] == art.url for e in titles):
+                failures.append(f"{title} is missing from search (the authors want it findable)")
+        return failures, f"{len(site.hidden)} hidden article(s) checked against {len(self.pages)} pages"
 
-    # Union quarantine: generated parts (the boxes after the article text) never join two of them
-    quarantine = config.get("quarantine") or []
-    slugs = {t: re.sub(r"[^a-z0-9-]", "", t.lower().replace(" ", "-")) for t in quarantine}
-    for title, slug in slugs.items():
-        page = SITE / "wiki" / slug / "index.html"
-        if not page.exists():
-            failures.append(f"quarantined article {title} was not built")
-            continue
-        text = page.read_text(encoding="utf-8")
-        generated = text.split('<div class="article-after">', 1)[1] if '<div class="article-after">' in text else ""
-        for other, other_slug in slugs.items():
-            if other != title and f"wiki/{other_slug}/" in generated:
-                failures.append(f"wiki/{slug}/: a generated box links to {other} (Union quarantine)")
+    def check_quarantine(self):
+        failures = []
+        site = self.site
+        group = [site.articles[t] for t in sorted(site.quarantine) if t in site.articles]
+        for art in group:
+            text = self.text.get(self.out / art.url / "index.html", "")
+            generated = text.split('<div class="article-after">', 1)[1] if '<div class="article-after">' in text else ""
+            for other in group:
+                if other is not art and f"wiki/{other.slug}/" in generated:
+                    failures.append(f"{art.title}: a generated box links to {other.title}")
+        return failures, f"{len(group)} quarantined articles"
 
-    print(f"Checked {checked} internal references on {len(pages)} pages.")
-    for where, n in sorted(not_yet.items()):
-        print(f"  not built yet (later phase): {where} ({n} links)")
-    if failures:
-        print(f"\n{len(failures)} problem(s):")
-        for f in failures:
-            print("  -", f)
-        return 1
-    print("All internal links, anchors and images resolve; no page links to a hidden article;"
-          " no generated box joins two quarantined articles.")
-    return 0
+    def check_search(self):
+        failures = []
+        site = self.site
+        titles = json.loads((self.out / "search" / "titles.json").read_text(encoding="utf-8"))
+        texts = json.loads((self.out / "search" / "text.json").read_text(encoding="utf-8"))
+        excluded = set(self.config.get("search_exclude") or [])
+        expected = sorted(a.url for a in site.articles.values() if a.title not in excluded)
+        for name, data in (("titles.json", titles), ("text.json", texts)):
+            urls = [e["u"] for e in data]
+            if sorted(urls) != expected:
+                failures.append(f"search/{name}: missing {sorted(set(expected) - set(urls))}, "
+                                f"unexpected {sorted(set(urls) - set(expected))}")
+            for url in urls:
+                if not (self.out / url / "index.html").exists():
+                    failures.append(f"search/{name}: /{url} has no page")
+        return failures, f"{len(titles)} articles searchable, {len(excluded)} excluded"
+
+    def check_self_hosted(self):
+        failures = []
+        for page, text in self.text.items():
+            for tag in re.findall(r"<(?:link|script|img|iframe)\b[^>]*>", text):
+                m = re.search(r'\b(?:href|src)="((?:https?:)?//[^"]+)"', tag)
+                if m and not tag.startswith("<a"):
+                    failures.append(f"{self.rel(page)} loads {m.group(1)}")
+        for css in (self.out / "static").glob("*.css"):
+            for ref in CSS_URL_RE.findall(css.read_text(encoding="utf-8")):
+                if re.match(r"^(?:https?:)?//", ref):
+                    failures.append(f"{self.rel(css)} loads {ref}")
+        return failures, "pages and stylesheets load only the site's own files"
+
+    def check_disclaimer(self):
+        failures = []
+        site = self.site
+        for art in site.articles.values():
+            text = self.text.get(self.out / art.url / "index.html", "")
+            if self.config.get("disclaimer") and 'id="disclaimer"' not in text:
+                failures.append(f"{art.title}: no entry disclaimer")
+        for title in (self.config.get("notices") or {}):
+            art = site.articles.get(title)
+            if art is None:
+                failures.append(f"notices: no article titled {title}")
+            elif 'class="notice"' not in self.text.get(self.out / art.url / "index.html", ""):
+                failures.append(f"{title}: its notice box is missing")
+        return failures, f"{len(site.articles)} pages, {len(self.config.get('notices') or {})} notice(s)"
+
+    # ---- running ---------------------------------------------------------------------
+
+    def say(self, line: str) -> None:
+        if not self.quiet:
+            print(line)
+
+    def failed(self) -> set[str]:
+        """The names of the checks that failed (run() first)."""
+        return {name for name, failures, _ in self.results if failures}
+
+    def run(self) -> int:
+        checks = [("links", self.check_links), ("completeness", self.check_completeness),
+                  ("hidden", self.check_hidden), ("quarantine", self.check_quarantine),
+                  ("search", self.check_search), ("self-hosted", self.check_self_hosted),
+                  ("disclaimer", self.check_disclaimer)]
+        total = 0
+        for name, check in checks:
+            failures, detail = check()
+            total += len(failures)
+            self.say(f"{'PASS' if not failures else 'FAIL'}  {name:<13} {detail}")
+            for f in failures[:50]:
+                self.say(f"      - {f}")
+                if IN_ACTIONS:  # shown as an error on the workflow run's page
+                    print(f"::error title=Wiki check: {name}::{f.replace('%', '%25')}")
+            if len(failures) > 50:
+                self.say(f"      … and {len(failures) - 50} more")
+            self.results.append((name, failures, detail))
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            with open(summary, "a", encoding="utf-8") as fh:
+                fh.write("### Wiki checks\n\n| Check | Result | Detail |\n|---|---|---|\n")
+                for name, failures, detail in self.results:
+                    fh.write(f"| {name} | {'✅ pass' if not failures else f'❌ {len(failures)} problem(s)'} | {detail} |\n")
+        self.say("\nAll checks passed." if not total else f"\n{total} problem(s): the site will not be published.")
+        return 1 if total else 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    folder = Path(sys.argv[1]) if len(sys.argv) > 1 else SITE
+    sys.exit(Checks(folder).run())

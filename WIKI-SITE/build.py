@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 import shutil
 import sys
@@ -219,7 +220,7 @@ def fenced_lines(lines) -> set[int]:
 
 
 def read_article(path: Path) -> Article:
-    rel = path.relative_to(ROOT)
+    rel = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
     raw = normalise(path.read_bytes().decode("utf-8-sig"))
     if not raw.startswith("---\n"):
         raise BuildError(f"{rel}: the file does not start with front matter (---)")
@@ -734,20 +735,21 @@ class Site:
         """search/titles.json (titles and redirect names, for suggestions as you type),
         search/text.json (every article's plain text, for the results page), the results
         page itself, and random/, which opens a random article. The authors want every
-        article findable by search, the hidden one included; it stays out of random/."""
+        article findable by search, the hidden one included (it stays out of random/), and
+        The Entire History left out of search altogether."""
         cats = self.config.get("categories") or {}
         titles, texts = [], []
+        excluded = set(self.config.get("search_exclude") or [])
         for art in sorted(self.articles.values(), key=sort_key):
+            if art.title in excluded:
+                continue  # left out of search entirely (config `search_exclude`)
             redirects = []
             for entry in art.meta.get("redirects") or []:
                 name, _, heading = str(entry).partition("#")
                 anc = art.anchors.get(heading.strip(), "") if heading.strip() else ""
                 redirects.append([name.strip(), anc])
             label = cats.get(art.category, {}).get("singular", "Page")
-            entry = {"t": art.title, "u": art.url, "c": label, "x": art.excerpt, "r": redirects}
-            if art.title == self.history_page:
-                entry["w"] = 0.25  # holds everything; rank it after the articles (its notice says so too)
-            titles.append(entry)
+            titles.append({"t": art.title, "u": art.url, "c": label, "x": art.excerpt, "r": redirects})
             texts.append({"u": art.url, "h": [h for _, h, _ in art.headings], "b": art.text})
         dump = lambda data: json.dumps(data, ensure_ascii=False, separators=(",", ":"))
         self.write("search/titles.json", dump(titles))
@@ -826,10 +828,20 @@ def main() -> int:
 
     print(f"Built {len(site.articles)} articles and pages and {len(site.redirects)} redirects "
           f"into {site.out}")
+    in_actions = os.environ.get("GITHUB_ACTIONS") == "true"
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:  # a short report on the workflow run's page
+        with open(summary, "a", encoding="utf-8") as fh:
+            fh.write(f"### Wiki build\n\n{len(site.articles)} articles and pages, {len(site.redirects)} redirects, "
+                     f"{len(site.warnings)} warning(s).\n\n")
+            fh.writelines(f"- {w}\n" for w in site.warnings)
+            fh.write("\n")
     if site.warnings:
         print(f"\n{len(site.warnings)} warning(s):")
         for w in site.warnings:
             print("  -", w)
+            if in_actions:  # shown as a warning on the workflow run's page; it does not stop publishing
+                print(f"::warning title=Wiki build::{w.replace('%', '%25')}")
         return 1 if args.strict else 0
     print("No warnings: every link, heading, redirect and image resolved.")
     return 0
