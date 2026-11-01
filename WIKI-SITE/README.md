@@ -137,7 +137,7 @@ These are code. If you change them, the next publish shows straight away whether
 
 ### The page animation
 
-When a reader follows a link to another page of the wiki, every line of text on the new page types itself out at the same moment, left to right, in 0.8 seconds (settings `page_transition` and `page_transition_seconds`). It does not play for visitors arriving from outside the wiki, on back/forward or reload, for a link to a section, or when the reader's device is set to reduce motion.
+When a reader follows a link to another page of the wiki, every line of text and every picture on the new page (the Main Page logo included) is uncovered at the same moment, left to right, in 0.8 seconds (settings `page_transition` and `page_transition_seconds`). It does not play for visitors arriving from outside the wiki, on back/forward or reload, for a link to a section, or when the reader's device is set to reduce motion.
 
 Readers can turn it off with the small switch to the right of the search box (on phones, at the end of the logo row). A brief pop-up confirms "Site animations on" or "off", and the browser remembers the choice. Setting `page_transition: none` removes the animation and the switch for everyone.
 
