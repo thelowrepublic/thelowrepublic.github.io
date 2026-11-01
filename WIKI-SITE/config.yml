@@ -112,11 +112,13 @@ main_page:
     file: lowrepublicmap.jpg
     title: Map of the galaxy
 
-# Animation when a reader follows a link to another page of the wiki: slide (the page slides out
-# from behind the sidebar), record (the page writes itself in, block by block) or none. It never
-# plays for visitors arriving from outside, on back/forward or reload, or when their device asks
-# for reduced motion.
+# Animation when a reader follows a link to another page of the wiki: record (every line of text
+# types itself out at the same moment) or none. It never plays for visitors arriving from outside,
+# on back/forward or reload, or when their device asks for reduced motion, and readers can turn it
+# off with the Animations switch beside the search box.
 page_transition: record
+# How long the typing takes, in seconds.
+page_transition_seconds: 0.4
 
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"

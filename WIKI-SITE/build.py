@@ -58,7 +58,7 @@ WEB_WIDTHS = (300, 600)  # web copies of each raster image: 1x and 2x for a ~300
 LARGE_SIDE = 1600  # the copy shown when an image is clicked: longest side, in pixels
 MAP_WIDTHS = (960, 1920)  # web copies of the Main Page map: 1x and 2x for the full-width box
 PAGE_BACKGROUND = "#0f0f10"  # matches --bg in style.css
-TRANSITIONS = ("slide", "record", "none")  # config page_transition
+TRANSITIONS = ("record", "none")  # config page_transition
 
 WIKILINK_RE = re.compile(r"\[\[([^\[\]|#]+)(?:#([^\[\]|]+))?(?:\\?\|([^\[\]]+))?\]\]")
 HATNOTE_RE = re.compile(r"^\*((?:Main articles?|See also|Further information): .+)\*$")
@@ -687,8 +687,15 @@ class Site:
         if transition not in TRANSITIONS:
             self.warn("config.yml", f"page_transition `{transition}` is not one of {', '.join(TRANSITIONS)}")
             transition = "none"
+        try:
+            seconds = float(self.config.get("page_transition_seconds") or 0.4)
+        except (TypeError, ValueError):
+            seconds = 0.4
+        if not 0.1 <= seconds <= 3:
+            self.warn("config.yml", f"page_transition_seconds {seconds} is outside 0.1 to 3; using 0.4")
+            seconds = 0.4
         return {"root": root, "site_name": self.config["site_name"], "nav": nav,
-                "transition": "" if transition == "none" else transition,
+                "transition": "" if transition == "none" else transition, "transition_seconds": f"{seconds:g}",
                 "categories": cats, "footer": self.config.get("footer", ""),
                 "disclaimer": disclaimer, "credits_href": f"{root}wiki/art-credits/",
                 "has_icon": bool(self.config.get("icon"))}

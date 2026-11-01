@@ -205,7 +205,30 @@
       .forEach(function (el) { if (el.getBoundingClientRect().top > fold) el.classList.add("tr-skip"); });
   }
 
+  // The Animations switch beside the search box: remembered in this browser, and off (and fixed)
+  // when the device asks for reduced motion.
+  function setupAnimationSwitch() {
+    var button = document.querySelector(".anim-switch");
+    if (!button) return;
+    var html = document.documentElement;
+    var reduce = html.classList.contains("motion-reduced");
+    function show() {
+      var on = !reduce && !html.classList.contains("animations-off");
+      button.setAttribute("aria-checked", on ? "true" : "false");
+      button.title = reduce ? "Animations are off because your device is set to reduce motion"
+                            : on ? "Page animations are on. Click to turn them off." : "Page animations are off. Click to turn them on.";
+    }
+    if (reduce) button.disabled = true;
+    button.addEventListener("click", function () {
+      var off = html.classList.toggle("animations-off");
+      try { localStorage.setItem("lowrepublic-animations", off ? "off" : "on"); } catch (e) {}
+      show();
+    });
+    show();
+  }
+
   setupTransition();
+  setupAnimationSwitch();
   setupMenu();
   setupRedirectNote();
   setupContents();

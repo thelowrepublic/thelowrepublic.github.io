@@ -634,27 +634,48 @@ html.gate-open .gate {
   .main-card { padding: 2px 16px 10px; }
 }
 
-/* ---- Page transitions (config page_transition) ----
-   html.animate-in is set by a script in <head> only after following a link inside the wiki.
-   Every animation runs once and only hides content during its own short delay
-   (fill mode "backwards"), so nothing can stay hidden. --tr-scale slows them all down. */
-:root { --tr-scale: 1; }
+/* ---- Page transition (config page_transition) ----
+   html.animate-in is set by a script in <head> only after following a link inside the wiki, and
+   --tr-time on <html> comes from page_transition_seconds. The animation runs once and hides text
+   only while it plays, so nothing can stay hidden. */
 @media (prefers-reduced-motion: no-preference) {
-  /* slide: the page slides out from behind the sidebar's edge */
-  .animate-in[data-transition="slide"] .content > .article {
-    animation: tr-slide calc(320ms * var(--tr-scale)) cubic-bezier(.2, .75, .25, 1) backwards;
-  }
-
-  /* record: every line of text on the page types itself out at the same moment, left to right,
-     very fast; boxes, lines and pictures are there from the start */
+  /* record: every line of text on the page types itself out at the same moment, left to right;
+     boxes, lines and pictures are there from the start */
   .animate-in[data-transition="record"] .content :is(h1, h2, h3, h4, p, li, th, td, dt, dd, figcaption,
       summary, .hatnote, .infobox-title, .chain-side > .box-label, .letter-bar):not(.visually-hidden):not(.tr-skip) {
-    animation: tr-type calc(380ms * var(--tr-scale)) steps(48, end) backwards;
+    animation: tr-type var(--tr-time, .4s) steps(80, end) backwards;
   }
 }
 /* both ends are given: a clip cannot be animated to "no clip", only to an inset of 0 */
-@keyframes tr-slide {
-  from { transform: translateX(-56px); clip-path: inset(0 0 0 56px); opacity: .15; }
-  to { transform: none; clip-path: inset(0 0 0 0); opacity: 1; }
-}
 @keyframes tr-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+
+/* The Animations switch beside the search box: shown only when scripts run (html.can-animate) */
+.anim-switch {
+  display: none; align-items: center; gap: 8px;
+  margin-left: auto; padding: 4px 2px;
+  font: inherit; font-size: 13px; color: var(--muted);
+  background: none; border: 0; border-radius: 4px; cursor: pointer;
+}
+.can-animate .anim-switch { display: flex; }
+.can-animate .anim-switch + .search { margin-left: 0; }
+.anim-switch:hover { color: var(--text); }
+.anim-switch:focus-visible { outline: 2px solid var(--detail); outline-offset: 2px; }
+.anim-switch:disabled { cursor: default; opacity: .6; }
+.anim-switch-track {
+  position: relative; width: 30px; height: 16px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+}
+.anim-switch-knob {
+  position: absolute; top: 2px; left: 2px; width: 10px; height: 10px;
+  background: var(--muted); border-radius: 50%;
+  transition: transform .15s, background-color .15s;
+}
+/* drawn from the classes the <head> script sets, so it is right from the first frame */
+.can-animate:not(.animations-off):not(.motion-reduced) .anim-switch-knob { transform: translateX(14px); background: var(--detail); }
+.can-animate:not(.animations-off):not(.motion-reduced) .anim-switch-track { border-color: var(--detail); }
+@media (max-width: 640px) {
+  .anim-switch { font-size: 12.5px; gap: 6px; }
+}
+@media (max-width: 359px) {
+  .anim-switch-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}
