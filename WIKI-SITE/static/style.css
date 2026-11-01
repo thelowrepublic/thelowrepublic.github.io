@@ -639,10 +639,10 @@ html.gate-open .gate {
    --tr-time on <html> comes from page_transition_seconds. The animation runs once and hides text
    only while it plays, so nothing can stay hidden. */
 @media (prefers-reduced-motion: no-preference) {
-  /* record: every line of text on the page types itself out at the same moment, left to right;
-     boxes, lines and pictures are there from the start */
+  /* record: every line of text and every picture on the page (the Main Page logo and map included)
+     is uncovered at the same moment, left to right; boxes and lines are there from the start */
   .animate-in[data-transition="record"] .content :is(h1, h2, h3, h4, p, li, th, td, dt, dd, figcaption,
-      summary, .hatnote, .infobox-title, .chain-side > .box-label, .letter-bar):not(.visually-hidden):not(.tr-skip) {
+      summary, .hatnote, .infobox-title, .chain-side > .box-label, .letter-bar, img):not(.visually-hidden):not(.tr-skip) {
     animation: tr-type var(--tr-time, .4s) steps(80, end) backwards;
   }
 }

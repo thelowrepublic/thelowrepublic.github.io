@@ -195,13 +195,13 @@
 
   setupDisclaimer();
   setupFilters();
-  // Record page transition: text below the first screen is shown straight away, so long
-  // pages do not animate hundreds of lines nobody can see yet.
+  // Record page transition: text and pictures below the first screen are shown straight away, so
+  // long pages do not animate hundreds of lines nobody can see yet.
   function setupTransition() {
     var html = document.documentElement;
     if (!html.classList.contains("animate-in") || html.getAttribute("data-transition") !== "record") return;
     var fold = window.innerHeight;
-    document.querySelectorAll(".content :is(h2, h3, h4, p, li, th, td, dt, dd, figcaption, summary, .hatnote)")
+    document.querySelectorAll(".content :is(h2, h3, h4, p, li, th, td, dt, dd, figcaption, summary, .hatnote, img)")
       .forEach(function (el) { if (el.getBoundingClientRect().top > fold) el.classList.add("tr-skip"); });
   }
 
