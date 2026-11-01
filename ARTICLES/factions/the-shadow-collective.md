@@ -72,7 +72,7 @@ There is no law underneath, only temperament. Some bosses behave like landlords 
 
 ```image
 image: "the-shadow-collective-death-watch.jpg"
-image_caption: ""
+image_caption: "Death Watch Mandalorian"
 artwork_author: "Adam Hartel"
 artwork_author_link: "https://www.artstation.com/adamhartel"
 ```
