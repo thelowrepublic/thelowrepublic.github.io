@@ -649,22 +649,22 @@ html.gate-open .gate {
 /* both ends are given: a clip cannot be animated to "no clip", only to an inset of 0 */
 @keyframes tr-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
 
-/* The Animations switch beside the search box: shown only when scripts run (html.can-animate) */
+/* The animations switch, right of the search box (on phones at the end of the logo row). It is
+   shown only when scripts run (html.can-animate). Clicking it shows a brief pop-up beneath it. */
+.anim-switch-wrap { display: none; position: relative; }
+.can-animate .anim-switch-wrap { display: block; }
 .anim-switch {
-  display: none; align-items: center; gap: 8px;
-  margin-left: auto; padding: 4px 2px;
-  font: inherit; font-size: 13px; color: var(--muted);
+  display: flex; align-items: center;
+  padding: 8px; margin: 0 -8px 0 -6px;
   background: none; border: 0; border-radius: 4px; cursor: pointer;
 }
-.can-animate .anim-switch { display: flex; }
-.can-animate .anim-switch + .search { margin-left: 0; }
-.anim-switch:hover { color: var(--text); }
-.anim-switch:focus-visible { outline: 2px solid var(--detail); outline-offset: 2px; }
+.anim-switch:focus-visible { outline: 2px solid var(--detail); outline-offset: -2px; }
 .anim-switch:disabled { cursor: default; opacity: .6; }
 .anim-switch-track {
   position: relative; width: 30px; height: 16px;
   background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
 }
+.anim-switch:hover .anim-switch-track { border-color: var(--muted); }
 .anim-switch-knob {
   position: absolute; top: 2px; left: 2px; width: 10px; height: 10px;
   background: var(--muted); border-radius: 50%;
@@ -673,9 +673,16 @@ html.gate-open .gate {
 /* drawn from the classes the <head> script sets, so it is right from the first frame */
 .can-animate:not(.animations-off):not(.motion-reduced) .anim-switch-knob { transform: translateX(14px); background: var(--detail); }
 .can-animate:not(.animations-off):not(.motion-reduced) .anim-switch-track { border-color: var(--detail); }
-@media (max-width: 640px) {
-  .anim-switch { font-size: 12.5px; gap: 6px; }
+.anim-toast {
+  position: absolute; top: calc(100% + 8px); right: -8px; z-index: 30;
+  margin: 0; padding: 6px 10px;
+  font-size: 13px; line-height: 1.3; white-space: nowrap; color: var(--text);
+  background: var(--surface); border: 1px solid var(--detail); border-radius: 4px;
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity .15s, transform .15s, visibility 0s .15s;
+  pointer-events: none;
 }
-@media (max-width: 359px) {
-  .anim-switch-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.anim-toast.show { opacity: 1; visibility: visible; transform: none; transition: opacity .15s, transform .15s; }
+@media (max-width: 640px) {
+  .anim-switch-wrap { order: 2; margin-left: auto; }
 }

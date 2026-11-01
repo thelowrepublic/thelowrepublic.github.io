@@ -121,6 +121,8 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `unknown_artist_images`, `unknown_artist_label` | Pictures by an unknown artist, and how they are credited. |
 | `disclaimer` | The notice visitors acknowledge before entering. After changing its text, **raise `version` by one**, so visitors who already acknowledged it see the new text. `show_on: all` shows it on whichever page a new visitor opens first; `main` only on the Main Page. |
 | `icon` | The browser-tab icon file. |
+| `page_transition` | The animation when a reader follows a link to another page: `record` (every line of text types itself out at once) or `none`. |
+| `page_transition_seconds` | How long that animation takes, in seconds (today 0.8). |
 | `main_page` | The Main Page map. |
 
 ---
@@ -132,6 +134,12 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 - **Page layouts** are the files in `WIKI-SITE/templates/`.
 
 These are code. If you change them, the next publish shows straight away whether anything broke.
+
+### The page animation
+
+When a reader follows a link to another page of the wiki, every line of text on the new page types itself out at the same moment, left to right, in 0.8 seconds (settings `page_transition` and `page_transition_seconds`). It does not play for visitors arriving from outside the wiki, on back/forward or reload, for a link to a section, or when the reader's device is set to reduce motion.
+
+Readers can turn it off with the small switch to the right of the search box (on phones, at the end of the logo row). A brief pop-up confirms "Site animations on" or "off", and the browser remembers the choice. Setting `page_transition: none` removes the animation and the switch for everyone.
 
 ---
 

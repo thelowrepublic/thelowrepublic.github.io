@@ -183,5 +183,27 @@ class Lists(unittest.TestCase):
         self.assertNotIn("vesk-tolloran", SITE.render_category("faction"))
 
 
+
+class PageTransition(unittest.TestCase):
+    def test_the_setting_reaches_every_page(self):
+        html = SITE.render_page("Test", "../../", "<p>Text.</p>")
+        self.assertIn('data-transition="record"', html)
+        self.assertIn(f'--tr-time: {float(CONFIG["page_transition_seconds"]):g}s', html)
+        self.assertIn('class="anim-switch"', html)
+
+    def test_none_or_a_wrong_value_turns_it_off(self):
+        for value in ("none", "spin"):
+            site = build.Site({**CONFIG, "page_transition": value}, Path(_TMP.name))
+            html = site.render_page("Test", "../../", "<p>Text.</p>")
+            self.assertNotIn("data-transition", html)
+            self.assertNotIn("anim-switch", html)
+            self.assertEqual(bool(site.warnings), value == "spin")
+
+    def test_seconds_out_of_range_fall_back(self):
+        site = build.Site({**CONFIG, "page_transition_seconds": 9}, Path(_TMP.name))
+        self.assertEqual(site.chrome("../../")["transition_seconds"], "0.4")
+        self.assertTrue(site.warnings)
+
+
 if __name__ == "__main__":
     unittest.main()

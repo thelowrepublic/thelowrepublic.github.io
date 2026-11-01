@@ -205,24 +205,33 @@
       .forEach(function (el) { if (el.getBoundingClientRect().top > fold) el.classList.add("tr-skip"); });
   }
 
-  // The Animations switch beside the search box: remembered in this browser, and off (and fixed)
-  // when the device asks for reduced motion.
+  // The animations switch right of the search box: remembered in this browser, off (and fixed)
+  // when the device asks for reduced motion. A click shows a brief pop-up with the new state.
   function setupAnimationSwitch() {
     var button = document.querySelector(".anim-switch");
     if (!button) return;
+    var toast = document.querySelector(".anim-toast");
     var html = document.documentElement;
     var reduce = html.classList.contains("motion-reduced");
+    var timer = null;
     function show() {
       var on = !reduce && !html.classList.contains("animations-off");
       button.setAttribute("aria-checked", on ? "true" : "false");
-      button.title = reduce ? "Animations are off because your device is set to reduce motion"
-                            : on ? "Page animations are on. Click to turn them off." : "Page animations are off. Click to turn them on.";
+      button.title = reduce ? "Site animations are off because your device is set to reduce motion"
+                            : "Site animations: " + (on ? "on" : "off");
+      return on;
     }
     if (reduce) button.disabled = true;
     button.addEventListener("click", function () {
       var off = html.classList.toggle("animations-off");
       try { localStorage.setItem("lowrepublic-animations", off ? "off" : "on"); } catch (e) {}
-      show();
+      var on = show();
+      if (toast) {
+        toast.textContent = "Site animations " + (on ? "on" : "off");
+        toast.classList.add("show");
+        clearTimeout(timer);
+        timer = setTimeout(function () { toast.classList.remove("show"); }, 1400);
+      }
     });
     show();
   }

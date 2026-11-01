@@ -115,10 +115,10 @@ main_page:
 # Animation when a reader follows a link to another page of the wiki: record (every line of text
 # types itself out at the same moment) or none. It never plays for visitors arriving from outside,
 # on back/forward or reload, or when their device asks for reduced motion, and readers can turn it
-# off with the Animations switch beside the search box.
+# off with the switch to the right of the search box.
 page_transition: record
 # How long the typing takes, in seconds.
-page_transition_seconds: 0.4
+page_transition_seconds: 0.8
 
 # Where the "Canon" tag beside a Background heading points.
 canon_link: "Canon and sources#How the articles use canon"

@@ -34,7 +34,7 @@
 <script>
 /* Page transition (config page_transition): only after following a link from another page of this
    wiki; never on arrival from outside, back/forward, reload or a #section link, when the reader has
-   switched animations off (the switch beside the search box), or when their device asks for
+   switched animations off (the switch right of the search box), or when their device asks for
    reduced motion. */
 (function () {
   var html = document.documentElement;
@@ -83,17 +83,19 @@
     <span></span><span></span><span></span>
   </button>
   <a class="logo" href="{{ root or './' }}"><img src="{{ root }}static/logo-wide.png" alt="{{ site_name }}" width="2100" height="213"></a>
-  {% if transition %}
-  <button class="anim-switch" type="button" role="switch" aria-checked="true">
-    <span class="anim-switch-label">Animations</span>
-    <span class="anim-switch-track" aria-hidden="true"><span class="anim-switch-knob"></span></span>
-  </button>
-  {% endif %}
   <form class="search" action="{{ root }}search/" role="search">
     <input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"
            role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-suggestions">
     <ul class="suggestions" id="search-suggestions" role="listbox" aria-label="Suggestions" hidden></ul>
   </form>
+  {% if transition %}
+  <div class="anim-switch-wrap">
+    <button class="anim-switch" type="button" role="switch" aria-checked="true" aria-label="Site animations">
+      <span class="anim-switch-track" aria-hidden="true"><span class="anim-switch-knob"></span></span>
+    </button>
+    <p class="anim-toast" role="status" aria-live="polite"></p>
+  </div>
+  {% endif %}
   </div>
 </header>
 <div class="layout">
