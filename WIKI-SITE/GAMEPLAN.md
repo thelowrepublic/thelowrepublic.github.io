@@ -289,6 +289,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D31 | Planet pictures (authors' files, 1 November 2026) | 18 WebP images in `ARTWORKS/`, named after their place articles, are each article's infobox image, credited explicitly to "Lucasfilm and Disney" as the format does for official art. Murkhana and Nal Kaddan have no picture yet; Galactic regions has no infobox. |
 | D32 | Emblem outlines (authors' instruction, 1 November 2026) | `the-shadow-collective.svg` and `the-nightsisters.svg` carry the same thin white outline as `mandalore.svg` (`stroke="#fff" stroke-width="4"` on their shape, with the viewBox widened by 2 units on each side so the outline is never clipped). |
 | D33 | Main Page video position (authors' instruction, 1 November 2026, on trial) | Moved between the logo and the opening text. `placement` in config `main_page.video` switches it: `below_logo`, or `before_history` for its first position above "The history". |
+| D34 | Final look-over (1 November 2026) | All 127 pages loaded at desktop and phone size: no script errors, failed requests, broken images or horizontal overflow. Every text style on 16 page states meets WCAG AA (lowest 6.72:1). Fixed: on phones the "Before you read" notice now stays above the opening text, and search snippets no longer include "Main article:" lines. |
 
 ---
 

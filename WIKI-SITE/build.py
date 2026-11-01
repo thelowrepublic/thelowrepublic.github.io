@@ -136,6 +136,7 @@ def search_text(fragment: str) -> str:
     vanish ("<a>Dathomir</a>." stays "Dathomir."), block tags become spaces."""
     fragment = re.sub(r"<figure\b.*?</figure>", " ", fragment, flags=re.S)
     fragment = re.sub(r"<h[1-6]\b.*?</h[1-6]>", " ", fragment, flags=re.S)  # headings are indexed apart
+    fragment = re.sub(r'<div class="hatnote".*?</div>', " ", fragment, flags=re.S)  # "Main article:" pointers
     fragment = re.sub(r"</?(?:a|strong|em|b|i|span|mark|sup|sub|code)\b[^>]*>", "", fragment)
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", fragment)).split())
 

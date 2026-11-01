@@ -623,6 +623,7 @@ html.gate-open .gate {
   /* lead first, then the infobox, then the contents, then the sections */
   .article-body { display: flex; flex-direction: column; }
   .article-body > * { order: 3; }
+  .article-body > .notice { order: -1; } /* a notice stays above everything, as on desktop */
   .article-body > .lead { order: 0; }
   .article-body > .infobox { order: 1; }
   .article-body > .toc-inline { order: 2; }
