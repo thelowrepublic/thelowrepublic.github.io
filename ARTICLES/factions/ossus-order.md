@@ -9,7 +9,7 @@ canon: false
 tags:
   affiliation: [Ossus Order]
   period: [15 BBY–0 ABY, Shadow War]
-redirects: [Ossus Council, Coleman Kcaj]
+redirects: [Ossus Council, Coleman Kcaj, "Temple Troopers#Temple Troopers"]
 infobox:
   image: "ossus-order.svg"
   image_caption: ""
@@ -38,6 +38,16 @@ Ossus is not absent from the [[The Shadow War|Shadow War]] and does not claim to
 ## Force-sensitive children
 
 Perhaps a hundred children with the potential to become Jedi are born in the Republic each year. Where a Force-sensitive child is found now decides what becomes of them. Near the Core the [[The Jedi Templars|Templars]] will hear of it first. In the Rim the [[The Shadow Collective|Collective]] usually hears first, and the child goes to [[Dathomir]], though the Ossus Order tries to find them first. The [[Order of Voss|Voss]] only accept people who seek them out through the Force.
+
+## Temple Troopers
+
+A Ministry of the Interior programme advertised the [[The Manumission Act#The ones still growing|clone children]] for adoption across the Core and the Inner Rim. It ran for nine years, and out of the pool of two million, sixty thousand were adopted by independent families, fifty thousand were adopted by adult clone troopers, and three thousand were adopted directly by the [[The Reckoning of the Jedi|Jedi Order]] when they moved. Some of the latter decided to establish the Temple Trooper regiment and still serve on [[Ossus]].
+
+They petitioned the Council at Ossus to let them form it out of genuine admiration for the Jedi, and a wish to repay them for their kindness. Many other [[Clones|clones]] have joined since, and the regiment is now about a thousand strong. The newest volunteers are the teenage children of clones from the nearby settlements, who are training so that they can serve as Temple Troopers once they are grown.
+
+None of them are Force-sensitive. They wear the combat armour that Jedi commanders wore early in the Clone Wars, which was decommissioned before the war ended, when the Jedi went back to their traditional robes. They are trained to use lightsabers as well as anyone who is not a Jedi can, which turns out to be quite well, and they carry stun blasters as a backup. They are also taught meditative techniques that help them keep a clear head in battle.
+
+The regiment guards the Temple on Ossus. On the rare occasions when Jedi Knights are sent into a fight, on Ossus or out in the [[Galactic regions#The Outer Rim|Outer Rim]], Temple Troopers go with them. None of them are made to serve, and all of them are more than willing to.
 
 ## In 2 ABY
 

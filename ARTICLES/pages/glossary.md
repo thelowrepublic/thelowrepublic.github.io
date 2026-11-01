@@ -74,7 +74,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Shadow War | The war between the Republic and the Shadow Collective since 0 ABY. The Senate never declared it. | [[The Shadow War]] |
 | Sith nexus | The Sith nexus on Yavin 4. On the third night of the battle it was used to amplify Dathomiri magick. | [[The Battle of Yavin#Six days]] |
 | Taozin nodules | Nodules that hide a wearer from Force detection. They are prohibited to Republic personnel and worn by perhaps a third of Republic Intelligence. | [[The Shadow War#What each side fields]] |
-| Temple Troopers | A regiment founded by clones the Jedi adopted. They still serve on Ossus. | [[Ossus#The clone settlements]] |
+| Temple Troopers | The security force of the Ossus Temple, a regiment founded by clones the Jedi adopted. | [[Ossus Order#Temple Troopers]] |
 | Traditionalists | The Senate stance that holds the Republic works, and that the problem is the sectors walking out. | [[Three Stances of the Senate]] |
 | Union, the | The Greater Seswenna Union. | [[The Greater Seswenna Union]] |
 | Vess case | Senator Ilai Vess's argument of 2 ABY that the attack on the licensed Yavin 4 dig had no legal authority. | [[The Secessions#The Vess case]] |

@@ -9,7 +9,7 @@ canon: false
 tags:
   affiliation: [Ossus Order, Jedi Order (before 0 ABY)]
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
-redirects: ["Temple Troopers#The clone settlements", "Jedi sheriffs#In 2 ABY"]
+redirects: ["Jedi sheriffs#In 2 ABY"]
 infobox:
   image: "ossus.webp"
   image_caption: ""
@@ -35,7 +35,7 @@ As the Jedi left Coruscant, they left an open invitation for all [[Clones|clone 
 
 The settlements were made both by clones and by [[Galactic regions#The Outer Rim|Outer Rim]] refugees seeking the protection of the Jedi.
 
-A Ministry of the Interior programme advertised the [[The Manumission Act#The ones still growing|clone children]] for adoption across the Core and the Inner Rim. It ran for nine years, and out of the pool of two million, sixty thousand were adopted by independent families, fifty thousand were adopted by adult clone troopers, and three thousand were adopted directly by the Jedi Order when they moved. Some of the latter decided to establish the Temple Trooper regiment and still serve on Ossus.
+Three thousand of the [[The Manumission Act#The ones still growing|clone children]] the Republic put up for adoption were adopted directly by the Jedi Order when it moved. Some of them founded the [[Ossus Order#Temple Troopers|Temple Troopers]], who still guard the Temple.
 
 ### The split, 0 ABY
 

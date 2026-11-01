@@ -61,7 +61,7 @@ Between 16 and 7 BBY the Republic turned more than five million clones out into 
 
 ## On Ossus
 
-As the Jedi left [[Coruscant]], they left an open invitation for all clone veterans to join them. Several thousand clones went immediately, and it's estimated that over the years [[Ossus]] has been a place where over eighty thousand clones lived out the rest of their days. By 2 ABY, around twenty thousand are still alive, albeit most elderly. Some started families, as several frontier villages sprang up on Ossus, at a respectful distance from the Jedi Temple. Some of the clone children the Order adopted decided to establish the [[Ossus#The clone settlements|Temple Trooper]] regiment and still serve on Ossus.
+As the Jedi left [[Coruscant]], they left an open invitation for all clone veterans to join them. Several thousand clones went immediately, and it's estimated that over the years [[Ossus]] has been a place where over eighty thousand clones lived out the rest of their days. By 2 ABY, around twenty thousand are still alive, albeit most elderly. Some started families, as several frontier villages sprang up on Ossus, at a respectful distance from the Jedi Temple. Some of the clone children the Order adopted decided to establish the [[Ossus Order#Temple Troopers|Temple Trooper]] regiment and still serve on Ossus.
 
 [[Shaak Ti]] is a liaison between the Temple and clone communities in those settlements, personally overseeing the wellbeing of remaining clones and doing her best to prolong their time with Force rituals. She has seen moderate success at it, though she did determine that children of clones are perfectly healthy and do not suffer from accelerated ageing or other health complications.
 
