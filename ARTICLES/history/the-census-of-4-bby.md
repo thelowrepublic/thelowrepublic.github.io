@@ -40,11 +40,11 @@ What the census also found is that the population decline had stopped. Sometime 
 
 The report was published in 4 BBY, and it caused quite a stir, though not anything close to the outrage that the [[The Kamino Findings|Kamino findings]] provoked. Small families had never been thought of as a condition; it was simply how things were. Now it had a beginning, and an end in sight.
 
-## What kind of war it is
+## In 2 ABY
 
 *Main article: [[The Shadow War#What kind of war it is]]*
 
-The galaxy is very large and almost entirely empty. Perhaps one star system in a hundred has a world anyone can live on, and most inhabited worlds hold a single town, a mine or a few farms. The census of 4 BBY counted about eighty billion people in the Republic, with everyone else in the charted galaxy coming to perhaps two billion more.
+The galaxy is very large and is still almost entirely empty. Perhaps one star system in a hundred has a world anyone can live on, and most inhabited worlds hold a single town, a mine or a few farms. The census of 4 BBY counted about eighty billion people in the Republic, with everyone else in the charted galaxy coming to perhaps two billion more.
 
 On ninety-five percent of worlds, nothing has ever happened that necessitated a soldier's intervention. The [[The Shadow War|Shadow War]] is fought over that meaningful five percent. When measured against the whole galaxy, every number in the war looks small, but when measured against the places that matter, it starts to make sense.
 
