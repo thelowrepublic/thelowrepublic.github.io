@@ -67,8 +67,13 @@ class RuleChecks(unittest.TestCase):
         self.assertIn("completeness", self.failed())
 
     def test_hidden_catches_a_name_on_another_page(self):
-        self.edit("category/characters/index.html", "</ul>", "<li>Vesk Tolloran</li></ul>")
+        self.edit("category/places/index.html", "</ul>", "<li>Vesk Tolloran</li></ul>")
         self.assertIn("hidden", self.failed())
+
+    def test_completeness_catches_the_hidden_article_missing_from_its_category(self):
+        self.edit("category/characters/index.html", 'class="category-title" href="../../wiki/vesk-tolloran/"',
+                  'class="category-gone" href="../../wiki/vesk-tolloran/"')
+        self.assertIn("completeness", self.failed())
 
     def test_hidden_catches_a_link(self):
         self.edit("wiki/maul/index.html", "</article>", '<a href="../vesk-tolloran/">?</a></article>')

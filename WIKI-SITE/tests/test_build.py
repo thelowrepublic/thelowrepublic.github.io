@@ -173,6 +173,12 @@ class Lists(unittest.TestCase):
         self.assertTrue(SITE.hidden)
         self.assertFalse(SITE.hidden & listed)
 
+    def test_hidden_articles_stay_on_their_category_page(self):
+        self.assertTrue(SITE.hidden_on_category_pages)
+        page = SITE.render_category("character")
+        self.assertIn('href="../../wiki/vesk-tolloran/"', page)
+        self.assertNotIn("vesk-tolloran", SITE.render_category("faction"))
+
 
 if __name__ == "__main__":
     unittest.main()

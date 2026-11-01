@@ -75,7 +75,7 @@ If the site does not look changed afterwards, your browser may be showing a stor
 
 Both are enforced on every publish:
 
-- **Hidden articles** (`hidden` in the settings; today Vesk Tolloran) appear in no list, category page, random article or sitemap, and no page links to them or names them, except their own page. They can still be found by search, by their redirect names and by their address.
+- **Hidden articles** (`hidden` in the settings; today Vesk Tolloran) appear in no list, random article or sitemap, and no page links to them or names them, except their own page and their own category page (Vesk is listed under Characters; the setting `hidden_on_category_pages` turns this off). They can still be found by search, by their redirect names and by their address.
 - **The Union quarantine** (`quarantine` in the settings): nothing the site generates by itself, such as the "In the history" box, ever links one of these eight articles to another. Links you write in the text are left as they are. The Art credits page may list them side by side.
 
 ---
@@ -115,6 +115,7 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `search_exclude` | Articles left out of search entirely (today The Entire History). |
 | `notices` | Boxes above an article's first paragraph, such as the "Before you read" box on The Entire History. Text may use `[[links]]`. |
 | `hidden` | Hidden articles (see the two special rules). |
+| `hidden_on_category_pages` | `true` lists hidden articles on their own category page (today Vesk on Characters); `false` leaves them off it too. |
 | `quarantine` | The Union quarantine's eight articles. |
 | `labels` | The names shown in infoboxes for each key (`senate_stance` → "Senate stance"). A pair gives the singular and plural. |
 | `canon_link` | Where the "Canon" tag beside a Background heading leads. |

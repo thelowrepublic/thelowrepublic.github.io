@@ -267,6 +267,8 @@ class Site:
         self.media: dict[str, dict | None] = {}
         self.media_written: set[Path] = set()
         self.hidden = set(config.get("hidden") or [])
+        # hidden articles may still appear on their own category page (config `hidden_on_category_pages`)
+        self.hidden_on_category_pages = bool(config.get("hidden_on_category_pages"))
         self.quarantine = set(config.get("quarantine") or [])
         # the masterdoc as one page; `sources` codes point into it (config `history_page`)
         self.history_page = str(config.get("history_page") or "The Entire History")
@@ -728,10 +730,12 @@ class Site:
 
     def render_category(self, key: str) -> str:
         """An alphabetical index of one category, grouped by letter (a leading "The" is
-        ignored for sorting), with period and region filters. Hidden articles are left out."""
+        ignored for sorting), with period and region filters. Hidden articles are left out,
+        unless config `hidden_on_category_pages` lists them on their own category page."""
         root = "../../"
         label = self.config["categories"][key]
-        arts = sorted((a for a in self.listed() if a.category == key), key=sort_key)
+        pool = self.articles.values() if self.hidden_on_category_pages else self.listed()
+        arts = sorted((a for a in pool if a.category == key), key=sort_key)
         groups: dict[str, list] = {}
         periods, regions = set(), set()
         for art in arts:

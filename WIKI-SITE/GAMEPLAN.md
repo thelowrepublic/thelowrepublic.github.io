@@ -199,7 +199,8 @@ WIKI-SITE/
 
 The hidden article and its redirect names are listed in `config.yml`. It will be:
 
-- **left out of:** every category page and filter, random article, sitemap, art credits page, backlinks ("What links here", if built), and every generated box or list. No page links to him on its own.
+- **left out of:** random article, sitemap, art credits page, backlinks ("What links here", if built), and every generated box or list. No other article links to him on its own.
+- **listed on:** the Characters category page, like any other character (D35; config `hidden_on_category_pages`).
 - **reachable by:** a direct URL (`/wiki/vesk-tolloran/`), the redirect stubs (`/wiki/agent-0006/`, `/wiki/moonraider/`), and search, **exactly like any other article**, suggestions and full text included (D7). The authors' aim is only that no article links to him directly, not that he is hard to find.
 
 One caveat outside the website's reach: the repository itself is public. Anyone browsing it on GitHub can see `characters/vesk-tolloran.md`, and `ARTICLES/handoff-wiki-website.md` names both secrets outright. If that matters, the options are to make the repository private (Pages on a private repository needs a paid GitHub plan), or to move the brief out of the repository. Your call; it does not change the build.
@@ -222,7 +223,7 @@ Every push to `main` runs, in order: the build, the rule checks (`tests/check_si
 |---|---|
 | links | Every internal link, image, stylesheet and font points at a file that exists, and every `#anchor` exists on its page. |
 | completeness | Every article, redirect, category page and utility page was built; each category page lists exactly its category's listed articles. |
-| hidden | No page links to a hidden article (every link is resolved, however it is written) or names it by its title or redirect names, except its own page and its redirect stubs. It is never in `random/`, and it is in search (D7). |
+| hidden | No page links to a hidden article (every link is resolved, however it is written) or names it by its title or redirect names, except its own page, its redirect stubs and its own category page (D35). It is never in `random/`, and it is in search (D7). |
 | quarantine | No generated box on a quarantined article links to another quarantined article. |
 | search | Search covers every article except those in `search_exclude` (D24). |
 | self-hosted | No page loads anything from another site, fonts included. |
@@ -273,7 +274,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D15 | Images by an unknown artist (authors' instruction) | Credited "Artwork by unknown artist" (`unknown_artist_label`), for the images listed in `unknown_artist_images`. The article keeps its empty artist keys, as the format requires. |
 | D16 | Main Page | The authors' text, untouched: the tall logo, the lead and quote (as wide as the cards below, authors' instruction), the first section as a full-width card, the next section in the left column and the rest stacked on the right. Phones show one column. |
 | D17 | "In the history" box | Passages are listed in the history's own order, each with its code ("X.4") and linking to that section of The Entire History. Register entries link to the figure's article, except an article's own entry (shown in bold), a hidden article, or another quarantined article on a quarantined page (plain text). |
-| D18 | Category pages | Alphabetical, ignoring a leading "The", grouped by letter with a jump bar; each entry shows the lead's first sentence; period and region filters. Hidden articles are left out. |
+| D18 | Category pages | Alphabetical, ignoring a leading "The", grouped by letter with a jump bar; each entry shows the lead's first sentence; period and region filters. Hidden articles are listed on their own category page (D35). |
 | D19 | The history page (authors' instruction, 1 November 2026) | Renamed from "The History" to **The Entire History** (`pages/the-entire-history.md`), with "The History" kept as a redirect. A "Before you read" box above its first paragraph says it holds the entire lore and advises reading the individual articles instead (`notices` in `config.yml`). It sits in the sidebar between Glossary and Canon and sources. |
 | D20 | Art credits page (authors' instruction, 1 November 2026) | Each artist with their link, image count and the articles their work appears in. Hidden articles are never listed. |
 | D21 | Fonts (authors' choice, 1 November 2026) | **Orbitron** for headings, infobox titles and the disclaimer title; **Barlow** for all other text. Both are self-hosted from `WIKI-SITE/static/fonts/` (SIL Open Font License, licence files alongside), so visitors' browsers make no requests to Google. |
@@ -290,6 +291,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D32 | Emblem outlines (authors' instruction, 1 November 2026) | `the-shadow-collective.svg` and `the-nightsisters.svg` carry the same thin white outline as `mandalore.svg` (`stroke="#fff" stroke-width="4"` on their shape, with the viewBox widened by 2 units on each side so the outline is never clipped). |
 | D33 | Main Page video position (authors' instruction, 1 November 2026, on trial) | Moved between the logo and the opening text. `placement` in config `main_page.video` switches it: `below_logo`, or `before_history` for its first position above "The history". |
 | D34 | Final look-over (1 November 2026) | All 127 pages loaded at desktop and phone size: no script errors, failed requests, broken images or horizontal overflow. Every text style on 16 page states meets WCAG AA (lowest 6.72:1). Fixed: on phones the "Before you read" notice now stays above the opening text, and search snippets no longer include "Main article:" lines. |
+| D35 | Vesk Tolloran on the Characters page (authors' instruction, 1 November 2026) | The hidden article is listed on its own category page like any other article (config `hidden_on_category_pages: true`). He stays out of random article, the sitemap, art credits and every generated box, and no other article links to him. The checks expect him on Characters and nowhere else. |
 
 ---
 

@@ -10,8 +10,9 @@ so the live site stays on its last good version.
                 that exists, and every #anchor exists on the page it points to
   completeness  every article, redirect, category and utility page was built, and
                 each category page lists exactly its category's listed articles
-  hidden        no page names or links to a hidden article, except its own page
-                and its redirect stubs; it is out of random/, but in search
+  hidden        no page names or links to a hidden article, except its own page,
+                its redirect stubs and (with `hidden_on_category_pages`) its own
+                category page; it is out of random/, but in search
   quarantine    no generated box on a quarantined article links to another one
   search        search covers every article except those in `search_exclude`
   self-hosted   no page loads anything from another site (fonts included)
@@ -130,8 +131,8 @@ class Checks:
                 failures.append(f"category page for {key} was not built")
                 continue
             listed = re.findall(r'class="category-title" href="\.\./\.\./([^"]+)"', self.text[page])
-            expected = sorted(a.url for a in site.articles.values()
-                              if a.category == key and a.title not in site.hidden)
+            expected = sorted(a.url for a in site.articles.values() if a.category == key
+                              and (site.hidden_on_category_pages or a.title not in site.hidden))
             if sorted(listed) != expected:
                 missing = set(expected) - set(listed)
                 extra = set(listed) - set(expected)
@@ -151,10 +152,13 @@ class Checks:
                 continue
             own = {self.out / art.url / "index.html"} | {
                 self.out / "wiki" / slug / "index.html" for slug, (a, _, _) in site.redirects.items() if a is art}
-            names = [title] + [str(r).partition("#")[0].strip() for r in art.meta.get("redirects") or []]
             targets = {p.resolve() for p in own}
+            allowed = set(own)
+            if site.hidden_on_category_pages and art.category in build.FOLDERS:
+                allowed.add(self.out / "category" / build.FOLDERS[art.category] / "index.html")
+            names = [title] + [str(r).partition("#")[0].strip() for r in art.meta.get("redirects") or []]
             for page, text in self.text.items():
-                if page in own:
+                if page in allowed:
                     continue
                 # every link, however it is written, is resolved to the page it opens
                 linked = any(self.resolve(page, ref)[0] in targets for ref in ATTR_RE.findall(text)

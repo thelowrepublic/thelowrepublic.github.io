@@ -45,6 +45,8 @@ categories:
 
 # Kept out of every generated list, index and backlink. Still reachable by URL, redirects and search.
 hidden: [Vesk Tolloran]
+# true: hidden articles are still listed on their own category page (authors' choice, 1 November 2026).
+hidden_on_category_pages: true
 
 # No generated feature may join two of these (handoff brief, "No automatic links between the Union articles").
 quarantine:
