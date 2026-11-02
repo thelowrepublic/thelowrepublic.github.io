@@ -44,13 +44,9 @@ The Compact stood for eight years and people used it. The Jedi at Ossus married.
 
 [[Luminara Unduli]] leads the Templars, taking on the old title of [[Yoda|Grand Master]]. She has never pretended her reasons are purely institutional. She trained [[Barriss Offee]], she did not see what was forming in her student, and she has said publicly that she should have. Every Force-sensitive the [[The Nightborn|Nightborn]] have taken in was taught by Barriss from what Unduli taught her first. A journalist asked her in 1 ABY whether the Templars existed to fight the [[The Shadow Collective|Shadow Collective]] or to fight her former student. She said both, and that she could see no useful distinction. [[Ki-Adi-Mundi]] and [[Stass Allie]] went with her and currently sit on her council. Both had been generals in the Clone Wars and neither had ever been reconciled to giving it up.
 
-Ki-Adi-Mundi and Stass Allie are both Templars, both on Unduli's council, both former generals who never made peace with the [[The Reckoning of the Jedi#Demilitarisation, 16 BBY|demilitarisation]] and have now reclaimed their former titles.
-
 ## In 2 ABY
 
 [[Tavia Orn]] is a Templar of the first adult intake, with minimal Force-sensitivity. She was a Republic Navy gunnery officer for six years and was tested on a whim during the post-Yavin sweeps. [[Ossus Order|Ossus]] would not have found her and would not have taken her.
-
-The Walkers of the [[The Path of Light|Path of Light]] are not Force-users. Four Walkers have ever been captured alive and all four tested flat. There is no corruption to detect, no Force signature. Templar investigators have walked through three fresh sites and reported an ordinary run of a room where somebody has died. Whatever the Path is doing, it is not being done by using the Force.
 
 [[Obi-Wan Kenobi]] is not a Templar and has refused to become one three times. He is not at Ossus, which regards his commission as precisely the error it left Coruscant to avoid. He holds a Republic rank. He commands Republic soldiers and a few dozen Jedi who followed him rather than either faction. He belongs to nothing.
 
