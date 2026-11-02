@@ -19,7 +19,7 @@ infobox:
   designation: CC-3636
   species: Human (clone)
   homeworld: "[[Kamino]]"
-  born: c. 32 BBY (physically about 68)
+  born: c. 32 BBY (physically about sixty)
   affiliation: ["[[The Shadow Collective]]"]
   position: Recruiter for Crimson Dawn
   formerly: [Commander of the 104th]
@@ -33,7 +33,7 @@ Wolffe commanded the Wolfpack in the 104th Battalion, under [[Plo Koon]]. The Se
 
 ## Discharge and Crimson Dawn
 
-Wolffe's chip was removed in 18 BBY, and he was discharged in 12 BBY at a physical age of about forty. No civilian employer would take him. [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] did, in 7 BBY. He became a recruiter.
+Wolffe's chip was removed in 18 BBY, and he was discharged in 12 BBY at a physical age of about forty. No civilian employer would take him. [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] did, in 7 BBY. He took the life-extension procedure and became a recruiter.
 
 The [[The Shadow Troopers|shadow troopers]] were among the first clones to go to [[Maul]], long before Wolffe began recruiting.
 
