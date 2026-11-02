@@ -34,6 +34,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Demilitarisation | The abolition of Jedi military rank in 16 BBY. | [[The Reckoning of the Jedi#Demilitarisation, 16 BBY]] |
 | Droid papers | At least nine studies, made between 21 and 15 BBY, which found sentience in many Separatist droids. The Investigative Office published them in 6 BBY. | [[The Republic Remade#The droid papers]] |
 | Emergency powers | Powers that expire after ninety days unless the Senate votes to keep them. They have been renewed eight times since Yavin. | [[The Shadow War#The Republic at war]] |
+| Ferrix Massacre | The Republic Corps' clearing of the Collective from Ferrix in 2 ABY, in which more than seven hundred civilians with no provable connection to the Collective died. The name comes from news channels outside the Republic. | [[Ferrix#Ferrix Massacre, 2 ABY]] |
 | First Marshal | The rank above marshal in the Grand Union Army. Deran Kolt holds it. | [[The Grand Union Army]] |
 | Greater Seswenna Union | Seswenna and eight neighbouring sectors, which left the Republic in 1 ABY. | [[The Greater Seswenna Union]] |
 | High Republic | The confident, expanding age of several centuries before. The Jedi still taught it to their younglings. | [[Main Page]] |

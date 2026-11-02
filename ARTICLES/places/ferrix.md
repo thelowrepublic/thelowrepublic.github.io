@@ -9,6 +9,7 @@ canon: false
 tags:
   affiliation: [Galactic Republic, Shadow Collective]
   period: [15 BBY–0 ABY, Shadow War]
+redirects: ["Ferrix Massacre#Ferrix Massacre, 2 ABY"]
 infobox:
   image: "ferrix.webp"
   image_caption: ""
@@ -18,7 +19,7 @@ infobox:
   held_by: [Administrators from the Corporate Sector]
 ---
 
-**Ferrix** is a world on the Hydian Way, run by corporate authority. The [[The Shadow Collective|Shadow Collective]] took over its corporate offices from within, after the [[The Galactic Republic|Republic]] had answered four years of complaints with instructional videos. Since Quelii seceded, a Republic garrison has cleared the Collective out and returned the world to its corporate administrators.
+**Ferrix** is a world on the Hydian Way, run by corporate authority. The [[The Shadow Collective|Shadow Collective]] took over its corporate offices from within, after the [[The Galactic Republic|Republic]] had answered four years of complaints with instructional videos. Since Quelii seceded, a Republic garrison has cleared the Collective out, in what became known as the Ferrix Massacre, and returned the world to its corporate administrators.
 
 ## History
 

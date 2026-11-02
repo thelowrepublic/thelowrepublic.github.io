@@ -27,17 +27,17 @@ infobox:
 
 ## Background
 
-Devaron is a jungle planet in the Colonies and the homeworld of the Devaronians. The Jedi Order built a temple deep in its jungles, the Temple of Eedit. In the Clone Wars the Republic kept an outpost on the planet, which the Separatists attacked. Savage Opress later attacked the temple and killed the Jedi Master Halsey and his Padawan, Knox.
+Devaron is a jungle planet in the Colonies and the homeworld of the Devaronians. The [[The Reckoning of the Jedi|Jedi Order]] built a temple deep in its jungles, the Temple of Eedit. In the Clone Wars the Republic kept an outpost on the planet, which the Separatists attacked. Savage Opress later attacked the temple and killed the Jedi Master Halsey and his Padawan, Knox.
 
 ## History
 
-In the first months of 19 BBY, the last year of the Clone Wars, Devaron went through a very heated election for governor. The war was at its height in the eyes of the populace, and the leading candidate was Malssanah Rashtrin of the populist party. She and her husband, Cruveth Rashtrin, were assassinated by hired killers. The Republic found the killers and put them to death, and they confessed that they had worked on a Separatist contract.
+In the first months of 19 BBY, the last year of the Clone Wars, Devaron went through a very heated election for governor. The war was at its height in the eyes of the populace, and the leading candidate was Malssanah Rashtrin of the populist party. She and her husband, Cruveth Rashtrin, were assassinated by hired killers. The [[The Galactic Republic|Republic]] found the killers and put them to death, and they confessed that they had worked on a Separatist contract.
 
 The couple's daughter, Heth Rashtrin, was six years old. She was given into the care of her aunt, Lura Brezvar, Malssanah's sister, who was then working as an assistant in Malssanah's office.
 
 ## In 2 ABY
 
-Devaron and the whole Duluur sector, which contains it, are staunch supporters and members of the [[The Galactic Republic|Republic]]. Lura Brezvar is now the senator for the Duluur sector, and she holds the [[Three Stances of the Senate#The Core Isolationists|Core Isolationist]] position. In public speeches she has said that she lost her sister because of the Outer Rim's insidious greed and violence. The Republic, she argues, should protect its most loyal worlds instead of dividing its attention towards those that would tear it apart for their own gain.
+Devaron and the whole Duluur sector, which contains it, are staunch supporters and members of the [[The Galactic Republic|Republic]]. Lura Brezvar is now the senator for the Duluur sector, and she holds the [[Three Stances of the Senate#The Core Isolationists|Core Isolationist]] position. In public speeches she has said that she lost her sister because of the [[Galactic regions#The Outer Rim|Outer Rim]]'s insidious greed and violence. The Republic, she argues, should protect its most loyal worlds instead of dividing its attention towards those that would tear it apart for their own gain.
 
 ## See also
 

@@ -32,7 +32,9 @@ The corporations that govern the Corporate Sector had been losing ground to the 
 
 ## Ferrix, 2 ABY
 
-[[Ferrix]] changed that. When [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic suddenly needed a foothold on the Hydian Way, and by the third month of 2 ABY it had taken Ferrix back by force. No Collective asset on the planet survived, and the world was handed to a new set of administrators from the Corporate Sector. The Republic described the operation as a follow-up to requests for aid from years before.
+*Main article: [[Ferrix#Ferrix Massacre, 2 ABY]]*
+
+[[Ferrix]] changed that. When [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic suddenly needed a foothold on the Hydian Way, and by the third month of 2 ABY it had taken Ferrix back by force. No Collective asset on the planet survived, more than seven hundred civilians died with them, and the world was handed to a new set of administrators from the Corporate Sector. The Republic described the operation as a follow-up to requests for aid from years before.
 
 The boards took note. Removing the Collective from a corporate world by force now had a precedent, and the Republic had set it. They also knew that the Republic would only do it again when it needed another world for itself.
 

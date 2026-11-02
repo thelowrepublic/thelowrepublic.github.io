@@ -21,7 +21,7 @@ infobox:
   position: Recruitment and supply smuggling across eleven Rim sectors
 ---
 
-**Cassian Andor** runs recruitment and supply smuggling for the [[The Shadow Collective|Shadow Collective]] across eleven Rim sectors. He turned to [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] after four years of asking the [[The Galactic Republic|Republic]] for help against the corporate authority on [[Ferrix]]. After Quelii seceded, the Republic came to Ferrix at last and exterminated the Collective's assets there.
+**Cassian Andor** runs recruitment and supply smuggling for the [[The Shadow Collective|Shadow Collective]] across eleven Rim sectors. He turned to [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] after four years of asking the [[The Galactic Republic|Republic]] for help against the corporate authority on [[Ferrix]]. After Quelii seceded, the Republic came to Ferrix at last and [[Ferrix#Ferrix Massacre, 2 ABY|exterminated the Collective's assets there]].
 
 ## Ferrix
 
@@ -29,7 +29,7 @@ Cassian Andor spent four years asking the Republic to look into the blatant corr
 
 ## The Collective
 
-To repay the Crimson Dawn, Cassian runs Collective recruitment and supply smuggling across eleven Rim sectors and is very good at it. After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic finally showed up on Ferrix to set up a garrison. The [[The Republic Corps|Republic Corps]] found out about the criminals running the planet and quickly exterminated all Collective assets on Ferrix, handing the planet back to a new batch of paper pushers from the Corporate Sector. It was clear they needed a foothold along the Hydian Way, but they defended their actions as 'following up on requests for aid from years ago'.
+To repay the Crimson Dawn, Cassian runs Collective recruitment and supply smuggling across eleven Rim sectors and is very good at it. After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic finally showed up on Ferrix to set up a garrison. The [[The Republic Corps|Republic Corps]] found out about the criminals running the planet and quickly [[Ferrix#Ferrix Massacre, 2 ABY|exterminated all Collective assets on Ferrix]], handing the planet back to a new batch of paper pushers from the Corporate Sector. It was clear they needed a foothold along the Hydian Way, but they defended their actions as 'following up on requests for aid from years ago'.
 
 ## See also
 
