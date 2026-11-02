@@ -87,7 +87,7 @@ The [[The Hutt Clans|Hutt Clans]] deal with the Shadow Collective constantly and
 
 ## Why it is winning the argument
 
-The Republic is a system of rules that has spent twenty years learning to tie its own hands. Anything it attempts to do has to survive an investigating office, a ninety-day vote and four committees. Its charter works. That is the trouble. It works at the speed it was built to work at, and it was built by people whose worst fear was a government that could move too fast.
+The Republic is a system of rules that has spent twenty years learning to tie its own hands. Anything it attempts to do has to survive an investigating office, a ninety-day vote and four committees. It works at the speed it was built to work at, and it was built by people whose worst fear was a government that could move too fast.
 
 The Shadow Collective has no charter. It takes in whatever the Republic throws out. It changes its roster, bosses and bases week to week. It holds no ground it cannot walk away from and has never once had to explain itself to anybody. In a galaxy of law, orders and structures, that would be a weakness. In this one, chaos has been their strength for many years.
 
