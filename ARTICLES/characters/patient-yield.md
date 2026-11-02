@@ -24,13 +24,15 @@ infobox:
 
 ## History
 
-Patient Yield was a Trade Federation battleship, gutted in 19 BBY, towed into the Gordian Reach in 9 BBY and stripped to its foundries. Its control core was never shut down and has only been expanded and upgraded with years.
+Patient Yield was a Trade Federation battleship, gutted in 19 BBY, then found by the Collective in 9 BBY. It was towed to an undisclosed system and stripped to its foundries. Its control core was never shut down and has only been expanded and upgraded with years.
 
 ## In 2 ABY
 
 Patient Yield has run droid refit for eleven years, files its production reports on schedule, and has three thousand organic workers under it. Gizor Dellso, a Geonosian roboticist of all people, reports to it, seemingly unaware of the irony of the situation. Or perhaps he does, but there is a good reason he is doing it. 
 
-Patient Yield has been retrofitted with so many illegal, unstable and experimental modules that its central mainframe is now off-limits to all organics for safety reasons and is surrounded by a ten-metre-thick sarcophagus of anti-radiation insulation. The control core has clearly surpassed its original design, but nobody has yet established what it has become. The few droids that have interfaced with it directly describe the experience as "finally understanding what faith is."
+The lucrehulk core has been retrofitted with so many illegal, unstable and experimental modules that its central mainframe is now off-limits to all organics for safety reasons and is surrounded by a ten-metre-thick insulating sarcophagus. The temperature within the containment must be constantly regulated to one degree above absolute zero, otherwise the mainframe will instantly start melting. That can only be achieved by utilising a complex setup of gases and pressure that will instantly kill and dissolve most organic beings.
+
+The control core has clearly surpassed its original design, but nobody has yet established what it has become. The few droids that have interfaced with it directly describe the experience as "finally understanding what faith is."
 
 ## See also
 
