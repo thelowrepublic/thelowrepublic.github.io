@@ -32,7 +32,7 @@ Sarn Vekh ran spice distribution into the poorest systems of the Rim for ninetee
 
 ## In 2 ABY
 
-The Syndicate calls the Shadow Pykes cast-offs. The Collective calls them turncoats and has never stopped watching them. Their work now is dismantling the routes Vekh spent nineteen years building. They do it system by system, against men they used to work with.
+The Syndicate calls the Shadow Pykes cast-offs. The Collective calls them turncoats and has never stopped watching them. Their work now is dismantling the routes Vekh spent nineteen years building. They do it system by system, against men they used to work with. The routes still run, because the main Syndicate body took them to the Hutts. In the poorest systems of the Rim, the Shadow Pykes now fight the spice trade harder than the Republic ever has.
 
 ## See also
 

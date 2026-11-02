@@ -27,7 +27,7 @@ Saw Gerrera is a Human from Onderon. In the Clone Wars he and his sister Steela 
 
 ## Career
 
-Saw Gerrera fought the [[The Long War|Confederacy]], then the droid remnants, then the [[The Shadow Collective|Shadow Collective]], with steadily less regard for the difference between fighters and the people they hide among. The [[The Galactic Republic|Republic]] publicly disavows Gerrera's organisation and describes them as no better than the Collective. Behind closed doors, at least three different senators have paid Gerrera to continue his operations.
+Saw Gerrera fought the [[The Long War|Confederacy]], then the droid remnants, then the [[The Shadow Collective|Shadow Collective]], with steadily less regard for the difference between fighters and the people they hide among. The [[The Galactic Republic|Republic]] publicly disavows Gerrera's organisation and describes them as no better than the Collective. Behind closed doors, at least three different senators have paid Gerrera to continue his operations. Among the Rim's poor, his name is cursed more often than Maul's.
 
 ## See also
 

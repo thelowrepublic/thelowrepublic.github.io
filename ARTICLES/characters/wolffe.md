@@ -39,7 +39,7 @@ The [[The Shadow Troopers|shadow troopers]] were among the first clones to go to
 
 ## In 2 ABY
 
-Over half the clone veterans on Collective payroll came in, directly or indirectly, through Wolffe. He arrives with a contract, a medical plan, a life extension treatment and a rank. And he is a fellow clone.
+Over half the clone veterans on Collective payroll came in, directly or indirectly, through Wolffe. He arrives with a contract, a medical plan, a life extension treatment and a rank. And he is a fellow clone. He has never claimed the Collective is clean, but he says it is the only side that kept its promises to his brothers.
 
 ## See also
 

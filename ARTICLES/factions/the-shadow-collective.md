@@ -48,7 +48,7 @@ Between 16 and 7 BBY the Republic turned more than five million [[Clones|clones]
 
 A large number of Shadow Collective ground units are commanded by men the Republic grew, freed, and then could not find a use for. Many Collective soldiers are rigorously trained by those same men, and getting deadlier by the year. The Collective also sponsors [[Clones#Ko Sai's procedure|Ko Sai's procedure]] for all clones working for it. It is genome work followed by months of drug therapy to make the changes hold. It's done once, and after that every man takes a maintenance course of pills priced so low that nobody notices it. Naturally, the price is not the issue, but the availability is. Even if a clone purchases the procedure with independent funds, he will need to keep returning to the Collective for refills. For an old man, the procedure halves their accelerated ageing. If done when the clone is young enough, it returns him to ordinary ageing altogether.
 
-The rest of the recruiting pool is simpler. Rim worlds that the [[The Long War#The Concord of Raxus, 15 BBY|Concord]] promised self-rule and the Senate then forgot to pay for. Separatist officers pardoned straight into unemployment. Mandalorians who have lost three civil wars. And the ordinary poor of countless systems, who are offered solid wages for work that carries a real chance of dying, which is more than the Republic offers them at all.
+The rest of the recruiting pool is simpler. Rim worlds that the [[The Long War#The Concord of Raxus, 15 BBY|Concord]] promised self-rule and the Senate then forgot to pay for. Separatist officers pardoned straight into unemployment. Mandalorians who have lost three civil wars. And the ordinary poor of countless systems, who are offered solid wages for work that carries a real chance of dying, which is more than the Republic offers them at all. Desperation brought most of them in. What has kept many of them is the discovery that, inside the Collective, they have the power to make sure the same desperation never reaches anyone else.
 
 ## The droid forces
 
@@ -91,6 +91,8 @@ The Republic is a system of rules that has spent twenty years learning to tie it
 
 The Shadow Collective has no charter. It takes in whatever the Republic throws out. It changes its roster, bosses and bases week to week. It holds no ground it cannot walk away from and has never once had to explain itself to anybody. In a galaxy of law, orders and structures, that would be a weakness. In this one, chaos has been their strength for many years.
 
+It has also become a banner. Where a governor is corrupt, a board is cruel or the Republic does not answer, the Collective is the only power that can push back, and people who would never have called themselves criminals join it for that reason alone. Inside it, the line between a gangster and a rebel has never been harder to draw.
+
 ## The Shadow War
 
 *Main article: [[The Shadow War]]*
@@ -98,6 +100,8 @@ The Shadow Collective has no charter. It takes in whatever the Republic throws o
 The Shadow Collective has no military targets to lose because it has no military assets to defend. No vital worlds. No fleet worth engaging. No depot that matters. What it has instead is presence. Every settled world is a source of money and recruits. A dock that skims cargo. A magistrate on retainer. A quartermaster selling parts out of a garrison store. None of that can be bombed. They latch onto independent infrastructure, embed themselves into it and then benefit from it. They want the Rim booming with commotion, industry and trade, and have even invested their own funds to facilitate it, with the bulk of the credits going into charting new hyperspace routes. They stopped thinking like criminals and started to think like an empire, and it's working.
 
 The difference in approach follows from the difference in cost. The Republic has to be everywhere and can only afford to pick targets. The Collective has no budget unless it actively extorts a population, so it fights only where it's already profitable to stay.
+
+The war has undone much of what the Collective was becoming. The Republic draws no line between a boss who keeps a hospital open and one who kills for hire, and its bounty list pays the same for both. The landlords now spend on guns what they used to spend on charity, and the warlords have found that a war makes them useful again.
 
 ```image
 image: "the-shadow-collective-black-sun.jpg"

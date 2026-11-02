@@ -71,7 +71,7 @@ The [[The Shadow Collective|Shadow Collective]]'s strength is not exotic. Its st
 
 A large number of Shadow Collective ground units are commanded by men the Republic grew, freed, and then could not find a use for. Many Collective soldiers are rigorously trained by those same men, and getting deadlier by the year.
 
-The [[The Shadow Troopers|shadow troopers]] were among the first clones to go to [[Maul]], long before [[Wolffe]] began recruiting. Wolffe joined Crimson Dawn in 7 BBY and became a recruiter. Over half the clone veterans on Collective payroll came in, directly or indirectly, through him. Over the years, most clones that joined the Collective took on a tradition to paint over their old legion's colours with the black and red of the shadow troopers.
+The [[The Shadow Troopers|shadow troopers]] were among the first clones to go to [[Maul]], long before [[Wolffe]] began recruiting. Wolffe joined Crimson Dawn in 7 BBY and became a recruiter. Over half the clone veterans on Collective payroll came in, directly or indirectly, through him. Over the years, most clones that joined the Collective took on a tradition to paint over their old legion's colours with the black and red of the shadow troopers. For many of them the Collective was the first employer since their decanting that asked what they wanted. Some now guard the worlds they are posted to as fiercely as they once guarded the Republic.
 
 [[Nadi Orl]] is the Collective's chief of accounts. Thanks to her, the Collective pays on time in hundreds of systems, and over eighty thousand elderly clones receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out.
 

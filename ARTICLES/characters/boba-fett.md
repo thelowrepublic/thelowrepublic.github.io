@@ -29,7 +29,7 @@ Boba Fett is an unaltered clone of the bounty hunter Jango Fett, born on [[Kamin
 
 ## In 2 ABY
 
-Boba Fett is the most successful bounty hunter of the age, in a market swollen by Confederate fugitives, indicted executives, and since 0 ABY a Republic price list for Shadow Collective personnel that pays better than any government contract in history. He is possibly the happiest man alive.
+Boba Fett is the most successful bounty hunter of the age, in a market swollen by Confederate fugitives, indicted executives, and since 0 ABY a Republic price list for Shadow Collective personnel that pays better than any government contract in history. The list does not ask what a name on it has done, only whom it works for, and Fett has collected on dock clerks and clinic staff as readily as on killers. He is possibly the happiest man alive.
 
 ## See also
 

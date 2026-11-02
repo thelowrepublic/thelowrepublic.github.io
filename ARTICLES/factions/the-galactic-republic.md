@@ -96,7 +96,7 @@ The Republic's strength was never its army or fleet. It was that a thousand sect
 
 After the Convention, the Outer Rim was still short of seats and short of policing, and still right in believing that the Core never thought about it. The Outer Rim sends almost no recruits to the Corps, because working for the Collective just pays better there.
 
-The Republic can say that [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]]'s government is exploited by a criminal organisation. This seems entirely true, but forty years of Republic negligence in the Outer Rim would only make that argument a statement of the Republic's own incompetence.
+The Republic can say that [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]]'s government is exploited by a criminal organisation. This seems entirely true, but forty years of Republic negligence in the Outer Rim would only make that argument a statement of the Republic's own incompetence. Across much of the Rim, joining the Collective has become the only form of protest that gets an answer. The Republic still has people who would die for its noble ideals, and many have, but out there it is the other kind of official that people remember.
 
 ## In 2 ABY
 

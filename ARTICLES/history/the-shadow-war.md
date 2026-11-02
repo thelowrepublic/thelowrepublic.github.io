@@ -34,6 +34,8 @@ The [[The Shadow Collective|Shadow Collective]] has no military targets to lose 
 
 So the fighting is done by auditors, customs inspectors and [[The Judicial Forces and the Sector Rangers|sector rangers]], with the occasional raid. It is done everywhere at once and it never stops. A citizen of the [[Galactic regions#The Core|Core]] can go a lifetime without seeing a battle and will pay Collective money every week without knowing it, in the price of shipping and the cost of a permit. This is why the war is unpopular in a way the Clone Wars never were. There is no line on a map that is moving. There is only the discovery, every few months, that something you relied on had already been seized.
 
+The war has set the Collective back as well. Before Yavin, parts of it were slowly turning into something the Republic could have negotiated with. Since 0 ABY, nobody on either side has had a reason to try.
+
 The galaxy is very large and almost entirely empty. Perhaps one star system in a hundred has a world anyone can live on, and most inhabited worlds hold a single town, a mine or a few farms. The [[The Census of 4 BBY|census of 4 BBY]] counted about eighty billion people in the Republic, with everyone else in the charted galaxy coming to perhaps two billion more. On ninety-five percent of worlds, nothing has ever happened that necessitated a soldier's intervention. The Shadow War is fought over that meaningful five percent. When measured against the whole galaxy, every number in the war looks small, but when measured against the places that matter, it starts to make sense.
 
 ## Why Quelii cannot be attacked

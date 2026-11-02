@@ -52,7 +52,7 @@ Their armour is a mass-produced copy of the old Phase II clone pattern, from blu
 
 ## Operations
 
-On the ground the Alliance has been effective. On every world it has re-taken the Collective has not returned yet, though the old corporate quotas have. Every operation in the Alliance's reports is an operation against the Collective, but it is the Alliance that decides what counts as the Collective. On two mining worlds, that has included a strike, classified as 'Collective agitation'.
+On the ground the Alliance has been effective. On every world it has re-taken the Collective has not returned yet, though the old corporate quotas have. Every operation in the Alliance's reports is an operation against the Collective, but it is the Alliance that decides what counts as the Collective. On two mining worlds, that has included a strike, classified as 'Collective agitation'. In parts of the Rim, 'Collective' has become the boards' word for anyone who stands up to them, and a good many of those people have since decided to earn the name.
 
 ## The Republic and the Alliance
 
