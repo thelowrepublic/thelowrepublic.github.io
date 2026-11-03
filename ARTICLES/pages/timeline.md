@@ -235,5 +235,5 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - Seven weeks after Quelii left, the Chommell sector filed a petition to secede.
 - In the sixth month Quelii and the Gordian Reach formed the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Dathomir-Yavin Accord]].
 - After Quelii seceded, the Republic came to [[Ferrix]] and exterminated every Collective asset there. More than seven hundred civilians died in what news channels outside the Republic called the Ferrix Massacre. See [[Ferrix#Ferrix Massacre, 2 ABY]].
-- In the ninth month Thesme, D'Astan and Kalamith stopped remitting taxes to the Republic.
+- In the ninth month Thesme, D'Astan and Kalamith stopped remitting taxes to the Republic. None of the three had been given a seat in the Senate for decades.
 - By the end of the year, more than sixty secession petitions were in review. The emergency powers had been renewed eight times. Three motions had been filed to remove Dal. See [[The Secessions#The petitions]].

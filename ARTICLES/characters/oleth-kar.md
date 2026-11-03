@@ -39,7 +39,7 @@ Senator Ilai Vess of the Quelii sector, which contains [[Dathomir]], stood up in
 
 Gordian Reach seceded in the third month of 2 ABY quietly and without fanfare. In the following months, Oleth Kar authored the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Dathomir-Yavin Accord]].
 
-Quelii and the Gordian Reach officially signed the Accord in the sixth month of 2 ABY, forming a defensive and economic alliance. Three months later, the Thesme, D'Astan and Kalamith sectors (which lie between Quelii and the Gordian Reach) stopped remitting taxes towards the Republic. Rumours circulate of increased Collective presence in those sectors and an expanded alliance pact being drafted by Kar. Everyone knows what this means, but the Republic won't acknowledge it, because it would mean the Republic just lost control of another vital hyperspace lane.
+Quelii and the Gordian Reach officially signed the Accord in the sixth month of 2 ABY, forming a defensive and economic alliance. Three months later, the Thesme, D'Astan and Kalamith sectors (which lie between Quelii and the Gordian Reach) stopped remitting taxes towards the Republic. None of the three has been given a seat in the Senate for decades. Rumours circulate of increased Collective presence in those sectors and an expanded alliance pact being drafted by Kar. Everyone knows what this means, but the Republic won't acknowledge it, because it would mean the Republic just lost control of another vital hyperspace lane.
 
 ## In 2 ABY
 
