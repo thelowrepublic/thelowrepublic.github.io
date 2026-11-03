@@ -20,7 +20,7 @@ infobox:
   position: Runs the Collective's droid refit
 ---
 
-**Patient Yield** is the control core of a gutted Trade Federation battleship in the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Gordian Reach]]. For eleven years it has run droid refit for the [[The Shadow Collective|Shadow Collective]], and [[Gizor Dellso]] reports to it.
+**Patient Yield** is the control core of a gutted Trade Federation battleship housed in an undisclosed location. For eleven years it has run droid refit for the [[The Shadow Collective|Shadow Collective]], and [[Gizor Dellso]] reports to it.
 
 ## History
 
