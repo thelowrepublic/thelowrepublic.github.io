@@ -12,10 +12,10 @@ tags:
   region: [Outer Rim]
 redirects: [Hondo]
 infobox:
-  image: ""
+  image: "hondo-ohnaka.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Sveta Nero"
+  artwork_author_link: "https://www.artstation.com/snero"
   name: Hondo Ohnaka
   species: Weequay
   born: 60 BBY (aged 62)

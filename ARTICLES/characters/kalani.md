@@ -12,10 +12,10 @@ tags:
   region: [Outer Rim]
 redirects: [General Kalani]
 infobox:
-  image: ""
+  image: "kalani.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Colin Searle"
+  artwork_author_link: "https://www.artstation.com/colinsearle"
   name: Kalani
   model: Super tactical droid
   affiliation: ["[[The Shadow Collective]]"]

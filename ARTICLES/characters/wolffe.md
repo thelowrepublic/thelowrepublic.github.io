@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
 redirects: [CC-3636, Commander Wolffe]
 infobox:
-  image: ""
+  image: "wolffe.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Shane Molina"
+  artwork_author_link: "https://www.artstation.com/shanemolina"
   name: Wolffe
   designation: CC-3636
   species: Human (clone)

@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
   region: [Core]
 infobox:
-  image: ""
+  image: "ki-adi-mundi.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Abner Koenigzdorf"
+  artwork_author_link: "https://www.artstation.com/abnerkoeni"
   name: Ki-Adi-Mundi
   species: Cerean
   affiliation: ["[[The Jedi Templars]]"]

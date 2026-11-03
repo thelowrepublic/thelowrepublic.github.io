@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
   region: [Outer Rim]
 infobox:
-  image: ""
+  image: "gar-saxon.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Ferenc Patkós"
+  artwork_author_link: "https://www.artstation.com/drenusart"
   name: Gar Saxon
   species: Human
   affiliation: ["[[The Shadow Collective]]", "[[Mandalore#The armouries|Death Watch]]"]

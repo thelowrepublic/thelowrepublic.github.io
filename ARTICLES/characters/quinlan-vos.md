@@ -10,10 +10,10 @@ tags:
   affiliation: [Jedi Order (before 0 ABY), Jedi Templars]
   period: [Before 19 BBY, Shadow War]
 infobox:
-  image: ""
+  image: "quinlan-vos.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Artur Rocha"
+  artwork_author_link: "https://www.artstation.com/artur"
   name: Quinlan Vos
   species: Kiffar
   born: 57 BBY (aged 59)

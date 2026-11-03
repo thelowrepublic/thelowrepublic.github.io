@@ -11,10 +11,10 @@ tags:
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Mid Rim, Outer Rim]
 infobox:
-  image: ""
+  image: "ruko-tass.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Kevin Cassidy"
+  artwork_author_link: "https://www.instagram.com/kevin_cassidy/"
   name: Ruko Tass
   species: Gungan
   homeworld: "[[Naboo]]"

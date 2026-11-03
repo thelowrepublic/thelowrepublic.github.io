@@ -10,10 +10,10 @@ tags:
   affiliation: [Independent]
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
 infobox:
-  image: ""
+  image: "saw-gerrera.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Gunship Revolution"
+  artwork_author_link: "https://www.artstation.com/gunrev"
   name: Saw Gerrera
   species: Human
   homeworld: Onderon

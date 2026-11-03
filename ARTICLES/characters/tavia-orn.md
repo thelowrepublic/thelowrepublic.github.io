@@ -10,10 +10,10 @@ tags:
   affiliation: [Jedi Templars, Galactic Republic]
   period: [15 BBY–0 ABY, Shadow War]
 infobox:
-  image: ""
+  image: "tavia-orn.webp"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Mairon"
+  artwork_author_link: "https://www.tumblr.com/maironarts"
   name: Tavia Orn
   species: Cathar
   born: 33 BBY (aged 35)
