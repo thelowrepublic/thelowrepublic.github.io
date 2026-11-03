@@ -48,7 +48,7 @@ The Convention also chose to say nothing whatsoever about how a sector might lea
 
 A Chancellor can be removed by the Senate on a two-thirds vote. Vehn is the only one it has ever managed. He was impeached in 11 BBY, when the Investigative Office exposed the [[The Republic Remade#The Geonosis Programme|Geonosis Programme]]. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Three Stances of the Senate#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
 
-Dal is a Rodian and a [[Three Stances of the Senate|Traditionalist]]. Dal was elected six weeks after [[The Battle of Yavin|Yavin]] on an open promise of revenge. He won with one sentence: the Republic would find the people responsible for Yavin and finish them. Two years on he has finished nobody.
+Dal is a Crystanian Rybet and a [[Three Stances of the Senate|Traditionalist]]. Dal was elected six weeks after [[The Battle of Yavin|Yavin]] on an open promise of revenge. He won with one sentence: the Republic would find the people responsible for Yavin and finish them. Two years on he has finished nobody.
 
 ## The Senate
 
