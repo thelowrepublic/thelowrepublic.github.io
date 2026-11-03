@@ -61,7 +61,7 @@ They are right that the charter works as written and right that the secessions b
 
 ## In 2 ABY
 
-Two years on, Dal has finished nobody. He understood the shape of this war inside six months and has only ever said so in committee. He has renewed the emergency powers eight times, never relenting in his warmongering.
+A Chancellor for two years now, Dal has not delivered on his promise yet. He has renewed the emergency powers eight times, never relenting in his warmongering.
 
 ## See also
 
