@@ -4,7 +4,7 @@ category: faction
 tier: standard
 batch: 3
 status: approved
-sources: [XIII.9, "R:Dek Kester", "R:Do'Kass", "R:Mas Amedda"]
+sources: [XIII.9, "R:Do'Kass", "R:Mas Amedda"]
 canon: false
 tags:
   affiliation: [Path of Light]
@@ -48,8 +48,6 @@ The second is the victims. Of the sixty-odd killings, investigators have gone on
 
 [[Do'Kass]] is a Jedi Knight who works for [[Wullf Yularen]]. Since 1 ABY he has worked almost only on the Path of Light case on [[Coruscant]]. He does not think it is a network. He thinks that most of it is one person.
 
-Twenty-four of the thirty-odd Path killings on Coruscant are the work of [[Dek Kester]]. He is a scene analyst of the [[The Galactic Republic#The Investigative Office|Investigative Office]]. The Path runs at seven in ten accuracy. Kester runs at ten in ten because he doesn't trust the Force; he trusts in his own skill to find a monster to hunt. He has processed four Path scenes in his official job, including one of his own. Nobody suspects him but Do'Kass, who cannot yet prove anything.
-
 ## In 2 ABY
 
 Three in ten victims were clean. Those three are why the Path is hunted. The seven are why the hunting goes badly. A working [[The Judicial Forces and the Sector Rangers|sector ranger]] in the Rim now has to decide how hard to look for people who keep removing their own problems.
@@ -60,6 +58,5 @@ Three in ten victims were clean. Those three are why the Path is hunted. The sev
 
 - [[Anakin Skywalker]]
 - [[Do'Kass]]
-- [[Dek Kester]]
 - [[The Battle of Yavin]]
 - [[The Judicial Forces and the Sector Rangers]]

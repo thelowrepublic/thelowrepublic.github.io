@@ -4,7 +4,7 @@ category: character
 tier: short
 batch: 3
 status: approved
-sources: [X.2, "R:Do'Kass", "R:Dek Kester"]
+sources: [X.2, "R:Do'Kass"]
 canon: false
 tags:
   affiliation: [Republic Intelligence, Jedi Order (before 0 ABY)]
@@ -40,11 +40,8 @@ Do'Kass walks into a room and simply knows who is lying. He is rarely wrong, but
 
 Since 1 ABY Do'Kass has worked almost only on the [[The Path of Light|Path of Light]] case on [[Coruscant]]. He does not think it is a network. He thinks that most of it is one person.
 
-Twenty-four of the thirty-odd Path killings on Coruscant are the work of [[Dek Kester]]. He is a scene analyst of the [[The Galactic Republic#The Investigative Office|Investigative Office]]. Nobody suspects him but Do'Kass, who cannot yet prove anything.
-
 ## See also
 
 - [[Wullf Yularen]]
 - [[Republic Intelligence]]
 - [[The Path of Light]]
-- [[Dek Kester]]

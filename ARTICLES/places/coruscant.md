@@ -4,7 +4,7 @@ category: place
 tier: standard
 batch: 4
 status: approved
-sources: [I.3, VI.2, VI.4, XII.5, XII.7, "R:Dek Kester"]
+sources: [I.3, VI.2, VI.4, XII.5, XII.7]
 canon: true
 tags:
   affiliation: [Galactic Republic, Jedi Templars, Jedi Order (before 0 ABY)]
@@ -47,8 +47,6 @@ The Coruscant body took the name [[The Jedi Templars|Jedi Templars]] within the 
 ## In 2 ABY
 
 The Senate judges the [[The Judicial Forces and the Sector Rangers|Judicial Forces and the Sector Rangers]] only by two numbers. One is how much money went into a sector, and the other is how fast its crime rate fell. Nothing else reaches Coruscant. Where the local authority is honest, the arrangement works very well. Where it is not, the Republic is unknowingly paying for the [[The Shadow Collective|Collective]]'s police, and the crime is still kept in check, just for a different reason.
-
-Twenty-four of the thirty-odd [[The Path of Light|Path]] killings on Coruscant are the work of [[Dek Kester]]. Nobody suspects him but [[Do'Kass]], who cannot yet prove anything.
 
 ## See also
 
