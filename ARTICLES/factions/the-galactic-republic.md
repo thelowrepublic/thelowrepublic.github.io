@@ -58,7 +58,7 @@ The Senate has settled into three political positions since Yavin and the secess
 
 Chancellor Sevrin Dal asked for [[The Shadow War#The Republic at war|emergency powers]] eight days after the last survivors came home from Yavin. The Senate granted them and has renewed them eight times. Every emergency renewal passes because the traditionalists want the war and the other two cannot agree on an alternative.
 
-Because Seswenna never left, in law, its nine sectors are still entitled to nine Senate seats, though they have sent nobody since 1 ABY. [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii and the Gordian Reach]] took the opposite view. [[Ilai Vess|Vess]] and [[Oleth Kar|Kar]] sit, speak, table motions and vote. Neither sector has remitted a credit of tax since it declared secession.
+Because Seswenna never left, in law, its eight sectors are still entitled to eight Senate seats, though they have sent nobody since 1 ABY. [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii and the Gordian Reach]] took the opposite view. [[Ilai Vess|Vess]] and [[Oleth Kar|Kar]] sit, speak, table motions and vote. Neither sector has remitted a credit of tax since it declared secession.
 
 ## The ministries
 

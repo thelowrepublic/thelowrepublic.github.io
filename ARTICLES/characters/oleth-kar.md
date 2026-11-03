@@ -45,7 +45,7 @@ Quelii and the Gordian Reach officially signed the Accord in the sixth month of 
 
 *Main article: [[The Secessions#The standoff]]*
 
-Because Seswenna never left, in law, its nine sectors are still entitled to nine Senate seats, though they have sent nobody since 1 ABY. Quelii and the Gordian Reach are in the same situation and have taken the opposite view. [[Ilai Vess|Vess]] and Kar sit, speak, table motions and vote. All of it on the strength of a technicality they helped create and describe in public as an absurdity. Neither sector has remitted a credit of tax since it declared secession.
+Because Seswenna never left, in law, its eight sectors are still entitled to eight Senate seats, though they have sent nobody since 1 ABY. Quelii and the Gordian Reach are in the same situation and have taken the opposite view. [[Ilai Vess|Vess]] and Kar sit, speak, table motions and vote. All of it on the strength of a technicality they helped create and describe in public as an absurdity. Neither sector has remitted a credit of tax since it declared secession.
 
 The Republic cannot bill them. Demanding levies from either sector means asserting that they are members in good standing, and a member in good standing is owed an answer on the reparations. Withdrawing the interdiction fleet from [[Yavin 4]] would be read everywhere as recognition, and recognition concedes that the fleet had been sitting in foreign territory for two years. Leaving it there costs nothing and admits nothing, so it stays. Oleth Kar's invitation to remove it is not just a taunt. It is an offer he knows cannot be accepted.
 

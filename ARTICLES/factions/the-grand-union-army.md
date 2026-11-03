@@ -29,7 +29,7 @@ The **Grand Union Army**, or the Union Army, is the [[The Greater Seswenna Union
 
 ## The garrisons, 1 ABY
 
-The [[The Republic Corps|Corps]] garrisons stationed in the nine sectors of the [[The Greater Seswenna Union|Greater Seswenna Union]] did not come home. There were about a hundred thousand commandos in them, which was much more than the sectors reasonably needed. Officers from [[Wilhuff Tarkin|Tarkin]]'s old Outland Command had spent ten years arranging postings there, quietly accumulating military presence exactly where they wanted it to be. When the Union was declared, the soldiers were offered a universal one-step rank promotion and double the pay. Nobody could find a single person that rejected that offer. The Republic has never recognised the secession, so it has never listed those soldiers as deserters. In law they are still at their posts.
+The [[The Republic Corps|Corps]] garrisons stationed in the eight sectors of the [[The Greater Seswenna Union|Greater Seswenna Union]] did not come home. There were about a hundred thousand commandos in them, which was much more than the sectors reasonably needed. Officers from [[Wilhuff Tarkin|Tarkin]]'s old Outland Command had spent ten years arranging postings there, quietly accumulating military presence exactly where they wanted it to be. When the Union was declared, the soldiers were offered a universal one-step rank promotion and double the pay. Nobody could find a single person that rejected that offer. The Republic has never recognised the secession, so it has never listed those soldiers as deserters. In law they are still at their posts.
 
 ## Conscription and training
 

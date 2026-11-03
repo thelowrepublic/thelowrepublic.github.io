@@ -214,8 +214,8 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 
 ### 1 ABY
 
-- In the fourth month Seswenna voted to leave the Republic. Eight neighbouring sectors followed, and together they formed the [[The Greater Seswenna Union|Greater Seswenna Union]].
-- The Corps garrisons in the nine sectors did not come home. The Union's armour went into full production in the month the Union was declared.
+- In the fourth month Seswenna voted to leave the Republic. Seven neighbouring sectors followed, and together they formed the [[The Greater Seswenna Union|Greater Seswenna Union]].
+- The Corps garrisons in the eight sectors did not come home. The Union's armour went into full production in the month the Union was declared.
 - Thrawn took command of the Union's fleet.
 - [[Bo-Katan Kryze]] fully took the north of Mandalore. Over the following year, Death Watch reopened the armouries in the south.
 - The Judicial Forces were revived after forty years of neglect.

@@ -58,7 +58,7 @@ A month later the Gordian Reach itself seceded as well, quietly and without fanf
 
 *Main article: [[The Secessions#The standoff]]*
 
-Because Seswenna never left, in law, its nine sectors are still entitled to nine Senate seats, though they have sent nobody since 1 ABY. Quelii and the Gordian Reach are in the same situation and have taken the opposite view. Vess and [[Oleth Kar|Kar]] sit, speak, table motions and vote. All of it on the strength of a technicality they helped create and describe in public as an absurdity. Neither sector has remitted a credit of tax since it declared secession.
+Because Seswenna never left, in law, its eight sectors are still entitled to eight Senate seats, though they have sent nobody since 1 ABY. Quelii and the Gordian Reach are in the same situation and have taken the opposite view. Vess and [[Oleth Kar|Kar]] sit, speak, table motions and vote. All of it on the strength of a technicality they helped create and describe in public as an absurdity. Neither sector has remitted a credit of tax since it declared secession.
 
 Nearly every [[The Nightborn|Nightborn]] the Republic has arrested was taken during a Collective operation. They are charged as criminals or as terrorists, like anyone else on the raid. The exceptions are few and they are the ones that matter. A small number were arrested for what they were and not for anything they had done. Those are the cases Senator Vess keeps track of.
 
