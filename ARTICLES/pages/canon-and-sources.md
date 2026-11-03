@@ -20,18 +20,12 @@ These Star Wars works are fully canon to the Low Republic:
 - Star Wars: The Clone Wars, the whole animated series
 - Star Wars: Tales of the Jedi, the Dooku episodes
 
-No other work is canon. Where the history names an element from another work, that element is canon. The rest of that work is not. The Voss come from the age of the Old Republic, for example. They are canon here. That does not make the rest of the Old Republic canon.
+No other work is explicitly canon. Where the history of Low Republic names an element from another work, only that element is canon. The rest of that work is not, unless also stated. The Voss come from the age of the Old Republic, for example. They are canon here, but that does not make the rest of the Old Republic canon.
 
 ## How the articles use canon
 
-Some articles carry a short Background section. It draws only on the works listed above, and it stops where Windu corners Palpatine. Everything after that point comes from the history alone.
-
-Where canon and the history differ, the history stands. Ages and dates always follow the history.
-
-## Dates
-
-Years are counted from the Battle of Yavin in 0 ABY. That was the Republic's disaster on the fourth moon of Yavin Prime. Years before it are BBY, and years after it are ABY. The calendar was reset within the year of the battle.
+Some articles carry a short Background section. It draws only on the works listed above, and it stops where Windu corners Palpatine. Everything after that point comes from the history alone. Where canon and the history differ, the history takes priority. Ages and dates always follow the history.
 
 ## Scope
 
-The wiki describes the galaxy up to the end of 2 ABY. Where an article uses the present tense, it describes the state of things at that point.
+Years are counted from the Battle of Yavin in 0 ABY. That was the Republic's disaster on the fourth moon of Yavin Prime. Years before it are BBY, and years after it are ABY. The wiki describes the galaxy up to the end of 2 ABY. Where an article uses the present tense, it describes the state of things at that point.
