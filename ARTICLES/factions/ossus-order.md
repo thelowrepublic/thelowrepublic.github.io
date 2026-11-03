@@ -33,7 +33,7 @@ Fifteen weeks after [[The Battle of Yavin|Yavin]] the Republic made the [[The Re
 
 ## Neutrality
 
-Ossus is not absent from the [[The Shadow War|Shadow War]] and does not claim to be, but it does claim neutrality. It treats the wounded from both sides. It has refused four Republic requests for intelligence and has quietly evacuated three Rim settlements ahead of [[The Shadow Collective|Collective]] sweeps. What it will not do is take a commission.
+Ossus is not absent from the [[The Shadow War|Shadow War]] and does not claim to be, but it does claim neutrality. It treats the wounded from both sides. It has refused four Republic requests for intelligence and has quietly evacuated three Rim settlements ahead of [[The Shadow Collective|Collective]] sweeps. What it will not do is take a commission. They have also stopped using the symbol of the Jedi Order that was used during the Clone Wars, and instead adopted an older design that the Jedi used during the High Republic era.
 
 ## Force-sensitive children
 
