@@ -9,7 +9,7 @@ canon: false
 tags:
   affiliation: [Galactic Republic]
   period: [Long War, Shadow War]
-redirects: ["Kolto#Background", "Crystan V#Background", "Rybets#Background"]
+redirects: ["Kolto#Background", "Crystan V#Background", "Crystanian Rybets#Background"]
 infobox:
   image: "sevrin-dal.jpg"
   image_caption: ""
@@ -21,7 +21,7 @@ infobox:
   born: 51 BBY (aged 53)
   affiliation: ["[[The Galactic Republic]]"]
   position: Chancellor of the Republic
-  formerly: [Senator for the Crystan sector]
+  formerly: [Senator for the Crystan system]
   senate_stance: Traditionalist
 ---
 
@@ -29,11 +29,11 @@ infobox:
 
 ## Background
 
-Early in the [[The Long War|Long War]], a Separatist general of unusual boldness tried to reach [[Coruscant]] through the Deep Core, as General Grievous had done in the Clone Wars. It failed badly. The Republic intercepted the fleet near the Crystan system, and in the fighting its own ships had to put in for repairs on Crystan V. There they met the planet's natives, the Rybets, metre-tall amphibians, and made a remarkable discovery: the Rybets harvested kolto from their swamps.
+Early in the [[The Long War|Long War]], a Separatist general of unusual boldness tried to reach [[Coruscant]] through the Deep Core, as General Grievous had done in the Clone Wars. It failed badly. The Republic intercepted the fleet near the Crystan system, and in the fighting its own ships had to put in for repairs on Crystan V. There they met the planet's natives, the Crystanian Rybets, metre-tall amphibians, and made a remarkable discovery: the Rybets harvested kolto from their swamps.
 
 Kolto had not been seen in the galaxy for centuries. Bacta had largely replaced it, and its main sources on Manaan had dried up. The news reached the Senate as fast as it could travel, and Chancellor [[Bail Organa]] quickly arranged trade talks with the Rybets. A less scrupulous politician would have seen a world to exploit. Organa oversaw the agreement personally, made sure it was fair, and saw that it benefited the Rybets greatly.
 
-The kolto of Crystan V was the main reason the Republic could fight the Long War for as long as it did, and the Crystan sector became prosperous in a very short time. Kolto barons sprang up within months. Sevrin Dal was one of them, and his wealth and influence saw him selected as senator for the Crystan sector.
+The kolto of Crystan V was the main reason the Republic could fight the Long War for as long as it did, and the Crystan system became prosperous in a very short time. Kolto barons sprang up within months. Sevrin Dal was one of them, and his wealth and influence saw him selected as senator for the Crystan system.
 
 ## Election, 0 ABY
 
