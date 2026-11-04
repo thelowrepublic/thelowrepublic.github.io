@@ -64,6 +64,10 @@ The Union has held no election since 1 ABY. Tarkin's title of Governor-General w
 
 Every holodrama, song and news broadcast made in the Union passes through the licensing office of the Ministry of Culture. Republic HoloNet channels are not carried, and owning a receiver that can pick them up is a licensing offence. Most citizens saw Yavin only as the licensing office let them.
 
+The eight sectors had little in common before 1 ABY beyond their borders with one another. The Union's anthem, its flag and its official history were all commissioned in the same month. Since then, the old sector festivals have given way to the Union's own calendar, which begins on the day of the secession vote, and local languages are no longer taught in Union schools. The schools teach one virtue above all others, which the textbooks call 'service'.
+
+The licensing office does not ask which species made a song. It asks whether the song belongs to anything smaller than the Union, and if it does, the song is not licensed. What the office passes is the music of the Union Army, the speeches of the Governor-General, and holodramas about people who did their duty. Every species in the Union is welcome to that culture, and to no other.
+
 With no Judicial Forces, the Union has no civilian criminal courts either. Offences are tried by military tribunals in closed session, and the usual sentence is labour in the lommite mines of Eriadu. The Union publishes its crime figures every quarter. They are the lowest in the Rim.
 
 Leaving requires an exit permit. The Union grants them rarely to locals, and even more rarely to anyone liable to be called up, which is most adults. Naturally, members of the Union Army have greater privileges.
