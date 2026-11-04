@@ -12,7 +12,7 @@ tags:
 infobox:
   image: "boba-fett.jpg"
   image_caption: ""
-  artwork_author: "Pablo Oliviera"
+  artwork_author: "Pablo Olivera"
   artwork_author_link: "https://www.artstation.com/pabloolivera"
   name: Boba Fett
   species: Human
