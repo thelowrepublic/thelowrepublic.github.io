@@ -39,13 +39,7 @@ Organa became Chancellor in 19 BBY, after [[Mas Amedda]]'s six weeks as acting C
 
 Early in the Long War, Republic ships put in at [[Crystan V]] after turning back a Separatist fleet in the Deep Core. Its natives, the Crystanian Rybets, harvested kolto from their swamps, a healing agent the galaxy had not seen for centuries. Organa arranged the trade talks and oversaw the agreement personally, making sure it was fair. It gave the Rybets perpetual rights to their world's resources, out of the corporations' reach, and made kolto sold to the Republic's military or healthcare institutions exempt from tax. Crystan kolto was the main reason the Republic could fight the Long War for as long as it did. The agreement still stands, and [[Sevrin Dal]], a Rybet who made his fortune in kolto and is now Chancellor, is one of its fiercest defenders.
 
-The [[The Manumission Act|Manumission Act]] of 16 BBY made every clone a citizen. Padmé Amidala drafted it and Bail Organa carried it.
-
-He stepped down exhausted, having pleased nobody. Ars Vehn followed him.
-
-## Alderaan
-
-Organa went home to Alderaan and is still active in its government. Alderaan is intact.
+The [[The Manumission Act|Manumission Act]] of 16 BBY made every clone a citizen. Padmé Amidala drafted it and Bail Organa carried it. He stepped down exhausted, having pleased nobody. Ars Vehn succeeded him as Chancellor. Organa went home to Alderaan and is still active in its government. Alderaan is intact.
 
 ## In 2 ABY
 
