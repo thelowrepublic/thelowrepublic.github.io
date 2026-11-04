@@ -43,7 +43,6 @@ If the site does not look changed afterwards, your browser may be showing a stor
 - a `[[link]]` to a title no article has: the page shows it as a red link
 - a `[[Title#Heading]]` link to a heading the article does not have: it leads to the top of the article instead
 - an image named in an article that is not in `ARTWORKS/`
-- a `sources` code that matches no section of The Entire History
 
 **A red cross** happens when:
 
@@ -60,7 +59,7 @@ If the site does not look changed afterwards, your browser may be showing a stor
 - **A new article:** create the `.md` file in the folder for its category (`characters/`, `factions/`, `history/`, `places/` or `pages/`). Name the file after the title's slug: lowercase, no accents, no apostrophes or full stops, spaces become hyphens (`Padmé Amidala` → `padme-amidala.md`). It then appears everywhere by itself: its own page, its category page, search, random article, its redirects. Link to it from other articles with `[[Its Title]]`.
 - **Renaming an article:** change the `title` and the file name, then fix the links to it. Every link still using the old title shows up as a warning. Add the old title to the article's `redirects`, so old addresses and searches still lead to it.
 - **Redirects** (`redirects:` in the front matter) become search names and addresses: `/wiki/darth-sidious/` opens The Death of Palpatine and says "Redirected from Darth Sidious". `Name#Heading` leads to that section.
-- **Sources** (`sources:`) become the "In the history" box at the foot of the article, linking to each section of The Entire History.
+- **Sources** (`sources:`) are kept in the front matter as a record of which masterdoc passages an article draws on. They are not shown on the site. The masterdoc itself, The Entire History, is kept for reference in `ARTICLES/_reference/` and is not a page of the wiki.
 
 ### Pictures in articles
 
@@ -76,7 +75,7 @@ If the site does not look changed afterwards, your browser may be showing a stor
 Both are enforced on every publish:
 
 - **Hidden articles** (`hidden` in the settings; today Vesk Tolloran) appear in no list, random article or sitemap, and no page links to them or names them, except their own page and their own category page (Vesk is listed under Characters; the setting `hidden_on_category_pages` turns this off). They can still be found by search, by their redirect names and by their address.
-- **The Union quarantine** (`quarantine` in the settings): nothing the site generates by itself, such as the "In the history" box, ever links one of these eight articles to another. Links you write in the text are left as they are. The Art credits page may list them side by side.
+- **The Union quarantine** (`quarantine` in the settings): nothing the site generates by itself, such as the "Preceded by / Followed by" box, ever links one of these eight articles to another. Links you write in the text are left as they are. The Art credits page may list them side by side.
 
 ---
 
@@ -108,9 +107,8 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `footer` | The text at the foot of every page. |
 | `sidebar_links` | The links at the top of the sidebar, in order (article titles). "Random article" is always added after them. |
 | `categories` | The sidebar's Browse links and the category pages' names. |
-| `history_page` | The page that holds the whole history (The Entire History); `sources` codes point into it. |
-| `search_exclude` | Articles left out of search entirely (today The Entire History). |
-| `notices` | Boxes above an article's first paragraph, such as the "Before you read" box on The Entire History. Text may use `[[links]]`. |
+| `search_exclude` | Articles left out of search entirely (today none). |
+| `notices` | Boxes above an article's first paragraph (today none). Text may use `[[links]]`. |
 | `hidden` | Hidden articles (see the two special rules). |
 | `hidden_on_category_pages` | `true` lists hidden articles on their own category page (today Vesk on Characters); `false` leaves them off it too. |
 | `quarantine` | The Union quarantine's eight articles. |

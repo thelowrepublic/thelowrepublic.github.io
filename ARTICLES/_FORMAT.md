@@ -128,7 +128,7 @@ The front matter uses a deliberately small part of YAML, so any parser can read 
 - `R:Title` is a register entry. It is keyed by the article title of the person the entry is about, for example `"R:Oleth Kar"`, `"R:Rex"` or `"R:Thrawn"`. Ki-Adi-Mundi and Stass Allie share one entry, and either title points to it.
 - `XV` is the closing chapter. It is cited only for the few details found nowhere else.
 
-The website builds each article's "In the history" box from this list, so the body does not repeat it.
+The list is kept as a record of the passages used. The website does not show it.
 
 ### 3.4 Tags
 

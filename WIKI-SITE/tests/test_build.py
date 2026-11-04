@@ -69,7 +69,10 @@ class Reading(unittest.TestCase):
         files = [p for folder in build.FOLDERS.values() for p in (build.ARTICLES / folder).glob("*.md")
                  if not p.name.startswith("_")]
         self.assertEqual(len(SITE.articles), len(files))
-        self.assertIn(CONFIG["history_page"], SITE.articles)
+
+    def test_the_masterdoc_is_not_a_page(self):
+        # The Entire History is kept in ARTICLES/_reference/ for the authors only
+        self.assertNotIn("The Entire History", SITE.articles)
 
 
 class WikiLinks(unittest.TestCase):
@@ -129,30 +132,12 @@ class Body(unittest.TestCase):
         self.assertIn('class="tag"', SITE.render_body(art, env(art.title)))
 
 
-class HistoryBox(unittest.TestCase):
-    def box(self, title):
-        art = SITE.articles[title]
-        return SITE.history_box(art, {"root": "../../", "where": title, "links": []})
-
-    def test_passages_link_into_the_history_page(self):
-        html = self.box("Maul")
-        self.assertIn('<span class="section-code">I.4</span> The escape of Maul', html)
-        self.assertIn("wiki/the-entire-history/#the-escape-of-maul", html)
-
-    def test_register_entries_respect_the_quarantine(self):
-        html = self.box("The Greater Seswenna Union")  # cites R:Deran Kolt and R:Thrawn
-        self.assertNotIn("wiki/deran-kolt/", html)
-        self.assertNotIn("wiki/thrawn/", html)
-        self.assertIn("Deran Kolt", html)
-
-    def test_own_register_entry_is_bold_not_a_link(self):
-        html = self.box("Oleth Kar")
-        self.assertIn("<strong>Oleth Kar</strong>", html)
-        self.assertNotIn("wiki/oleth-kar/", html)
-
-    def test_pages_have_no_box(self):
-        self.assertEqual(self.box("Timeline"), "")
-
+class FootOfArticle(unittest.TestCase):
+    def test_no_in_the_history_box(self):
+        # removed at the authors' request (4 November 2026); sources stay in the front matter only
+        html = SITE.render_article(SITE.articles["Maul"])
+        self.assertNotIn("history-box", html)
+        self.assertNotIn("In the history", html)
 
 class Text(unittest.TestCase):
     def test_first_sentence(self):

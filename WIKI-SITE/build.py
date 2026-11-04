@@ -269,9 +269,6 @@ class Site:
         # hidden articles may still appear on their own category page (config `hidden_on_category_pages`)
         self.hidden_on_category_pages = bool(config.get("hidden_on_category_pages"))
         self.quarantine = set(config.get("quarantine") or [])
-        # the masterdoc as one page; `sources` codes point into it (config `history_page`)
-        self.history_page = str(config.get("history_page") or "The Entire History")
-        self.sections: dict[str, dict] = {}  # source code ("X.4", "XV", "Pref") -> heading on that page
         self.credits: dict[str, dict] = {}  # artist -> {"link", "articles": {title: count}}
         self.md = self._make_markdown()
         self.jinja = Environment(
@@ -325,35 +322,6 @@ class Site:
                     self.warn(where, f"/wiki/{slug}/ already leads to {self.redirects[slug][0].title}; skipped")
                 else:
                     self.redirects[slug] = (art, heading, name)
-        self._index_history()
-
-    def _index_history(self) -> None:
-        """Map source codes to the history page's headings: `Pref` is the preface, `XI` a whole
-        chapter (`## XI. ...`), `XI.2` the second `###` under it (_FORMAT 3.3, handoff brief)."""
-        hist = self.articles.get(self.history_page)
-        if hist is None:
-            self.warn("config.yml", f"there is no `{self.history_page}` page (history_page), so no \"In the history\" boxes")
-            return
-        chapter, count = None, 0
-        for order, (level, text, anc) in enumerate(hist.headings):
-            if level == 2:
-                m = re.match(r"^([IVXLC]+)\.\s+(.+)$", text)
-                chapter, count = (m.group(1), 0) if m else (None, 0)
-                if m:
-                    self.sections[chapter] = {"anchor": anc, "title": m.group(2), "order": order}
-                elif text == "Preface":
-                    self.sections["Pref"] = {"anchor": anc, "title": "Preface", "order": order}
-            elif level == 3 and chapter:
-                count += 1
-                self.sections[f"{chapter}.{count}"] = {"anchor": anc, "title": text, "order": order}
-        for art in self.articles.values():
-            for code in art.meta.get("sources") or []:
-                code = str(code).strip()
-                if code.startswith("R:"):
-                    if code[2:].strip() not in self.articles:
-                        self.warn(art.title, f"source `{code}`: no article has that title")
-                elif code not in self.sections:
-                    self.warn(art.title, f"source `{code}` matches no heading on {self.history_page}")
 
     # ---- links --------------------------------------------------------------
 
@@ -575,35 +543,6 @@ class Site:
         image = self.image_box(box, env, f"Artwork of {art.title}", "infobox-image") if box.get("image") else ""
         return self.jinja.get_template("_infobox.html").render(title=art.title, image=image, rows=rows)
 
-    def history_box(self, art: Article, env: dict) -> str:
-        """The "In the history" box (handoff brief): the passages of the history page that the
-        article draws on, in the history's order, and the register entries it uses."""
-        hist = self.articles.get(self.history_page)
-        if art.category == "page" or hist is None:
-            return ""
-        passages, register, seen = [], [], set()
-        for code in art.meta.get("sources") or []:
-            code = str(code).strip()
-            if code in seen:
-                continue
-            seen.add(code)
-            if code.startswith("R:"):
-                title = code[2:].strip()
-                target = self.articles.get(title)
-                linkable = (target is not None and target is not art and title not in self.hidden
-                            and not (art.title in self.quarantine and title in self.quarantine))
-                href = self.link(title, None, env)[0] if linkable else None
-                register.append({"title": title, "href": href, "self": target is art})
-            elif code in self.sections:
-                sec = self.sections[code]
-                passages.append({"code": "" if code == "Pref" else code, "title": sec["title"],
-                                 "href": f"{env['root']}{hist.url}#{sec['anchor']}", "order": sec["order"]})
-        if not passages and not register:
-            return ""
-        passages.sort(key=lambda p: p["order"])
-        return self.jinja.get_template("_history_box.html").render(
-            passages=passages, register=register, history_href=env["root"] + hist.url, history_title=hist.title)
-
     def chain_nav(self, art: Article, env: dict) -> str:
         """Previous and next links for history articles, from preceded_by and followed_by
         (_FORMAT 4.3.1). Where the chain branches, every branch is listed."""
@@ -704,16 +643,11 @@ class Site:
         env = {"root": art.root, "where": art.title, "links": [], "article": art}
         infobox = self.render_infobox(art, env)
         body = self.render_body(art, env)
-        if art.title == self.history_page:  # a small code marker ("X.4") on each section heading
-            for code, sec in self.sections.items():
-                if "." in code:
-                    body = body.replace(f'<h3 id="{sec["anchor"]}">',
-                                        f'<h3 id="{sec["anchor"]}"><span class="section-code">{code}</span> ', 1)
         cut = body.find("<h2")
         lead, rest = (body, "") if cut < 0 else (body[:cut], body[cut:])
         art.excerpt = first_sentence(plain_text(lead))
         art.text = search_text(body) + " " + search_text(infobox)  # prose first, for snippets
-        after = self.chain_nav(art, env) + self.history_box(art, env)
+        after = self.chain_nav(art, env)
         art.meta["_links"] = env["links"]
         cat = (self.config.get("categories") or {}).get(art.category)
         notice = (self.config.get("notices") or {}).get(art.title)
@@ -857,7 +791,7 @@ class Site:
         search/text.json (every article's plain text, for the results page), the results
         page itself, and random/, which opens a random article. The authors want every
         article findable by search, the hidden one included (it stays out of random/), and
-        The Entire History left out of search altogether."""
+        anything in config `search_exclude` left out."""
         cats = self.config.get("categories") or {}
         titles, texts = [], []
         excluded = set(self.config.get("search_exclude") or [])

@@ -84,14 +84,14 @@ class RuleChecks(unittest.TestCase):
         self.assertIn("hidden", self.failed())
 
     def test_quarantine_catches_a_generated_link(self):
-        self.edit("wiki/the-greater-seswenna-union/index.html", '<div class="article-after">',
+        self.edit("wiki/the-secessions/index.html", '<div class="article-after">',
                   '<div class="article-after"><a href="../../wiki/thrawn/">Thrawn</a>')
         self.assertIn("quarantine", self.failed())
 
-    def test_search_catches_an_excluded_article(self):
+    def test_search_catches_an_entry_with_no_page(self):
         path = self.site / "search" / "titles.json"
         data = json.loads(path.read_text(encoding="utf-8"))
-        data.append({"t": "The Entire History", "u": "wiki/the-entire-history/", "c": "Page", "x": "", "r": []})
+        data.append({"t": "Nowhere", "u": "wiki/nowhere/", "c": "Page", "x": "", "r": []})
         path.write_text(json.dumps(data), encoding="utf-8")
         self.assertIn("search", self.failed())
 

@@ -392,7 +392,7 @@ html.gate-open .gate {
 }
 .link-button:hover { text-decoration: underline; }
 
-/* ---- Foot of an article: history navigation and "In the history" -------- */
+/* ---- Foot of an article: history navigation ---------------------------- */
 
 .visually-hidden {
   position: absolute !important;
@@ -401,7 +401,7 @@ html.gate-open .gate {
 }
 
 .article-after { clear: both; display: grid; gap: 16px; margin-top: 2.4em; }
-.history-box, .chain-nav {
+.chain-nav {
   padding: 14px 18px 16px;
   font-size: 14px;
   line-height: 1.5;
@@ -422,21 +422,7 @@ html.gate-open .gate {
   text-transform: uppercase;
   color: var(--muted);
 }
-.box-note { margin: 0 0 10px; font-size: 13.5px; color: var(--muted); }
-.history-passages { list-style: none; margin: 0; padding: 0; columns: 2 260px; column-gap: 32px; }
-.history-passages li { break-inside: avoid; padding: 2px 0; }
-.history-passages .section-code { min-width: 4.4em; }
-.history-register { margin: 12px 0 0; padding-top: 10px; border-top: 1px solid var(--border); }
-.history-register .box-label { margin-right: 6px; cursor: help; }
 .sep { color: var(--muted); }
-
-.section-code {
-  display: inline-block;
-  min-width: 3.3em;
-  font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  color: var(--muted);
-}
-.article-body h3 .section-code { min-width: 0; margin-right: 6px; vertical-align: 1px; }
 
 .chain-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .chain-following { text-align: right; }
