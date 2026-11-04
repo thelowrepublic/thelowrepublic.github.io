@@ -10,10 +10,10 @@ tags:
   affiliation: [Order of Voss, Jedi Order (before 0 ABY)]
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
 infobox:
-  image: ""
+  image: "aayla-secura.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "libpaint"
+  artwork_author_link: "https://www.instagram.com/libpaint"
   name: Aayla Secura
   species: Twi'lek
   born: 44 BBY (aged 46)
