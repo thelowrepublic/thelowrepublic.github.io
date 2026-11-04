@@ -26,7 +26,7 @@ infobox:
 
 ## The world
 
-Most of Crystan V is a single gigantic ocean. Its one landmass is swamp from end to end, denser in some places than in others, and broken in some areas by hot springs and geysers. No other planet in the system is habitable by nature. Crystan I to IV are gas giants, and the system's only other rocky planet has been the object of efforts to terraform and settle it for the past decade.
+Most of Crystan V is a single gigantic ocean. Its one landmass is swamp from end to end, denser in some places than in others, and broken in some areas by hot springs and geysers. No other planet in the system is habitable by nature. Crystan I to IV are gas giants, and the system's only other rocky planet, Crystan VI, has been the object of efforts to terraform and settle it for the past decade.
 
 ## The Crystanian Rybets
 
