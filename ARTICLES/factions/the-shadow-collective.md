@@ -50,6 +50,13 @@ A large number of Shadow Collective ground units are commanded by men the Republ
 
 The rest of the recruiting pool is simpler. Rim worlds that the [[The Long War#The Concord of Raxus, 15 BBY|Concord]] promised self-rule and the Senate then forgot to pay for. Separatist officers pardoned straight into unemployment. Mandalorians who have lost three civil wars. And the ordinary poor of countless systems, who are offered solid wages for work that carries a real chance of dying, which is more than the Republic offers them at all. Desperation brought most of them in. What has kept many of them is the discovery that, inside the Collective, they have the power to make sure the same desperation never reaches anyone else.
 
+```image
+image: "the-shadow-troopers.jpg"
+image_caption: "Collective Shadow Trooper"
+artwork_author: "MandaloArt"
+artwork_author_link: "https://www.instagram.com/mandalo_art"
+```
+
 ## The droid forces
 
 The [[The Long War#The Concord of Raxus, 15 BBY|Concord of Raxus]] required the droid armies to be scrapped and the job was never finished. The Shadow Collective finds that hardware, repairs it and fields it. It is twenty years out of date, it is almost free, and there is a very great deal of it. Since the [[The Republic Remade#The droid papers|droid papers]] came out in 6 BBY there has also been an argument attached to it. The Republic scrapped them, despite the fact that some of them were self-aware beings. The Collective repairs them, gives them orders, and supposedly even gives some units rank. The practice might be performative, but does wonders for public perception.
