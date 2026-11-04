@@ -49,6 +49,13 @@ The [[The Shadow War|Shadow War]] itself is fought mostly by the Judicial Forces
 
 The Senate judges both organisations only by two numbers. One is how much money went into a sector, and the other is how fast its crime rate fell. Nothing else reaches Coruscant. Where the local authority is honest, the arrangement works very well. Where it is not, the Republic is unknowingly paying for the [[The Shadow Collective|Collective]]'s police, and the crime is still kept in check, just for a different reason.
 
+```image
+image: "the-judicial-forces-and-the-sector-rangers-ranger-squad.jpg"
+image_caption: "Sector Rangers Squad"
+artwork_author: "Brian Matyas"
+artwork_author_link: "https://www.artstation.com/bmatyas"
+```
+
 ## See also
 
 - [[The Republic Corps]]
