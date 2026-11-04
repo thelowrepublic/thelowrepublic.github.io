@@ -31,6 +31,10 @@ infobox:
 
 The Union Army is the state's only force on the ground. There are no [[The Judicial Forces and the Sector Rangers|Sector Rangers]] and no Judicial Forces under [[Wilhuff Tarkin|Tarkin]]'s new government. The same elite soldiers who hold the sector borders are also the ones that patrol the streets of Eriadu. That is how the Union found the [[The Shadow Collective|Collective]]'s people inside it, and no other state has managed the same. The Union Army kept the [[The Republic Corps|Corps]] ranks from commando to marshal and added one above them, the First Marshal, which Deran Kolt holds.
 
+## The infiltration campaign, 1–2 ABY
+
+Kolt ran the campaign against [[The Shadow Collective|Collective]] infiltration for the Union's first fourteen months. Where a Collective cell was found, his soldiers sealed the whole street and held everyone in it until someone named the rest. Most streets did. At the end, the Union announced that it had found about four thousand Collective agents. [[Republic Intelligence]] puts the number detained over the same months at nearer forty thousand. There were no trials. Those whose Collective allegiance was reasonably certain were rounded up and executed by firing squad.
+
 ## In 2 ABY
 
 Kolt has a better public image than [[Wilhuff Tarkin|Tarkin]] and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and [[Thrawn]] are the two reasons why it won't. Kolt wants the Union to take the bordering sectors now, while the Republic is busy. Thrawn swayed him away from that course of action.

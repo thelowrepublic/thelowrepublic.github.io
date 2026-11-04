@@ -58,6 +58,16 @@ Naturally, a hundred thousand soldiers do not make an army, but they can make it
 
 The Union Army is the state's only force on the ground. There are no [[The Judicial Forces and the Sector Rangers|Sector Rangers]] and no Judicial Forces under Tarkin's new government. The same elite soldiers who hold the sector borders are also the ones that patrol the streets of Eriadu. That is how the Union found the [[The Shadow Collective|Collective]]'s people inside it, and no other state has managed the same. The Union Army kept the Corps ranks from commando to marshal and added one above them, the First Marshal, which Deran Kolt holds.
 
+## Life in the Union
+
+The Union has held no election since 1 ABY. Tarkin's title of Governor-General was conferred by the eight sector assemblies, which still meet twice a year and have not yet voted against anything put before them. Of the twenty-three Seswenna delegates who voted against secession, none still holds office. Four are known to have reached Republic space. The Union has not said where the other nineteen are.
+
+Every holodrama, song and news broadcast made in the Union passes through the licensing office of the Ministry of Culture. Republic HoloNet channels are not carried, and owning a receiver that can pick them up is a licensing offence. Most citizens saw Yavin only as the licensing office let them.
+
+With no Judicial Forces, the Union has no civilian criminal courts either. Offences are tried by military tribunals in closed session, and the usual sentence is labour in the lommite mines of Eriadu. The Union publishes its crime figures every quarter. They are the lowest in the Rim.
+
+Leaving requires an exit permit. The Union grants them rarely to locals, and even more rarely to anyone liable to be called up, which is most adults. Naturally, members of the Union Army have greater privileges.
+
 ## In 2 ABY
 
 [[Wilhuff Tarkin|Tarkin]] is now sixty-six. He holds the title of Governor-General of the Greater Seswenna Union and has never been convicted of anything by any court.
