@@ -45,9 +45,7 @@ Almost all of the Core still trades with the Union, as the Eriadu hyperspace cro
 
 The [[The Grand Union Army|Union Army]] is the state's only force on the ground. There are no [[The Judicial Forces and the Sector Rangers|Sector Rangers]] and no Judicial Forces under [[Wilhuff Tarkin|Tarkin]]'s new government. The same elite soldiers who hold the sector borders are also the ones that patrol the streets of Eriadu. That is how the Union found the [[The Shadow Collective|Collective]]'s people inside it, and no other state has managed the same. The soldiers' uniforms are the work of [[Hoog Oboz]], a Hutt designer who lives on Eriadu.
 
-Eriadu has been under curfew since the campaign against Collective infiltration. The curfew was announced as temporary and has not been lifted. Its lommite mines, the world's chief industry, are now worked in part by prisoners sentenced by the Union's military tribunals.
-
-In the shipyards of Eriadu there are at least ten new drydocks, each of them nineteen kilometres long. The Union has not stated what they are for.
+Eriadu has been under curfew since the campaign against Collective infiltration. The curfew was announced as temporary and has not been lifted. Its lommite mines, the world's chief industry, are now worked in part by prisoners sentenced by the Union's military tribunals. In the shipyards of Eriadu there are at least ten new drydocks, each of them nineteen kilometres long. The Union has not stated what they are for.
 
 ## See also
 
