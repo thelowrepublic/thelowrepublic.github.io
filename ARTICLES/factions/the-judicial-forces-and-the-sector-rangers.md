@@ -18,7 +18,7 @@ infobox:
   artwork_author_link: ""
   type: Law enforcement
   leader: ["[[Eogun Vidoc]] (central office only)"]
-  strength: About two hundred million together
+  strength: About one hundred million Sector Rangers and one million Judicial Forces investigators
   affiliated_with: ["[[The Galactic Republic]]"]
   status: Active
 ---
@@ -31,7 +31,7 @@ What the Republic has grown since [[The Battle of Yavin|Yavin]] is not the [[The
 
 ## The two forces
 
-The Republic's real strength on the ground is not the Corps, but the Judicial Forces and the Sector Rangers. The Judicial Forces serve the courts: they investigate, arrest and are entitled to pass judgement in local matters. The Sector Rangers patrol everything that the Corps doesn't: ports, roads, outlying settlements and the lanes between worlds. Between them they number about two hundred million, which is twenty-five times what the Corps can muster.
+The Republic's real strength on the ground is not the Corps, but the Judicial Forces and the Sector Rangers. The Judicial Forces serve the courts: they investigate, arrest and are entitled to pass judgement in local matters. The Sector Rangers patrol everything that the Corps doesn't: ports, roads, outlying settlements and the lanes between worlds. There are about one hundred million Sector Rangers, scattered across the galaxy, and about one million Judicial Forces investigators. Together they are more than twelve times what the Corps can muster.
 
 ## How they are run
 

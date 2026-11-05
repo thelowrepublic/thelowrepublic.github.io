@@ -44,7 +44,7 @@ No civilian employer would take [[Wolffe]] after his discharge. Crimson Dawn did
 
 The Shadow Collective's strength is not exotic. Its strength is that it hires the people the Republic was finished with. The law no longer puts food on the table or gives your children a roof to sleep under. The Collective does.
 
-Between 16 and 7 BBY the Republic turned more than five million [[Clones|clones]] out into the galaxy. They were new citizens on paper and more than half were elderly in the body, trained for a job that no longer existed, living on a pension worked out for a man in his thirties. The Senate debated protecting them four sessions in a row and passed nothing. Crimson Dawn offered contracts, quarters, rank, and medical care suited to men ageing at twice the ordinary rate. By the Republic's own cautious estimate, around ten percent took the deal and by 2 ABY around eighty-six thousand of them still work for the Collective.
+Between 16 and 7 BBY the Republic turned more than five million [[Clones|clones]] out into the galaxy. They were new citizens on paper and more than half were elderly in the body, trained for a job that no longer existed, living on a pension worked out for a man in his thirties. The Senate debated protecting them four sessions in a row and passed nothing. Crimson Dawn offered contracts, quarters, rank, and medical care suited to men ageing at twice the ordinary rate. By the Republic's own cautious estimate, around ten percent took the deal and by 2 ABY around two hundred thousand of them still work for the Collective.
 
 A large number of Shadow Collective ground units are commanded by men the Republic grew, freed, and then could not find a use for. Many Collective soldiers are rigorously trained by those same men, and getting deadlier by the year. The Collective also sponsors [[Clones#Ko Sai's procedure|Ko Sai's procedure]] for all clones working for it. It is genome work followed by months of drug therapy to make the changes hold. It's done once, and after that every man takes a maintenance course of pills priced so low that nobody notices it. Naturally, the price is not the issue, but the availability is. Even if a clone purchases the procedure with independent funds, he will need to keep returning to the Collective for refills. For an old man, the procedure halves their accelerated ageing. If done when the clone is young enough, it returns him to ordinary ageing altogether.
 
@@ -63,7 +63,7 @@ The [[The Long War#The Concord of Raxus, 15 BBY|Concord of Raxus]] required the 
 
 The Collective's advantage is that almost everything it fields costs next to nothing. The Concord left something near four million droid hulls unaccounted for across thousands of systems. Three recovered Lucrehulk hulls have been stripped down for their foundries and communication hubs, bolstering the rate at which the Collective refurbishes droids. Cortosis-weave BXs were a Separatist experiment that never reached production and are now in production. Its best anti-Jedi asset is older than any of it: IG-100 MagnaGuards, built to [[The Long War|Grievous]]'s specification for killing Force-users, of which about nine hundred are operational.
 
-[[Gizor Dellso]] is chief engineer of the Collective's droid programme. He has returned near two hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality.
+[[Gizor Dellso]] is chief engineer of the Collective's droid programme. He has returned near six hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality.
 
 [[Patient Yield]] is a Lucrehulk control core. It has run droid refit for eleven years, files its production reports on schedule, and has three thousand organic workers under it. Gizor Dellso reports to it, contrary to all common sense.
 
@@ -125,7 +125,7 @@ The Collective understands why [[The Shadow War#Why Quelii cannot be attacked|Qu
 
 Twenty-one years after Chancellor [[The Death of Palpatine|Palpatine]]'s death, the Low Republic is a bloated system strangling itself with its own rules, at war with the largest criminal organisation the galaxy has ever seen, which has just acquired a government, a flag and a lawyer.
 
-[[Nadi Orl]] is chief of accounts for the Shadow Collective. Thanks to her, the Collective pays on time in hundreds of systems, and over eighty thousand clones receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out. [[Maul]] has never overruled her. [[Republic Intelligence]] rates her the highest-value target in the organisation.
+[[Nadi Orl]] is chief of accounts for the Shadow Collective. Thanks to her, the Collective pays on time in hundreds of systems, and around two hundred thousand clones receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out. [[Maul]] has never overruled her. [[Republic Intelligence]] rates her the highest-value target in the organisation.
 
 ## See also
 

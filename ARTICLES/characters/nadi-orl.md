@@ -40,7 +40,7 @@ Ever since then, Orl sets wages, funds pensions, approves capital projects, and 
 
 ## In 2 ABY
 
-Thanks to Orl, the Collective pays on time in hundreds of systems, and over eighty thousand [[Clones|clones]] receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out. Maul has never overruled her. Republic Intelligence rates her the highest-value target in the organisation.
+Thanks to Orl, the Collective pays on time in hundreds of systems, and around two hundred thousand [[Clones|clones]] receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out. Maul has never overruled her. Republic Intelligence rates her the highest-value target in the organisation.
 
 She has since come back to her homeworld of [[Ryloth]], using the immense wealth she accrued from running the Collective to set herself up publicly as a philanthropist entrepreneur. She has invested immense funds into the city of Kala'uun, turning it from a meagre starport into a bustling resort metropolis, with her as the head of the ruling council. Most in the Collective simply regard this as 'Orl's pet project', but the woman herself seems to be completely genuine in her desire to elevate Ryloth into prominence, outright banning Collective activity on Ryloth unless she authorises it personally, as well as sending very violent warnings to several corporations that wished to extract Ryloth's natural resources. She even attempts to integrate indigenous Twi'lek clans into her plans as tourist guides and spiritual gurus for hire, though she has immense difficulties trying to come to any sort of agreement with the Clan Assembly.
 

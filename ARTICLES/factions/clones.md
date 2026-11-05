@@ -67,13 +67,13 @@ As the Jedi left [[Coruscant]], they left an open invitation for all clone veter
 
 ## In the Collective
 
-The [[The Shadow Collective|Shadow Collective]]'s strength is not exotic. Its strength is that it hires the people the Republic was finished with. [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] offered contracts, quarters, rank, and medical care suited to men ageing at twice the ordinary rate. By the Republic's own cautious estimate, around ten percent took the deal and by 2 ABY around eighty-six thousand of them still work for the Collective.
+The [[The Shadow Collective|Shadow Collective]]'s strength is not exotic. Its strength is that it hires the people the Republic was finished with. [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] offered contracts, quarters, rank, and medical care suited to men ageing at twice the ordinary rate. By the Republic's own cautious estimate, around ten percent took the deal and by 2 ABY around two hundred thousand of them still work for the Collective.
 
 A large number of Shadow Collective ground units are commanded by men the Republic grew, freed, and then could not find a use for. Many Collective soldiers are rigorously trained by those same men, and getting deadlier by the year.
 
 The [[The Shadow Troopers|shadow troopers]] were among the first clones to go to [[Maul]], long before [[Wolffe]] began recruiting. Wolffe joined Crimson Dawn in 7 BBY and became a recruiter. Over half the clone veterans on Collective payroll came in, directly or indirectly, through him. Over the years, most clones that joined the Collective took on a tradition to paint over their old legion's colours with the black and red of the shadow troopers. For many of them the Collective was the first employer since their decanting that asked what they wanted. Some now guard the worlds they are posted to as fiercely as they once guarded the Republic.
 
-[[Nadi Orl]] is the Collective's chief of accounts. Thanks to her, the Collective pays on time in hundreds of systems, and over eighty thousand elderly clones receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out.
+[[Nadi Orl]] is the Collective's chief of accounts. Thanks to her, the Collective pays on time in hundreds of systems, and around two hundred thousand elderly clones receive good pay, expert medical oversight, and retirement to comfortable lives when their contracts run out.
 
 ## Ko Sai's procedure
 

@@ -32,7 +32,7 @@ Gizor Dellso was a Techno Union designer until Geonosis fell. He was never charg
 
 *Main article: [[The Shadow Collective#The droid forces]]*
 
-Dellso is chief engineer of the Collective's droid programme. He has returned near two hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality.
+Dellso is chief engineer of the Collective's droid programme. He has returned near six hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality.
 
 [[Patient Yield]] is a Lucrehulk control core. It has run droid refit for eleven years, files its production reports on schedule, and has three thousand organic workers under it. Gizor Dellso reports to it, contrary to all common sense.
 
