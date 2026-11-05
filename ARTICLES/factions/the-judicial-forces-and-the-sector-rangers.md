@@ -10,16 +10,16 @@ tags:
   affiliation: [Galactic Republic]
   period: [Shadow War]
   region: [Core, Inner Rim, Mid Rim, Outer Rim]
-redirects: [Judicial Forces, Sector Rangers, Sector Ranger, Rangers, "Central office#The central office"]
+redirects: [Judicial Forces, Sector Rangers, Sector Ranger, Rangers, "Central office#The central office", "Judicial Department#The central office", "Judicial Oversight Office#The central office", "Commissioner#Commissioners"]
 infobox:
   image: "the-judicial-forces-and-the-sector-rangers.svg"
   image_caption: ""
   artwork_author: "Lucasfilm and Disney"
   artwork_author_link: ""
   type: Law enforcement
-  leader: ["[[Eogun Vidoc]] (central office only)"]
+  leader: ["[[Eogun Vidoc]] (Judicial Forces, through the Judicial Oversight Office)"]
   strength: About one hundred million Sector Rangers and one million Judicial Forces investigators
-  affiliated_with: ["[[The Galactic Republic]]"]
+  affiliated_with: ["[[The Galactic Republic]]", Ministry of Security]
   status: Active
 ---
 
@@ -41,7 +41,13 @@ That is also why they cannot be moved. A Ranger hired on [[Ord Mantell]] works o
 
 ## The central office
 
-Only one part of either force answers to Coruscant directly. It is a small office for crimes that cross sector lines, led by chief criminal investigator [[Eogun Vidoc]]. Vidoc hunted bounties for twenty-two years first, and that is where he learned the law. He moves faster than the Ministry can authorise and has never broken a law in his life. The [[The Shadow Collective|Collective]]'s bounty on his head has seven digits.
+The Judicial Forces work under the Judicial Department, which answers to the Ministry of Security. Each sector has its own separate branch of the Department, which handles cases at the local level. Above the branches is the Judicial Oversight Office, a small central office led by chief criminal investigator [[Eogun Vidoc]]. It oversees the sector branches and handles the crimes that cross sector lines. It works alongside the central Judicial Department but does not answer to it, only to the Ministry of Security. Technically, that puts Vidoc in charge of all the Judicial Forces, but not of the Department itself, which is run by Republic bureaucrats.
+
+Vidoc hunted bounties for twenty-two years first, and that is where he learned the law. He moves faster than the Ministry can authorise and has never broken a law in his life. The [[The Shadow Collective|Collective]]'s bounty on his head has seven digits.
+
+## Commissioners
+
+The Sector Rangers have no oversight office of their own. Every local branch falls directly under the Ministry of Security. The highest rank among the Rangers is Commissioner, who is responsible for a whole sector, or for a single planet if it is vital enough. A Commissioner is usually a Ministry of Security official, sent out to coordinate the sector and to work with the local [[The Republic Corps|Corps]] division, if there is one. A local officer rising to Commissioner is rare, but not unheard of, especially in sectors where loyalty to the Republic runs low. There, raising a local to the top post is a form of appeasement.
 
 ## In 2 ABY
 
