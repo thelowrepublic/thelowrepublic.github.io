@@ -81,10 +81,10 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 - [[Coruscant]]
 - [[Dathomir]]
 - [[Ossus]]
-- [[Voss]]
+- [[Crystan V]]
 - [[Yavin 4]]
 - [[Kamino]]
-- [[Naboo]]
+- [[Eriadu]]
 
 ## Reference
 
