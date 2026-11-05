@@ -58,6 +58,13 @@ Naturally, a hundred thousand soldiers do not make an army, but they can make it
 
 The Union Army is the state's only force on the ground. There are no [[The Judicial Forces and the Sector Rangers|Sector Rangers]] and no Judicial Forces under Tarkin's new government. The same elite soldiers who hold the sector borders are also the ones that patrol the streets of [[Eriadu]]. That is how the Union found the [[The Shadow Collective|Collective]]'s people inside it, and no other state has managed the same. The Union Army kept the Corps ranks from commando to marshal and added one above them, the First Marshal, which Deran Kolt holds.
 
+```image
+image: "the-grand-union-army.jpg"
+image_caption: "Union Commando"
+artwork_author: "Jesus Blones"
+artwork_author_link: "https://www.artstation.com/jesusblones"
+```
+
 ## Life in the Union
 
 The Union has held no election since 1 ABY. Tarkin's title of Governor-General was conferred by the eight sector assemblies, which still meet twice a year and have not yet voted against anything put before them. Of the twenty-three Seswenna delegates who voted against secession, none still holds office. Only four are known to have reached Republic space.
@@ -81,6 +88,7 @@ Grand Admiral [[Thrawn]] has commanded the Union's fleet since the secession and
 ## See also
 
 - [[Wilhuff Tarkin]]
+- [[Eriadu]]
 - [[The Grand Union Army]]
 - [[The Shadow Collective]]
 - [[The Galactic Republic]]

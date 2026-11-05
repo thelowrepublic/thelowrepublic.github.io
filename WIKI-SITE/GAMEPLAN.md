@@ -212,6 +212,7 @@ The eight articles are listed in `config.yml`. No generated feature may place tw
 - **Tags:** "Greater Seswenna Union" is the affiliation tag of six of the eight, plus Vesk Tolloran. An affiliation tag page would break both rules at once. This is decision D6.
 - **"In the history" box:** The Greater Seswenna Union cites `R:Deran Kolt` and `R:Thrawn`, Thrawn cites `R:Deran Kolt`, and Deran Kolt cites `R:Thrawn`. Generated links there would join them, so on the quarantined articles those register entries are shown as plain text with no link.
 - **Art credits:** one artist drew Dedra Meero, Orson Krennic and Thrawn, so the credits page lists three of them together. The authors accepted this on 1 November 2026. Hidden articles are left off the page.
+- **See also exception:** The Greater Seswenna Union's hand-written See also lists Eriadu, the Union's capital. The authors chose this on 5 November 2026, since leaving the capital out would be more conspicuous than linking it. It is the only See also link between two quarantined articles.
 - **Backlinks:** if a "What links here" feature is built, it drops any entry where both pages are in the quarantine.
 - **Search results** answer the reader's own query and are not suggestions, so they are left alone. The Entire History page is exempt, as the brief says.
 
