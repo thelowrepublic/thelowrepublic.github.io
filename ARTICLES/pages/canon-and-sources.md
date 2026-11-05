@@ -18,7 +18,7 @@ These Star Wars works are fully canon to the Low Republic:
 - Episode II: Attack of the Clones
 - Episode III: Revenge of the Sith, up to the scene in which Windu corners Palpatine
 - Star Wars: The Clone Wars, the whole animated series
-- Star Wars: Tales of the Jedi, the Dooku episodes
+- Star Wars: Tales of the Jedi, episodes 1-5
 
 No other work is explicitly canon. Where the history of Low Republic names an element from another work, only that element is canon. The rest of that work is not, unless also stated. The Voss come from the age of the Old Republic, for example. They are canon here, but that does not make the rest of the Old Republic canon.
 
