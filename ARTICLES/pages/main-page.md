@@ -59,7 +59,7 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 - [[The Nightsisters]]
 - [[The Hutt Clans]]
 - [[Mandalore]]
-- [[The Path of Light]]
+- [[The Corporate Security Alliance]]
 
 ## People
 
@@ -70,7 +70,7 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 - [[Padmé Amidala]]
 - [[Leia Skywalker]]
 - [[Ahsoka Tano]]
-- [[Mace Windu]]
+- [[Nadi Orl]]
 - [[Barriss Offee]]
 - [[Ilai Vess]]
 - [[Clones]]
