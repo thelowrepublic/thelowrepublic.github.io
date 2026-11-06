@@ -62,7 +62,7 @@ For the Republic the Alliance is convenient. The [[The Republic Corps|Corps]] ga
 
 What troubles the Ministry most is not what the Alliance does but how fast it became able to do it. Its first troops were in the field, armed and armoured, two months after the signing. By the end of the year it had declared a force of fifty thousand at its shareholder meetings, with more supposedly on the way. The Corps took two years to stand up, and the [[The Grand Union Army#The armour|Union]] spent ten years readying its factories for its armour alone.
 
-The Alliance says it hired its soldiers. Its recruiters supposedly took on mercenaries, [[Clones|clone]] veterans and anyone else willing to fight. That pool is well known to every intelligence service, and it is neither large nor easy to reach in such a short time. In the Outer Rim the Collective outbids everyone, which is why the Corps gets almost no recruits there. Most clone veterans still fit to fight joined the Collective years ago.
+The Alliance says it hired its soldiers. Its recruitment and training are run by [[Director Gideon]]. Its recruiters supposedly took on mercenaries, [[Clones|clone]] veterans and anyone else willing to fight. That pool is well known to every intelligence service, and it is neither large nor easy to reach in such a short time. In the Outer Rim the Collective outbids everyone, which is why the Corps gets almost no recruits there. Most clone veterans still fit to fight joined the Collective years ago.
 
 The numbers do not add up. So far, [[Republic Intelligence]] has given the Senate three explanations. Either the Alliance recruited faster than any army in history, or it began recruiting long before it signed anything, or it has found a way for soldiers to spring out of the ground like mushrooms after rain. The Alliance has never left its dead on a field and has never published a casualty list. No trooper has deserted, or if one has, they have never spoken to the press. If the Collective has taken any of them alive, it has not said so.
 
@@ -73,6 +73,7 @@ The numbers do not add up. So far, [[Republic Intelligence]] has given the Senat
 ## See also
 
 - [[Ferrix]]
+- [[Director Gideon]]
 - [[The Shadow Collective]]
 - [[The Republic Corps]]
 - [[Republic Intelligence]]
