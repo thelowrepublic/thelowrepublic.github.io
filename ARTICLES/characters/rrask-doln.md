@@ -34,7 +34,7 @@ The [[The Long War|Long War]] was fought hardest in the [[Galactic regions#The M
 
 ## In 2 ABY
 
-Doln is the Coalition's third minister. In public he calls the Coalition loyal and says it has no complaints. He also keeps reminding everyone about the Perlemian Trade Route that runs through the Coalition's territories. And about the opinionated Wookiees that are a part of the Coalition.
+Doln is the Coalition's third minister. The first was [[Jhena Varrin]], Governor of Taldot, who served in the same militia during the war. In public he calls the Coalition loyal and says it has no complaints. He also keeps reminding everyone about the Perlemian Trade Route that runs through the Coalition's territories. And about the opinionated Wookiees that are a part of the Coalition.
 
 ## See also
 

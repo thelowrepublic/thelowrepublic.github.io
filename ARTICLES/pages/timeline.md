@@ -99,7 +99,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 
 - Nute Gunray and Rune Haako were tried and convicted.
 - Bail Organa stepped down. Ars Vehn became Chancellor.
-- The Governor of Taldot called four neighbouring sectors together. They agreed to pool what was left. See [[The Kashyyyk Region Coalition]].
+- The Governor of Taldot, [[Jhena Varrin]], aged nineteen, called four neighbouring sectors together. They agreed to pool what was left. See [[The Kashyyyk Region Coalition]].
 - Anakin Skywalker was discharged with honour.
 - The schism over attachment opened in the Order. See [[The Reckoning of the Jedi#The schism, 14–8 BBY]].
 - Lux Bonteri became senator for [[Raxus]].

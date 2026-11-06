@@ -30,7 +30,7 @@ The **Hutt Clans** rule [[Galactic regions#Hutt Space|Hutt Space]], and in all t
 
 [[The Kashyyyk Region Coalition|Halla and Kastolar]] border [[Galactic regions#Hutt Space|Hutt Space]], and the Hutts moved in while the sectors were still counting their dead. [[Nal Kaddan]] fell in 15 BBY. Both sectors begged for help. Nothing came out of [[Coruscant]] except condolences and empty promises.
 
-The Governor of Taldot called the other four sectors together in 14 BBY. They agreed to pool what was left. The [[Kashyyyk|Wookiees]] had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the Hutts. It took two years to push the Hutts back out of Halla and Kastolar.
+The Governor of Taldot, [[Jhena Varrin]], called the other four sectors together in 14 BBY. They agreed to pool what was left. The [[Kashyyyk|Wookiees]] had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the Hutts. It took two years to push the Hutts back out of Halla and Kastolar.
 
 ## The Collective
 
