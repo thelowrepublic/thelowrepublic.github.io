@@ -227,6 +227,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - Barriss Offee sent Leia Skywalker the first of three private invitations. Leia declined it and reported it.
 - Morgan Elsbeth began feeding Republic Intelligence.
 - In the ninth month a ship matching no registry breached Nightsister territory and stayed for five hours.
+- In the last months of the year, [[Cassian Andor]] killed two corporate security guards on Morlana One. Deputy Inspector [[Syril Karn]] followed his trail to Ferrix.
 - By the end of the year, at least seventy-eight sectors had asked whether they could follow Seswenna out. They asked their own lawyers and Senate representatives.
 
 ### 2 ABY
@@ -236,5 +237,6 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - Seven weeks after Quelii left, the Chommell sector filed a petition to secede.
 - In the sixth month Quelii and the Gordian Reach formed the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Dathomir-Yavin Accord]].
 - After Quelii seceded, the Republic came to [[Ferrix]] and exterminated every Collective asset there. More than seven hundred civilians died in what news channels outside the Republic called the Ferrix Massacre. See [[Ferrix#Ferrix Massacre, 2 ABY]].
+- The Corps withdrew from Ferrix and deputised its local security forces as Sector Rangers, with Syril Karn as their Commissioner.
 - In the ninth month Thesme, D'Astan and Kalamith stopped remitting taxes to the Republic. None of the three had been given a seat in the Senate for decades.
 - By the end of the year, more than sixty secession petitions were in review. The emergency powers had been renewed eight times. Three motions had been filed to remove Dal. See [[The Secessions#The petitions]].

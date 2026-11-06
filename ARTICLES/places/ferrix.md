@@ -19,7 +19,7 @@ infobox:
   held_by: [Administrators from the Corporate Sector]
 ---
 
-**Ferrix** is a world on the Hydian Way, run by corporate authority. The [[The Shadow Collective|Shadow Collective]] took over its corporate offices from within, after the [[The Galactic Republic|Republic]] had answered four years of complaints with instructional videos. Since Quelii seceded, a Republic garrison has cleared the Collective out, in what became known as the Ferrix Massacre, and returned the world to its corporate administrators.
+**Ferrix** is a world on the Hydian Way, run by corporate authority. The [[The Shadow Collective|Shadow Collective]] took over its corporate offices from within, after the [[The Galactic Republic|Republic]] had answered four years of complaints with instructional videos. Since Quelii seceded, the Republic Corps has cleared the Collective out, in what became known as the Ferrix Massacre, returned the world to its corporate administrators and left its security to local forces deputised as Sector Rangers.
 
 ## History
 
@@ -33,10 +33,13 @@ After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Rep
 
 The extermination cost a terrible number of lives. What exactly happened is still unclear. To this day it is not known whether the civilians who died were killed because they attacked the Corps at the Collective's behest, or because the Corps made no distinction between known [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] agents and locals who had by then become deeply involved in Collective operations. Each side tells the story differently. What is certain is that more than seven hundred civilians with no provable connection to the Collective were killed, and that news channels outside the Republic dubbed it 'the Ferrix Massacre'.
 
+The Corps did not stay. To save face it withdrew and handed Ferrix's security to the planet's own security forces, deputised as [[The Judicial Forces and the Sector Rangers|Sector Rangers]]. Their Commissioner is [[Syril Karn]], a former corporate security officer from Morlana One, and the Republic funds them generously, because it still needs Ferrix. The people of Ferrix despise him for the badge he wears.
+
 The Republic's response on Ferrix set a precedent, which a month later led to the formation of the [[The Corporate Security Alliance|Corporate Security Alliance]].
 
 ## See also
 
 - [[Cassian Andor]]
+- [[Syril Karn]]
 - [[The Shadow Collective]]
 - [[The Corporate Security Alliance]]

@@ -29,9 +29,10 @@ Cassian Andor spent four years asking the Republic to look into the blatant corr
 
 ## The Collective
 
-To repay the Crimson Dawn, Cassian runs Collective recruitment and supply smuggling across eleven Rim sectors and is very good at it. Most of the people he brings in are not looking for a criminal career. They are workers from worlds like Ferrix, and he offers them what Crimson Dawn once offered him: someone who answers when they ask. After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic finally showed up on Ferrix to set up a garrison. The [[The Republic Corps|Republic Corps]] found out about the criminals running the planet and quickly [[Ferrix#Ferrix Massacre, 2 ABY|exterminated all Collective assets on Ferrix]], handing the planet back to a new batch of paper pushers from the Corporate Sector. It was clear they needed a foothold along the Hydian Way, but they defended their actions as 'following up on requests for aid from years ago'.
+To repay the Crimson Dawn, Cassian runs Collective recruitment and supply smuggling across eleven Rim sectors and is very good at it. Most of the people he brings in are not looking for a criminal career. They are workers from worlds like Ferrix, and he offers them what Crimson Dawn once offered him: someone who answers when they ask. On Collective business on Morlana One in 1 ABY, he killed two corporate security guards. A deputy inspector, [[Syril Karn]], followed his trail all the way to Ferrix. After [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] seceded, the Republic finally showed up on Ferrix to set up a garrison. The [[The Republic Corps|Republic Corps]] found out about the criminals running the planet and quickly [[Ferrix#Ferrix Massacre, 2 ABY|exterminated all Collective assets on Ferrix]], handing the planet back to a new batch of paper pushers from the Corporate Sector. It was clear they needed a foothold along the Hydian Way, but they defended their actions as 'following up on requests for aid from years ago'.
 
 ## See also
 
 - [[Ferrix]]
+- [[Syril Karn]]
 - [[The Shadow Collective]]

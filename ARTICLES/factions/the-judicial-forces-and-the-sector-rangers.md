@@ -47,7 +47,7 @@ Vidoc hunted bounties for twenty-two years first, and that is where he learned t
 
 ## Commissioners
 
-The Sector Rangers have no oversight office of their own. Every local branch falls directly under the Ministry of Security. The highest rank among the Rangers is Commissioner, who is responsible for a whole sector, or for a single planet if it is vital enough. A Commissioner is usually a Ministry of Security official, sent out to coordinate the sector and to work with the local [[The Republic Corps|Corps]] division, if there is one. A local officer rising to Commissioner is rare, but not unheard of, especially in sectors where loyalty to the Republic runs low. There, raising a local to the top post is a form of appeasement.
+The Sector Rangers have no oversight office of their own. Every local branch falls directly under the Ministry of Security. The highest rank among the Rangers is Commissioner, who is responsible for a whole sector, or for a single planet if it is vital enough. A Commissioner is usually a Ministry of Security official, sent out to coordinate the sector and to work with the local [[The Republic Corps|Corps]] division, if there is one. A local officer rising to Commissioner is rare, but not unheard of, especially in sectors where loyalty to the Republic runs low. There, raising a local to the top post is a form of appeasement. One exception is on [[Ferrix]], where the post fell to [[Syril Karn]], a corporate security officer from Morlana One, when the Corps deputised the planet's whole security force.
 
 ## In 2 ABY
 
