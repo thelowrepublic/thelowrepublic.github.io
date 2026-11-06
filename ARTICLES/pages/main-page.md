@@ -73,6 +73,7 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 - [[Nadi Orl]]
 - [[Barriss Offee]]
 - [[Ilai Vess]]
+- [[Rrask Doln]]
 - [[Clones]]
 
 ## Places
