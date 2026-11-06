@@ -39,6 +39,8 @@ He will do very nearly anything to the guilty and nothing at all to anyone else.
 
 In the sixth month of 0 ABY [[Ahsoka Tano]] left the place she had been living and has not been found since. Nobody in the Republic knows what she is attempting. Investigator Vidoc has her filed as someone he would like to talk to, but doesn't yet have a reason to track her down.
 
+Vidoc is now investigating what he assumes to be a single organisation, working across sector lines with the [[The Shadow Collective|Collective]], the [[The Secessions|secessionist sectors]] and even the [[The Greater Seswenna Union|Union]], undermining the Republic with tactics that can only be described as terroristic. He has dubbed it 'Axis'.
+
 ## See also
 
 - [[The Judicial Forces and the Sector Rangers]]
