@@ -19,6 +19,7 @@ infobox:
   type: Sector alliance
   founded: 14 BBY
   founder: ["[[Jhena Varrin]], Governor of Taldot"]
+  leader: ["[[Rrask Doln]], third minister"]
   territory: "The Taldot, Mytaranor, Lantillian, Halla and Kastolar sectors"
   affiliated_with: ["[[The Galactic Republic]]"]
   status: Active
