@@ -12,9 +12,9 @@ tags:
   region: [Mid Rim]
 redirects: [Kashyyyk Region, Taldot, Mytaranor, Lantillian, Halla, Kastolar]
 infobox:
-  image: ""
+  image: "the-kashyyyk-region-coalition.png"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Pablito"
   artwork_author_link: ""
   type: Sector alliance
   founded: 14 BBY
