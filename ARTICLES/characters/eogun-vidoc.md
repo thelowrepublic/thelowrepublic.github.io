@@ -11,12 +11,12 @@ tags:
   period: [Shadow War]
 redirects: [Vidoc, Investigator Vidoc]
 infobox:
-  image: ""
+  image: "eogun-vidoc.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Luke Fisher"
+  artwork_author_link: "https://www.krop.com/lukefisher"
   name: Eogun Vidoc
-  species: Human
+  species: Mosyk
   born: 60 BBY (aged 62)
   affiliation: ["[[The Judicial Forces and the Sector Rangers]]"]
   position: Chief criminal investigator, head of the Judicial Oversight Office
