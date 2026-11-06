@@ -52,6 +52,8 @@ The Compact stood for eight years and people used it. The Jedi at Ossus married.
 
 [[Quinlan Vos]] reads the history of objects by touch, which is why the Templars chose him to infiltrate the [[The Nightborn|Nightborn]] in 1 ABY and find out about the [[The Shadow War#What each side fields|holocrons]] they unearthed. He has sent information out at irregular intervals ever since. He has sent more information to Kenobi privately. Nobody has reached a settled view if Vos is still their asset. His well-known propensity to disregard Jedi creed is troublesome, but it has given credence to his alibi as a defector. His problematic attachment to [[Asajj Ventress]], and over a dozen unsuccessful attempts to contact her, make his real loyalty and priorities an open question.
 
+The Templars received the [[Order of Voss]]'s warning about [[Baylan Skoll]] in 2 ABY, in time.
+
 ## See also
 
 - [[Ossus Order]]

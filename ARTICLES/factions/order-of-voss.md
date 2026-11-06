@@ -42,6 +42,8 @@ Master [[Aayla Secura]] is among them and is understood to have some standing th
 
 Perhaps a hundred children with the potential to become Jedi are born in the Republic each year. Where a Force-sensitive child is found now decides what becomes of them. Near the Core the [[The Jedi Templars|Templars]] will hear of it first. In the Rim the [[The Shadow Collective|Collective]] usually hears first, and the child goes to [[Dathomir]], though the [[Ossus Order#Force-sensitive children|Ossus Order]] tries to find them first. The Voss only accept people who seek them out through the Force.
 
+In 2 ABY the Order of Voss sent its only message to date to Ossus and the Templars: a warning to be wary of [[Baylan Skoll]], a former Jedi who had fled Voss with something taken from its mystics.
+
 ## See also
 
 - [[Voss]]

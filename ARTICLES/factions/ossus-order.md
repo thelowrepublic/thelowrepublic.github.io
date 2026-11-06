@@ -62,6 +62,8 @@ artwork_author_link: "https://www.jakebartok.net"
 
 The Ossus Council has met with [[Barriss Offee]] in secret several times, but the subjects of those meetings are unknown.
 
+In 2 ABY the [[Order of Voss]] sent word warning Ossus to be wary of [[Baylan Skoll]]. The warning reached Ossus too late. Skoll had already broken into the Temple, harmed no one, and taken only his own old lightsaber and a stone tablet.
+
 ## See also
 
 - [[Ossus]]
