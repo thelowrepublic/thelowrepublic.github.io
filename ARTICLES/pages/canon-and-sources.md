@@ -8,7 +8,7 @@ sources: [Pref, X.1, X.5]
 canon: false
 ---
 
-The Low Republic is an alternate history of the Star Wars galaxy, written by Pablito and HyeroDrimm. Every article on this wiki is drawn from that history. The articles repeat it, arrange it and link it together. Some add a short canon background, as set out below. Nothing else is added.
+The Low Republic is an alternate history of the Star Wars galaxy, written by Pablito and HyeroDrimm. Every article on this wiki is drawn from that history. The articles repeat it, arrange it and link it together. Some add a short canon background, as set out below.
 
 ## Canon
 
