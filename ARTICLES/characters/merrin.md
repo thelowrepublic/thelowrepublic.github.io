@@ -13,8 +13,8 @@ tags:
 infobox:
   image: "merrin.jpg"
   image_caption: ""
-  artwork_author: "Jordan Lamarre-Wan"
-  artwork_author_link: "https://www.artstation.com/jroid"
+  artwork_author: "lizzart_zardonicz"
+  artwork_author_link: "https://www.instagram.com/lizzart_zardonicz"
   name: Merrin
   species: Dathomirian
   homeworld: "[[Dathomir]]"
