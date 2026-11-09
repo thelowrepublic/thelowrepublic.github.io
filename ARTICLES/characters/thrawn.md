@@ -32,9 +32,9 @@ Thrawn was found adrift in [[Galactic regions#Wild Space|Wild Space]] by an Outl
 
 ## In 2 ABY
 
-Thrawn has commanded the [[The Greater Seswenna Union|Union]]'s fleet since the secession and has not lost an engagement with the [[The Shadow Collective|Collective]]. He studies the art of the people he fights. He calls the Republic charter [[The Republic Remade#The Constitutional Convention, 13–11 BBY|a beautiful machine for preventing decisions]]. Since the secession, he has advised patience in military actions to both [[Wilhuff Tarkin|Tarkin]] and [[Deran Kolt|Kolt]], though he has never elaborated in public about what the Union is waiting for.
+Thrawn has commanded the [[The Greater Seswenna Union|Union]]'s fleet since the secession and has not lost a single engagement with the [[The Shadow Collective|Collective]]. He studies the art of the people he fights, oftentimes publicly praising the value of learning from other cultures, much to the Ministry of Culture's dismay. He calls the Republic charter [[The Republic Remade#The Constitutional Convention, 13–11 BBY|a beautiful machine for preventing decisions]]. 
 
-Coruscant's quiet hope is that the Union falls apart when Tarkin dies. Kolt and Thrawn are the two reasons why it won't. Kolt wants the Union to take the bordering sectors now, while the Republic is busy. Thrawn swayed him away from that course of action.
+Since the secession, he has advised patience in military actions to both [[Wilhuff Tarkin|Tarkin]] and [[Deran Kolt|Kolt]], though he has never elaborated in public about what the Union is waiting for. Coruscant's quiet hope is that the Union falls apart when Tarkin dies. Kolt and Thrawn are the two reasons why it won't. Kolt wants the Union to take the bordering sectors now, while the Republic is busy. Thrawn swayed him away from that course of action.
 
 ## See also
 
