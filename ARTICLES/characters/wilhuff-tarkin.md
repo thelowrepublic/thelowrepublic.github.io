@@ -99,13 +99,11 @@ The [[The Republic Corps|Corps]] garrisons stationed in the eight sectors of the
 
 ## In 2 ABY
 
-Tarkin is now sixty-six. He holds the title of Governor-General of the [[The Greater Seswenna Union|Greater Seswenna Union]] and has never been convicted of anything by any court. He has given two long interviews about Yavin. In both of them he expressed deep regret but accepted no responsibility.
+Tarkin is now sixty-six. He holds the title of Governor-General of the [[The Greater Seswenna Union|Greater Seswenna Union]] and has never been convicted of anything by any court. He has given two long interviews about Yavin. In both of them he expressed deep regret but accepted no responsibility. By the end of 2 ABY, his public appearances have grown sparse.
 
 After he resigned his commission and became governor, Tarkin underwent life extension procedures because of a popular referendum. He was already in his fifties, so they did not return him to his prime. They do mean that at sixty-six he is physically in his mid fifties and he will not be dying any time soon, despite the Republic's wishes.
 
 Because Seswenna never left, in law, its eight sectors are still entitled to eight Senate seats, though they have sent nobody since 1 ABY. Tarkin does not need the room anymore, though it is a weapon that is loaded for him to use.
-
-[[Wullf Yularen|Yularen]] is generally credited as the man who exposed Tarkin's machinations during the Long War. Several colleagues privately blame him for a share of [[The Battle of Yavin#The decision|Yavin]], on the argument that when cornered in 1 BBY, someone like Tarkin was always going to do something.
 
 [[Thrawn]] was found adrift in Wild Space by an Outland Command survey in 14 BBY. Recruited by Tarkin, he quickly became his protégé. He has commanded the Union's fleet since the secession and has not lost an engagement with the [[The Shadow Collective|Collective]]. [[Deran Kolt]] is First Marshal of the Greater Seswenna Union, commander of the [[The Grand Union Army|Grand Union Army]], and Tarkin's presumed successor. He has a better public image than Tarkin and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and Thrawn are the two reasons why it won't.
 
