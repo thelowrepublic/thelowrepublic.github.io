@@ -37,9 +37,7 @@ Kolt ran the campaign against [[The Shadow Collective|Collective]] infiltration 
 
 ## In 2 ABY
 
-Kolt has a better public image than [[Wilhuff Tarkin|Tarkin]] and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and [[Thrawn]] are the two reasons why it won't. Kolt wants the Union to take the bordering sectors now, while the Republic is busy. Thrawn swayed him away from that course of action.
-
-Since the secession, Thrawn has advised patience in military actions to both Tarkin and Kolt, though he has never elaborated in public about what the Union is waiting for.
+Kolt has a harsher public image than [[Wilhuff Tarkin|Tarkin]] and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and [[Thrawn]] are the two reasons why it won't. Kolt wants the Union to take the bordering sectors now, while the Republic is busy. Thrawn swayed him away from that course of action. Since the secession, Thrawn has advised patience in military actions to both Tarkin and Kolt, though he has never elaborated in public about what the Union is waiting for.
 
 ## See also
 
