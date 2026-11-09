@@ -19,7 +19,7 @@ infobox:
   designation: CC-2224
   species: Human (clone)
   homeworld: "[[Kamino]]"
-  born: 32 BBY (physically 68)
+  born: 32 BBY (physically in his late fifties)
   position: "In [[Obi-Wan Kenobi]]'s closest retinue"
   formerly: [Commander of the 212th]
 ---
@@ -32,11 +32,11 @@ Cody was a clone marshal commander. He led the 212th Attack Battalion as Obi-Wan
 
 ## After the findings
 
-Cody's chip was removed in 18 BBY. He learned about the extent of Order 66 in the [[The Kamino Findings#The contingency orders|published findings]], like everyone else. He took the citizenship, took the pension, and turned down [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] twice.
+Cody's chip was removed in 18 BBY. He learned about the extent of Order 66 in the [[The Kamino Findings#The contingency orders|published findings]], like everyone else. He took the citizenship, took the pension, and turned down [[The Shadow Collective#Crimson Dawn|Crimson Dawn]] work offers twice. Eventually he relented in one aspect, and he took the life extension procedure, though he purchased it with independent funds.
 
 ## In 2 ABY
 
-Cody is physically sixty-eight. He serves on [[Obi-Wan Kenobi|Kenobi]]'s closest retinue, refusing any transfers or retirement. His loyalty is unwavering, as if he was atoning for a sin he never committed.
+Cody serves on [[Obi-Wan Kenobi|Kenobi]]'s closest retinue, refusing any transfers or retirement. He signed up shortly after Yavin, when he heard that Kenobi was put back in charge as a general. [The Republic Corps|The Corps] has strict guidelines against hiring clones, but Kenobi overruled those personally. Cody's loyalty is unwavering, as if he was atoning for a sin he never committed.
 
 ## See also
 
