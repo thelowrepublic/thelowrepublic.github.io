@@ -19,7 +19,7 @@ infobox:
   designation: CC-3636
   species: Human (clone)
   homeworld: "[[Kamino]]"
-  born: c. 32 BBY (physically about sixty)
+  born: c. 32 BBY (physically in his late fifties)
   affiliation: ["[[The Shadow Collective]]"]
   position: Recruiter for Crimson Dawn
   formerly: [Commander of the 104th]
