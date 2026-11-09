@@ -36,7 +36,7 @@ Cody's chip was removed in 18 BBY. He learned about the extent of Order 66 in th
 
 ## In 2 ABY
 
-Cody serves on [[Obi-Wan Kenobi|Kenobi]]'s closest retinue, refusing any transfers or retirement. He signed up shortly after Yavin, when he heard that Kenobi was put back in charge as a general. [The Republic Corps|The Corps] has strict guidelines against hiring clones, but Kenobi overruled those personally. Cody's loyalty is unwavering, as if he was atoning for a sin he never committed.
+Cody serves on [[Obi-Wan Kenobi|Kenobi]]'s closest retinue, refusing any transfers or retirement. He signed up shortly after Yavin, when he heard that Kenobi was put back in charge as a general. [[The Republic Corps|The Corps]] has strict guidelines against hiring clones, but Kenobi overruled those personally. Cody's loyalty is unwavering, as if he was atoning for a sin he never committed.
 
 ## See also
 
