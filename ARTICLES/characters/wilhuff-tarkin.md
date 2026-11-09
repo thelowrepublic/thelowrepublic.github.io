@@ -105,7 +105,7 @@ After he resigned his commission and became governor, Tarkin underwent life exte
 
 Because Seswenna never left, in law, its eight sectors are still entitled to eight Senate seats, though they have sent nobody since 1 ABY. Tarkin does not need the room anymore, though it is a weapon that is loaded for him to use.
 
-[[Thrawn]] was found adrift in Wild Space by an Outland Command survey in 14 BBY. Recruited by Tarkin, he quickly became his protégé. He has commanded the Union's fleet since the secession and has not lost an engagement with the [[The Shadow Collective|Collective]]. [[Deran Kolt]] is First Marshal of the Greater Seswenna Union, commander of the [[The Grand Union Army|Grand Union Army]], and Tarkin's presumed successor. He has a better public image than Tarkin and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and Thrawn are the two reasons why it won't.
+[[Thrawn]] was found adrift in Wild Space by an Outland Command survey in 14 BBY. Recruited by Tarkin, he quickly became his protégé. He has commanded the Union's fleet since the secession and has not lost an engagement with the [[The Shadow Collective|Collective]]. [[Deran Kolt]] is First Marshal of the Greater Seswenna Union, commander of the [[The Grand Union Army|Grand Union Army]], and Tarkin's presumed successor. He has a harsher public image than Tarkin and holds the same views. Coruscant's quiet hope is that the Union falls apart when the old man dies. Kolt and Thrawn are the two reasons why it won't.
 
 ## See also
 
