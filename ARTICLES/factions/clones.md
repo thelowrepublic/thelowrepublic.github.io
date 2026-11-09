@@ -87,8 +87,6 @@ The Collective also sponsors Ko Sai's procedure for all clones working for it. I
 
 Around one and a half million of the eight million are still alive in 2 ABY. Most of them never fought. The men who served were those decanted before 27 BBY and most are physically approaching seventy. The ones raised as wards are physically between forty and sixty. The latter are the reason the survivor numbers are as high as they are.
 
-[[Cody]] is physically sixty-eight. He serves on [[Obi-Wan Kenobi|Kenobi]]'s closest retinue, refusing any transfers or retirement.
-
 ## See also
 
 - [[The Kamino Findings]]
