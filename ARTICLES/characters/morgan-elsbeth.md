@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, 15 BBY–0 ABY, Shadow War]
   region: [Outer Rim]
 infobox:
-  image: ""
+  image: "morgan-elsbeth.webp"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Brian Matyas"
+  artwork_author_link: "https://www.artstation.com/bmatyas"
   name: Morgan Elsbeth
   species: Human
   homeworld: "[[Dathomir]]"
