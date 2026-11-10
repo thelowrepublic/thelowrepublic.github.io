@@ -77,9 +77,7 @@ The Nightborn are only one part of it: the order of Force-users based on Dathomi
 
 Twenty-one hundred trained Force-users went into the field for the Republic in 0 ABY. The Nightborn number around six hundred. They are on average more skilled individually and they choose where and when to fight. And they will still lose a war of attrition by a wide margin. Everyone involved can do the arithmetic. The [[The Shadow Collective|Shadow Collective]]'s answer was not to make more Nightborn, but to [[Mandalore#The armouries|stop needing them]].
 
-Collective field operations are coordinated out of proportion by Nightborn, who know Republic doctrine, Jedi tactics, and how to stay hidden from people they often studied beside.
-
-Then there are all the ancient Sith treasures that Maul dug up. Only a select few Nightborn know all the specifics, but they are known to be in possession of [[The Shadow War#What each side fields|holocrons]] dating back to the ancient Sith Empire.
+Collective field operations are coordinated out of proportion by Nightborn, who know Republic doctrine, Jedi tactics, and how to stay hidden from people they often studied beside. Then there are all the ancient Sith treasures that Maul dug up. Only a select few Nightborn know all the specifics, but they are known to be in possession of holocrons dating back to the ancient Sith Empire.
 
 ## See also
 
