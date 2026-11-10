@@ -31,7 +31,7 @@ infobox:
 
 ## The dig
 
-[[Maul]] registered a dig on the [[Yavin 4|fourth moon of Yavin Prime]] with the Republic [[The Galactic Republic|Bureau of Antiquities]] in 5 BBY. It went through a shell company, on the correct forms, with the correct fees, renewed every year. It was one of eleven hundred such permits active in the [[Galactic regions#The Outer Rim|Outer Rim]] that year and drew no attention whatsoever. The Massassi temples there were raised by the Sith of Naga Sadow's day and abandoned for four thousand years. They are also where Exar Kun put his spirit at the end of the Great Sith War. He escaped the destruction of his body by pouring himself into the stone, and he stayed there for four thousand years. Maul had not gone to Yavin for riches or power. He had gone to find out how Kun did it.
+[[Maul]] registered a dig on the [[Yavin 4|fourth moon of Yavin Prime]] with the Republic [[The Galactic Republic|Bureau of Antiquities]] in 5 BBY. It went through a shell company, on the correct forms, with the correct fees, renewed every year. It was one of eleven hundred such permits active in the [[Galactic regions#The Outer Rim|Outer Rim]] that year and drew no attention whatsoever. The Massassi temples there were raised by the Sith of Naga Sadow's day and abandoned for four thousand years. They are also where Exar Kun put his spirit at the end of the Great Sith War. He escaped the destruction of his body by pouring himself into the stone, and he stayed there for four thousand years.
 
 ## The decision
 
