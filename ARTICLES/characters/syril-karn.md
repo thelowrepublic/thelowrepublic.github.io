@@ -28,7 +28,7 @@ infobox:
 
 ## Background
 
-Syril Karn was born on [[Coruscant]] around 40 BBY, to a strict mother, Eedy Karn, and a father who left the family. Around 10 BBY he left home, against his mother's wishes, to join the security forces of Preox-Morlana, known as Pre-Mor, the corporate conglomerate that governs the Morlani system. He moved to its security headquarters on Morlana One. He took his duties more seriously than most of his colleagues and rose to deputy inspector, at which point he had his uniform tailored tighter, with extra pockets and piping.
+Syril Karn was born on [[Coruscant]] around 40 BBY, to a strict mother, Eedy Karn, and a father who left the family. Around 10 BBY he left home, against his mother's wishes, to join the security forces of Preox-Morlana, known as Pre-Mor, the corporate conglomerate that governs the Morlani system. He moved to its security headquarters on Morlana One. He took his duties more seriously than most of his colleagues and rose to deputy inspector.
 
 ## Morlana One, 1–2 ABY
 
