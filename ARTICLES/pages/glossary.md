@@ -12,13 +12,13 @@ Short definitions of the names and terms used across the wiki. Each one links to
 
 | Term | Meaning | See |
 |---|---|---|
-| ABY and BBY | Years after and before the Battle of Yavin, 0 ABY. The calendar was reset within the year of the battle. | [[The Battle of Yavin#Aftermath]] |
+| ABY and BBY | Years after and before the Battle of Yavin, 0 ABY. | [[The Battle of Yavin#Aftermath]] |
 | Auxiliary Corps | The Long War regiments of re-enlisted clones and conscripted citizens. They took most of the war's last casualties and were disbanded between 15 and 12 BBY. | [[The Republic Corps#The Auxiliary Corps]] |
-| Beskar | A lightsaber will not go through it. Death Watch refitted an army in beskar from the old armouries of Mandalore. | [[Mandalore#The armouries]] |
-| Blues, the | The soldiers of the Republic Corps. Enlisting is called going blue. | [[The Republic Corps]] |
+| Beskar | Alloy that was used in Mandalorian armor and was notable for its high tolerance to extreme forms of damage. | [[Mandalore#The armouries]] |
+| Blues, the | The soldiers of the Republic Corps. Enlisting is called 'going blue'. | [[The Republic Corps]] |
 | Bureau of Antiquities | The Republic office that registers digs. It registered the Yavin 4 dig in 5 BBY. | [[The Galactic Republic]] |
 | Candorian plague | The plague of the Republic Dark Age, a thousand years ago. It killed two-thirds of the galaxy's population. | [[The Census of 4 BBY]] |
-| Children of the Watch | A Mandalorian sect that takes in orphans and raises them in the creed from infancy. | [[Mandalore#The Children of the Watch]] |
+| Children of the Watch | A Mandalorian sect that takes in orphans and raises them in warrior creed from infancy. | [[Mandalore#The Children of the Watch]] |
 | Clone Wars | The war between the Republic and the Confederacy, up to the death of Palpatine in 19 BBY. The fighting that followed is the Long War. | [[The Long War]] |
 | Collective, the | The Shadow Collective. | [[The Shadow Collective]] |
 | Commando | The rank of every enlisted soldier of the Republic Corps. | [[The Republic Corps]] |
@@ -26,60 +26,60 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Constitutional Convention | The convention of 13 to 11 BBY that wrote the new charter. Padmé Amidala chaired it. | [[The Republic Remade#The Constitutional Convention, 13–11 BBY]] |
 | Contingency orders | The hundred and fifty standing orders held on a chip in every clone trooper. | [[The Kamino Findings#The contingency orders]] |
 | Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Inner Rim, with free trade beyond. | [[Three Stances of the Senate]] |
-| Cortosis | Cortosis-weave gauntlets short out a lightsaber for about eight seconds. They are standard issue for Republic escorts who expect to meet Nightborn. | [[The Shadow War#What each side fields]] |
+| Cortosis | An extremely rare metal that had a very high energy absorption rate and transmission coefficients, which allowed even the energy of a blaster bolt or lightsaber to be dissipated upon contact. | [[The Shadow War#What each side fields]] |
 | Crimson Dawn | The Shadow Collective's trading arm and its main source of money. | [[The Shadow Collective#Crimson Dawn]] |
 | Cult of Light | The Republic's name for the Path of Light. | [[The Path of Light]] |
 | Dathomir-Yavin Accord | The defensive and economic alliance of Quelii and the Gordian Reach, formed in the sixth month of 2 ABY. | [[The Secessions#Quelii and Gordian Reach, 2 ABY]] |
 | Death Watch | The Mandalorian faction under Gar Saxon. It is part of the Shadow Collective and holds the southern half of Mandalore. | [[Mandalore#The armouries]] |
 | Demilitarisation | The abolition of Jedi military rank in 16 BBY. | [[The Reckoning of the Jedi#Demilitarisation, 16 BBY]] |
-| Droid papers | At least nine studies, made between 21 and 15 BBY, which found sentience in many Separatist droids. The Investigative Office published them in 6 BBY. | [[The Republic Remade#The droid papers]] |
-| Emergency powers | Powers that expire after ninety days unless the Senate votes to keep them. They have been renewed eight times since Yavin. | [[The Shadow War#The Republic at war]] |
+| Droid papers | At least nine studies, made between 21 and 15 BBY, which found innate sentience in many Separatist droids. The Investigative Office published them in 6 BBY. | [[The Republic Remade#The droid papers]] |
+| Emergency powers | Extraordinary extent of power granted to the Chancellor of the Republic. Must be renewed every ninety days by Senate majority vote. | [[The Shadow War#The Republic at war]] |
 | Exit permit | The Union's permission to leave its territory, rarely granted. | [[The Greater Seswenna Union#Life in the Union]] |
 | Ferrix Massacre | The Republic Corps' clearing of the Collective from Ferrix in 2 ABY, in which more than seven hundred civilians with no provable connection to the Collective died. The name comes from news channels outside the Republic. | [[Ferrix#Ferrix Massacre, 2 ABY]] |
 | First Marshal | The rank above marshal in the Grand Union Army. Deran Kolt holds it. | [[The Grand Union Army]] |
 | Greater Seswenna Union | Seswenna and seven neighbouring sectors, which left the Republic in 1 ABY. | [[The Greater Seswenna Union]] |
-| High Republic | The confident, expanding age of several centuries before. The Jedi still taught it to their younglings. | [[Main Page]] |
+| High Republic | The confident, expanding age of of the Republic from several centuries before. | [[Main Page]] |
 | Ichor crystals | Kyber crystals infused with Dathomiri ichor. They give off green smoke and a sickly glow when ignited. | [[The Nightborn#Magick]] |
 | Interdiction fleet | The Republic fleet that has surrounded Yavin 4 since 0 ABY. | [[The Battle of Yavin#Aftermath]] |
 | Investigative Office | The standing office created by the Convention, with the power to demand any record the government holds. Also called the Office of the Inquiry. | [[The Galactic Republic#The Investigative Office]] |
 | Jedi Templars | The Jedi body based in the Coruscant Temple since 0 ABY, led by Luminara Unduli. | [[The Jedi Templars]] |
 | Judicial Forces | The force that serves the courts. It investigates, arrests and may pass judgement in local matters. | [[The Judicial Forces and the Sector Rangers]] |
-| Kashyyyk Region Coalition | Taldot, Mytaranor, Lantillian, Halla and Kastolar, which pooled what was left to them in 14 BBY. | [[The Kashyyyk Region Coalition]] |
-| Ko Sai's procedure | Genome work and drug therapy that slows clone ageing. It costs nine thousand credits, is done once, and is followed by a cheap maintenance course. | [[Clones#Ko Sai's procedure]] |
+| Kashyyyk Region Coalition | Taldot, Mytaranor, Lantillian, Halla and Kastolar, which pooled what was left to them in 14 BBY to repel a Hutt invasion. | [[The Kashyyyk Region Coalition]] |
+| Ko Sai's procedure | Genome work and drug therapy that slows clone ageing. It's done once, and is followed by a cheap maintenance course. | [[Clones#Ko Sai's procedure]] |
 | Long War | The war against the Confederacy's remnants, from 19 to 15 BBY. | [[The Long War]] |
 | Low Republic | The Republic of the age after Palpatine, and the age itself. | [[Main Page]] |
-| Magick | The Dathomiri practice of illusion, spirit-work, ichor and the raising of the dead. | [[The Nightborn#Magick]] |
+| Magick | The Dathomiri practice of illusion, spirit-work and the raising of the dead. | [[The Nightborn#Magick]] |
 | MagnaGuards | IG-100 droids built to Grievous's specification for killing Force-users. About nine hundred are in the Collective's service. | [[The Shadow War#What each side fields]] |
 | Manumission Act | The law of 16 BBY that made every clone a citizen. | [[The Manumission Act]] |
-| Marshal | The Republic Corps rank that commands the garrison of one sector. | [[The Republic Corps]] |
-| Massassi temples | The temples on the fourth moon of Yavin Prime, raised by the Sith of Naga Sadow's day. | [[Yavin 4]] |
-| Nightborn | The order of Force-users based on Dathomir. It is one part of the Shadow Collective, and it has never been outlawed by name. | [[The Nightborn]] |
+| Marshal | The Republic Corps rank that commands a division of ten thousand troops. | [[The Republic Corps]] |
+| Massassi temples | The Sith temples on the fourth moon of Yavin Prime. | [[Yavin 4]] |
+| Nightborn | The order of Force-users based on Dathomir. | [[The Nightborn]] |
 | Nightbrothers | The men of the Dathomiri villages, once breeding stock and labour for the Nightsister tradition. | [[Dathomir]] |
 | Nightsisters | Asajj Ventress's breakaway order in the eastern highlands of Dathomir. It keeps the old closed rite. | [[The Nightsisters]] |
 | Order, the | The undivided Jedi Order, before 0 ABY. | [[The Reckoning of the Jedi]] |
-| Order 66 | The contingency order to kill every Jedi officer, at once, on a single transmission. It was never sent. | [[The Kamino Findings#The contingency orders]] |
-| Order of Voss | The order behind the veil of Voss, perhaps six hundred strong. Its members take no commissions and have given up their lightsabers. | [[Order of Voss]] |
+| Order 66 | The contingency order to kill every Jedi officer on a single transmission. | [[The Kamino Findings#The contingency orders]] |
+| Order of Voss | The order behind the veil of Voss, perhaps six hundred strong. | [[Order of Voss]] |
 | Ossus Compact | The settlement of 8 BBY. Younglings could keep contact with their families, and openly acknowledged bonds were permitted. | [[The Reckoning of the Jedi#The schism, 14–8 BBY]] |
 | Ossus Order | The Jedi who stayed on Ossus in 0 ABY, led by the Ossus Council. | [[Ossus Order]] |
 | Outland Command | The theatre posting in the Rim that Tarkin held by 17 BBY. | [[Wilhuff Tarkin]] |
-| Path of Light | A movement that holds the prophecy to be real and Anakin Skywalker to be the Chosen One. | [[The Path of Light]] |
-| Reconstitution | The years from 18 to 12 BBY in which the clone army was freed and replaced by a recruited one. | [[The Manumission Act#The Reconstitution, 18–12 BBY]] |
+| Path of Light | A murder cult that holds the prophecy about Anakin Skywalker being the Chosen One to be real. | [[The Path of Light]] |
+| Reconstitution | The years from 18 to 12 BBY in which the clone army was dismissed and replaced by a recruited one. | [[The Manumission Act#The Reconstitution, 18–12 BBY]] |
 | Republic Corps | The Republic's recruited army, raised from 18 BBY. | [[The Republic Corps]] |
 | Republic Intelligence | The Republic's intelligence service, also called the Strategic Information Service or the SIS. | [[Republic Intelligence]] |
 | Republic Reformists | The Senate stance that wants the Republic's machinery rebuilt from the ground up. | [[Three Stances of the Senate]] |
 | Rim self-rule bloc | The Senate bloc led by Lux Bonteri. It votes with the Core Isolationists. | [[Three Stances of the Senate]] |
-| Sector Rangers | The force that patrols ports, roads, outlying settlements and the lanes between worlds. | [[The Judicial Forces and the Sector Rangers]] |
+| Sector Rangers | Republic's localised military force that patrols ports, roads, outlying settlements and the lanes between worlds. | [[The Judicial Forces and the Sector Rangers]] |
 | Senate Guard | The ceremonial guard of the Senate. It was left as it was. | [[The Republic Corps]] |
-| Shadow Collective | Maul's whole organisation. The Republic has been at war with it since 0 ABY. | [[The Shadow Collective]] |
+| Shadow Collective | Maul's criminal empire, which includes Crimson Dawn, Black Sun, Death Watch, Shadow Troopers, rebuilt droid remnants, countless gangs and cartels, as well as some Nightborn. | [[The Shadow Collective]] |
 | Shadow Pykes | The part of the Pyke Syndicate, about a fifth, that stayed loyal to Maul under Sarn Vekh. | [[The Shadow Collective#What it is]] |
-| Shadow Troopers | Clone soldiers in black and red armour. The Republic first used them for covert and illegal operations, and the Collective's clones took up the colours. | [[The Shadow Troopers]] |
-| Shadow War | The war between the Republic and the Shadow Collective since 0 ABY. The Senate never declared it. | [[The Shadow War]] |
+| Shadow Troopers | Clone soldiers in black and red armour. The Republic first used them for covert and illegal operations, and the Collective's clones took up the colours and name afterwards. | [[The Shadow Troopers]] |
+| Shadow War | The war between the Republic and the Shadow Collective since 0 ABY. | [[The Shadow War]] |
 | Sith nexus | The Sith nexus on Yavin 4. On the third night of the battle it was used to amplify Dathomiri magick. | [[The Battle of Yavin#Six days]] |
-| Taozin nodules | Nodules that hide a wearer from Force detection. They are prohibited to Republic personnel and worn by perhaps a third of Republic Intelligence. | [[The Shadow War#What each side fields]] |
+| Taozin nodules | Nodules that hide a wearer from Force detection. | [[The Shadow War#What each side fields]] |
 | Temple Troopers | The security force of the Ossus Temple, a regiment founded by clones the Jedi adopted. | [[Ossus Order#Temple Troopers]] |
-| Traditionalists | The Senate stance that holds the Republic works, and that the problem is the sectors walking out. | [[Three Stances of the Senate]] |
+| Traditionalists | The Senate stance that promotes military actions to force seceding sectors back into the Republic. | [[Three Stances of the Senate]] |
 | Union, the | The Greater Seswenna Union. | [[The Greater Seswenna Union]] |
-| Vess case | Senator Ilai Vess's argument of 2 ABY that the attack on the licensed Yavin 4 dig had no legal authority. | [[The Secessions#The Vess case]] |
+| Vess case, the | Senator Ilai Vess's argument of 2 ABY that the attack on the licensed Yavin 4 dig had no legal authority. | [[The Secessions#The Vess case]] |
 | Walkers | Members of the Path of Light. | [[The Path of Light]] |
 | Wards | The clone children raised as wards of the Republic. They never received accelerated combat training. | [[Clones#The wards]] |
 | Withdrawalists | The Jedi who held that the Order's true error was serving a government at all. Six hundred and thirty-two resigned after the Ossus Compact. | [[Order of Voss#The withdrawalists]] |
