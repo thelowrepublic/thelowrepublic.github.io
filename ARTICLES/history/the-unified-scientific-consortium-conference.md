@@ -106,7 +106,7 @@ The Techno Union opposed presenting the paradox at all. Its commerce rested on o
 
 ## Afterwards
 
-The Consortium fizzled out without much fanfare. The scientists met, made their acquaintances, and went back to their own projects across the galaxy. No second conference was ever called.
+The Consortium fizzled out without much fanfare. The scientists met, made their acquaintances, and went back to their own projects across the galaxy. The Consortium went on holding yearly meetings, but with a collaborative environment came mutual criticism, petitions, votes and, worst of all, an ethics committee. The number of people who showed up to the yearly meetings kept falling exponentially. By 8 BBY the meetings were suspended indefinitely, for lack of attendance.
 
 ## In 2 ABY
 
