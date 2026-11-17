@@ -14,11 +14,11 @@ Short definitions of the names and terms used across the wiki. Each one links to
 |---|---|---|
 | ABY and BBY | Years after and before the Battle of Yavin, 0 ABY. | [[The Battle of Yavin#Aftermath]] |
 | Auxiliary Corps | The Long War regiments of re-enlisted clones and conscripted citizens. They took most of the war's last casualties and were disbanded between 15 and 12 BBY. | [[The Republic Corps#The Auxiliary Corps]] |
-| Beskar | Alloy that was used in Mandalorian armor and was notable for its high tolerance to extreme forms of damage. | [[Mandalore#The armouries]] |
+| Beskar | An alloy that is used in Mandalorian armour and is notable for its high tolerance to extreme forms of damage. | [[Mandalore#The armouries]] |
 | Blues, the | The soldiers of the Republic Corps. Enlisting is called 'going blue'. | [[The Republic Corps]] |
 | Bureau of Antiquities | The Republic office that registers digs. It registered the Yavin 4 dig in 5 BBY. | [[The Galactic Republic]] |
 | Candorian plague | The plague of the Republic Dark Age, a thousand years ago. It killed two-thirds of the galaxy's population. | [[The Census of 4 BBY]] |
-| Children of the Watch | A Mandalorian sect that takes in orphans and raises them in warrior creed from infancy. | [[Mandalore#The Children of the Watch]] |
+| Children of the Watch | A Mandalorian sect that takes in orphans and raises them in a warrior creed from infancy. | [[Mandalore#The Children of the Watch]] |
 | Clone Wars | The war between the Republic and the Confederacy, up to the death of Palpatine in 19 BBY. The fighting that followed is the Long War. | [[The Long War]] |
 | Collective, the | The Shadow Collective. | [[The Shadow Collective]] |
 | Commando | The rank of every enlisted soldier of the Republic Corps. | [[The Republic Corps]] |
@@ -26,7 +26,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Constitutional Convention | The convention of 13 to 11 BBY that wrote the new charter. Padmé Amidala chaired it. | [[The Republic Remade#The Constitutional Convention, 13–11 BBY]] |
 | Contingency orders | The hundred and fifty standing orders held on a chip in every clone trooper. | [[The Kamino Findings#The contingency orders]] |
 | Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Inner Rim, with free trade beyond. | [[Three Stances of the Senate]] |
-| Cortosis | An extremely rare metal that had a very high energy absorption rate and transmission coefficients, which allowed even the energy of a blaster bolt or lightsaber to be dissipated upon contact. | [[The Shadow War#What each side fields]] |
+| Cortosis | An extremely rare metal that has a very high energy absorption rate and transmission coefficients, which allow even the energy of a blaster bolt or lightsaber to be dissipated upon contact. | [[The Shadow War#What each side fields]] |
 | Crimson Dawn | The Shadow Collective's trading arm and its main source of money. | [[The Shadow Collective#Crimson Dawn]] |
 | Cult of Light | The Republic's name for the Path of Light. | [[The Path of Light]] |
 | Dathomir-Yavin Accord | The defensive and economic alliance of Quelii and the Gordian Reach, formed in the sixth month of 2 ABY. | [[The Secessions#Quelii and Gordian Reach, 2 ABY]] |
@@ -38,7 +38,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Ferrix Massacre | The Republic Corps' clearing of the Collective from Ferrix in 2 ABY, in which more than seven hundred civilians with no provable connection to the Collective died. The name comes from news channels outside the Republic. | [[Ferrix#Ferrix Massacre, 2 ABY]] |
 | First Marshal | The rank above marshal in the Grand Union Army. Deran Kolt holds it. | [[The Grand Union Army]] |
 | Greater Seswenna Union | Seswenna and seven neighbouring sectors, which left the Republic in 1 ABY. | [[The Greater Seswenna Union]] |
-| High Republic | The confident, expanding age of of the Republic from several centuries before. | [[Main Page]] |
+| High Republic | The confident, expanding age of the Republic from several centuries before. | [[Main Page]] |
 | Ichor crystals | Kyber crystals infused with Dathomiri ichor. They give off green smoke and a sickly glow when ignited. | [[The Nightborn#Magick]] |
 | Interdiction fleet | The Republic fleet that has surrounded Yavin 4 since 0 ABY. | [[The Battle of Yavin#Aftermath]] |
 | Investigative Office | The standing office created by the Convention, with the power to demand any record the government holds. Also called the Office of the Inquiry. | [[The Galactic Republic#The Investigative Office]] |
@@ -68,7 +68,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Republic Intelligence | The Republic's intelligence service, also called the Strategic Information Service or the SIS. | [[Republic Intelligence]] |
 | Republic Reformists | The Senate stance that wants the Republic's machinery rebuilt from the ground up. | [[Three Stances of the Senate]] |
 | Rim self-rule bloc | The Senate bloc led by Lux Bonteri. It votes with the Core Isolationists. | [[Three Stances of the Senate]] |
-| Sector Rangers | Republic's localised military force that patrols ports, roads, outlying settlements and the lanes between worlds. | [[The Judicial Forces and the Sector Rangers]] |
+| Sector Rangers | The Republic's localised armed force that patrols ports, roads, outlying settlements and the lanes between worlds. | [[The Judicial Forces and the Sector Rangers]] |
 | Senate Guard | The ceremonial guard of the Senate. It was left as it was. | [[The Republic Corps]] |
 | Shadow Collective | Maul's criminal empire, which includes Crimson Dawn, Black Sun, Death Watch, Shadow Troopers, rebuilt droid remnants, countless gangs and cartels, as well as some Nightborn. | [[The Shadow Collective]] |
 | Shadow Pykes | The part of the Pyke Syndicate, about a fifth, that stayed loyal to Maul under Sarn Vekh. | [[The Shadow Collective#What it is]] |
