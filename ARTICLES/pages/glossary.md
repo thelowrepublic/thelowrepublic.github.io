@@ -13,6 +13,8 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Term | Meaning | See |
 |---|---|---|
 | ABY and BBY | Years after and before the Battle of Yavin, 0 ABY. | [[The Battle of Yavin#Aftermath]] |
+| Aether, the | Short for the luminiferous aether, the frictionless medium that fills realspace. Light and sound travel through it, and the speed of its waves is the threshold a ship must cross to enter hyperspace. | [[The Unified Scientific Consortium Conference#Aether theory]] |
+| Aether theory | The single account of the aether agreed in 12 BBY. It gave one name and one explanation to rules that spacers had long worked by under many others. | [[The Unified Scientific Consortium Conference#Aether theory]] |
 | Auxiliary Corps | The Long War regiments of re-enlisted clones and conscripted citizens. They took most of the war's last casualties and were disbanded between 15 and 12 BBY. | [[The Republic Corps#The Auxiliary Corps]] |
 | Beskar | An alloy that is used in Mandalorian armour and is notable for its high tolerance to extreme forms of damage. | [[Mandalore#The armouries]] |
 | Blues, the | The soldiers of the Republic Corps. Enlisting is called 'going blue'. | [[The Republic Corps]] |
@@ -74,10 +76,13 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Shadow Pykes | The part of the Pyke Syndicate, about a fifth, that stayed loyal to Maul under Sarn Vekh. | [[The Shadow Collective#What it is]] |
 | Shadow Troopers | Clone soldiers in black and red armour. The Republic first used them for covert and illegal operations, and the Collective's clones took up the colours and name afterwards. | [[The Shadow Troopers]] |
 | Shadow War | The war between the Republic and the Shadow Collective since 0 ABY. | [[The Shadow War]] |
+| Simu-tunnel | The bubble of realspace aether that surrounds a ship on its way through hyperspace. | [[The Unified Scientific Consortium Conference#The lightspeed barrier]] |
 | Sith nexus | The Sith nexus on Yavin 4. On the third night of the battle it was used to amplify Dathomiri magick. | [[The Battle of Yavin#Six days]] |
 | Taozin nodules | Nodules that hide a wearer from Force detection. | [[The Shadow War#What each side fields]] |
+| Technology Privatisation Paradox | The observation that the galaxy's most advanced machines are lost whenever their secretive owners fall, while openly shared designs last for millennia and only grow more dependable. | [[The Unified Scientific Consortium Conference#The Technology Privatisation Paradox]] |
 | Temple Troopers | The security force of the Ossus Temple, a regiment founded by clones the Jedi adopted. | [[Ossus Order#Temple Troopers]] |
 | Traditionalists | The Senate stance that promotes military actions to force seceding sectors back into the Republic. | [[Three Stances of the Senate]] |
+| Unified Scientific Consortium | The joint body of Republic and Techno Union scientists formed after the Long War to give the sciences a shared vocabulary. It has not met since 8 BBY. | [[The Unified Scientific Consortium Conference]] |
 | Union, the | The Greater Seswenna Union. | [[The Greater Seswenna Union]] |
 | Vess case, the | Senator Ilai Vess's argument of 2 ABY that the attack on the licensed Yavin 4 dig had no legal authority. | [[The Secessions#The Vess case]] |
 | Walkers | Members of the Path of Light. | [[The Path of Light]] |

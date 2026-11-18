@@ -22,7 +22,7 @@ infobox:
   key_figures: ["[[Lux Bonteri]]", "[[Wilhuff Tarkin]]", Nute Gunray, Rune Haako, Shu Mai]
   result: The Concord of Raxus. A bargain rather than a surrender.
   preceded_by: ["[[The Death of Palpatine]]"]
-  followed_by: ["[[The Republic Remade]]"]
+  followed_by: ["[[The Republic Remade]]", "[[The Unified Scientific Consortium Conference]]"]
 ---
 
 **The Long War** was fought against the Confederacy of Independent Systems from 19 to 15 BBY. It closed with the Concord of [[Raxus]], a negotiated settlement in which nobody surrendered.

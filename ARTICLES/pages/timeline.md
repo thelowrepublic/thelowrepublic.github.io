@@ -92,6 +92,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - The Jedi Council voted to leave Coruscant. The move to [[Ossus]] took two years. The Temple stood empty for thirteen years.
 - The Auxiliary Corps began to stand down.
 - The Murkhana inquiry called [[C-3PO]]. Data pulled from him ended two careers.
+- The Republic and the Techno Union founded the Unified Scientific Consortium, pooling their scientists as a gesture of goodwill. See [[The Unified Scientific Consortium Conference]].
 
 ## 15 BBY to 0 ABY
 
@@ -111,6 +112,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 
 ### 12 BBY
 
+- The [[The Unified Scientific Consortium Conference|Unified Scientific Consortium Conference]] met on [[Coruscant]] for the whole of the second month. It presented aether theory and the Technology Privatisation Paradox.
 - The last Auxiliary regiment stood down.
 - [[Wullf Yularen]] became director of the reformed [[Republic Intelligence]].
 - From this year the Collective absorbed several hundred local syndicates.
@@ -143,6 +145,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - The Ossus Compact partly settled the schism. Six hundred and thirty-two Jedi resigned in the eleven weeks after it, [[Aayla Secura]] among them.
 - Ahsoka Tano withdrew to the Outer Rim. [[Rex]] lived with her.
 - The Pyke Syndicate began selling itself to the Hutts and the Collective at once.
+- The Unified Scientific Consortium suspended its yearly meetings indefinitely, for lack of attendance. See [[The Unified Scientific Consortium Conference#Afterwards]].
 
 ### 7 BBY
 

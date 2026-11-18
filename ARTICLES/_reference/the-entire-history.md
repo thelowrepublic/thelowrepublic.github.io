@@ -225,6 +225,12 @@ The Governor of Taldot called the other four together in 14 BBY. They agreed to 
 
 The five sectors have been rebuilt since. They are richer now than they were before the war. They have a combined military force on standby that nobody around them wants to test. The Wookiees have never shown anyone their secret hyperspace routes, but they navigate Coalition ships through them for efficient intra-region travel. None of the five sectors has ever filed any complaint to the Senate. No other sector bloc has been offered the same special treatment and the Ministry has found plenty of excuses to not give anyone else the same deal. In reality, the difference is that the others do not have a trade route that the Republic needs kept open.
 
+### The Unified Scientific Consortium, 15–8 BBY
+
+(Added by the authors on 18 November 2026. The full account is the article The Unified Scientific Consortium Conference.)
+
+After the Concord of Raxus, the Republic and the Techno Union pooled their scientists as a gesture of goodwill, founding the Unified Scientific Consortium to settle on common terms and check each side's findings against the other's. Its conference opened on Coruscant in the second month of 12 BBY and lasted a month, overshadowed by the Constitutional Convention. Two of its topics outlived it. Aether theory: realspace is filled with the luminiferous aether, a frictionless superfluid that carries light, sound and shockwaves; lightspeed is its wave speed, and crossing it throws up the shock front that opens the way into hyperspace; it holds blaster bolts together; its pressure inside living bodies means exposure to space kills within minutes rather than at once. The aether belongs to realspace only and explains nothing about hyperspace lanes. The Technology Privatisation Paradox: advanced technology is owned and kept secret, so it is lost when its owners fall, while public designs persist for millennia and improve only in reliability. The Techno Union opposed presenting the paradox and was overruled. Afterwards the Consortium's yearly meetings dwindled under criticism, petitions, votes and an ethics committee, and were suspended indefinitely in 8 BBY. In 2 ABY it exists on paper only, while aether theory is taught as plain fact.
+
 ### The census, 4 BBY
 
 *Main article: [[The Census of 4 BBY]]*

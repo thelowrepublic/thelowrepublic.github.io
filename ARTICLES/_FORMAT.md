@@ -11,7 +11,7 @@ The article list and what each article covers are in `WORKFILES/wiki-article-str
 ```
 ARTICLES/
   _FORMAT.md        this file
-  history/          the 10 history articles
+  history/          the 11 history articles
   factions/         the 19 faction and group articles
   characters/       the 65 character articles
   places/           the 21 place articles
@@ -255,7 +255,8 @@ Chronological order wins. The masterdoc is one continuous read, but the wiki can
 | Article | `preceded_by` | `followed_by` |
 |---|---|---|
 | The Death of Palpatine | | The Long War, The Kamino Findings, The Reckoning of the Jedi |
-| The Long War | The Death of Palpatine | The Republic Remade |
+| The Long War | The Death of Palpatine | The Republic Remade, The Unified Scientific Consortium Conference |
+| The Unified Scientific Consortium Conference | The Long War | |
 | The Kamino Findings | The Death of Palpatine | The Manumission Act |
 | The Manumission Act | The Kamino Findings | The Republic Remade |
 | The Republic Remade | The Long War, The Manumission Act | The Census of 4 BBY |
@@ -264,6 +265,8 @@ Chronological order wins. The masterdoc is one continuous read, but the wiki can
 | The Battle of Yavin | The Reckoning of the Jedi, The Census of 4 BBY | The Shadow War, The Secessions |
 | The Shadow War | The Battle of Yavin | |
 | The Secessions | The Battle of Yavin | |
+
+The Unified Scientific Consortium Conference (added 18 November 2026) branches off The Long War and ends its own thread.
 
 ### 4.4 Place
 

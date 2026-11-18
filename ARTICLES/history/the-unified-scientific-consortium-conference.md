@@ -38,7 +38,7 @@ The Conference opened on [[Coruscant]] in the second month of 12 BBY and lasted 
 
 ## Aether theory
 
-Everyone who worked in space already knew these principles. Engineers built around them and gunners aimed by them, but what was missing was common language. The same effect went by a different name in every university, shipyard and laboratory, and each came with its own partial explanation. Most worked well enough within a single trade or atmosphere, but contradicted one another in differing environments. The Conference replaced them with one theory, reviewed by both sides, which it called aether theory. It didn't tell spacers anyhing they did not already rely on, but explained the whys and hows.
+Everyone who worked in space already knew these principles. Engineers built around them and gunners aimed by them, but what was missing was common language. The same effect went by a different name in every university, shipyard and laboratory, and each came with its own partial explanation. Most worked well enough within a single trade or atmosphere, but contradicted one another in differing environments. The Conference replaced them with one theory, reviewed by both sides, which it called aether theory. It didn't tell spacers anything they did not already rely on, but explained the whys and hows.
 
 ### The medium
 
@@ -58,7 +58,7 @@ Crossing lightspeed throws up a shock front, as crossing the speed of sound does
 
 ### Blaster bolts
 
-A blaster's power cell excites a gas, usually Tibanna, into a bolt of plasma. That much had been understood for centuries, but it was never been explained why the bolt holds together in space. Aether theory's answer is that the plasma rides inside a vortex of aether, which keeps it whole. The bolt travels as a visible pulse, slow enough to follow by eye, and it carries momentum.
+A blaster's power cell excites a gas, usually Tibanna, into a bolt of plasma. That much had been understood for centuries, but it had never been explained why the bolt holds together in space. Aether theory's answer is that the plasma rides inside a vortex of aether, which keeps it whole. The bolt travels as a visible pulse, slow enough to follow by eye, and it carries momentum.
 
 ### Exposure to space
 
@@ -68,19 +68,19 @@ Lack of instantaneous death is not the same as safety. An unprotected person die
 
 ### Open questions
 
-The aether may not be the same everywhere. Readings near the galactic core show no 'aether wind', which the Conference put down to the core dragging the aether along with it. Readings from the Rim did not always agree and limited readings from the Wild Space were completely inconsistent, so the Conference left the question open.
+The aether may not be the same everywhere. Readings near the galactic core show no 'aether wind', which the Conference put down to the core dragging the aether along with it. Readings from the Rim did not always agree and limited readings from Wild Space were completely inconsistent, so the Conference left the question open.
 
 ## The Technology Privatisation Paradox
 
-The galaxy's history is full of lost technology. Time and again, a great galactic power has built something far beyond what anyone else could build, ruled with it, and then fallen along with its secrets. Centuries later someone else built something similar, and lost it the same way. The Conference's explanation was privatisation, as the most advanced technologies have historically been owned, trademarked and restricted from widespread access. Those who held it kept the designs secret, because the exclusivity of a secret was the source of their power. When they fell, under their own weight or to those who rose against them, nobody else knew how to recreate their machines.
+The galaxy's history is full of lost technology. Time and again, a great galactic power has built something far beyond what anyone else could build, ruled with it, and then fallen along with its secrets. Centuries later someone else built something similar, and lost it the same way. The Conference's explanation was privatisation, as the most advanced technologies have historically been owned, trademarked and restricted from widespread access. Those who held them kept the designs secret, because the exclusivity of a secret was the source of their power. When they fell, under their own weight or to those who rose against them, nobody else knew how to recreate their machines.
 
 Common technology runs the other way. The blueprints of the ordinary freighter, the standard hyperdrive and the astromech are freely available and have been copied for thousands of years. They are crude in comparison to what has been lost, but they remain constant and accessible. These designs barely improve in capacity, because more capacity takes an exponentially larger resource investment, and no organisation would spend that on a public blueprint. What improves instead is reliability. Millions of small optimisations, each made by somebody with a repair to finish and too few parts, have perfected the common designs down to what they cannot do without. This is why advanced technology tends to be fragile, and the most common technology is the sturdiest there is.
 
-The Techno Union opposed presenting the paradox at all. Its commerce rested on owning technology that nobody else could copy, and it did not care to hear that this made its products fragile and its secrets temporary. It was eventually overruled, and the findings backed by historical date were presented.
+The Techno Union opposed presenting the paradox at all. Its commerce rested on owning technology that nobody else could copy, and it did not care to hear that this made its products fragile and its secrets temporary. It was eventually overruled, and the findings backed by historical data were presented.
 
 ## Afterwards
 
-The Consortium fizzled out without much fanfare. The scientists met, made their acquaintances, and went back to their own projects across the galaxy. The Consortium went on holding yearly meetings, but with a collaborative environment came new factors that many were not comfortable with. Mutual criticism, petitions, votes and, worst of all, an ethics committee. The number of people who showed up to the yearly meetings kept falling exponentially. By 8 BBY the meetings were suspended indefinitely, for lack of attendance.
+The Consortium fizzled out without much fanfare. The scientists met, made their acquaintances, and went back to their own projects across the galaxy. The Consortium went on holding yearly meetings, but with a collaborative environment came new factors that many were not comfortable with: mutual criticism, petitions, votes and, worst of all, an ethics committee. The number of people who showed up to the yearly meetings kept falling exponentially. By 8 BBY the meetings were suspended indefinitely, for lack of attendance.
 
 ## In 2 ABY
 
