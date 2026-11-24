@@ -27,7 +27,7 @@ infobox:
 
 ## Background
 
-Bo-Katan Kryze is a Human, a Mandalorian of House Kryze, and the sister of Duchess Satine Kryze, who led Mandalore's pacifist government. She joined Death Watch and led its Nite Owls. She helped [[Maul]] take Mandalore, then turned on him when he took power for himself, and led the Mandalore resistance against him, with the Republic's help.
+Bo-Katan Kryze is a Human, a Mandalorian of House Kryze, and the sister of Duchess Satine Kryze, who led Mandalore's pacifist government. She joined Death Watch and led its Nite Owls. She helped [[Maul]] take Mandalore, then turned on him when he took power for himself, and led the Mandalore resistance against him, with the Republic's help. Maul killed Satine in front of [[Obi-Wan Kenobi]], whom she had loved, as revenge for [[Naboo]].
 
 ## The north, 1 ABY
 

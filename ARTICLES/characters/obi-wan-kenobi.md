@@ -38,7 +38,7 @@ The inquiry treated Murkhana as a question of fact and of who had authorised wha
 
 ## Ossus, 10 BBY
 
-Kenobi retired to [[Ossus]] in 10 BBY and taught. [[Luke Skywalker]], a Force prodigy, trained at Ossus under Kenobi from twelve.
+Kenobi retired to [[Ossus]] in 10 BBY and taught. [[Luke Skywalker]], a Force prodigy, trained at Ossus under Kenobi from twelve. Those who knew him there say they were the quietest years of his life.
 
 ## Yavin, 0 ABY
 
@@ -64,19 +64,19 @@ The fourth reason went unstated. Jedi defectors that joined the [[The Nightborn|
 
 Thirty-one Jedi had gone to Yavin on a [[The Battle of Yavin#The briefing|briefing]] that had been deliberately gutted. Twenty-six of them died because nobody in the chain of command knew what a Sith nexus was, and because the officers who did know were protecting [[Wilhuff Tarkin|Tarkin]]'s reputation. If the Republic fought the rest of this war the same way, it would happen again, it would keep happening, and there was nobody else in any position to stop it.
 
-He had held the northern landing zone for nineteen hours and given the orders that were given there. He has said once, and only once, that having done that he could not hand that burden to somebody else and go back to teaching. He understood the price and took it anyway. His appointment has been the strongest single piece of evidence in the [[The Secessions#The Vess case|Vess case]] since the day [[Ilai Vess|Vess]] stood up, and he knew it would be before he signed. He has asked to be released twice since.
+He had held the northern landing zone for nineteen hours and given the orders that were given there. He has said once, and only once, that having done that he could not hand that burden to somebody else and go back to teaching. He understood the price and took it anyway. His appointment has been the strongest single piece of evidence in the [[The Secessions#The Vess case|Vess case]] since the day [[Ilai Vess|Vess]] stood up, and he knew it would be before he signed.
 
 ## Luke Skywalker, 1 ABY
 
 *Main article: [[Luke Skywalker]]*
 
-[[Luke Skywalker]] left Kenobi's command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The Republic holds Kenobi in place, and [[Maul]] can only be effectively pursued by a free agent. Maul needs to be stopped by whatever means it takes, and Kenobi trusts Luke to know which means are the right and wrong ones.
+[[Luke Skywalker]] left Kenobi's command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The Republic holds Kenobi in place, and [[Maul]] can only be effectively pursued by a free agent. Kenobi holds that Maul must be stopped by whatever means it takes. He trusts Luke to know which means are the right and wrong ones, at least more than he trusts himself.
 
 ## In 2 ABY
 
 Kenobi is not a [[The Jedi Templars|Templar]] and has refused to become one three times. He is not at [[Ossus Order|Ossus]], which regards his commission as precisely the error it left Coruscant to avoid. He holds a Republic rank. He commands Republic soldiers and a few dozen Jedi who followed him rather than either faction. He belongs to nothing.
 
-Kenobi commands soldiers for a government he does not trust, but knows that someone has to do it.
+Kenobi commands soldiers for a government he does not trust, but says that someone has to do it.
 
 The other difficulty for everyone in Jedi uniform is that they are fighting people they trained. [[The Shadow Collective|Collective]] field operations are coordinated out of proportion by [[The Nightborn|Nightborn]], who know Republic doctrine, Jedi tactics, and how to stay hidden from people they often studied beside. Master [[Quinlan Vos]] was embedded inside the organisation in 1 ABY by the Templars, who did not inform Ossus. He has sent information out at irregular intervals ever since. He has sent more information to Kenobi privately. Nobody has reached a settled view if Vos is still their asset. His well-known propensity to disregard Jedi creed is troublesome, but it has given credence to his alibi as a defector. His problematic attachment to [[Asajj Ventress]], and over a dozen unsuccessful attempts to contact her, make his real loyalty and priorities an open question.
 

@@ -52,6 +52,8 @@ The Council refused to be involved. The debate ran for four days and the refusal
 
 The force went in badly briefed. What [[Wilhuff Tarkin|Tarkin]] knew about [[The Nightborn|Nightborn]] capabilities was extensive, but he could not pass it on without further incriminating himself. So the briefing described a fortified criminal stronghold held by an army of [[Mandalore|Mandalorians]] and mercenaries. It did not describe a Sith nexus or [[The Nightborn|the witches]]. The relevant pages of the intelligence file were held back by Tarkin's people on the grounds of protecting a source. So working off of this, the Republic sent a force of eleven thousand four hundred elite troopers, the best of what they had available and what they could spare. The landing on [[Yavin 4]] was unopposed. The temple complex was taken on the second day at minimal cost. On the third night the Sith nexus was used to amplify [[The Nightborn#Magick|Dathomiri magick]].
 
+Of the thirty-one, only [[Obi-Wan Kenobi]] asked where [[Maul]] himself would be. The briefing did not say.
+
 [[Anakin Skywalker]] arrived at Yavin 4 the day before the Republic fleet. Nobody sent him. Nobody knew he was coming. He had been seen four weeks earlier on Umbara and had given no indication of any destination. He fought at the temple complex on the second day. Most of the soldiers around him did not know who he was. Some officers did, and could do nothing about it. On the third night, when the ground force came apart, he was on the eastern approach.
 
 ### What the survivors describe

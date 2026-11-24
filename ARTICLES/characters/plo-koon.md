@@ -49,6 +49,8 @@ Plo Koon declined the [[The Jedi Templars#The offer|Templar offer]] to join in a
 
 Plo Koon presides over the Ossus Order, insofar as anyone does. He continued leading Jedi missions to protect people of the Rim, until his venerable age made excursions unsafe. He currently teaches new generations of Jedi.
 
+He has written to [[Obi-Wan Kenobi]], who sat beside him on the Council for eleven years, three times since Yavin. Kenobi answered the first message in one line, saying that he was well. The other two messages were left unanswered.
+
 ## See also
 
 - [[Ossus Order]]

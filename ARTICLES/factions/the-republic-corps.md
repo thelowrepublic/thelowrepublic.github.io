@@ -66,7 +66,7 @@ artwork_author_link: "https://www.instagram.com/mandalo_art"
 
 The intelligence had come to him through Outland Command. He said so at the inquiry. He said someone wanted him gone, but he could not prove it, and he sounded exactly like a man making excuses. Of course, nothing has ever been proved. He was discharged with honour in 14 BBY.
 
-The [[The Republic Remade#The Constitutional Convention, 13–11 BBY|Constitutional Convention]] of 11 BBY ended the practice for good. No general has led troops in person since, with [[Obi-Wan Kenobi]] as the sole exception, and his commission had to be written specially to allow it.
+The [[The Republic Remade#The Constitutional Convention, 13–11 BBY|Constitutional Convention]] of 11 BBY ended the practice for good. No general has led troops in person since, with [[Obi-Wan Kenobi]] as the sole exception, and his commission had to be written specially to allow it. He has used it six times in two years. Each time, it took him to a world where [[Maul]] had lately been seen.
 
 ## The commandos
 
