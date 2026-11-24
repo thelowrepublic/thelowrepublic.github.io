@@ -11,10 +11,10 @@ tags:
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Mid Rim]
 infobox:
-  image: ""
+  image: "nal-kaddan.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Shiny Man"
+  artwork_author_link: "https://www.artstation.com/shinyman"
   type: Planet
   region: Mid Rim
   sector: Kastolar

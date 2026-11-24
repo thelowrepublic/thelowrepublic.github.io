@@ -10,10 +10,10 @@ tags:
   affiliation: [Galactic Republic]
   period: [Long War]
 infobox:
-  image: ""
+  image: "murkhana.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Shiny Man"
+  artwork_author_link: "https://www.artstation.com/shinyman"
   type: Planet
 ---
 
