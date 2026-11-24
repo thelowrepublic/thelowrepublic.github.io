@@ -36,7 +36,9 @@ Ever since then, Orl sets wages, funds pensions, approves capital projects, and 
 
 *Main article: [[The Hutt Clans#The Pykes]]*
 
-[[Sarn Vekh]] ran spice distribution into the poorest systems of the Rim for nineteen years and was made a director for it. In 4 BBY the Collective ordered the Syndicate out of those systems entirely. Nadi Orl had decided that an addicted sector cannot be recruited from or invested in, and both of those options were more profitable in the long run. The Pyke Syndicate had been selling itself to the [[The Hutt Clans|Hutts]] and the Collective at once since 8 BBY. Orl's order is what broke this game and resulted in two years of conflict. At the end of it in 2 BBY, the main Syndicate body went to the Hutts. Vekh took about a fifth of it and stayed loyal to Maul as the Shadow Pykes. Profit was the reason she gave Maul. Those who have worked closely with her doubt it was the only one.
+[[Sarn Vekh]] ran spice distribution into the poorest systems of the Rim for nineteen years and was made a director for it. In 4 BBY the Collective ordered the Syndicate out of those systems entirely. Nadi Orl had decided that an addicted sector cannot be recruited from or invested in, and both of those options were more profitable in the long run. Profit was the reason she gave Maul, but those who have worked closely with her doubt it was the only one. 
+
+The Pyke Syndicate had been selling itself to the [[The Hutt Clans|Hutts]] and the Collective at once since 8 BBY. Orl's order is what broke this game and resulted in two years of conflict. At the end of it in 2 BBY, the main Syndicate body went to the Hutts. Vekh took about a fifth of it and stayed loyal to Maul as the Shadow Pykes.
 
 ## In 2 ABY
 
