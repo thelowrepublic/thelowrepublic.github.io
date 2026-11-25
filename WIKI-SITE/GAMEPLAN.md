@@ -195,7 +195,9 @@ WIKI-SITE/
 
 ## 6. The two special rules
 
-### The hidden article (Vesk Tolloran)
+### The hidden article (Vesk Tolloran): dropped on 25 November 2026
+
+The authors dropped this rule on 25 November 2026 (D41): `hidden` in `config.yml` is now empty and Vesk Tolloran is an ordinary article. The rest of this section describes how the rule worked, and the setting still works if it is ever used again.
 
 The hidden article and its redirect names are listed in `config.yml`. It will be:
 
@@ -298,6 +300,7 @@ Work happens on the `claude/gifted-brown-x20p6v` branch and is merged into `main
 | D38 | Jedi Templars emblem outline (authors' instruction, 1 November 2026) | `the-jedi-templars.svg` gets the thin white outline of D32. Its shape sits inside two scaling transforms (3.21 in all), so the outline is 1.2463 in the shape's own units, 4 in the image's, like the other emblems; a viewBox adds 2 units of room on every side at the same scale. |
 | D39 | Page animation (authors' choice, 1 November 2026) | After following a link inside the wiki, every line of text on the new page types itself out at the same moment, left to right, in 0.8 s (config `page_transition: record`, `page_transition_seconds`); pictures, the Main Page's tall logo and map included, are uncovered with it (authors' request, 1 November 2026). Boxes and lines are there from the start, and anything below the first screen is shown straight away. A script in `<head>` allows it only for a link click from another page of the wiki: never on arrival from outside, back/forward, reload, a `#section` link, or reduced motion. Readers can switch it off with a switch right of the search box (end of the logo row on phones); a pop-up confirms the change and the choice is remembered in the browser (`lowrepublic-animations`). The authors also saw a slide-in effect and a block-by-block version, and chose this one. |
 | D40 | The Entire History and the "In the history" box removed (authors' instruction, 4 November 2026) | The Entire History is no longer a page: it is kept for reference in `ARTICLES/_reference/the-entire-history.md`, which the build does not read, and leaves the sidebar, search exclusions and notices. The "In the history" box at the foot of articles is removed, with its template, styling and section-code markers; `sources` stay in the front matter as a record only. This supersedes D9, D17, D19 and D24. |
+| D41 | The hidden-article rule dropped (authors' instruction, 25 November 2026) | Vesk Tolloran is no longer hidden: `hidden` is empty, so any article may link to him or name him, and he now appears in the random article, the sitemap and the Art credits page like any other article. The publish of 25 November had failed because The Greater Seswenna Union linked to him. The `hidden` setting and its check stay in the code, unused; the tests now try them out with a test setting instead of the real one. This supersedes D7, D8 and D35. |
 
 ---
 

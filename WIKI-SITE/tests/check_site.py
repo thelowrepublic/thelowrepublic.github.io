@@ -46,10 +46,11 @@ IN_ACTIONS = os.environ.get("GITHUB_ACTIONS") == "true"
 
 
 class Checks:
-    def __init__(self, out: Path = SITE, quiet: bool = False):
+    def __init__(self, out: Path = SITE, quiet: bool = False, config: dict | None = None):
+        """`config` defaults to config.yml; the tests pass their own to try out a setting."""
         self.out = Path(out)
         self.quiet = quiet
-        self.config = yaml.safe_load((HERE / "config.yml").read_text(encoding="utf-8"))
+        self.config = config or yaml.safe_load((HERE / "config.yml").read_text(encoding="utf-8"))
         self.site = build.Site(self.config, self.out)
         self.site.load()  # the articles and redirects the site was built from
         self.pages = sorted(self.out.rglob("*.html"))

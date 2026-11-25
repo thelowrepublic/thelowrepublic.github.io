@@ -74,7 +74,7 @@ If the site does not look changed afterwards, your browser may be showing a stor
 
 Both are enforced on every publish:
 
-- **Hidden articles** (`hidden` in the settings; today Vesk Tolloran) appear in no list, random article or sitemap, and no page links to them or names them, except their own page and their own category page (Vesk is listed under Characters; the setting `hidden_on_category_pages` turns this off). They can still be found by search, by their redirect names and by their address.
+- **Hidden articles** (`hidden` in the settings; today none) appear in no list, random article or sitemap, and no page links to them or names them, except their own page and, with the setting `hidden_on_category_pages`, their own category page. They can still be found by search, by their redirect names and by their address. Vesk Tolloran was hidden until 25 November 2026, when you dropped the rule; he is now an ordinary article that any page may link to.
 - **The Union quarantine** (`quarantine` in the settings): nothing the site generates by itself, such as the "Preceded by / Followed by" box, ever links one of these eight articles to another. Links you write in the text are left as they are. The Art credits page may list them side by side.
 
 ---
@@ -109,8 +109,8 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `categories` | The sidebar's Browse links and the category pages' names. |
 | `search_exclude` | Articles left out of search entirely (today none). |
 | `notices` | Boxes above an article's first paragraph (today none). Text may use `[[links]]`. |
-| `hidden` | Hidden articles (see the two special rules). |
-| `hidden_on_category_pages` | `true` lists hidden articles on their own category page (today Vesk on Characters); `false` leaves them off it too. |
+| `hidden` | Hidden articles (see the two special rules). Today none. |
+| `hidden_on_category_pages` | `true` lists hidden articles on their own category page; `false` leaves them off it too. |
 | `quarantine` | The Union quarantine's eight articles. |
 | `labels` | The names shown in infoboxes for each key (`senate_stance` → "Senate stance"). A pair gives the singular and plural. |
 | `canon_link` | Where the "Canon" tag beside a Background heading leads. |

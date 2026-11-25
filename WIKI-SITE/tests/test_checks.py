@@ -13,6 +13,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import yaml
+
 HERE = Path(__file__).resolve().parent.parent
 BUILT = HERE / "_site"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -45,8 +47,8 @@ class RuleChecks(unittest.TestCase):
         self.assertIn(old, text, f"{rel} has changed shape; update this test")
         path.write_text(text.replace(old, new, 1), encoding="utf-8")
 
-    def failed(self):
-        checks = check_site.Checks(self.site, quiet=True)
+    def failed(self, config=None):
+        checks = check_site.Checks(self.site, quiet=True, config=config)
         checks.run()
         return checks.failed()
 
@@ -66,22 +68,12 @@ class RuleChecks(unittest.TestCase):
                   'class="category-gone" href="../../wiki/maul/"')
         self.assertIn("completeness", self.failed())
 
-    def test_hidden_catches_a_name_on_another_page(self):
-        self.edit("category/places/index.html", "</ul>", "<li>Vesk Tolloran</li></ul>")
-        self.assertIn("hidden", self.failed())
-
-    def test_completeness_catches_the_hidden_article_missing_from_its_category(self):
-        self.edit("category/characters/index.html", 'class="category-title" href="../../wiki/vesk-tolloran/"',
-                  'class="category-gone" href="../../wiki/vesk-tolloran/"')
-        self.assertIn("completeness", self.failed())
-
-    def test_hidden_catches_a_link(self):
-        self.edit("wiki/maul/index.html", "</article>", '<a href="../vesk-tolloran/">?</a></article>')
-        self.assertIn("hidden", self.failed())
-
-    def test_hidden_catches_the_random_page(self):
-        self.edit("random/index.html", 'var pages = ["', 'var pages = ["wiki/vesk-tolloran/", "')
-        self.assertIn("hidden", self.failed())
+    # No article is hidden since the authors dropped the rule for Vesk Tolloran (25 November 2026).
+    # The check still works if `hidden` is used again: hiding an article that other pages link to
+    # and name, as they do Maul, must fail it.
+    def test_hidden_catches_links_and_names_when_an_article_is_hidden(self):
+        config = yaml.safe_load((check_site.HERE / "config.yml").read_text(encoding="utf-8"))
+        self.assertIn("hidden", self.failed({**config, "hidden": ["Maul"]}))
 
     def test_quarantine_catches_a_generated_link(self):
         self.edit("wiki/the-secessions/index.html", '<div class="article-after">',
@@ -109,11 +101,6 @@ class RuleChecks(unittest.TestCase):
     def test_previews_catch_a_missing_picture(self):
         self.edit("wiki/maul/index.html", '<meta property="og:image" ', '<meta property="og:gone" ')
         self.assertIn("previews", self.failed())
-
-    def test_hidden_catches_the_sitemap(self):
-        self.edit("sitemap.xml", "</urlset>",
-                  "  <url><loc>https://thelowrepublic.github.io/wiki/vesk-tolloran/</loc></url>\n</urlset>")
-        self.assertIn("hidden", self.failed())
 
     def test_disclaimer_catches_a_page_without_it(self):
         self.edit("wiki/maul/index.html", 'id="disclaimer"', 'id="something-else"')

@@ -34,8 +34,10 @@ categories:
   character: {label: Characters, singular: Character}
   place: {label: Places, singular: Place}
 
-# Kept out of every generated list, index and backlink. Still reachable by URL, redirects and search.
-hidden: [Vesk Tolloran]
+# Kept out of every generated list, index and backlink, and no other page may link to them or name
+# them. Still reachable by URL, redirects and search. Empty: the authors dropped the rule for Vesk
+# Tolloran on 25 November 2026, so he is an ordinary article that any page may link to.
+hidden: []
 # true: hidden articles are still listed on their own category page (authors' choice, 1 November 2026).
 hidden_on_category_pages: true
 

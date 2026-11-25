@@ -156,16 +156,28 @@ class Text(unittest.TestCase):
 
 
 class Lists(unittest.TestCase):
-    def test_hidden_articles_are_not_listed(self):
-        listed = {a.title for a in SITE.listed()}
-        self.assertTrue(SITE.hidden)
-        self.assertFalse(SITE.hidden & listed)
+    def test_no_article_is_hidden(self):
+        # the authors dropped the hidden-article rule for Vesk Tolloran (25 November 2026)
+        self.assertEqual(SITE.hidden, set())
+        self.assertIn("Vesk Tolloran", {a.title for a in SITE.listed()})
 
-    def test_hidden_articles_stay_on_their_category_page(self):
-        self.assertTrue(SITE.hidden_on_category_pages)
-        page = SITE.render_category("character")
-        self.assertIn('href="../../wiki/vesk-tolloran/"', page)
-        self.assertNotIn("vesk-tolloran", SITE.render_category("faction"))
+    @staticmethod
+    def hiding(title, on_category_page):
+        """A site with one article hidden: the setting still works if it is ever used again."""
+        site = build.Site({**CONFIG, "hidden": [title], "hidden_on_category_pages": on_category_page},
+                          Path(_TMP.name))
+        site.load()
+        return site
+
+    def test_hidden_articles_are_not_listed(self):
+        site = self.hiding("Vesk Tolloran", False)
+        self.assertNotIn("Vesk Tolloran", {a.title for a in site.listed()})
+        self.assertNotIn("vesk-tolloran", site.render_category("character"))
+
+    def test_hidden_articles_can_stay_on_their_category_page(self):
+        site = self.hiding("Vesk Tolloran", True)
+        self.assertIn('href="../../wiki/vesk-tolloran/"', site.render_category("character"))
+        self.assertNotIn("vesk-tolloran", site.render_category("faction"))
 
 
 
