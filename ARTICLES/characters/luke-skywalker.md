@@ -40,7 +40,7 @@ Luke Skywalker is a Force prodigy, trained at [[Ossus]] under [[Obi-Wan Kenobi|K
 
 ## Rogue, 1 ABY
 
-Luke left Kenobi's command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The [[The Galactic Republic|Republic]] holds Kenobi in place, and [[Maul]] can only be effectively pursued by a free agent. Maul needs to be stopped by whatever means it takes, and Kenobi trusts Luke to know which means are the right and wrong ones.
+Luke left Kenobi's command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The [[The Galactic Republic|Republic]] holds Kenobi in place, and [[Maul]] can only be effectively pursued by a free agent. Kenobi holds that Maul must be stopped by whatever means it takes, and he trusts Luke to know which means are the right and wrong ones.
 
 ## In 2 ABY
 

@@ -24,7 +24,7 @@ infobox:
 
 ## Crimson Dawn
 
-Qi'ra runs Crimson Dawn since 6 BBY, the Shadow Collective's trading arm and its main source of money. She has met [[Maul]] in person on eleven recorded occasions and has outlasted three predecessors who met him more often than that.
+Qi'ra runs Crimson Dawn since 6 BBY, the Shadow Collective's trading arm and its main source of money. She has met [[Maul]] in person on eleven recorded occasions and has outlasted three predecessors who met him more often than that. She has said that the man she meets now is not the one she first met. She has not said whether that is an improvement.
 
 ## Han Solo
 

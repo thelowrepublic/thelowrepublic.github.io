@@ -28,7 +28,7 @@ infobox:
 
 ## Background
 
-Maul was a Dathomirian Zabrak, born on [[Dathomir]]. He was taken from the planet as a child by the Sith Lord [[The Death of Palpatine|Sidious]] and trained as his apprentice. In 32 BBY, during the invasion of [[Naboo]], he killed the Jedi Master Qui-Gon Jinn and was cut in half by [[Obi-Wan Kenobi]]. He survived. During the Clone Wars he and his brother Savage Opress took over [[Mandalore]] with Death Watch, and he gathered Black Sun and the Pyke Syndicate into a criminal alliance, the Shadow Collective.
+Maul was a Dathomirian Zabrak, born on [[Dathomir]]. He was taken from the planet as a child by the Sith Lord [[The Death of Palpatine|Sidious]] and trained as his apprentice. In 32 BBY, during the invasion of [[Naboo]], he killed the Jedi Master Qui-Gon Jinn and was cut in half by [[Obi-Wan Kenobi]]. He survived. During the Clone Wars he and his brother Savage Opress took over [[Mandalore]] with Death Watch, and he gathered Black Sun and the Pyke Syndicate into a criminal alliance, the Shadow Collective. Sidious killed Savage on Mandalore. Not long afterwards, [[The Long War|Count Dooku]] and [[The Long War|General Grievous]] killed his mother, Mother Talzin, on Dathomir.
 
 ## The escape, 19 BBY
 
@@ -102,7 +102,9 @@ The [[The Hutt Clans|Hutt Clans]] deal with the Shadow Collective constantly and
 
 On Dathomir, when he is there at all, Maul presides over six hundred people who have stopped needing him. His order was founded on a promise that none of its members would ever be a tool. It is run day to day by Merrin who merely wants her people to be allowed to exist, and by Barriss Offee who has been making the same argument towards the Jedi Order since she was nineteen. He has told neither of them what he was looking for at Yavin. 
 
-[[Luke Skywalker]] left [[Obi-Wan Kenobi|Kenobi]]'s command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The Republic holds Kenobi in place, and Maul can only be effectively pursued by a free agent. Maul needs to be stopped by whatever means it takes, and Kenobi trusts Luke to know which means are the right and wrong ones. What little Luke has picked up of Maul's trail has lately been moving deeper towards the Core, not away from it, and this disturbs him.
+In two years of war, the Collective has never once been sent after [[Obi-Wan Kenobi|Kenobi]], though it has had chances.
+
+[[Luke Skywalker]] left Kenobi's command in 1 ABY and is listed as going rogue. In reality, Kenobi sent him. The Republic holds Kenobi in place, and Maul can only be effectively pursued by a free agent. Kenobi holds that Maul must be stopped by whatever means it takes, and he trusts Luke to know which means are the right and wrong ones. What little Luke has picked up of Maul's trail has lately been moving deeper towards the Core, not away from it, and this disturbs him.
 
 ## See also
 
