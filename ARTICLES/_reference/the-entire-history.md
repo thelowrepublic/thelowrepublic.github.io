@@ -59,6 +59,8 @@ Four days before the killing, the Zabrak warlord Maul had been captured on Manda
 
 He was the only prisoner in the galaxy who understood immediately what Palpatine's death meant. He had known his former master's identity for over a decade and had been dismissed as a lunatic every time he said so. When the news of Palpatine's death reached the fleet, its chain of command was in disarray. There were recall orders, competing authorities, rumours of a Jedi coup, and a Senate demanding the return of every capital ship in the Core. Ahsoka was temporarily disarmed and detained. Maul escaped in the confusion, tearing apart half of the Star Destroyer in the process, and reached Mandalorian space within the month. When life support started failing, Tano was released from confinement, but prioritised saving lives over pursuing Maul. She does not regret her choice, but still views the operation as one of the greatest failures of her life.
 
+By the end of 19 BBY, the men who had killed his brother and his mother were all dead. Maul had killed neither of them.
+
 ## II. The Long War, 19–15 BBY
 
 *Main article: [[The Long War]]*

@@ -40,6 +40,8 @@ When the news of Palpatine's death reached the fleet, its chain of command was i
 
 When life support started failing, Tano was released from confinement, but prioritised saving lives over pursuing Maul. She does not regret her choice, but still views the operation as one of the greatest failures of her life.
 
+By the end of 19 BBY, the men who had killed his brother and his mother were all dead. Maul had killed neither of them.
+
 ## The bargain with Tarkin, 17–1 BBY
 
 *Main article: [[Wilhuff Tarkin]]*
