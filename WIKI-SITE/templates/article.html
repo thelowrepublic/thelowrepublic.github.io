@@ -61,6 +61,9 @@
          data-w="{{ media.map.large_w }}" data-h="{{ media.map.large_h }}" title="View larger"><img
          src="{{ root }}{{ media.map.src }}" srcset="{{ root }}{{ media.map.srcset[0] }} 1x, {{ root }}{{ media.map.srcset[1] }} 2x"
          width="{{ media.map.width }}" height="{{ media.map.height }}" alt="{{ media.map.title }}" loading="lazy" decoding="async"></a>
+      {% if media.map.author %}
+      <figcaption><span class="credit">Artwork by {% if media.map.link %}<a href="{{ media.map.link }}" target="_blank" rel="noopener">{{ media.map.author }}</a>{% else %}{{ media.map.author }}{% endif %}</span></figcaption>
+      {% endif %}
     </figure>
   </section>
   {% endif %}

@@ -100,10 +100,13 @@ icon: lowrepublicicon.png
 
 # Extra media on the Main Page, from the main folder of the repository.
 main_page:
-  # A full-width box at the end of the page.
+  # A full-width box at the end of the page, credited under the picture like article artwork
+  # (an empty artwork_author shows no credit; the link is optional).
   map:
-    file: lowrepublicmap.jpg
+    file: lowrepublicnewmap.jpg
     title: Map of the galaxy
+    artwork_author: "Lucasfilm and Disney (edited by Pablito)"
+    artwork_author_link: ""
 
 # Animation when a reader follows a link to another page of the wiki: record (every line of text
 # types itself out at the same moment) or none. It never plays for visitors arriving from outside,

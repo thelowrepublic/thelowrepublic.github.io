@@ -729,7 +729,7 @@ class Site:
         return dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime
 
     def main_media(self) -> dict:
-        """The Main Page's map (config `main_page`), with web copies in media/."""
+        """The Main Page's map (config `main_page`), with web copies in media/ and its credit."""
         cfg = self.config.get("main_page") or {}
         media = self.out / "media"
         media.mkdir(parents=True, exist_ok=True)
@@ -757,7 +757,9 @@ class Site:
             found["map"] = {"title": mapcfg.get("title", ""), "original": f"media/original/{src.name}",
                             "src": copies[0][0], "srcset": [c[0] for c in copies],
                             "width": copies[0][1], "height": copies[0][2],
-                            "large": copies[-1][0], "large_w": copies[-1][1], "large_h": copies[-1][2]}
+                            "large": copies[-1][0], "large_w": copies[-1][1], "large_h": copies[-1][2],
+                            "author": str(mapcfg.get("artwork_author") or "").strip(),
+                            "link": str(mapcfg.get("artwork_author_link") or "").strip()}
         return found
 
     def write_icons(self) -> None:

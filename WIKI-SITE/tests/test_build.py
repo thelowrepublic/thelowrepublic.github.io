@@ -155,6 +155,14 @@ class Text(unittest.TestCase):
         self.assertEqual(build.svg_size(build.ARTWORKS / "the-galactic-republic.svg"), (600, 600))
 
 
+class MainPage(unittest.TestCase):
+    def test_the_map_is_credited(self):
+        html = SITE.render_article(SITE.articles["Main Page"])
+        credit = CONFIG["main_page"]["map"]["artwork_author"]
+        self.assertTrue(credit)
+        self.assertIn(f'<figcaption><span class="credit">Artwork by {credit}</span></figcaption>', html)
+
+
 class Lists(unittest.TestCase):
     def test_no_article_is_hidden(self):
         # the authors dropped the hidden-article rule for Vesk Tolloran (25 November 2026)

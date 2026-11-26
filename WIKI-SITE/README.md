@@ -87,7 +87,7 @@ These files sit in the main folder of the repository. Replace a file with one of
 |---|---|---|
 | `lowrepubliclogowide.png`, `lowrepubliclogotall.png` | the logo in the top bar, and on the Main Page and disclaimer | none |
 | `lowrepublicicon.png` | the browser-tab and phone home-screen icons (square, 512 px) | `icon` |
-| `lowrepublicmap.jpg` | the map at the end of the Main Page | `main_page: map:` |
+| `lowrepublicnewmap.jpg` | the map at the end of the Main Page, credited beneath it (`artwork_author`, and an optional `artwork_author_link`) | `main_page: map:` |
 | `WIKI-SITE/assets/social-card.png` | the picture shown when a page without artwork is shared on Discord or social media (1200 × 630 px) | `social_image` |
 
 When a page is shared, the preview shows the article's own artwork if it has a JPG, PNG or WebP image, and the card otherwise. The text under it is the article's first sentence.
@@ -121,7 +121,7 @@ Edit it on GitHub like any other file. Indent with spaces (never tabs), and put 
 | `icon` | The browser-tab icon file. |
 | `page_transition` | The animation when a reader follows a link to another page: `record` (every line of text types itself out at once) or `none`. |
 | `page_transition_seconds` | How long that animation takes, in seconds (today 0.8). |
-| `main_page` | The Main Page map. |
+| `main_page` | The Main Page map: its file, title and credit. |
 
 ---
 
