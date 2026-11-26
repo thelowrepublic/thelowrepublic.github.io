@@ -32,13 +32,13 @@ Kashyyyk is a forest world of wroshyr trees in the Mytaranor sector of the Mid R
 
 Kashyyyk had been held at enormous cost in 19 BBY and was not rebuilt. No reconstruction money came, because all of it was going into [[The Republic Remade|government reforms]] and the [[The Republic Corps|recruited army]].
 
-The Governor of Taldot, [[Jhena Varrin]], called four other sectors together in 14 BBY. They agreed to pool what was left. Kashyyyk brought most of the militia. The Wookiees had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the [[The Hutt Clans|Hutts]]. It took two years to push the Hutts back out of Halla and Kastolar.
+The Governor of Taldot, [[Jhena Varrin]], called five other sectors together in 14 BBY. They agreed to pool what was left. Kashyyyk brought most of the militia. The Wookiees had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the [[The Hutt Clans|Hutts]]. It took two years to push the Hutts back out of Halla and Kastolar.
 
 The Wookiee Chewbacca is a Kashyyyk veteran of the Clone Wars. He met [[Han Solo]] during the incident that got Solo thrown out of the new Republic Navy.
 
 ## In 2 ABY
 
-The five sectors of the Coalition have been rebuilt since. They are richer now than they were before the war. The Wookiees have never shown anyone their secret hyperspace routes, but they navigate Coalition ships through them for efficient intra-region travel.
+Five of the Coalition's six sectors have been rebuilt since; only Taldot still lies largely barren. The Coalition is richer now than it was before the war. The Wookiees have never shown anyone their secret hyperspace routes, but they navigate Coalition ships through them for efficient intra-region travel.
 
 ## See also
 

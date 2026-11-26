@@ -46,7 +46,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Investigative Office | The standing office created by the Convention, with the power to demand any record the government holds. Also called the Office of the Inquiry. | [[The Galactic Republic#The Investigative Office]] |
 | Jedi Templars | The Jedi body based in the Coruscant Temple since 0 ABY, led by Luminara Unduli. | [[The Jedi Templars]] |
 | Judicial Forces | The force that serves the courts. It investigates, arrests and may pass judgement in local matters. | [[The Judicial Forces and the Sector Rangers]] |
-| Kashyyyk Region Coalition | Taldot, Mytaranor, Lantillian, Halla and Kastolar, which pooled what was left to them in 14 BBY to repel a Hutt invasion. | [[The Kashyyyk Region Coalition]] |
+| Kashyyyk Region Coalition | Taldot, Mytaranor, Lantillian, Halla, Kastolar and Numesira, which pooled what was left to them in 14 BBY to repel a Hutt invasion. | [[The Kashyyyk Region Coalition]] |
 | Ko Sai's procedure | Genome work and drug therapy that slows clone ageing. It's done once, and is followed by a cheap maintenance course. | [[Clones#Ko Sai's procedure]] |
 | Long War | The war against the Confederacy's remnants, from 19 to 15 BBY. | [[The Long War]] |
 | Low Republic | The Republic of the age after Palpatine, and the age itself. | [[Main Page]] |

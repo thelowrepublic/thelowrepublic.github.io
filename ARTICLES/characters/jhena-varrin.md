@@ -10,7 +10,7 @@ tags:
   affiliation: [Kashyyyk Region Coalition, Galactic Republic]
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Mid Rim]
-redirects: [Jhena, Varrin, Governor of Taldot]
+redirects: [Jhena, Varrin, Governor of Taldot, Governor of Numesira]
 infobox:
   image: "jhena-varrin.jpg"
   image_caption: ""
@@ -20,11 +20,11 @@ infobox:
   species: Human
   born: 33 BBY (aged 35)
   affiliation: ["[[The Kashyyyk Region Coalition]]"]
-  position: Governor of the Taldot sector
-  formerly: [First minister of the Kashyyyk Region Coalition, Taldot sector militia]
+  position: Governor of the Numesira sector
+  formerly: [Governor of the Taldot sector, First minister of the Kashyyyk Region Coalition, Taldot sector militia]
 ---
 
-**Jhena Varrin** is the Governor of the Taldot sector. At nineteen she called the five sectors that became the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]] together, and led their militias against the [[The Hutt Clans|Hutts]] with a blade in her hand. She was the Coalition's first minister, and resigned the post the day it became official.
+**Jhena Varrin** is the Governor of the Numesira sector. At nineteen, as Governor of Taldot, she called the six sectors that became the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]] together, and led their militias against the [[The Hutt Clans|Hutts]] with a blade in her hand. She was the Coalition's first minister, and resigned the post the day it became official. When the war left Taldot largely barren, she led its people to new homes across the Coalition.
 
 ## The Long War
 
@@ -38,17 +38,21 @@ The war left Taldot without a government. Its governor and most of its council w
 
 *Main article: [[The Kashyyyk Region Coalition#The founding, 14 BBY]]*
 
-No reconstruction money came from [[Coruscant]], and the [[The Hutt Clans|Hutts]] were already taking Halla and Kastolar. In 14 BBY, aged nineteen, Varrin called the four neighbouring sectors together and asked them to pool what was left: shipping, yards, food, and whatever militia each could still raise. They had every reason to refuse a girl from a ruined sector. They agreed, because she never asked anyone to go where she would not go herself.
+No reconstruction money came from [[Coruscant]], and the [[The Hutt Clans|Hutts]] were already taking Halla and Kastolar. In 14 BBY, aged nineteen, Varrin called the five neighbouring sectors together and asked them to pool what was left: shipping, yards, food, and whatever militia each could still raise. They had every reason to refuse a girl from a ruined sector. They agreed, because she never asked anyone to go where she would not go herself.
 
 It took two years to push the Hutts out of Halla and Kastolar, and Varrin fought at the front of it, beside the [[Kashyyyk|Wookiee]] warbands, with her father's blade. At her insistence, the Coalition freed every slave it found in the reclaimed worlds and took nothing inside Hutt Space, though it could have.
 
 ## First minister
 
-The five sectors made her the Coalition's first minister. When the Senate granted the tax cut in 12 BBY and the Coalition became official, she resigned. She claimed that a coalition like this needed a stable succession much more than it needed a symbol. Privately, she admitted how much of a toll the fighting had taken on her psyche. Her successor later passed the office to [[Rrask Doln]], and Varrin went home to govern Taldot.
+The six sectors made her the Coalition's first minister. When the Senate granted the tax cut in 12 BBY and the Coalition became official, she resigned. She claimed that a coalition like this needed a stable succession much more than it needed a symbol. Privately, she admitted how much of a toll the fighting had taken on her psyche. Her successor later passed the office to [[Rrask Doln]], and Varrin went home to govern Taldot.
+
+## Governor of Numesira
+
+Taldot never recovered from the [[The Long War|Long War]]. Its worlds still lie largely barren, and there was little left on them to rebuild. Varrin organised a mass migration of the sector's people to the surrounding [[The Kashyyyk Region Coalition|Coalition]] worlds, and moved to Charros herself, the industrial world in the Numesira sector that serves as the Coalition's unofficial capital. She is now Governor of the Numesira sector.
 
 ## In 2 ABY
 
-Varrin is thirty-five and still Governor of Taldot. She is severe, sparing with words and rarely seen to smile, and the war left more marks on her than the arm. She is also, by the account of nearly everyone who has dealt with her, impossible to buy and genuinely kind. Taldot resettled the survivors of its fourteen dead worlds before it rebuilt a single shipyard, and she still answers their petitions herself.
+Varrin is thirty-five and Governor of Numesira. She is severe, sparing with words and rarely seen to smile, and the war left more marks on her than the arm. She is also, by the account of nearly everyone who has dealt with her, impossible to buy and genuinely kind. She resettled the survivors of Taldot's fourteen dead worlds before anyone else, and she still answers their petitions herself.
 
 ## See also
 

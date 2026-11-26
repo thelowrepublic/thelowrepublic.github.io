@@ -29,7 +29,7 @@ infobox:
 
 [[The Kashyyyk Region Coalition|Halla and Kastolar]] border [[Galactic regions#Hutt Space|Hutt Space]], and the [[The Hutt Clans|Hutts]] moved in while the sectors were still counting their dead. Nal Kaddan fell in 15 BBY. Both sectors begged for help. Nothing came out of [[Coruscant]] except condolences and empty promises.
 
-In 14 BBY Kastolar and the four other sectors of what became the Kashyyyk Region Coalition agreed to pool what was left. It took two years to push the Hutts back out of Halla and Kastolar. Nal Kaddan was the last world to be retaken.
+In 14 BBY Kastolar and the five other sectors of what became the Kashyyyk Region Coalition agreed to pool what was left. It took two years to push the Hutts back out of Halla and Kastolar. Nal Kaddan was the last world to be retaken.
 
 ## See also
 

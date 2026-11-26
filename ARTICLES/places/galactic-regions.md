@@ -33,7 +33,7 @@ Around half of the Inner Rim is garrisoned by the Republic Corps, mostly along i
 
 ## The Mid Rim
 
-The [[The Long War|Long War]] was fought hardest in the Mid Rim. The Taldot sector lost most of its industry and fourteen of its worlds were left completely uninhabitable. The damage spread into the Mytaranor, Lantillian, Halla and Kastolar sectors. In 14 BBY those five sectors formed the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]].
+The [[The Long War|Long War]] was fought hardest in the Mid Rim. The Taldot sector lost most of its industry and fourteen of its worlds were left completely uninhabitable. The damage spread into the Mytaranor, Lantillian, Halla and Kastolar sectors. In 14 BBY those five sectors and Numesira formed the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]]. Taldot and its worlds still lie largely barren.
 
 Most recruits for the Corps come from the Mid Rim and the poorer worlds of the Core. In the Mid and Outer Rim, the Corps only garrisons tactically vital worlds and chokepoints along important trade lanes. There is no garrison in most of the Rim and there never has been. The Core Isolationists want the Mid and Outer Rim to gain full autonomy.
 

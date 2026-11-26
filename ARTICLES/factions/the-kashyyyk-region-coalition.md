@@ -10,7 +10,7 @@ tags:
   affiliation: [Kashyyyk Region Coalition, Galactic Republic]
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Mid Rim]
-redirects: [Kashyyyk Region, Taldot, Mytaranor, Lantillian, Halla, Kastolar]
+redirects: [Kashyyyk Region, Taldot, Mytaranor, Lantillian, Halla, Kastolar, Numesira, "Charros#How it is run"]
 infobox:
   image: "the-kashyyyk-region-coalition.png"
   image_caption: ""
@@ -18,14 +18,15 @@ infobox:
   artwork_author_link: ""
   type: Sector alliance
   founded: 14 BBY
-  founder: ["[[Jhena Varrin]], Governor of Taldot"]
+  founder: ["[[Jhena Varrin]], then Governor of Taldot"]
   leader: ["[[Rrask Doln]], third minister"]
-  territory: "The Taldot, Mytaranor, Lantillian, Halla and Kastolar sectors"
+  seat: "Charros, in the Numesira sector (unofficial)"
+  territory: "The Taldot, Mytaranor, Lantillian, Halla, Kastolar and Numesira sectors"
   affiliated_with: ["[[The Galactic Republic]]"]
   status: Active
 ---
 
-The **Kashyyyk Region Coalition** is a bloc of five sectors: Taldot, Mytaranor, Lantillian, Halla and Kastolar. Since joining forces in 14 BBY, and thanks to a tax cut granted for the sake of the Perlemian Trade Route, they have grown wealthier than they were before the [[The Long War|Long War]].
+The **Kashyyyk Region Coalition** is a bloc of six sectors: Taldot, Mytaranor, Lantillian, Halla, Kastolar and Numesira. Since joining forces in 14 BBY, and thanks to a tax cut granted for the sake of the Perlemian Trade Route, they have grown wealthier than they were before the [[The Long War|Long War]].
 
 ## The Long War
 
@@ -35,23 +36,23 @@ Halla and Kastolar border [[Galactic regions#Hutt Space|Hutt Space]], and the [[
 
 ## The founding, 14 BBY
 
-The Governor of Taldot, [[Jhena Varrin]], called the other four together in 14 BBY. She was nineteen, had lost an arm in the war, and fought at the front of everything that followed. They agreed to pool what was left. Shipping, yards, food, and whatever militia each of them could still raise. Kashyyyk brought most of the latter. The Wookiees had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the Hutts. It took two years to push the Hutts back out of Halla and Kastolar.
+The Governor of Taldot, [[Jhena Varrin]], called the other five together in 14 BBY. She was nineteen, had lost an arm in the war, and fought at the front of everything that followed. They agreed to pool what was left. Shipping, yards, food, and whatever militia each of them could still raise. Kashyyyk brought most of the latter. The Wookiees had been fighting Trandoshan slavers for centuries without help, and they were eager to strike back at the Hutts. It took two years to push the Hutts back out of Halla and Kastolar.
 
 Then they all went to the Senate and asked for their taxes to be cut to a fraction. They got it, because the Perlemian Trade Route runs through their territories and the Senate could not risk them blockading it. The Coalition became official.
 
 ## How it is run
 
-To many in the [[Galactic regions#The Mid Rim|Mid Rim]], the Coalition is what the [[The Galactic Republic|Republic]] was meant to be. Its five sectors decide together, share what they have, and publish their accounts. The [[The Galactic Republic#The Investigative Office|Investigative Office]] has audited them three times without finding anything to report. Its first minister, [[Jhena Varrin]], resigned the day the Coalition became official, so that it would never belong to one person or dynasty.
+To many in the [[Galactic regions#The Mid Rim|Mid Rim]], the Coalition is what the [[The Galactic Republic|Republic]] was meant to be. Its six sectors decide together, share what they have, and publish their accounts. It has no official capital, but its unofficial one is Charros, an industrial world in the Numesira sector. The [[The Galactic Republic#The Investigative Office|Investigative Office]] has audited them three times without finding anything to report. Its first minister, [[Jhena Varrin]], resigned the day the Coalition became official, so that it would never belong to one person or dynasty.
 
 Importantly, it is not naive. It won its tax cut by strong-arming the Republic, reminding the Senate that it sits on the Perlemian Trade Route, and it keeps an armed force that its neighbours do not care to test. But when it pushed the [[The Hutt Clans|Hutts]] out of Halla and Kastolar, it freed every slave it found and didn't claim any planets inside Hutt Space, though it could have. The Coalition does what it must to survive, but never at the cost of its soul.
 
 ## In 2 ABY
 
-The five sectors have been rebuilt since. They are richer now than they were before the war, though not by much, and much of that wealth is funnelled into humanitarian efforts in nearby sectors. They have a combined armed force on standby that nobody around them wants to test. The Wookiees have never shown anyone their secret hyperspace routes, but they navigate Coalition ships through them for efficient intra-region travel.
+Five of the six sectors have been rebuilt since. Taldot never recovered from the [[The Long War|Long War]], and its worlds still lie largely barren; most of its people were resettled on the surrounding Coalition worlds. The sectors are richer now than they were before the war, though not by much, and much of that wealth is funnelled into humanitarian efforts in nearby sectors. They have a combined armed force on standby that nobody around them wants to test. The Wookiees have never shown anyone their secret hyperspace routes, but they navigate Coalition ships through them for efficient intra-region travel.
 
 Every soldier fighting for the Coalition is a volunteer. They serve as [[The Judicial Forces and the Sector Rangers|Sector Rangers]], and most of them signed up because of the Coalition's founding: a nineteen-year-old governor with one arm, at the front of militias that had no business winning. The Coalition has never needed to conscript anyone. To the dismay of many would-be tyrants, this is proof that people will always stand beside each other, as long as someone shows them the way and stands right there with them.
 
-None of the five sectors has ever filed any complaint to the Senate. The Coalition's third minister, [[Rrask Doln]], is a [[Three Stances of the Senate|Core Isolationist]]. In public he calls the Coalition loyal and says it has no complaints. He also keeps politely reminding everyone about the Perlemian Trade Route that runs through the Coalition's territories. And about the opinionated Wookiees that are a part of the Coalition. The Core Isolationist front points at the Kashyyyk Region, which rebuilt itself on just a tax cut, as evidence that their intentions towards the Republic would work out.
+None of the six sectors has ever filed any complaint to the Senate. The Coalition's third minister, [[Rrask Doln]], is a [[Three Stances of the Senate|Core Isolationist]]. In public he calls the Coalition loyal and says it has no complaints. He also keeps politely reminding everyone about the Perlemian Trade Route that runs through the Coalition's territories. And about the opinionated Wookiees that are a part of the Coalition. The Core Isolationist front points at the Kashyyyk Region, which rebuilt itself on just a tax cut, as evidence that their intentions towards the Republic would work out.
 
 No other sector bloc has been offered the same special treatment and the Ministry has found plenty of excuses to not give anyone else the same deal. In reality, the difference is that the others do not have a super-hyperroute that the Republic needs kept open.
 
