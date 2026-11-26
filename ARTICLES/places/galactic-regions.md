@@ -29,7 +29,7 @@ The [[Three Stances of the Senate|Core Isolationists]]' answer is full withdrawa
 
 ### The Colonies
 
-The Colonies are a ring-shaped region between the Core and the Inner Rim, and are counted among the inner worlds. They lie along major hyperspace trade routes, among them the Perlemian Trade Route, the Corellian Run and the Hydian Way, which have made their worlds hubs of education, fashion, finance and technology. Some of those worlds are extremely wealthy. Explorers from the Colonies and the Core settled the Inner Rim, and in the overcrowded centuries of the High Republic many of the Colonies' poor left for new lives in the Outer Rim. [[Devaron]], Carida and Cato Neimoidia are Colonies worlds.
+The Colonies are a ring-shaped region between the Core and the Inner Rim, and are counted among the inner worlds. They lie along major hyperspace trade routes, among them the Perlemian Trade Route, the Corellian Run and the Hydian Way, which have made their worlds hubs of education, fashion, finance and technology. Some of those worlds are extremely wealthy. Explorers from the Colonies and the Core settled the Inner Rim, and in the overcrowded centuries of the High Republic many of the Colonies' poor left for new lives in the Outer Rim. [[Devaron]], Carida and Cato Neimoidia are Colonies worlds. The Colonies are only sparsely garrisoned by the [[The Republic Corps|Republic Corps]], as their worlds feel protected by the Core garrisons on one side and the Inner Rim border garrisons on the other.
 
 ## The Inner Rim
 
