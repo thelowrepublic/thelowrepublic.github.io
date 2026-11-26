@@ -23,11 +23,12 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Children of the Watch | A Mandalorian sect that takes in orphans and raises them in a warrior creed from infancy. | [[Mandalore#The Children of the Watch]] |
 | Clone Wars | The war between the Republic and the Confederacy, up to the death of Palpatine in 19 BBY. The fighting that followed is the Long War. | [[The Long War]] |
 | Collective, the | The Shadow Collective. | [[The Shadow Collective]] |
+| Colonies | The ring of wealthy trade-route worlds between the Core and the Inner Rim. | [[Galactic regions#The Colonies]] |
 | Commando | The rank of every enlisted soldier of the Republic Corps. | [[The Republic Corps]] |
 | Concord of Raxus | The bargain that ended the Long War in 15 BBY. | [[The Long War#The Concord of Raxus, 15 BBY]] |
 | Constitutional Convention | The convention of 13 to 11 BBY that wrote the new charter. Padmé Amidala chaired it. | [[The Republic Remade#The Constitutional Convention, 13–11 BBY]] |
 | Contingency orders | The hundred and fifty standing orders held on a chip in every clone trooper. | [[The Kamino Findings#The contingency orders]] |
-| Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Inner Rim, with free trade beyond. | [[Three Stances of the Senate]] |
+| Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Colonies, with free trade beyond. | [[Three Stances of the Senate]] |
 | Cortosis | An extremely rare metal that has a very high energy absorption rate and transmission coefficients, which allow even the energy of a blaster bolt or lightsaber to be dissipated upon contact. | [[The Shadow War#What each side fields]] |
 | Crimson Dawn | The Shadow Collective's trading arm and its main source of money. | [[The Shadow Collective#Crimson Dawn]] |
 | Cult of Light | The Republic's name for the Path of Light. | [[The Path of Light]] |

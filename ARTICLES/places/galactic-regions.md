@@ -10,10 +10,10 @@ tags:
   affiliation: [Galactic Republic]
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Core, Inner Rim, Mid Rim, Outer Rim, Hutt Space, Wild Space]
-redirects: ["Core#The Core", "Core Worlds#The Core", "Inner Rim#The Inner Rim", "Mid Rim#The Mid Rim", "Outer Rim#The Outer Rim", "Hutt Space#Hutt Space", "Wild Space#Wild Space"]
+redirects: ["Core#The Core", "Core Worlds#The Core", "Colonies#The Colonies", "The Colonies#The Colonies", "Inner Rim#The Inner Rim", "Mid Rim#The Mid Rim", "Outer Rim#The Outer Rim", "Hutt Space#Hutt Space", "Wild Space#Wild Space"]
 ---
 
-The **galactic regions** are the Core, the Inner Rim, the Mid Rim and the Outer Rim. Beside them are Hutt Space and Wild Space. The galaxy is very large and almost entirely empty. Perhaps one star system in a hundred has a world anyone can live on, and most inhabited worlds hold a single town, a mine or a few farms.
+The **galactic regions** are the Core, the Colonies, the Inner Rim, the Mid Rim and the Outer Rim. Beside them are Hutt Space and Wild Space. The galaxy is very large and almost entirely empty. Perhaps one star system in a hundred has a world anyone can live on, and most inhabited worlds hold a single town, a mine or a few farms.
 
 ## Background
 
@@ -25,7 +25,11 @@ The Core is fully garrisoned by the [[The Republic Corps|Republic Corps]]. In th
 
 At the [[The Republic Remade#The Constitutional Convention, 13–11 BBY|Constitutional Convention]], the Core worlds voted down more Senate seats for the Outer Rim. Almost all of the Core still trades with the [[The Greater Seswenna Union|Union]], as the Eriadu hyperspace crossroads is too vital to simply abandon.
 
-The [[Three Stances of the Senate|Core Isolationists]]' answer is full withdrawal of the Republic to the Core and the Inner Rim, focus shift towards self-sufficiency of the Core, and free trade with everything beyond it.
+The [[Three Stances of the Senate|Core Isolationists]]' answer is full withdrawal of the Republic to the Core and the Colonies, focus shift towards self-sufficiency of the Core, and free trade with everything beyond it.
+
+### The Colonies
+
+The Colonies are a ring-shaped region between the Core and the Inner Rim, and are counted among the inner worlds. They lie along major hyperspace trade routes, among them the Perlemian Trade Route, the Corellian Run and the Hydian Way, which have made their worlds hubs of education, fashion, finance and technology. Some of those worlds are extremely wealthy. Explorers from the Colonies and the Core settled the Inner Rim, and in the overcrowded centuries of the High Republic many of the Colonies' poor left for new lives in the Outer Rim. [[Devaron]], Carida and Cato Neimoidia are Colonies worlds.
 
 ## The Inner Rim
 
