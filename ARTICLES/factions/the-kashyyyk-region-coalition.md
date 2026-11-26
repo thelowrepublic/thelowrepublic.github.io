@@ -10,7 +10,7 @@ tags:
   affiliation: [Kashyyyk Region Coalition, Galactic Republic]
   period: [Long War, 15 BBY–0 ABY, Shadow War]
   region: [Mid Rim]
-redirects: [Kashyyyk Region, Taldot, Mytaranor, Lantillian, Halla, Kastolar, Numesira, "Charros#How it is run"]
+redirects: [Kashyyyk Region, Taldot, Mytaranor, Lantillian, Halla, Kastolar, Numesira, "Charros#How it is run", "Charros IV#How it is run"]
 infobox:
   image: "the-kashyyyk-region-coalition.png"
   image_caption: ""
@@ -42,7 +42,7 @@ Then they all went to the Senate and asked for their taxes to be cut to a fracti
 
 ## How it is run
 
-To many in the [[Galactic regions#The Mid Rim|Mid Rim]], the Coalition is what the [[The Galactic Republic|Republic]] was meant to be. Its six sectors decide together, share what they have, and publish their accounts. It has no official capital, but its unofficial one is Charros, an industrial world in the Numesira sector. The [[The Galactic Republic#The Investigative Office|Investigative Office]] has audited them three times without finding anything to report. Its first minister, [[Jhena Varrin]], resigned the day the Coalition became official, so that it would never belong to one person or dynasty.
+To many in the [[Galactic regions#The Mid Rim|Mid Rim]], the Coalition is what the [[The Galactic Republic|Republic]] was meant to be. Its six sectors decide together, share what they have, and publish their accounts. It has no official capital, but its unofficial one is Charros, an industrial world in the Numesira sector. Its official name is Charros IV, though it is called Charros in common usage and on maps. The [[The Galactic Republic#The Investigative Office|Investigative Office]] has audited them three times without finding anything to report. Its first minister, [[Jhena Varrin]], resigned the day the Coalition became official, so that it would never belong to one person or dynasty.
 
 Importantly, it is not naive. It won its tax cut by strong-arming the Republic, reminding the Senate that it sits on the Perlemian Trade Route, and it keeps an armed force that its neighbours do not care to test. But when it pushed the [[The Hutt Clans|Hutts]] out of Halla and Kastolar, it freed every slave it found and didn't claim any planets inside Hutt Space, though it could have. The Coalition does what it must to survive, but never at the cost of its soul.
 
@@ -58,7 +58,7 @@ No other sector bloc has been offered the same special treatment and the Ministr
 
 ```image
 image: "kashyyyk-region-coalition-ranger.jpg"
-image_caption: "Taldot Sector Ranger"
+image_caption: "Coalition Sector Ranger"
 artwork_author: "Karl Lindberg"
 artwork_author_link: "https://www.artstation.com/karllindberg"
 ```

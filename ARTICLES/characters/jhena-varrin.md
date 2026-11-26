@@ -48,7 +48,7 @@ The six sectors made her the Coalition's first minister. When the Senate granted
 
 ## Governor of Numesira
 
-Taldot never recovered from the [[The Long War|Long War]]. Its worlds still lie largely barren, and there was little left on them to rebuild. Varrin organised a mass migration of the sector's people to the surrounding [[The Kashyyyk Region Coalition|Coalition]] worlds, and moved to Charros herself, the industrial world in the Numesira sector that serves as the Coalition's unofficial capital. She is now Governor of the Numesira sector.
+Taldot never recovered from the [[The Long War|Long War]]. Its worlds still lie largely barren, and there was little left on them to rebuild. Varrin organised a mass migration of the sector's people to the surrounding [[The Kashyyyk Region Coalition|Coalition]] worlds, and moved to Charros herself, the industrial world in the Numesira sector that serves as the Coalition's unofficial capital. She did not stand for election there. The local worlds nominated her themselves, and she was elected Governor of the Numesira sector unanimously.
 
 ## In 2 ABY
 
