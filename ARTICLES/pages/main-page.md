@@ -43,13 +43,13 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 
 - [[The Jedi Templars]]
 - [[Ossus Order]]
-- [[Order of Voss]]
 
 ### The Shadow Collective
 
 - [[The Shadow Collective]]
 - [[The Nightborn]]
 - [[The Shadow Troopers]]
+- [[The Droid Gotra]]
 
 ### Other powers
 
