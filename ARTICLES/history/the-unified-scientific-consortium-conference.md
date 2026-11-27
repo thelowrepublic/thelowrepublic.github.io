@@ -3,7 +3,7 @@ title: The Unified Scientific Consortium Conference
 category: history
 tier: standard
 batch: 21
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

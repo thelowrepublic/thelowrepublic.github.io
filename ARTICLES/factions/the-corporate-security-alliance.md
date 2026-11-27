@@ -3,7 +3,7 @@ title: The Corporate Security Alliance
 category: faction
 tier: standard
 batch: 13
-status: draft
+status: approved
 sources: [II.3, VII.2, XII.4, XII.6, "R:Cassian Andor"]
 canon: false
 tags:

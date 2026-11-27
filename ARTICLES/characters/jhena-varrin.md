@@ -3,7 +3,7 @@ title: Jhena Varrin
 category: character
 tier: standard
 batch: 18
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

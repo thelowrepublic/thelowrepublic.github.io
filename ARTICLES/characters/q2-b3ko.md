@@ -3,7 +3,7 @@ title: Q2-B3KO
 category: character
 tier: short
 batch: 22
-status: draft
+status: approved
 sources: []
 canon: true
 tags:

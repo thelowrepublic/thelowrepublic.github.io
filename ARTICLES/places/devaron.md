@@ -3,7 +3,7 @@ title: Devaron
 category: place
 tier: short
 batch: 14
-status: draft
+status: approved
 sources: []
 canon: true
 tags:

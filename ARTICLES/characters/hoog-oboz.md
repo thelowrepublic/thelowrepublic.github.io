@@ -3,7 +3,7 @@ title: Hoog Oboz
 category: character
 tier: short
 batch: 15
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

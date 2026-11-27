@@ -3,7 +3,7 @@ title: Director Gideon
 category: character
 tier: short
 batch: 19
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

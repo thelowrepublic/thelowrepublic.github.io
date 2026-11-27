@@ -3,7 +3,7 @@ title: The Droid Gotra
 category: faction
 tier: standard
 batch: 22
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

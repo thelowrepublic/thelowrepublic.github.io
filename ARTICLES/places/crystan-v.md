@@ -3,7 +3,7 @@ title: Crystan V
 category: place
 tier: short
 batch: 16
-status: draft
+status: approved
 sources: []
 canon: false
 tags:

@@ -3,7 +3,7 @@ title: Syril Karn
 category: character
 tier: standard
 batch: 17
-status: draft
+status: approved
 sources: []
 canon: true
 tags:

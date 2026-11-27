@@ -3,7 +3,7 @@ title: Baylan Skoll
 category: character
 tier: standard
 batch: 20
-status: draft
+status: approved
 sources: []
 canon: true
 tags:
