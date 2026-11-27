@@ -36,7 +36,7 @@ She followed Ars Vehn, the only Chancellor the Senate has ever managed to remove
 
 ## In 2 ABY
 
-Mon Mothma is of the [[Three Stances of the Senate|Republic Reformist]] stance.
+Mon Mothma is of the [[Senate Stances|Republic Reformist]] stance.
 
 ## See also
 

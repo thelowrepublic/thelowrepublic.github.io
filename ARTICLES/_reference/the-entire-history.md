@@ -483,7 +483,7 @@ She does not defend the Shadow Collective and has never been careless about the 
 
 ### Three stances of the Senate
 
-*Main article: [[Three Stances of the Senate]]*
+*Main article: [[Senate Stances]]*
 
 The Senate has settled into three political positions since Yavin and the secessions. None of them is a party in the old sense and all three cut across sector lines.
 

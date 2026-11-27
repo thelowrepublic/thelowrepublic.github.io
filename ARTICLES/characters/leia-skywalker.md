@@ -50,9 +50,9 @@ She does not defend the [[The Shadow Collective|Shadow Collective]] and has neve
 
 ## The three stances
 
-*Main article: [[Three Stances of the Senate]]*
+*Main article: [[Senate Stances]]*
 
-The [[Three Stances of the Senate|three stances]] pull in three directions and nothing moves. Every emergency renewal passes because the traditionalists want the war and the other two cannot agree on an alternative. Leia Skywalker votes with the reformists on every law. She votes with the isolationists on every question of who should govern the Rim. She has never officially joined any political camp.
+The [[Senate Stances|three stances]] pull in three directions and nothing moves. Every emergency renewal passes because the traditionalists want the war and the other two cannot agree on an alternative. Leia Skywalker votes with the reformists on every law. She votes with the isolationists on every question of who should govern the Rim. She has never officially joined any political camp.
 
 ## In 2 ABY
 
@@ -68,5 +68,5 @@ The [[Three Stances of the Senate|three stances]] pull in three directions and n
 - [[Bail Organa]]
 - [[Ilai Vess]]
 - [[The Secessions]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[Naboo]]

@@ -28,7 +28,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Concord of Raxus | The bargain that ended the Long War in 15 BBY. | [[The Long War#The Concord of Raxus, 15 BBY]] |
 | Constitutional Convention | The convention of 13 to 11 BBY that wrote the new charter. Padmé Amidala chaired it. | [[The Republic Remade#The Constitutional Convention, 13–11 BBY]] |
 | Contingency orders | The hundred and fifty standing orders held on a chip in every clone trooper. | [[The Kamino Findings#The contingency orders]] |
-| Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Colonies, with free trade beyond. | [[Three Stances of the Senate]] |
+| Core Isolationists | The Senate stance that wants the Republic withdrawn to the Core and the Colonies, with free trade beyond. | [[Senate Stances]] |
 | Cortosis | An extremely rare metal that has a very high energy absorption rate and transmission coefficients, which allow even the energy of a blaster bolt or lightsaber to be dissipated upon contact. | [[The Shadow War#What each side fields]] |
 | Crimson Dawn | The Shadow Collective's trading arm and its main source of money. | [[The Shadow Collective#Crimson Dawn]] |
 | Cult of Light | The Republic's name for the Path of Light. | [[The Path of Light]] |
@@ -69,8 +69,8 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Reconstitution | The years from 18 to 12 BBY in which the clone army was dismissed and replaced by a recruited one. | [[The Manumission Act#The Reconstitution, 18–12 BBY]] |
 | Republic Corps | The Republic's recruited army, raised from 18 BBY. | [[The Republic Corps]] |
 | Republic Intelligence | The Republic's intelligence service, also called the Strategic Information Service or the SIS. | [[Republic Intelligence]] |
-| Republic Reformists | The Senate stance that wants the Republic's machinery rebuilt from the ground up. | [[Three Stances of the Senate]] |
-| Rim self-rule bloc | The Senate bloc led by Lux Bonteri. It votes with the Core Isolationists. | [[Three Stances of the Senate]] |
+| Republic Reformists | The Senate stance that wants the Republic's machinery rebuilt from the ground up. | [[Senate Stances]] |
+| Rim self-rule bloc | The Senate bloc led by Lux Bonteri. It votes with the Core Isolationists. | [[Senate Stances]] |
 | Sector Rangers | The Republic's localised armed force that patrols ports, roads, outlying settlements and the lanes between worlds. | [[The Judicial Forces and the Sector Rangers]] |
 | Senate Guard | The ceremonial guard of the Senate. It was left as it was. | [[The Republic Corps]] |
 | Shadow Collective | Maul's criminal empire, which includes Crimson Dawn, Black Sun, Death Watch, Shadow Troopers, rebuilt droid remnants, countless gangs and cartels, as well as some Nightborn. | [[The Shadow Collective]] |
@@ -82,7 +82,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Taozin nodules | Nodules that hide a wearer from Force detection. | [[The Shadow War#What each side fields]] |
 | Technology Privatisation Paradox | The observation that the galaxy's most advanced machines are lost whenever their secretive owners fall, while openly shared designs last for millennia and only grow more dependable. | [[The Unified Scientific Consortium Conference#The Technology Privatisation Paradox]] |
 | Temple Troopers | The security force of the Ossus Temple, a regiment founded by clones the Jedi adopted. | [[Ossus Order#Temple Troopers]] |
-| Traditionalists | The Senate stance that promotes military actions to force seceding sectors back into the Republic. | [[Three Stances of the Senate]] |
+| Traditionalists | The Senate stance that promotes military actions to force seceding sectors back into the Republic. | [[Senate Stances]] |
 | Unified Scientific Consortium | The joint body of Republic and Techno Union scientists formed after the Long War to give the sciences a shared vocabulary. It has not met since 8 BBY. | [[The Unified Scientific Consortium Conference]] |
 | Union, the | The Greater Seswenna Union. | [[The Greater Seswenna Union]] |
 | Vess case, the | Senator Ilai Vess's argument of 2 ABY that the attack on the licensed Yavin 4 dig had no legal authority. | [[The Secessions#The Vess case]] |

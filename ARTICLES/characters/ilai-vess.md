@@ -26,7 +26,7 @@ infobox:
   senate_stance: Core Isolationist
 ---
 
-**Ilai Vess** is the senator for the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] sector, which contains [[Dathomir]], and a [[Three Stances of the Senate|Core Isolationist]]. A Dathomirian raised on [[Coruscant]], she practised administrative law before she took the seat. In the second month of 2 ABY she read the Yavin 4 dig permit into the Senate record, and within the month Quelii had seceded from the [[The Galactic Republic|Republic]].
+**Ilai Vess** is the senator for the [[The Secessions#Quelii and Gordian Reach, 2 ABY|Quelii]] sector, which contains [[Dathomir]], and a [[Senate Stances|Core Isolationist]]. A Dathomirian raised on [[Coruscant]], she practised administrative law before she took the seat. In the second month of 2 ABY she read the Yavin 4 dig permit into the Senate record, and within the month Quelii had seceded from the [[The Galactic Republic|Republic]].
 
 ## Early life
 

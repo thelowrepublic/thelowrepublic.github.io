@@ -36,7 +36,7 @@ After the death of [[The Death of Palpatine|Palpatine]] in 19 BBY, **the Republi
 
 Organa governed through the war's continuation, the [[The Long War|trials]] and the [[The Kamino Findings|Kamino findings]]. He stepped down exhausted, having pleased nobody. Vehn, a former sector admiral, won on public exhaustion and governed as the Security faction's man. Mon Mothma was the first Chancellor to serve under the new charter. Dal was elected six weeks after [[The Battle of Yavin|Yavin]] on an open promise of revenge.
 
-A Chancellor can be removed by the Senate on a two-thirds vote. Vehn is the only one it has ever managed. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Three Stances of the Senate#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
+A Chancellor can be removed by the Senate on a two-thirds vote. Vehn is the only one it has ever managed. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Senate Stances#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
 
 ## The Constitutional Convention, 13–11 BBY
 
@@ -77,4 +77,4 @@ The report was published in 4 BBY, and it caused quite a stir, though not anythi
 - [[The Galactic Republic]]
 - [[Padmé Amidala]]
 - [[The Census of 4 BBY]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]

@@ -1,5 +1,5 @@
 ---
-title: Three Stances of the Senate
+title: Senate Stances
 category: faction
 tier: standard
 batch: 2
@@ -10,7 +10,7 @@ tags:
   affiliation: [Galactic Republic]
   period: [Shadow War]
   region: [Core, Inner Rim, Mid Rim, Outer Rim]
-redirects: [Senate stances, "Traditionalists#The Traditionalists", "Republic Reformists#The Republic Reformists", "Core Isolationists#The Core Isolationists", "Rim self-rule bloc#The Rim self-rule bloc"]
+redirects: [Three Stances of the Senate, "Traditionalists#The Traditionalists", "Republic Reformists#The Republic Reformists", "Core Isolationists#The Core Isolationists", "Rim self-rule bloc#The Rim self-rule bloc"]
 ---
 
 The [[The Galactic Republic|Senate]] has settled into **three stances** since [[The Battle of Yavin|Yavin]] and the [[The Secessions|secessions]]. They are the Traditionalists, the Republic Reformists and the Core Isolationists. None of them is a party in the old sense and all three cut across sector lines. Separately, the Rim self-rule bloc votes with the Core Isolationists.

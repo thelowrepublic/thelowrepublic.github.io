@@ -25,7 +25,7 @@ infobox:
   senate_stance: Core Isolationist
 ---
 
-**Rrask Doln** is a Bothan, the third minister of the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]] and a [[Three Stances of the Senate|Core Isolationist]]. He was a Taldot shipping clerk before the war and a militia quartermaster during it.
+**Rrask Doln** is a Bothan, the third minister of the [[The Kashyyyk Region Coalition|Kashyyyk Region Coalition]] and a [[Senate Stances|Core Isolationist]]. He was a Taldot shipping clerk before the war and a militia quartermaster during it.
 
 ## The Coalition
 
@@ -41,4 +41,4 @@ Doln is the Coalition's third minister. The first was [[Jhena Varrin]], now Gove
 
 - [[The Kashyyyk Region Coalition]]
 - [[Kashyyyk]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]

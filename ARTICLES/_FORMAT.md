@@ -283,7 +283,7 @@ The Unified Scientific Consortium Conference (added 18 November 2026) branches o
 ### 4.5 No infobox
 
 Three kinds of article have no `infobox` key at all:
-- the composite overviews **Galactic regions** and **Three Stances of the Senate**
+- the composite overviews **Galactic regions** and **Senate Stances** (formerly Three Stances of the Senate)
 - all `pages/` files
 
 ---

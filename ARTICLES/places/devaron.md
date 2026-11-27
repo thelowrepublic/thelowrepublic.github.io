@@ -23,7 +23,7 @@ infobox:
   locations: [Temple of Eedit]
 ---
 
-**Devaron** is the jungle world of the Devaronians, and it stands firmly with the [[The Galactic Republic|Republic]]. In 19 BBY hired killers working for the Separatists murdered the leading candidate in its election for governor, Malssanah Rashtrin, along with her husband. Her sister, Lura Brezvar, now represents the Duluur sector in the Senate as a [[Three Stances of the Senate#The Core Isolationists|Core Isolationist]].
+**Devaron** is the jungle world of the Devaronians, and it stands firmly with the [[The Galactic Republic|Republic]]. In 19 BBY hired killers working for the Separatists murdered the leading candidate in its election for governor, Malssanah Rashtrin, along with her husband. Her sister, Lura Brezvar, now represents the Duluur sector in the Senate as a [[Senate Stances#The Core Isolationists|Core Isolationist]].
 
 ## Background
 
@@ -37,9 +37,9 @@ The couple's daughter, Heth Rashtrin, was six years old. She was given into the 
 
 ## In 2 ABY
 
-Devaron and the whole Duluur sector, which contains it, are staunch supporters and members of the [[The Galactic Republic|Republic]]. Lura Brezvar is now the senator for the Duluur sector, and she holds the [[Three Stances of the Senate#The Core Isolationists|Core Isolationist]] position. In public speeches she has said that she lost her sister because of the [[Galactic regions#The Outer Rim|Outer Rim]]'s insidious greed and violence. The Republic, she argues, should protect its most loyal worlds instead of dividing its attention towards those that would tear it apart for their own gain.
+Devaron and the whole Duluur sector, which contains it, are staunch supporters and members of the [[The Galactic Republic|Republic]]. Lura Brezvar is now the senator for the Duluur sector, and she holds the [[Senate Stances#The Core Isolationists|Core Isolationist]] position. In public speeches she has said that she lost her sister because of the [[Galactic regions#The Outer Rim|Outer Rim]]'s insidious greed and violence. The Republic, she argues, should protect its most loyal worlds instead of dividing its attention towards those that would tear it apart for their own gain.
 
 ## See also
 
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[The Galactic Republic]]

@@ -20,7 +20,7 @@ infobox:
   held_by: ["[[The Galactic Republic]]"]
 ---
 
-**Raxus** has been represented in the Senate by [[Lux Bonteri]] since 14 BBY. He leads the [[Three Stances of the Senate|Rim self-rule bloc]]. The Concord of Raxus, which he negotiated, ended [[The Long War|the Long War]] in 15 BBY.
+**Raxus** has been represented in the Senate by [[Lux Bonteri]] since 14 BBY. He leads the [[Senate Stances|Rim self-rule bloc]]. The Concord of Raxus, which he negotiated, ended [[The Long War|the Long War]] in 15 BBY.
 
 ## Background
 

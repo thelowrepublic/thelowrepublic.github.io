@@ -27,7 +27,7 @@ The Core is fully garrisoned by the [[The Republic Corps|Republic Corps]]. In th
 
 At the [[The Republic Remade#The Constitutional Convention, 13–11 BBY|Constitutional Convention]], the Core worlds voted down more Senate seats for the Outer Rim. Almost all of the Core still trades with the [[The Greater Seswenna Union|Union]], as the Eriadu hyperspace crossroads is too vital to simply abandon.
 
-The [[Three Stances of the Senate|Core Isolationists]]' answer is full withdrawal of the Republic to the Core and the Colonies, focus shift towards self-sufficiency of the Core, and free trade with everything beyond it.
+The [[Senate Stances|Core Isolationists]]' answer is full withdrawal of the Republic to the Core and the Colonies, focus shift towards self-sufficiency of the Core, and free trade with everything beyond it.
 
 ### The Deep Core
 
@@ -87,4 +87,4 @@ Wild Space lies beyond the Outer Rim, 'off the edge of the map'. Its star cluste
 - [[The Census of 4 BBY]]
 - [[The Kashyyyk Region Coalition]]
 - [[The Hutt Clans]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]

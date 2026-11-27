@@ -43,7 +43,7 @@ The [[The Manumission Act|Manumission Act]] of 16 BBY made every clone a citizen
 
 ## In 2 ABY
 
-Organa is of the [[Three Stances of the Senate|Republic Reformist]] stance. He is the political mentor of [[Leia Skywalker]].
+Organa is of the [[Senate Stances|Republic Reformist]] stance. He is the political mentor of [[Leia Skywalker]].
 
 ## See also
 

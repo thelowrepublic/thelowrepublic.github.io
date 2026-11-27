@@ -46,13 +46,13 @@ The Convention also chose to say nothing whatsoever about how a sector might lea
 - 11 BBY – 0 ABY: [[Mon Mothma]]
 - 0 ABY – present: [[Sevrin Dal]]
 
-A Chancellor can be removed by the Senate on a two-thirds vote. Vehn is the only one it has ever managed. He was impeached in 11 BBY, when the Investigative Office exposed the [[The Republic Remade#The Geonosis Programme|Geonosis Programme]]. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Three Stances of the Senate#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
+A Chancellor can be removed by the Senate on a two-thirds vote. Vehn is the only one it has ever managed. He was impeached in 11 BBY, when the Investigative Office exposed the [[The Republic Remade#The Geonosis Programme|Geonosis Programme]]. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Senate Stances#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
 
-Dal is a Crystanian Rybet and a [[Three Stances of the Senate|Traditionalist]]. Dal was elected six weeks after [[The Battle of Yavin|Yavin]] on an open promise of revenge. He won with one sentence: the Republic would find the people responsible for Yavin and finish them. Two years on he has finished nobody.
+Dal is a Crystanian Rybet and a [[Senate Stances|Traditionalist]]. Dal was elected six weeks after [[The Battle of Yavin|Yavin]] on an open promise of revenge. He won with one sentence: the Republic would find the people responsible for Yavin and finish them. Two years on he has finished nobody.
 
 ## The Senate
 
-*Main article: [[Three Stances of the Senate]]*
+*Main article: [[Senate Stances]]*
 
 The Senate has settled into three political positions since Yavin and the secessions. They are the Traditionalists, the Republic Reformists and the Core Isolationists. None of them is a party in the old sense and all three cut across sector lines. The Rim self-rule bloc votes with the Core Isolationists constantly. The three pull in three directions and nothing moves.
 
@@ -107,7 +107,7 @@ The Republic will not recognise any of the secessions. The refusal cost nothing 
 ## See also
 
 - [[The Republic Remade]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[The Republic Corps]]
 - [[Republic Intelligence]]
 - [[The Shadow War]]

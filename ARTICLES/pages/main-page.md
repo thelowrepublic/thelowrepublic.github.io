@@ -34,7 +34,7 @@ This wiki describes the galaxy from 19 BBY to the end of 2 ABY.
 ### The Republic
 
 - [[The Galactic Republic]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[The Republic Corps]]
 - [[The Judicial Forces and the Sector Rangers]]
 - [[Republic Intelligence]]

@@ -25,7 +25,7 @@ infobox:
   senate_stance: Core Isolationist
 ---
 
-**Quarsh Panaka** is the Governor of [[Naboo]] and a [[Three Stances of the Senate|Core Isolationist]]. It was he who asked for the Chommell sector to leave the Republic, and he has given no reason since.
+**Quarsh Panaka** is the Governor of [[Naboo]] and a [[Senate Stances|Core Isolationist]]. It was he who asked for the Chommell sector to leave the Republic, and he has given no reason since.
 
 ## Background
 
@@ -47,5 +47,5 @@ By the end of 2 ABY the Ministry of the Interior had over sixty formal secession
 
 - [[Naboo]]
 - [[The Secessions]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[Leia Skywalker]]

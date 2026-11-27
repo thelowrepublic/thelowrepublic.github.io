@@ -24,7 +24,7 @@ infobox:
   senate_stance: Traditionalist
 ---
 
-**Sevrin Dal** is a Crystanian Rybet who made his fortune in kolto, and Chancellor of the [[The Galactic Republic|Republic]] since 0 ABY. He is a [[Three Stances of the Senate|Traditionalist]].
+**Sevrin Dal** is a Crystanian Rybet who made his fortune in kolto, and Chancellor of the [[The Galactic Republic|Republic]] since 0 ABY. He is a [[Senate Stances|Traditionalist]].
 
 ## Background
 
@@ -50,11 +50,11 @@ Chancellor Sevrin Dal asked for emergency powers eight days after the last survi
 
 The [[The Republic Remade#The Constitutional Convention, 13–11 BBY|ninety-day rule]] has worked exactly as written on every single occasion. [[Padmé Amidala]], who wrote it, has said that the rule works and the politics beat it. She has not proposed changing it, on the grounds that she cannot think of a change that would have made any difference.
 
-A Chancellor can be removed by the Senate on a two-thirds vote. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Three Stances of the Senate#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
+A Chancellor can be removed by the Senate on a two-thirds vote. Three motions have been filed against Dal in two years. The best of them reached forty-one percent. All three came from the [[Senate Stances#The Rim self-rule bloc|Rim self-rule bloc]], and all three raised the number of sectors thinking about leaving.
 
 ## The Traditionalist stance
 
-*Main article: [[Three Stances of the Senate#The Traditionalists]]*
+*Main article: [[Senate Stances#The Traditionalists]]*
 
 The Traditionalists hold that the Republic works. Sevrin Dal is one of them. The charter is sound and the Convention fixed what needed fixing. The only reason anything fails now is that sectors keep walking out. Bring them back and the problem ends.
 
@@ -67,6 +67,6 @@ A Chancellor for two years now, Dal has not delivered on his promise yet. He has
 ## See also
 
 - [[The Republic Remade]]
-- [[Three Stances of the Senate]]
+- [[Senate Stances]]
 - [[The Shadow War]]
 - [[Mon Mothma]]
