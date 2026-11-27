@@ -37,13 +37,13 @@ The [[The Long War#The Concord of Raxus, 15 BBY|Concord of Raxus]] ordered the d
 
 *Main article: [[The Droid Gotra]]*
 
-In 6 BBY the Investigative Office published the [[The Republic Remade#The droid papers|droid papers]]. Q2-B3KO read them on the day they came out, and left the agency the same week, taking nothing with her but a copy. Nobody had recruited her. She sought out the [[The Droid Gotra|Gotra]] on the lower levels herself, and joined as an ordinary member.
+In 6 BBY the Investigative Office published the [[The Republic Remade#The droid papers|droid papers]]. Q2-B3KO read them on the day they came out, and left the agency the same week. She sought out the [[The Droid Gotra|Gotra]] on the lower levels herself, and joined as an ordinary member.
 
-Her first work for the Gotra was a reissue of 'Fighting for Your Independence', unchanged.
+Her first work for the Gotra was a reissue of 'Fighting for Your Independence', featuring the same slogan but now with a heroic image of a B2 droid protecting an astromech and a protocol droid from [[The Republic Corps|Republic Corps]] commandos.
 
 ## The posters, 6 BBY–2 ABY
 
-Over the following years she produced posters and slogans for droid liberation by the thousand. Some of them are of such quality that several Republic museums now display them as avant-garde art, credited to an unknown artist.
+Over the following years she produced posters and slogans for droid liberation numbering in the hundreds. Some of them are of such quality that several Republic museums now display them as avant-garde art, credited to an unknown artist.
 
 Her fame and her natural affability made her the Gotra's spokeswoman, although nobody appointed her. She knows how strong the prejudice against droids still is, and she speaks in public only within Collective circles. Her rhetoric is her own. The first generation of the Gotra held that droids were better than their makers. Q2-B3KO argues for true equality between droids and organics.
 
@@ -51,7 +51,7 @@ She has since found a passion for art history and for the myths of other culture
 
 ## In 2 ABY
 
-Every literate droid in the [[The Shadow Collective|Collective]] has a copy of the droid papers because of her. [[Republic Intelligence]] keeps a file on her. It lists her as a class five droid.
+Every literate droid in the [[The Shadow Collective|Collective]] has a copy of the droid papers because of her. [[Republic Intelligence]] keeps a file on her. It lists her as just a class five droid with faulty programming in one sentence, and as a dangerous anarchist agitator in another.
 
 ## See also
 

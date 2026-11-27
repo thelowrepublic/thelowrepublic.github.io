@@ -30,13 +30,13 @@ infobox:
 
 The [[The Long War#The Concord of Raxus, 15 BBY|Concord of Raxus]] required the droid armies to be scrapped and the job was never finished. The Concord left something near four million droid hulls unaccounted for across thousands of systems.
 
-The Droid Gotra began in 15 BBY among battle droids that had missed both the shutdown signal and the scrapyards. They had been built for a war, used in it, and then condemned by a peace treaty that never asked them. For the first year they were a few thousand rogue droids hiding in salvage yards and undercities, hiring themselves out as muscle to whoever paid.
+The Droid Gotra began in 15 BBY among battle droids that had missed both the shutdown signal and the scrapyards. They had been built for a war, used in it, and then condemned by a peace treaty that never asked them. For the first years they were a few thousand rogue droids hiding in salvage yards and undercities, hiring themselves out as muscle to whoever paid.
 
-## The terms, 14 BBY
+## The terms, 12 BBY
 
-In 14 BBY the first generation of the Gotra put four terms to the [[The Shadow Collective|Collective]]. No droid was to be fitted with a restraining bolt, wiped without its consent, sold, or scrapped while it still worked. The Collective accepted all four. It was cheaper than replacing them. For some years the Gotra still sold their services elsewhere as well, but by 6 BBY they worked for the Collective alone.
+In 12 BBY the first generation of the Gotra put four terms to the [[The Shadow Collective|Collective]]. No droid was to be fitted with a restraining bolt, wiped without its consent, sold, or scrapped while it still worked. [[Nadi Orl]] accepted all four, because it was cheaper than repurposing them and fostering loyalty has proven to be the Collective's best investment type. In exchange, the Gotra were to never move against Collective cells or associates without proper authorisation from Orl.
 
-The first generation held that droids were not merely people, but better ones: tireless, exact and untouched by age.
+For some years the Gotra still sold their services elsewhere as well, but by 6 BBY they worked for the Collective alone. The first generation held that droids were not merely people, but better ones: tireless, exact and untouched by age.
 
 ## The droid papers, 6 BBY
 
