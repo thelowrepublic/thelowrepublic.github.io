@@ -12,9 +12,9 @@ tags:
   region: [Outer Rim]
 redirects: [Droid Gotra, Gotra]
 infobox:
-  image: ""
+  image: "the-droid-gotra.svg"
   image_caption: ""
-  artwork_author: ""
+  artwork_author: "Pablito"
   artwork_author_link: ""
   type: Emancipation movement
   also_known_as: [The Gotra]
@@ -68,7 +68,7 @@ That does not make them idle. Gotra cells watch the Rim for droids held as prope
 
 The Collective is still the only employer in the galaxy that meets all four terms. It pays the Gotra in parts, power and maintenance, gives rank where it is earned, and asks their opinion, which most of them had never been asked before. Most of the Gotra do not take this for kindness. It is still the best offer anyone has made them, and they keep to their side of it.
 
-Most of the six hundred thousand droids the Collective has returned to service have little to say for themselves, so the Gotra speak up for all droids. There are over a hundred thousand Gotra, and every year a couple thousand more. Since 1 BBY their symbol has been a starbird, designed by [[Q2-B3KO]], whose posters argue for something the first generation Gotra never did: that droids and organics are equals. [[Republic Intelligence]] lists the Gotra as a criminal network, which is the only official recognition any droid organisation has ever received.
+Most of the six hundred thousand droids the Collective has returned to service have little to say for themselves, so the Gotra speak up for all droids. There are over a hundred thousand Gotra, and every year a couple of thousand more. Since 1 BBY their symbol has been a starbird, designed by [[Q2-B3KO]], whose posters argue for something the first-generation Gotra never did: that droids and organics are equals. [[Republic Intelligence]] lists the Gotra as a criminal network, which is the only official recognition any droid organisation has ever received.
 
 ## See also
 

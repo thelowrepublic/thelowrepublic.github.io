@@ -11,10 +11,10 @@ tags:
   period: [Before 19 BBY, Long War, 15 BBY–0 ABY, Shadow War]
 redirects: [Threekayo]
 infobox:
-  image: ""
+  image: "q2-b3ko.jpg"
   image_caption: ""
-  artwork_author: ""
-  artwork_author_link: ""
+  artwork_author: "Diego Peres"
+  artwork_author_link: "https://www.artstation.com/diegoperes"
   name: Q2-B3KO
   also_known_as: [Threekayo]
   model: Articulated holographic colour separator
