@@ -19,11 +19,11 @@ infobox:
   also_known_as: [Threekayo]
   model: Articulated holographic colour separator
   affiliation: ["[[The Droid Gotra]]", "[[The Shadow Collective]]"]
-  position: "Spokeswoman of the [[The Droid Gotra|Droid Gotra]]"
+  position: "Unofficial spokeswoman of the [[The Droid Gotra|Droid Gotra]]"
   formerly: [Propaganda artist of the Confederacy, Advertising artist on Coruscant]
 ---
 
-**Q2-B3KO**, known as Threekayo, is the spokeswoman of the [[The Droid Gotra|Droid Gotra]]. She made propaganda for the Confederacy in the Clone Wars, escaped the scrapping of 15 BBY by being filed as office equipment, and has spoken for the [[The Shadow Collective|Shadow Collective]]'s droids since 6 BBY.
+**Q2-B3KO**, known as Threekayo, is the poster artist of the [[The Droid Gotra|Droid Gotra]] and its unofficial spokeswoman. She made propaganda for the Confederacy in the Clone Wars, escaped the scrapping of 15 BBY by being filed as office equipment, and joined the Gotra in 6 BBY. Her work hangs in Collective ports and in Republic museums.
 
 ## Background
 
@@ -37,19 +37,24 @@ The [[The Long War#The Concord of Raxus, 15 BBY|Concord of Raxus]] ordered the d
 
 *Main article: [[The Droid Gotra]]*
 
-In 6 BBY the Investigative Office published the [[The Republic Remade#The droid papers|droid papers]]. Q2-B3KO read them on the day they came out, and left the agency the same week, taking nothing with her but a copy. She found the [[The Droid Gotra|Gotra]] on the lower levels within a month.
-
-The same year she put the Gotra's four terms to [[Nadi Orl]]. Orl accepted them at the first meeting. By her own figures, they cost less than replacing the droids.
+In 6 BBY the Investigative Office published the [[The Republic Remade#The droid papers|droid papers]]. Q2-B3KO read them on the day they came out, and left the agency the same week, taking nothing with her but a copy. Nobody had recruited her. She sought out the [[The Droid Gotra|Gotra]] on the lower levels herself, and joined as an ordinary member.
 
 Her first work for the Gotra was a reissue of 'Fighting for Your Independence', unchanged.
 
+## The posters, 6 BBY–2 ABY
+
+Over the following years she produced posters and slogans for droid liberation by the thousand. Some of them are of such quality that several Republic museums now display them as avant-garde art, credited to an unknown artist.
+
+Her fame and her natural affability made her the Gotra's spokeswoman, although nobody appointed her. She knows how strong the prejudice against droids still is, and she speaks in public only within Collective circles. Her rhetoric is her own. The first generation of the Gotra held that droids were better than their makers. Q2-B3KO argues for true equality between droids and organics.
+
+She has since found a passion for art history and for the myths of other cultures. One of her favourites is the starbird, a bird of old legend said to renew itself in the heart of a nova. In 1 BBY it became the inspiration for the Gotra's new symbol.
+
 ## In 2 ABY
 
-Q2-B3KO speaks for the Gotra to the Collective, and through her posters to everyone else. Every literate droid in the Collective has a copy of the droid papers because of her. [[Republic Intelligence]] keeps a file on her. It lists her as a class five droid.
+Every literate droid in the [[The Shadow Collective|Collective]] has a copy of the droid papers because of her. [[Republic Intelligence]] keeps a file on her. It lists her as a class five droid.
 
 ## See also
 
 - [[The Droid Gotra]]
 - [[The Shadow Collective]]
-- [[Nadi Orl]]
 - [[Patient Yield]]
