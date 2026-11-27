@@ -54,7 +54,7 @@ Obi-Wan Kenobi held the northern landing zone for nineteen hours and gave the or
 
 [[Anakin Skywalker]], disgraced sixteen years ago, had arrived a day ahead of the fleet, uninvited and unannounced, and spent the last three days pulling people out of the collapse. On the sixth day [[Wilhuff Tarkin|Tarkin]] ordered the whole temple valley shelled from orbit. He did not pull anyone out first. More than a thousand living Republic soldiers were still inside the target area. The order could be defended in military terms and was. Most [[The Nightborn|Nightborn]] left the moon hours earlier. Maul was already gone by day four.
 
-Anakin met Kenobi on the third day. They spoke for about a minute and hugged. Neither has ever said what they talked about. [[Luke Skywalker]] was in the northern landing zone, and did not find his father there.
+Anakin met Kenobi on the third day. They spoke for about a minute and hugged. Neither has ever said what they talked about. A corporal standing nearby heard only the last thing Skywalker said: "Let him go, Obi-Wan." [[Luke Skywalker]] was in the northern landing zone, and did not find his father there.
 
 ## General of the Republic, 0 ABY
 
@@ -74,13 +74,9 @@ He had held the northern landing zone for nineteen hours and given the orders th
 
 ## In 2 ABY
 
-Kenobi is not a [[The Jedi Templars|Templar]] and has refused to become one three times. He is not at [[Ossus Order|Ossus]], which regards his commission as precisely the error it left Coruscant to avoid. He holds a Republic rank. He commands Republic soldiers and a few dozen Jedi who followed him rather than either faction. He belongs to nothing.
-
-Kenobi commands soldiers for a government he does not trust, but says that someone has to do it.
+Kenobi is not a [[The Jedi Templars|Templar]] and has refused to become one three times. He is not at [[Ossus Order|Ossus]], which regards his commission as precisely the error it left Coruscant to avoid. He holds a Republic rank. He commands Republic soldiers and a few dozen Jedi who followed him rather than either faction. He commands soldiers for a government he does not trust, but says that someone has to do it. [[Cody]] serves on Kenobi's closest retinue, refusing any transfers or retirement. His loyalty is unwavering, as if he was atoning for a sin he never committed.
 
 The other difficulty for everyone in Jedi uniform is that they are fighting people they trained. [[The Shadow Collective|Collective]] field operations are coordinated out of proportion by [[The Nightborn|Nightborn]], who know Republic doctrine, Jedi tactics, and how to stay hidden from people they often studied beside. Master [[Quinlan Vos]] was embedded inside the organisation in 1 ABY by the Templars, who did not inform Ossus. He has sent information out at irregular intervals ever since. He has sent more information to Kenobi privately. Nobody has reached a settled view if Vos is still their asset. His well-known propensity to disregard Jedi creed is troublesome, but it has given credence to his alibi as a defector. His problematic attachment to [[Asajj Ventress]], and over a dozen unsuccessful attempts to contact her, make his real loyalty and priorities an open question.
-
-[[Cody]] serves on Kenobi's closest retinue, refusing any transfers or retirement. His loyalty is unwavering, as if he was atoning for a sin he never committed.
 
 ## See also
 
