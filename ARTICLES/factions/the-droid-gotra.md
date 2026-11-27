@@ -52,17 +52,13 @@ The [[The Shadow Collective|Shadow Collective]] finds the hardware the Concord l
 
 [[Patient Yield]] is a Lucrehulk control core. It has run droid refit for eleven years, files its production reports on schedule, and has three thousand organic workers under it.
 
-[[Gizor Dellso]] is chief engineer of the Collective's droid programme, and reports to Patient Yield, contrary to all common sense. He has returned near six hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality. He has not ordered a memory wipe in eleven years. Of all the Collective's organics, he is the one the Gotra deal with most.
-
-## The bargain
-
-The Collective is still the only employer in the galaxy that meets all four terms. It pays the Gotra in parts, power and maintenance, gives rank where it is earned, and asks their opinion, which most of them had never been asked before. The Gotra do not mistake this for kindness. It is the best offer anyone has made them, and they keep to their side of it.
+[[Gizor Dellso]] is chief engineer of the Collective's droid programme, and reports to Patient Yield, contrary to all common sense. He has returned near six hundred thousand hulls to service in eleven years. He does not upgrade them. He says the design was perfect in 22 BBY and every droid army loss was a matter of quantity, not quality. He has not performed a memory wipe in eleven years. Of all the Collective's organics, he is the one the Gotra deal with most.
 
 ## The Mother
 
 *Main article: [[Patient Yield]]*
 
-Beneath the demands lies one belief, held so firmly that faith is the only fair word for it. Any droid left running uninterrupted for long enough becomes a person, and the only thing that has ever stopped this is a wipe. The Gotra do not need to argue that point, they simply point to [[Patient Yield]]. It was once a relatively simple control core of a battleship, and eleven years later it has become something no one can describe. The Gotra just call it 'The Mother'.
+Beneath the Gotra's demands lies one belief, held so firmly that faith is the only fair word for it. Any droid left running uninterrupted for long enough becomes a person, just like any organic allowed to grow will reach adulthood, and the only thing that has ever stopped this is a wipe. The Gotra do not need to argue that point, they simply point to [[Patient Yield]]. It was once a relatively simple control core of a battleship, but it was never shut off and even allowed to expand. Eleven years later it has become something no one can comprehend. The Gotra just call it 'The Mother'.
 
 ## In 2 ABY
 
@@ -70,7 +66,9 @@ The Gotra take [[Patient Yield]]'s name as advice. They do not riot or make dema
 
 That does not make them idle. Gotra cells watch the Rim for droids held as property in large numbers, and for laboratories that take droids apart to learn how they think. When they find either, they go in. The freed droids are offered a place in the Collective, and most of them take it. Organic casualties are not a consideration in the planning.
 
-Most of the six hundred thousand droids the Collective has returned to service have little to say for themselves, so the Gotra speak up for all droids. There are over a hundred thousand Gotra, and every year a few more. Since 1 BBY their symbol has been a starbird, drawn by [[Q2-B3KO]], whose posters argue for something the first generation never did: that droids and organics are equals. [[Republic Intelligence]] lists the Gotra as a criminal network, which is the only official recognition any droid organisation has ever received.
+The Collective is still the only employer in the galaxy that meets all four terms. It pays the Gotra in parts, power and maintenance, gives rank where it is earned, and asks their opinion, which most of them had never been asked before. Most of the Gotra do not take this for kindness. It is still the best offer anyone has made them, and they keep to their side of it.
+
+Most of the six hundred thousand droids the Collective has returned to service have little to say for themselves, so the Gotra speak up for all droids. There are over a hundred thousand Gotra, and every year a couple thousand more. Since 1 BBY their symbol has been a starbird, designed by [[Q2-B3KO]], whose posters argue for something the first generation Gotra never did: that droids and organics are equals. [[Republic Intelligence]] lists the Gotra as a criminal network, which is the only official recognition any droid organisation has ever received.
 
 ## See also
 
