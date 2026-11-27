@@ -12,7 +12,7 @@ tags:
   region: [Outer Rim]
 redirects: [Droid Gotra, Gotra]
 infobox:
-  image: "the-droid-gotra.svg"
+  image: "the-droid-gotra.png"
   image_caption: ""
   artwork_author: "Pablito"
   artwork_author_link: ""
