@@ -33,7 +33,7 @@ Kalani was a super tactical droid who held the rank of general in the Separatist
 
 Kalani was found in 4 BBY on Agamar along with a small army of fully functional battle droids. When questioned why his army was still operating, he claimed to have intercepted the shutdown signal that was sent out at the end of the Long War and prevented it from reaching any of the droids under his command. Recruiting him was as simple as treating him like the general he was. 
 
-Now he holds that rank under the [[The Shadow Collective|Collective]] and has commanded ground actions in sixteen systems. The Republic considers the rank a piece of theatre. Kalani has twice refused reckless orders on the grounds that they would have destroyed units under his command. Reports of his behaviour during the Clone Wars were the basis of four out of nine of the [[The Republic Remade#The droid papers|droid papers]] of 6 BBY.
+Now he holds that rank under the [[The Shadow Collective|Collective]] and has commanded ground actions in sixteen systems. The Republic considers the rank a piece of theatre. Kalani has twice refused reckless orders on the grounds that they would have destroyed units under his command. Reports of his behaviour during the Clone Wars were the basis of four out of nine of the [[The Republic Remade#The droid papers|droid papers]] of 6 BBY. Kalani is not a member of the [[The Droid Gotra|Droid Gotra]]. About a third of the droids under his command are.
 
 ## See also
 

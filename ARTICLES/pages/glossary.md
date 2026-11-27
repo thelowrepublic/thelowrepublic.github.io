@@ -35,6 +35,7 @@ Short definitions of the names and terms used across the wiki. Each one links to
 | Dathomir-Yavin Accord | The defensive and economic alliance of Quelii and the Gordian Reach, formed in the sixth month of 2 ABY. | [[The Secessions#Quelii and Gordian Reach, 2 ABY]] |
 | Death Watch | The Mandalorian faction under Gar Saxon. It is part of the Shadow Collective and holds the southern half of Mandalore. | [[Mandalore#The armouries]] |
 | Demilitarisation | The abolition of Jedi military rank in 16 BBY. | [[The Reckoning of the Jedi#Demilitarisation, 16 BBY]] |
+| Droid Gotra | A droid emancipation movement within the Shadow Collective, founded by battle droids that escaped the scrapping. | [[The Droid Gotra]] |
 | Droid papers | At least nine studies, made between 21 and 15 BBY, which found innate sentience in many Separatist droids. The Investigative Office published them in 6 BBY. | [[The Republic Remade#The droid papers]] |
 | Emergency powers | Extraordinary extent of power granted to the Chancellor of the Republic. Must be renewed every ninety days by Senate majority vote. | [[The Shadow War#The Republic at war]] |
 | Exit permit | The Union's permission to leave its territory, rarely granted. | [[The Greater Seswenna Union#Life in the Union]] |

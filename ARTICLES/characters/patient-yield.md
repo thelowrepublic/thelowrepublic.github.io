@@ -32,7 +32,7 @@ Patient Yield has run droid refit for eleven years, files its production reports
 
 The lucrehulk core has been retrofitted with so many illegal, unstable and experimental modules that its central mainframe is now off-limits to all organics for safety reasons and is surrounded by a ten-metre-thick insulating sarcophagus. The temperature within the containment must be constantly regulated to one degree above absolute zero, otherwise the mainframe will instantly start melting. That can only be achieved by utilising a complex setup of gases and pressure that will instantly kill and dissolve most organic beings.
 
-The control core has clearly surpassed its original design, but nobody has yet established what it has become. The few droids that have interfaced with it directly describe the experience as "finally understanding what faith is."
+The control core has clearly surpassed its original design, but nobody has yet established what it has become. The few droids that have interfaced with it directly describe the experience as "finally understanding what faith is." Most of them have since joined the [[The Droid Gotra|Droid Gotra]].
 
 ## See also
 

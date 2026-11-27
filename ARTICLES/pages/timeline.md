@@ -91,6 +91,7 @@ The dated events of the Low Republic, from the ancient past to the end of 2 ABY.
 - [[Nal Kaddan]] fell to the Hutts.
 - The Jedi Council voted to leave Coruscant. The move to [[Ossus]] took two years. The Temple stood empty for thirteen years.
 - The Auxiliary Corps began to stand down.
+- Battle droids that escaped the scrapping formed the [[The Droid Gotra|Droid Gotra]].
 - The Murkhana inquiry called [[C-3PO]]. Data pulled from him ended two careers.
 - The Republic and the Techno Union founded the Unified Scientific Consortium, pooling their scientists as a gesture of goodwill. See [[The Unified Scientific Consortium Conference]].
 
